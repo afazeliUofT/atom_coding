@@ -1,0 +1,269 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "after": 2,
+        "before": 3
+      },
+      "name": "duplicate_map_reduction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "received_symbols_checked": 28,
+        "representations": 14
+      },
+      "name": "bac_complete_interval_exactness",
+      "pass": true
+    },
+    {
+      "detail": {
+        "probability_sum": 1.0,
+        "states": 81
+      },
+      "name": "product_atom_enumerator",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 500,
+        "code": {
+          "generator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "k": 4,
+          "n": 8,
+          "name": "audit_code",
+          "parity_check": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "rate": 0.5
+        }
+      },
+      "name": "gf2_coordinate_fiber_oracle",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 256,
+        "parity_check": [
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference_selection_counts": {
+          "direct_codeword_ml": 0,
+          "syndrome_trellis_ml": 256
+        }
+      },
+      "name": "syndrome_trellis_vs_direct_ml",
+      "pass": true
+    },
+    {
+      "detail": {
+        "channels": [
+          {
+            "compact": 0.8999999999999999,
+            "full": 0.8999999999999999
+          },
+          {
+            "compact": 1.0,
+            "full": 1.0
+          },
+          {
+            "compact": 0.8,
+            "full": 0.8
+          }
+        ]
+      },
+      "name": "injective_lp_full_vs_compact",
+      "pass": true
+    },
+    {
+      "detail": {
+        "averaged_codebooks": 280,
+        "exact": 1.9052011428572404,
+        "formula": 1.9052011428571425,
+        "kappa": 1.46
+      },
+      "name": "random_code_fiber_theorem_tiny_exact",
+      "pass": true
+    },
+    {
+      "detail": {
+        "maps": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            0,
+            3,
+            4,
+            2
+          ],
+          [
+            2,
+            3,
+            4,
+            0,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            0.67,
+            0.22,
+            0.11,
+            0.0,
+            0.0
+          ],
+          [
+            0.22,
+            0.67,
+            0.0,
+            0.11,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.67,
+            0.22,
+            0.11
+          ],
+          [
+            0.11,
+            0.0,
+            0.0,
+            0.67,
+            0.22
+          ],
+          [
+            0.0,
+            0.11,
+            0.22,
+            0.0,
+            0.67
+          ]
+        ]
+      },
+      "name": "noncyclic_reversible_action_control",
+      "pass": true
+    }
+  ],
+  "count": 8,
+  "pass": true
+}

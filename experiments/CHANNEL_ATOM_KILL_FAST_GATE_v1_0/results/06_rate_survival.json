@@ -1,0 +1,83 @@
+{
+  "channel_best": {
+    "AES_INJECTIVE_FRIENDLY": {
+      "actual_mass": 0.4851562499999995,
+      "atom_separating_rate_lower_bound": 0.4,
+      "best_representation": "COMMON_UNIFORM_011__reduced__reduced__reduced",
+      "capacity": 0.42507744466194275,
+      "fiber_ceiling": 1.0,
+      "fiber_ceiling_to_capacity": 2.3525124952119816,
+      "fiber_ceiling_to_uniform_information": 2.3530029744457623,
+      "joint_score": -1.0,
+      "largest_n": 5,
+      "mass_ok": false,
+      "milp_optimal": true,
+      "pass": false,
+      "rate_to_capacity": 0.9410049980847928,
+      "rate_to_uniform_information": 0.9412011897783049,
+      "target_mass": 0.9,
+      "uniform_input_mutual_information": 0.42498883803389365
+    },
+    "AES_OVERLOADED_ERASURE": {
+      "actual_mass": 0.2952400000000004,
+      "atom_separating_rate_lower_bound": 0.2,
+      "best_representation": "COMMON_UNIFORM_004__reduced__reduced__reduced",
+      "capacity": 0.12502613216964656,
+      "fiber_ceiling": 0.7369655941662062,
+      "fiber_ceiling_to_capacity": 5.894492466312769,
+      "fiber_ceiling_to_uniform_information": 5.894606375824223,
+      "joint_score": -1.0,
+      "largest_n": 5,
+      "mass_ok": false,
+      "milp_optimal": true,
+      "pass": false,
+      "rate_to_capacity": 1.599665578141874,
+      "rate_to_uniform_information": 1.5996964912570466,
+      "target_mass": 0.9,
+      "uniform_input_mutual_information": 0.12502371611932422
+    },
+    "BAC_HARD": {
+      "actual_mass": 0.8517787500000003,
+      "atom_separating_rate_lower_bound": 0.0,
+      "best_representation": "BAC_t0.15000000__reduced__reduced",
+      "capacity": 0.09260110544296235,
+      "fiber_ceiling": 0.7983661388303496,
+      "fiber_ceiling_to_capacity": 8.62156164347415,
+      "fiber_ceiling_to_uniform_information": 8.622232258603479,
+      "joint_score": 0.0,
+      "largest_n": 5,
+      "mass_ok": true,
+      "milp_optimal": true,
+      "pass": false,
+      "rate_to_capacity": 0.0,
+      "rate_to_uniform_information": 0.0,
+      "target_mass": 0.9,
+      "uniform_input_mutual_information": 0.09259390316628503
+    },
+    "BAC_MODERATE": {
+      "actual_mass": 0.9011036159999988,
+      "atom_separating_rate_lower_bound": 0.0,
+      "best_representation": "BAC_t0.16000000__reduced__reduced",
+      "capacity": 0.2892866141620932,
+      "fiber_ceiling": 0.7858751946471524,
+      "fiber_ceiling_to_capacity": 2.716597160651237,
+      "fiber_ceiling_to_uniform_information": 2.7188392217711246,
+      "joint_score": 0.0,
+      "largest_n": 5,
+      "mass_ok": true,
+      "milp_optimal": true,
+      "pass": false,
+      "rate_to_capacity": 0.0,
+      "rate_to_uniform_information": 0.0,
+      "target_mass": 0.9,
+      "uniform_input_mutual_information": 0.289048057109906
+    }
+  },
+  "channel_pass": {
+    "AES_INJECTIVE_FRIENDLY": false,
+    "AES_OVERLOADED_ERASURE": false,
+    "BAC_HARD": false,
+    "BAC_MODERATE": false
+  },
+  "passing_channels": 0
+}

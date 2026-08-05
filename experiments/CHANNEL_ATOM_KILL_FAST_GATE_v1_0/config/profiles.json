@@ -1,0 +1,162 @@
+{
+  "smoke": {
+    "seed": 20260805,
+    "atlas": {
+      "random_channels": 3,
+      "vertex_count": 12
+    },
+    "reversible": {
+      "blocklengths": [
+        3,
+        4,
+        5
+      ],
+      "normalized_rate": 0.65,
+      "trials": 8,
+      "max_atoms": 5000,
+      "bootstrap_replicates": 80
+    },
+    "nonlatin": {
+      "blocklengths": [
+        4,
+        6
+      ],
+      "rates": [
+        0.5,
+        0.75
+      ],
+      "trials": 5,
+      "max_atoms": 2000,
+      "representations_per_channel": 3,
+      "vertex_count": 10,
+      "bootstrap_replicates": 80
+    },
+    "rate_survival": {
+      "blocklengths": [
+        2,
+        3,
+        4
+      ],
+      "cumulative_targets": [
+        0.8
+      ],
+      "max_atoms": 32,
+      "reps_per_channel": 2,
+      "vertex_count": 10,
+      "milp_time_limit": 15.0
+    },
+    "purpose": "installation_and_exactness_validation_only"
+  },
+  "standard": {
+    "purpose": "pre_registered_kill_fast_investment_gate",
+    "seed": 20260805,
+    "atlas": {
+      "random_channels": 6,
+      "vertex_count": 20
+    },
+    "reversible": {
+      "blocklengths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_rate": 0.7,
+      "trials": 16,
+      "max_atoms": 20000,
+      "bootstrap_replicates": 160
+    },
+    "nonlatin": {
+      "blocklengths": [
+        4,
+        6,
+        8
+      ],
+      "rates": [
+        0.5,
+        0.75
+      ],
+      "trials": 8,
+      "max_atoms": 3000,
+      "representations_per_channel": 3,
+      "vertex_count": 18,
+      "bootstrap_replicates": 140
+    },
+    "rate_survival": {
+      "blocklengths": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "cumulative_targets": [
+        0.8,
+        0.9
+      ],
+      "max_atoms": 96,
+      "reps_per_channel": 3,
+      "vertex_count": 18,
+      "milp_time_limit": 30.0
+    }
+  },
+  "deep": {
+    "seed": 20260805,
+    "atlas": {
+      "random_channels": 18,
+      "vertex_count": 80
+    },
+    "reversible": {
+      "blocklengths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "normalized_rate": 0.75,
+      "trials": 160,
+      "max_atoms": 1000000,
+      "bootstrap_replicates": 1000
+    },
+    "nonlatin": {
+      "blocklengths": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "rates": [
+        0.5,
+        0.625,
+        0.75
+      ],
+      "trials": 80,
+      "max_atoms": 150000,
+      "representations_per_channel": 5,
+      "vertex_count": 80,
+      "bootstrap_replicates": 800
+    },
+    "rate_survival": {
+      "blocklengths": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "cumulative_targets": [
+        0.8,
+        0.9,
+        0.95
+      ],
+      "max_atoms": 512,
+      "reps_per_channel": 3,
+      "vertex_count": 60,
+      "milp_time_limit": 180.0
+    },
+    "purpose": "confirmation_only_after_standard_continue_or_ambiguous_pivot"
+  }
+}

@@ -1,0 +1,35 @@
+[E0] Running exactness and theorem-implementation audit...
+[E1] Building exact small-DMC representation atlas...
+[E2] Running additive and non-cyclic reversible-action positive controls...
+[E3] Running exact non-Latin block-scaling tests...
+[E4] Running analytic and exact small-block rate-survival tests...
+
+==============================================================================
+FINAL CLASSIFICATION: PIVOT_TO_REVISED_TRACK
+STAGE: REVERSIBLE_ACTION_ONLY
+REASON: The broad non-Latin programme failed, but the non-cyclic bi-unambiguous action channel passed the exact first-hit scaling control.
+PIVOT COMMAND: STOP_ORIGINAL_BROAD_CHANNEL_ATOM_PROGRAM
+==============================================================================
+	Command being timed: "env PYTHONPATH=src MPLBACKEND=Agg python -m atom_gate.run_gate --profile standard"
+	User time (seconds): 17.97
+	System time (seconds): 0.85
+	Percent of CPU this job got: 105%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:17.81
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 219384
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 45883
+	Voluntary context switches: 69
+	Involuntary context switches: 142
+	Swaps: 0
+	File system inputs: 112
+	File system outputs: 2216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

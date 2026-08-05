@@ -1,0 +1,55 @@
+{
+  "config": {
+    "atlas": {
+      "random_channels": 6,
+      "vertex_count": 20
+    },
+    "nonlatin": {
+      "blocklengths": [
+        4,
+        6,
+        8
+      ],
+      "bootstrap_replicates": 140,
+      "max_atoms": 3000,
+      "rates": [
+        0.5,
+        0.75
+      ],
+      "representations_per_channel": 3,
+      "trials": 8,
+      "vertex_count": 18
+    },
+    "purpose": "pre_registered_kill_fast_investment_gate",
+    "rate_survival": {
+      "blocklengths": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "cumulative_targets": [
+        0.8,
+        0.9
+      ],
+      "max_atoms": 96,
+      "milp_time_limit": 30.0,
+      "reps_per_channel": 3,
+      "vertex_count": 18
+    },
+    "reversible": {
+      "blocklengths": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "bootstrap_replicates": 160,
+      "max_atoms": 20000,
+      "normalized_rate": 0.7,
+      "trials": 16
+    },
+    "seed": 20260805
+  },
+  "profile": "standard"
+}

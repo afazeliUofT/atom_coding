@@ -1,0 +1,11013 @@
+{
+  "AES_INJECTIVE_FRIENDLY": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.07500000000000001,
+        0.48750000000000004,
+        0.1875,
+        0.005000000000000001,
+        0.0325,
+        0.0125,
+        0.020000000000000004,
+        0.13,
+        0.05
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.1,
+        0.65,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.1,
+        0.4,
+        0.24999999999999997,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.65,
+        0.09999999999999998,
+        0.050000000000000044,
+        0.09999999999999998,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.5,
+        0.25,
+        0.050000000000000044,
+        0.09999999999999998,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.65,
+        0.09999999999999998,
+        0.050000000000000044,
+        0.04999999999999993,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.5,
+        0.25,
+        0.050000000000000044,
+        0.04999999999999993,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "min_uniform_fiber_ambiguity",
+        "reduced_from": "LP_MIN_AMBIGUITY__reduced"
+      },
+      "name": "LP_MIN_AMBIGUITY__reduced__reduced",
+      "weights": [
+        0.55,
+        0.19999999999999996,
+        0.05,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 4,
+        "reduced_from": "AES_INJECTIVE_FRIENDLY_V_004__reduced"
+      },
+      "name": "AES_INJECTIVE_FRIENDLY_V_004__reduced__reduced",
+      "weights": [
+        0.05,
+        0.65,
+        0.049999999999999975,
+        0.05,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 7,
+        "reduced_from": "AES_INJECTIVE_FRIENDLY_V_007__reduced"
+      },
+      "name": "AES_INJECTIVE_FRIENDLY_V_007__reduced__reduced",
+      "weights": [
+        0.05,
+        0.45,
+        0.25,
+        0.05,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 10,
+        "reduced_from": "AES_INJECTIVE_FRIENDLY_V_010__reduced"
+      },
+      "name": "AES_INJECTIVE_FRIENDLY_V_010__reduced__reduced",
+      "weights": [
+        0.6,
+        0.15000000000000002,
+        0.05,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 13,
+        "reduced_from": "AES_INJECTIVE_FRIENDLY_V_013__reduced"
+      },
+      "name": "AES_INJECTIVE_FRIENDLY_V_013__reduced__reduced",
+      "weights": [
+        0.1,
+        0.6,
+        0.050000000000000044,
+        0.05,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 16,
+        "reduced_from": "AES_INJECTIVE_FRIENDLY_V_016__reduced"
+      },
+      "name": "AES_INJECTIVE_FRIENDLY_V_016__reduced__reduced",
+      "weights": [
+        0.1,
+        0.45,
+        0.2,
+        0.05,
+        0.2
+      ]
+    }
+  ],
+  "AES_OVERLOADED_ERASURE": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.04000000000000001,
+        0.1,
+        0.26,
+        0.005000000000000001,
+        0.0125,
+        0.0325,
+        0.05500000000000001,
+        0.1375,
+        0.35750000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.1,
+        0.24999999999999997,
+        0.050000000000000044,
+        0.04999999999999999,
+        0.55
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.1,
+        0.30000000000000004,
+        0.04999999999999999,
+        0.25,
+        0.3
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.25,
+        0.15000000000000002,
+        0.04999999999999999,
+        0.09999999999999998,
+        0.45
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.4,
+        0.04999999999999999,
+        0.09999999999999998,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.1,
+        0.30000000000000004,
+        0.050000000000000044,
+        0.19999999999999996,
+        0.35
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.25,
+        0.15000000000000002,
+        0.050000000000000044,
+        0.04999999999999993,
+        0.5
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.4,
+        0.050000000000000044,
+        0.09999999999999998,
+        0.19999999999999996,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.4,
+        0.050000000000000044,
+        0.04999999999999993,
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 8,
+        "reduced_from": "AES_OVERLOADED_ERASURE_V_008__reduced"
+      },
+      "name": "AES_OVERLOADED_ERASURE_V_008__reduced__reduced",
+      "weights": [
+        0.1,
+        0.2,
+        0.10000000000000003,
+        0.05,
+        0.55
+      ]
+    }
+  ],
+  "BAC_a0.100_b0.250": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.225,
+        0.675,
+        0.025,
+        0.07500000000000001
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.25,
+        0.65,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.15000000000000002,
+        0.75,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.16000000__reduced",
+        "t": 0.16
+      },
+      "name": "BAC_t0.16000000__reduced__reduced",
+      "weights": [
+        0.16,
+        0.74,
+        0.09,
+        0.010000000000000009
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.17000000__reduced",
+        "t": 0.16999999999999998
+      },
+      "name": "BAC_t0.17000000__reduced__reduced",
+      "weights": [
+        0.16999999999999998,
+        0.73,
+        0.08000000000000002,
+        0.01999999999999999
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.18000000__reduced",
+        "t": 0.18
+      },
+      "name": "BAC_t0.18000000__reduced__reduced",
+      "weights": [
+        0.18,
+        0.72,
+        0.07,
+        0.03
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.19000000__reduced",
+        "t": 0.19
+      },
+      "name": "BAC_t0.19000000__reduced__reduced",
+      "weights": [
+        0.19,
+        0.71,
+        0.06,
+        0.04000000000000001
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.20000000__reduced",
+        "t": 0.2
+      },
+      "name": "BAC_t0.20000000__reduced__reduced",
+      "weights": [
+        0.2,
+        0.7,
+        0.04999999999999999,
+        0.05000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.21000000__reduced",
+        "t": 0.21
+      },
+      "name": "BAC_t0.21000000__reduced__reduced",
+      "weights": [
+        0.21,
+        0.6900000000000001,
+        0.04000000000000001,
+        0.06
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.22000000__reduced",
+        "t": 0.22
+      },
+      "name": "BAC_t0.22000000__reduced__reduced",
+      "weights": [
+        0.22,
+        0.68,
+        0.03,
+        0.07
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.23000000__reduced",
+        "t": 0.22999999999999998
+      },
+      "name": "BAC_t0.23000000__reduced__reduced",
+      "weights": [
+        0.22999999999999998,
+        0.67,
+        0.020000000000000018,
+        0.07999999999999999
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.1,
+        "b": 0.25,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.24000000__reduced",
+        "t": 0.24
+      },
+      "name": "BAC_t0.24000000__reduced__reduced",
+      "weights": [
+        0.24,
+        0.66,
+        0.010000000000000009,
+        0.09
+      ]
+    }
+  ],
+  "BAC_a0.200_b0.350": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.27999999999999997,
+        0.52,
+        0.06999999999999999,
+        0.13
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.35,
+        0.45000000000000007,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.15000000000000002,
+        0.65,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.17000000__reduced",
+        "t": 0.16999999999999996
+      },
+      "name": "BAC_t0.17000000__reduced__reduced",
+      "weights": [
+        0.16999999999999996,
+        0.6300000000000001,
+        0.18000000000000002,
+        0.01999999999999999
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.19000000__reduced",
+        "t": 0.18999999999999997
+      },
+      "name": "BAC_t0.19000000__reduced__reduced",
+      "weights": [
+        0.18999999999999997,
+        0.6100000000000001,
+        0.16,
+        0.04000000000000001
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.21000000__reduced",
+        "t": 0.20999999999999996
+      },
+      "name": "BAC_t0.21000000__reduced__reduced",
+      "weights": [
+        0.20999999999999996,
+        0.5900000000000001,
+        0.14,
+        0.06
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.23000000__reduced",
+        "t": 0.22999999999999998
+      },
+      "name": "BAC_t0.23000000__reduced__reduced",
+      "weights": [
+        0.22999999999999998,
+        0.5700000000000001,
+        0.12,
+        0.08000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.25000000__reduced",
+        "t": 0.24999999999999997
+      },
+      "name": "BAC_t0.25000000__reduced__reduced",
+      "weights": [
+        0.24999999999999997,
+        0.55,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.27000000__reduced",
+        "t": 0.26999999999999996
+      },
+      "name": "BAC_t0.27000000__reduced__reduced",
+      "weights": [
+        0.26999999999999996,
+        0.53,
+        0.08000000000000002,
+        0.12
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.29000000__reduced",
+        "t": 0.29
+      },
+      "name": "BAC_t0.29000000__reduced__reduced",
+      "weights": [
+        0.29,
+        0.51,
+        0.06,
+        0.14
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.31000000__reduced",
+        "t": 0.30999999999999994
+      },
+      "name": "BAC_t0.31000000__reduced__reduced",
+      "weights": [
+        0.30999999999999994,
+        0.4900000000000001,
+        0.040000000000000036,
+        0.15999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.35,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.33000000__reduced",
+        "t": 0.32999999999999996
+      },
+      "name": "BAC_t0.33000000__reduced__reduced",
+      "weights": [
+        0.32999999999999996,
+        0.4700000000000001,
+        0.020000000000000018,
+        0.18
+      ]
+    }
+  ],
+  "BAC_a0.300_b0.400": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.27999999999999997,
+        0.42,
+        0.12,
+        0.18
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.4,
+        0.29999999999999993,
+        0.30000000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.09999999999999998,
+        0.6,
+        0.30000000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.13000000__reduced",
+        "t": 0.13000000000000003
+      },
+      "name": "BAC_t0.13000000__reduced__reduced",
+      "weights": [
+        0.13000000000000003,
+        0.57,
+        0.27,
+        0.03
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.16000000__reduced",
+        "t": 0.16000000000000003
+      },
+      "name": "BAC_t0.16000000__reduced__reduced",
+      "weights": [
+        0.16000000000000003,
+        0.5399999999999999,
+        0.24,
+        0.06
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.19000000__reduced",
+        "t": 0.19000000000000003
+      },
+      "name": "BAC_t0.19000000__reduced__reduced",
+      "weights": [
+        0.19,
+        0.5099999999999999,
+        0.20999999999999996,
+        0.09
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.22000000__reduced",
+        "t": 0.22000000000000003
+      },
+      "name": "BAC_t0.22000000__reduced__reduced",
+      "weights": [
+        0.22,
+        0.47999999999999987,
+        0.18,
+        0.11999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.25000000__reduced",
+        "t": 0.25
+      },
+      "name": "BAC_t0.25000000__reduced__reduced",
+      "weights": [
+        0.25,
+        0.44999999999999996,
+        0.15000000000000002,
+        0.14999999999999997
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.31000000__reduced",
+        "t": 0.31000000000000005
+      },
+      "name": "BAC_t0.31000000__reduced__reduced",
+      "weights": [
+        0.31000000000000005,
+        0.3899999999999999,
+        0.08999999999999997,
+        0.21000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.34000000__reduced",
+        "t": 0.34
+      },
+      "name": "BAC_t0.34000000__reduced__reduced",
+      "weights": [
+        0.34,
+        0.35999999999999993,
+        0.06,
+        0.24
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.3,
+        "b": 0.4,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.37000000__reduced",
+        "t": 0.37000000000000005
+      },
+      "name": "BAC_t0.37000000__reduced__reduced",
+      "weights": [
+        0.37000000000000005,
+        0.3299999999999999,
+        0.02999999999999997,
+        0.27
+      ]
+    }
+  ],
+  "BEC_e0.250": [
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.5625,
+        0.1875,
+        0.1875,
+        0.0625
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.5,
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.25,
+        "reduced_from": "BEC_s0.03125000__reduced",
+        "s": 0.03125
+      },
+      "name": "BEC_s0.03125000__reduced__reduced",
+      "weights": [
+        0.71875,
+        0.03125,
+        0.03125,
+        0.21875
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.25,
+        "reduced_from": "BEC_s0.06250000__reduced",
+        "s": 0.0625
+      },
+      "name": "BEC_s0.06250000__reduced__reduced",
+      "weights": [
+        0.6875,
+        0.0625,
+        0.0625,
+        0.1875
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.25,
+        "reduced_from": "BEC_s0.09375000__reduced",
+        "s": 0.09375
+      },
+      "name": "BEC_s0.09375000__reduced__reduced",
+      "weights": [
+        0.65625,
+        0.09375,
+        0.09375,
+        0.15625
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.25,
+        "reduced_from": "BEC_s0.12500000__reduced",
+        "s": 0.125
+      },
+      "name": "BEC_s0.12500000__reduced__reduced",
+      "weights": [
+        0.625,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.25,
+        "reduced_from": "BEC_s0.15625000__reduced",
+        "s": 0.15625
+      },
+      "name": "BEC_s0.15625000__reduced__reduced",
+      "weights": [
+        0.59375,
+        0.15625,
+        0.15625,
+        0.09375
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.25,
+        "reduced_from": "BEC_s0.21875000__reduced",
+        "s": 0.21875
+      },
+      "name": "BEC_s0.21875000__reduced__reduced",
+      "weights": [
+        0.53125,
+        0.21875,
+        0.21875,
+        0.03125
+      ]
+    }
+  ],
+  "BEC_e0.600": [
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.16000000000000003,
+        0.24,
+        0.24,
+        0.36
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.4,
+        0.6
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.4,
+        0.4,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.05000000__reduced",
+        "s": 0.05
+      },
+      "name": "BEC_s0.05000000__reduced__reduced",
+      "weights": [
+        0.35000000000000003,
+        0.05,
+        0.05,
+        0.5499999999999999
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.10000000__reduced",
+        "s": 0.1
+      },
+      "name": "BEC_s0.10000000__reduced__reduced",
+      "weights": [
+        0.30000000000000004,
+        0.1,
+        0.1,
+        0.5
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.15000000__reduced",
+        "s": 0.15000000000000002
+      },
+      "name": "BEC_s0.15000000__reduced__reduced",
+      "weights": [
+        0.25,
+        0.15000000000000002,
+        0.15000000000000002,
+        0.44999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.20000000__reduced",
+        "s": 0.2
+      },
+      "name": "BEC_s0.20000000__reduced__reduced",
+      "weights": [
+        0.2,
+        0.2,
+        0.2,
+        0.39999999999999997
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.25000000__reduced",
+        "s": 0.25
+      },
+      "name": "BEC_s0.25000000__reduced__reduced",
+      "weights": [
+        0.15000000000000002,
+        0.25,
+        0.25,
+        0.35
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.30000000__reduced",
+        "s": 0.30000000000000004
+      },
+      "name": "BEC_s0.30000000__reduced__reduced",
+      "weights": [
+        0.09999999999999998,
+        0.30000000000000004,
+        0.30000000000000004,
+        0.29999999999999993
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "bec_one_parameter",
+        "epsilon": 0.6,
+        "reduced_from": "BEC_s0.35000000__reduced",
+        "s": 0.35000000000000003
+      },
+      "name": "BEC_s0.35000000__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.35000000000000003,
+        0.35000000000000003,
+        0.24999999999999994
+      ]
+    }
+  ],
+  "BSC_p0.080": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.0736,
+        0.8464,
+        0.0064,
+        0.0736
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.08,
+        0.8400000000000001,
+        0.07999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.92,
+        0.07999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.08,
+        "b": 0.08,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.01333333__reduced",
+        "t": 0.013333333333333334
+      },
+      "name": "BAC_t0.01333333__reduced__reduced",
+      "weights": [
+        0.013333333333333334,
+        0.9066666666666667,
+        0.06666666666666667,
+        0.013333333333333334
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.08,
+        "b": 0.08,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.02666667__reduced",
+        "t": 0.02666666666666667
+      },
+      "name": "BAC_t0.02666667__reduced__reduced",
+      "weights": [
+        0.02666666666666667,
+        0.8933333333333334,
+        0.05333333333333333,
+        0.02666666666666667
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.08,
+        "b": 0.08,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.04000000__reduced",
+        "t": 0.04
+      },
+      "name": "BAC_t0.04000000__reduced__reduced",
+      "weights": [
+        0.04,
+        0.88,
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.08,
+        "b": 0.08,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.05333333__reduced",
+        "t": 0.05333333333333334
+      },
+      "name": "BAC_t0.05333333__reduced__reduced",
+      "weights": [
+        0.05333333333333334,
+        0.8666666666666667,
+        0.026666666666666665,
+        0.05333333333333334
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.08,
+        "b": 0.08,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.06666667__reduced",
+        "t": 0.06666666666666667
+      },
+      "name": "BAC_t0.06666667__reduced__reduced",
+      "weights": [
+        0.06666666666666667,
+        0.8533333333333334,
+        0.013333333333333336,
+        0.06666666666666667
+      ]
+    }
+  ],
+  "BSC_p0.200": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.16,
+        0.64,
+        0.04,
+        0.16
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.2,
+        0.6000000000000001,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.8,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.2,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.03333333__reduced",
+        "t": 0.03333333333333333
+      },
+      "name": "BAC_t0.03333333__reduced__reduced",
+      "weights": [
+        0.03333333333333333,
+        0.7666666666666667,
+        0.16666666666666669,
+        0.03333333333333333
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.2,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.06666667__reduced",
+        "t": 0.06666666666666667
+      },
+      "name": "BAC_t0.06666667__reduced__reduced",
+      "weights": [
+        0.06666666666666667,
+        0.7333333333333334,
+        0.13333333333333336,
+        0.06666666666666667
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.2,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.10000000__reduced",
+        "t": 0.1
+      },
+      "name": "BAC_t0.10000000__reduced__reduced",
+      "weights": [
+        0.1,
+        0.7000000000000001,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.2,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.13333333__reduced",
+        "t": 0.13333333333333333
+      },
+      "name": "BAC_t0.13333333__reduced__reduced",
+      "weights": [
+        0.13333333333333333,
+        0.6666666666666667,
+        0.06666666666666668,
+        0.13333333333333333
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "a": 0.2,
+        "b": 0.2,
+        "construction": "complete_bac_interval_grid",
+        "is_independent_coupling": false,
+        "is_lower_endpoint": false,
+        "is_upper_endpoint": false,
+        "reduced_from": "BAC_t0.16666667__reduced",
+        "t": 0.16666666666666666
+      },
+      "name": "BAC_t0.16666667__reduced__reduced",
+      "weights": [
+        0.16666666666666666,
+        0.6333333333333334,
+        0.033333333333333354,
+        0.16666666666666666
+      ]
+    }
+  ],
+  "DETERMINISTIC_IDENTITY": [
+    {
+      "maps": [
+        [
+          0,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        1.0
+      ]
+    }
+  ],
+  "RAND_2x3_00": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.2,
+        0.08000000000000002,
+        0.12,
+        0.1,
+        0.04000000000000001,
+        0.06,
+        0.2,
+        0.08000000000000002,
+        0.12
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.4,
+        0.09999999999999998,
+        0.09999999999999998,
+        0.09999999999999998,
+        0.30000000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.4,
+        0.09999999999999998,
+        0.09999999999999998,
+        0.19999999999999996,
+        0.20000000000000007
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.2,
+        0.2,
+        0.19999999999999996,
+        0.09999999999999998,
+        0.30000000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.2,
+        0.2,
+        0.09999999999999998,
+        0.09999999999999998,
+        0.4
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.19999999999999996,
+        0.20000000000000007,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.09999999999999998,
+        0.09999999999999998,
+        0.4
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_006__reduced"
+      },
+      "name": "COMMON_UNIFORM_006__reduced__reduced",
+      "weights": [
+        0.4,
+        0.19999999999999996,
+        0.09999999999999998,
+        0.19999999999999996,
+        0.10000000000000009
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.4,
+        0.19999999999999996,
+        0.09999999999999998,
+        0.30000000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_008__reduced"
+      },
+      "name": "COMMON_UNIFORM_008__reduced__reduced",
+      "weights": [
+        0.2,
+        0.2,
+        0.19999999999999996,
+        0.29999999999999993,
+        0.10000000000000009
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.2,
+        0.2,
+        0.19999999999999996,
+        0.30000000000000004,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.19999999999999996,
+        0.4
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.19999999999999996,
+        0.30000000000000004,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 5,
+        "reduced_from": "RAND_2x3_00_V_005__reduced"
+      },
+      "name": "RAND_2x3_00_V_005__reduced__reduced",
+      "weights": [
+        0.3,
+        0.10000000000000003,
+        0.2,
+        0.09999999999999998,
+        0.30000000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 7,
+        "reduced_from": "RAND_2x3_00_V_007__reduced"
+      },
+      "name": "RAND_2x3_00_V_007__reduced__reduced",
+      "weights": [
+        0.3,
+        0.10000000000000003,
+        0.2,
+        0.2,
+        0.2
+      ]
+    }
+  ],
+  "RAND_2x3_01": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.12249999999999998,
+        0.12249999999999998,
+        0.105,
+        0.13999999999999999,
+        0.13999999999999999,
+        0.12,
+        0.0875,
+        0.0875,
+        0.075
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.35,
+        0.35,
+        0.050000000000000044,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.35,
+        0.09999999999999998,
+        0.30000000000000004,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.35,
+        0.35,
+        0.050000000000000044,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.35,
+        0.09999999999999998,
+        0.30000000000000004,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.3,
+        0.30000000000000004,
+        0.09999999999999998,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.3,
+        0.09999999999999998,
+        0.30000000000000004,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.3,
+        0.050000000000000044,
+        0.35,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.3,
+        0.35,
+        0.050000000000000044,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "min_kappa",
+        "reduced_from": "LP_MIN_KAPPA__reduced"
+      },
+      "name": "LP_MIN_KAPPA__reduced__reduced",
+      "weights": [
+        0.09999999999999998,
+        0.25,
+        0.35,
+        0.050000000000000044,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 6,
+        "reduced_from": "RAND_2x3_01_V_006__reduced"
+      },
+      "name": "RAND_2x3_01_V_006__reduced__reduced",
+      "weights": [
+        0.09999999999999998,
+        0.25,
+        0.09999999999999998,
+        0.30000000000000004,
+        0.25
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 9,
+        "reduced_from": "RAND_2x3_01_V_009__reduced"
+      },
+      "name": "RAND_2x3_01_V_009__reduced__reduced",
+      "weights": [
+        0.29999999999999993,
+        0.050000000000000044,
+        0.35,
+        0.050000000000000044,
+        0.25
+      ]
+    }
+  ],
+  "RAND_2x3_02": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.10999999999999999,
+        0.16499999999999998,
+        0.27499999999999997,
+        0.04999999999999999,
+        0.07499999999999998,
+        0.12499999999999997,
+        0.04,
+        0.059999999999999984,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.2,
+        0.3,
+        0.050000000000000044,
+        0.25,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.2,
+        0.35000000000000003,
+        0.10000000000000009,
+        0.1499999999999999,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.3,
+        0.25000000000000006,
+        0.25,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.050000000000000044,
+        0.5,
+        0.1499999999999999,
+        0.10000000000000009,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.050000000000000044,
+        0.5,
+        0.25,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.2,
+        0.35000000000000003,
+        0.25,
+        0.050000000000000044,
+        0.1499999999999999
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.3,
+        0.25000000000000006,
+        0.19999999999999996,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.050000000000000044,
+        0.5,
+        0.25,
+        0.1499999999999999,
+        0.050000000000000044
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.050000000000000044,
+        0.5,
+        0.19999999999999996,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "min_kappa",
+        "reduced_from": "LP_MIN_KAPPA__reduced"
+      },
+      "name": "LP_MIN_KAPPA__reduced__reduced",
+      "weights": [
+        0.09999999999999998,
+        0.45000000000000007,
+        0.2,
+        0.04999999999999999,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 4,
+        "reduced_from": "RAND_2x3_02_V_004__reduced"
+      },
+      "name": "RAND_2x3_02_V_004__reduced__reduced",
+      "weights": [
+        0.2,
+        0.09999999999999998,
+        0.25000000000000006,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 17,
+        "reduced_from": "RAND_2x3_02_V_017__reduced"
+      },
+      "name": "RAND_2x3_02_V_017__reduced__reduced",
+      "weights": [
+        0.2,
+        0.04999999999999999,
+        0.30000000000000004,
+        0.25,
+        0.2
+      ]
+    }
+  ],
+  "RAND_2x3_03": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.1575,
+        0.1125,
+        0.18000000000000002,
+        0.12249999999999998,
+        0.0875,
+        0.13999999999999999,
+        0.06999999999999999,
+        0.05,
+        0.08000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.35,
+        0.10000000000000003,
+        0.14999999999999997,
+        0.20000000000000007,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.35,
+        0.10000000000000003,
+        0.050000000000000044,
+        0.3,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.2,
+        0.25,
+        0.14999999999999997,
+        0.20000000000000007,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.25,
+        0.2,
+        0.15000000000000002,
+        0.2,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.4,
+        0.3,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.4,
+        0.15000000000000002,
+        0.2,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_006__reduced"
+      },
+      "name": "COMMON_UNIFORM_006__reduced__reduced",
+      "weights": [
+        0.35,
+        0.10000000000000003,
+        0.35,
+        0.14999999999999997,
+        0.050000000000000044
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.35,
+        0.10000000000000003,
+        0.25,
+        0.09999999999999998,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_008__reduced"
+      },
+      "name": "COMMON_UNIFORM_008__reduced__reduced",
+      "weights": [
+        0.2,
+        0.25,
+        0.35,
+        0.14999999999999997,
+        0.050000000000000044
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.25,
+        0.2,
+        0.35,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.4,
+        0.09999999999999998,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.04999999999999999,
+        0.4,
+        0.35,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 8,
+        "reduced_from": "RAND_2x3_03_V_008__reduced"
+      },
+      "name": "RAND_2x3_03_V_008__reduced__reduced",
+      "weights": [
+        0.14999999999999997,
+        0.25,
+        0.050000000000000044,
+        0.35,
+        0.2
+      ]
+    }
+  ],
+  "RAND_2x3_04": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.25,
+        0.075,
+        0.175,
+        0.175,
+        0.0525,
+        0.12249999999999998,
+        0.075,
+        0.0225,
+        0.0525
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.5,
+        0.15000000000000002,
+        0.19999999999999996,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.5,
+        0.35,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.35,
+        0.15,
+        0.15000000000000002,
+        0.19999999999999996,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.15,
+        0.35,
+        0.35,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.15000000000000002,
+        0.35,
+        0.35,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_008__reduced"
+      },
+      "name": "COMMON_UNIFORM_008__reduced__reduced",
+      "weights": [
+        0.35,
+        0.15,
+        0.35,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.15000000000000002,
+        0.35,
+        0.19999999999999996,
+        0.15000000000000002,
+        0.15000000000000002
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 4,
+        "reduced_from": "RAND_2x3_04_V_004__reduced"
+      },
+      "name": "RAND_2x3_04_V_004__reduced__reduced",
+      "weights": [
+        0.30000000000000004,
+        0.19999999999999996,
+        0.19999999999999998,
+        0.15,
+        0.15
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 6,
+        "reduced_from": "RAND_2x3_04_V_006__reduced"
+      },
+      "name": "RAND_2x3_04_V_006__reduced__reduced",
+      "weights": [
+        0.15000000000000002,
+        0.15,
+        0.19999999999999996,
+        0.35,
+        0.15
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 7,
+        "reduced_from": "RAND_2x3_04_V_007__reduced"
+      },
+      "name": "RAND_2x3_04_V_007__reduced__reduced",
+      "weights": [
+        0.35,
+        0.15000000000000002,
+        0.15,
+        0.19999999999999998,
+        0.15
+      ]
+    }
+  ],
+  "RAND_2x3_05": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.13999999999999999,
+        0.13999999999999999,
+        0.12,
+        0.13999999999999999,
+        0.13999999999999999,
+        0.12,
+        0.06999999999999999,
+        0.06999999999999999,
+        0.06
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.35,
+        0.050000000000000044,
+        0.29999999999999993,
+        0.10000000000000009,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.35,
+        0.050000000000000044,
+        0.15000000000000002,
+        0.25,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.050000000000000044,
+        0.35,
+        0.29999999999999993,
+        0.10000000000000009,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.35,
+        0.050000000000000044,
+        0.15000000000000002,
+        0.25,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.25,
+        0.15000000000000002,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.15000000000000002,
+        0.25,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_006__reduced"
+      },
+      "name": "COMMON_UNIFORM_006__reduced__reduced",
+      "weights": [
+        0.35,
+        0.050000000000000044,
+        0.09999999999999998,
+        0.30000000000000004,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.35,
+        0.050000000000000044,
+        0.35,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_008__reduced"
+      },
+      "name": "COMMON_UNIFORM_008__reduced__reduced",
+      "weights": [
+        0.050000000000000044,
+        0.35,
+        0.09999999999999998,
+        0.30000000000000004,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.35,
+        0.050000000000000044,
+        0.35,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.050000000000000044,
+        0.35,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.10000000000000003,
+        0.3,
+        0.35,
+        0.050000000000000044,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "min_kappa",
+        "reduced_from": "LP_MIN_KAPPA__reduced"
+      },
+      "name": "LP_MIN_KAPPA__reduced__reduced",
+      "weights": [
+        0.14999999999999997,
+        0.25000000000000006,
+        0.35,
+        0.050000000000000044,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 5,
+        "reduced_from": "RAND_2x3_05_V_005__reduced"
+      },
+      "name": "RAND_2x3_05_V_005__reduced__reduced",
+      "weights": [
+        0.25000000000000006,
+        0.14999999999999997,
+        0.09999999999999992,
+        0.3000000000000001,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 12,
+        "reduced_from": "RAND_2x3_05_V_012__reduced"
+      },
+      "name": "RAND_2x3_05_V_012__reduced__reduced",
+      "weights": [
+        0.14999999999999997,
+        0.25000000000000006,
+        0.09999999999999992,
+        0.3000000000000001,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 14,
+        "reduced_from": "RAND_2x3_05_V_014__reduced"
+      },
+      "name": "RAND_2x3_05_V_014__reduced__reduced",
+      "weights": [
+        0.29999999999999993,
+        0.10000000000000009,
+        0.050000000000000044,
+        0.35,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 19,
+        "reduced_from": "RAND_2x3_05_V_019__reduced"
+      },
+      "name": "RAND_2x3_05_V_019__reduced__reduced",
+      "weights": [
+        0.29999999999999993,
+        0.10000000000000009,
+        0.35,
+        0.050000000000000044,
+        0.2
+      ]
+    }
+  ],
+  "RAND_3x3_00": [
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.044444444444444446,
+        0.044444444444444446,
+        0.044444444444444446,
+        0.03703703703703704,
+        0.03703703703703704,
+        0.03703703703703704,
+        0.029629629629629624,
+        0.029629629629629624,
+        0.029629629629629624,
+        0.053333333333333344,
+        0.053333333333333344,
+        0.053333333333333344,
+        0.044444444444444446,
+        0.044444444444444446,
+        0.044444444444444446,
+        0.03555555555555556,
+        0.03555555555555556,
+        0.03555555555555556,
+        0.03555555555555556,
+        0.03555555555555556,
+        0.03555555555555556,
+        0.029629629629629624,
+        0.029629629629629624,
+        0.029629629629629624,
+        0.023703703703703703,
+        0.023703703703703703,
+        0.023703703703703703
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.26666666666666694,
+        0.06666666666666599,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.26666666666666694,
+        0.06666666666666599,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.26666666666666694,
+        0.06666666666666599,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_006__reduced"
+      },
+      "name": "COMMON_UNIFORM_006__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_008__reduced"
+      },
+      "name": "COMMON_UNIFORM_008__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.333333333333333,
+        0.06666666666666704,
+        0.06666666666666599,
+        0.26666666666666694,
+        0.26666666666666705
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "min_kappa",
+        "reduced_from": "LP_MIN_KAPPA__reduced"
+      },
+      "name": "LP_MIN_KAPPA__reduced__reduced",
+      "weights": [
+        0.06666666666666665,
+        0.26666666666666666,
+        0.33333333333333337,
+        0.06666666666666665,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "max_injective_mass",
+        "reduced_from": "LP_MAX_INJECTIVE__reduced"
+      },
+      "name": "LP_MAX_INJECTIVE__reduced__reduced",
+      "weights": [
+        0.06666666666666665,
+        0.033333333333333326,
+        0.23333333333333334,
+        0.33333333333333337,
+        0.033333333333333326,
+        0.033333333333333326,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 0,
+        "reduced_from": "RAND_3x3_00_V_000__reduced"
+      },
+      "name": "RAND_3x3_00_V_000__reduced__reduced",
+      "weights": [
+        0.06666666666666665,
+        0.26666666666666666,
+        0.33333333333333337,
+        0.06666666666666665,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 5,
+        "reduced_from": "RAND_3x3_00_V_005__reduced"
+      },
+      "name": "RAND_3x3_00_V_005__reduced__reduced",
+      "weights": [
+        0.3333333333333333,
+        0.1999999999999999,
+        0.13333333333333341,
+        0.06666666666666671,
+        0.06666666666666671,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 6,
+        "reduced_from": "RAND_3x3_00_V_006__reduced"
+      },
+      "name": "RAND_3x3_00_V_006__reduced__reduced",
+      "weights": [
+        0.19999999999999998,
+        0.13333333333333333,
+        0.13333333333333328,
+        0.06666666666666671,
+        0.20000000000000004,
+        0.20000000000000004,
+        0.06666666666666662
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 7,
+        "reduced_from": "RAND_3x3_00_V_007__reduced"
+      },
+      "name": "RAND_3x3_00_V_007__reduced__reduced",
+      "weights": [
+        0.09999999999999995,
+        0.06666666666666672,
+        0.16666666666666669,
+        0.23333333333333336,
+        0.16666666666666669,
+        0.16666666666666669,
+        0.1
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 8,
+        "reduced_from": "RAND_3x3_00_V_008__reduced"
+      },
+      "name": "RAND_3x3_00_V_008__reduced__reduced",
+      "weights": [
+        0.13333333333333336,
+        0.19999999999999996,
+        0.3333333333333333,
+        0.06666666666666665,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 9,
+        "reduced_from": "RAND_3x3_00_V_009__reduced"
+      },
+      "name": "RAND_3x3_00_V_009__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.06666666666666665,
+        0.06666666666666665,
+        0.33333333333333337,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 10,
+        "reduced_from": "RAND_3x3_00_V_010__reduced"
+      },
+      "name": "RAND_3x3_00_V_010__reduced__reduced",
+      "weights": [
+        0.06666666666666665,
+        0.26666666666666666,
+        0.06666666666666665,
+        0.16666666666666669,
+        0.16666666666666669,
+        0.10000000000000003,
+        0.16666666666666663
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 11,
+        "reduced_from": "RAND_3x3_00_V_011__reduced"
+      },
+      "name": "RAND_3x3_00_V_011__reduced__reduced",
+      "weights": [
+        0.3333333333333333,
+        0.06666666666666665,
+        0.33333333333333337,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 12,
+        "reduced_from": "RAND_3x3_00_V_012__reduced"
+      },
+      "name": "RAND_3x3_00_V_012__reduced__reduced",
+      "weights": [
+        0.23333333333333334,
+        0.09999999999999998,
+        0.13333333333333336,
+        0.03333333333333327,
+        0.2333333333333334,
+        0.16666666666666669,
+        0.09999999999999998
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 13,
+        "reduced_from": "RAND_3x3_00_V_013__reduced"
+      },
+      "name": "RAND_3x3_00_V_013__reduced__reduced",
+      "weights": [
+        0.06666666666666665,
+        0.26666666666666666,
+        0.3333333333333333,
+        0.06666666666666671,
+        0.06666666666666671,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 14,
+        "reduced_from": "RAND_3x3_00_V_014__reduced"
+      },
+      "name": "RAND_3x3_00_V_014__reduced__reduced",
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.06666666666666665,
+        0.06666666666666671,
+        0.19999999999999996
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 15,
+        "reduced_from": "RAND_3x3_00_V_015__reduced"
+      },
+      "name": "RAND_3x3_00_V_015__reduced__reduced",
+      "weights": [
+        0.2666666666666666,
+        0.06666666666666671,
+        0.06666666666666671,
+        0.3333333333333333,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 16,
+        "reduced_from": "RAND_3x3_00_V_016__reduced"
+      },
+      "name": "RAND_3x3_00_V_016__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.06666666666666665,
+        0.06666666666666665,
+        0.06666666666666671,
+        0.26666666666666666,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 17,
+        "reduced_from": "RAND_3x3_00_V_017__reduced"
+      },
+      "name": "RAND_3x3_00_V_017__reduced__reduced",
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.06666666666666671,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 18,
+        "reduced_from": "RAND_3x3_00_V_018__reduced"
+      },
+      "name": "RAND_3x3_00_V_018__reduced__reduced",
+      "weights": [
+        0.06666666666666665,
+        0.16666666666666666,
+        0.1,
+        0.33333333333333337,
+        0.06666666666666665,
+        0.1,
+        0.16666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 19,
+        "reduced_from": "RAND_3x3_00_V_019__reduced"
+      },
+      "name": "RAND_3x3_00_V_019__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.06666666666666665,
+        0.2666666666666667,
+        0.1333333333333333,
+        0.1333333333333333,
+        0.06666666666666671,
+        0.06666666666666665
+      ]
+    }
+  ],
+  "RAND_3x3_01": [
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.03792592592592593,
+        0.018962962962962966,
+        0.08533333333333334,
+        0.03792592592592593,
+        0.018962962962962966,
+        0.08533333333333334,
+        0.06637037037037039,
+        0.03318518518518519,
+        0.14933333333333335,
+        0.009481481481481483,
+        0.0047407407407407415,
+        0.021333333333333336,
+        0.009481481481481483,
+        0.0047407407407407415,
+        0.021333333333333336,
+        0.016592592592592596,
+        0.008296296296296298,
+        0.037333333333333336,
+        0.023703703703703703,
+        0.011851851851851851,
+        0.05333333333333333,
+        0.023703703703703703,
+        0.011851851851851851,
+        0.05333333333333333,
+        0.04148148148148149,
+        0.020740740740740744,
+        0.09333333333333335
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.13333333333333303,
+        0.13333333333333297,
+        0.13333333333333397,
+        0.33333333333333304
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.266666666666666,
+        0.13333333333333397,
+        0.13333333333333297,
+        0.20000000000000007
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_002__reduced"
+      },
+      "name": "COMMON_UNIFORM_002__reduced__reduced",
+      "weights": [
+        0.133333333333334,
+        0.133333333333333,
+        0.13333333333333303,
+        0.13333333333333297,
+        0.13333333333333397,
+        0.33333333333333304
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_003__reduced"
+      },
+      "name": "COMMON_UNIFORM_003__reduced__reduced",
+      "weights": [
+        0.133333333333333,
+        0.133333333333334,
+        0.266666666666666,
+        0.13333333333333397,
+        0.26666666666666705,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_004__reduced"
+      },
+      "name": "COMMON_UNIFORM_004__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.266666666666666,
+        0.06666666666666698,
+        0.06666666666666698,
+        0.20000000000000007,
+        0.13333333333333297
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_005__reduced"
+      },
+      "name": "COMMON_UNIFORM_005__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.266666666666666,
+        0.06666666666666698,
+        0.06666666666666698,
+        0.26666666666666705,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_006__reduced"
+      },
+      "name": "COMMON_UNIFORM_006__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.13333333333333303,
+        0.13333333333333297,
+        0.13333333333333397,
+        0.26666666666666705,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_007__reduced"
+      },
+      "name": "COMMON_UNIFORM_007__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.266666666666666,
+        0.13333333333333397,
+        0.13333333333333297,
+        0.13333333333333408,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_008__reduced"
+      },
+      "name": "COMMON_UNIFORM_008__reduced__reduced",
+      "weights": [
+        0.133333333333334,
+        0.133333333333333,
+        0.13333333333333303,
+        0.13333333333333297,
+        0.13333333333333397,
+        0.26666666666666705,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_009__reduced"
+      },
+      "name": "COMMON_UNIFORM_009__reduced__reduced",
+      "weights": [
+        0.133333333333333,
+        0.133333333333334,
+        0.266666666666666,
+        0.13333333333333397,
+        0.26666666666666705,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_010__reduced"
+      },
+      "name": "COMMON_UNIFORM_010__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.266666666666666,
+        0.06666666666666698,
+        0.06666666666666698,
+        0.13333333333333408,
+        0.13333333333333297,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_011__reduced"
+      },
+      "name": "COMMON_UNIFORM_011__reduced__reduced",
+      "weights": [
+        0.266666666666667,
+        0.266666666666666,
+        0.06666666666666698,
+        0.06666666666666698,
+        0.26666666666666705,
+        0.06666666666666599
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "min_kappa",
+        "reduced_from": "LP_MIN_KAPPA__reduced"
+      },
+      "name": "LP_MIN_KAPPA__reduced__reduced",
+      "weights": [
+        0.06666666666666668,
+        0.26666666666666666,
+        0.13333333333333333,
+        0.06666666666666665,
+        0.13333333333333333,
+        0.06666666666666665,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "linear_program",
+        "objective": "max_injective_mass",
+        "reduced_from": "LP_MAX_INJECTIVE__reduced"
+      },
+      "name": "LP_MAX_INJECTIVE__reduced__reduced",
+      "weights": [
+        0.13333333333333333,
+        0.13333333333333336,
+        0.13333333333333336,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.1333333333333333,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 0,
+        "reduced_from": "RAND_3x3_01_V_000__reduced"
+      },
+      "name": "RAND_3x3_01_V_000__reduced__reduced",
+      "weights": [
+        0.13333333333333333,
+        0.26666666666666666,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 4,
+        "reduced_from": "RAND_3x3_01_V_004__reduced"
+      },
+      "name": "RAND_3x3_01_V_004__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.06666666666666668,
+        0.19999999999999998,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 5,
+        "reduced_from": "RAND_3x3_01_V_005__reduced"
+      },
+      "name": "RAND_3x3_01_V_005__reduced__reduced",
+      "weights": [
+        0.20000000000000004,
+        0.06666666666666667,
+        0.2666666666666667,
+        0.13333333333333336,
+        0.06666666666666667,
+        0.0666666666666667,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 6,
+        "reduced_from": "RAND_3x3_01_V_006__reduced"
+      },
+      "name": "RAND_3x3_01_V_006__reduced__reduced",
+      "weights": [
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666668,
+        0.06666666666666665,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 7,
+        "reduced_from": "RAND_3x3_01_V_007__reduced"
+      },
+      "name": "RAND_3x3_01_V_007__reduced__reduced",
+      "weights": [
+        0.06666666666666668,
+        0.13333333333333333,
+        0.33333333333333337,
+        0.033333333333333326,
+        0.1,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 8,
+        "reduced_from": "RAND_3x3_01_V_008__reduced"
+      },
+      "name": "RAND_3x3_01_V_008__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 9,
+        "reduced_from": "RAND_3x3_01_V_009__reduced"
+      },
+      "name": "RAND_3x3_01_V_009__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.1,
+        0.16666666666666666,
+        0.1,
+        0.033333333333333326,
+        0.06666666666666665,
+        0.26666666666666666
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 10,
+        "reduced_from": "RAND_3x3_01_V_010__reduced"
+      },
+      "name": "RAND_3x3_01_V_010__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.26666666666666666,
+        0.13333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 11,
+        "reduced_from": "RAND_3x3_01_V_011__reduced"
+      },
+      "name": "RAND_3x3_01_V_011__reduced__reduced",
+      "weights": [
+        0.2666666666666668,
+        0.13333333333333336,
+        0.13333333333333336,
+        0.13333333333333336,
+        0.13333333333333336,
+        0.2
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 12,
+        "reduced_from": "RAND_3x3_01_V_012__reduced"
+      },
+      "name": "RAND_3x3_01_V_012__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.26666666666666666,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 13,
+        "reduced_from": "RAND_3x3_01_V_013__reduced"
+      },
+      "name": "RAND_3x3_01_V_013__reduced__reduced",
+      "weights": [
+        0.0666666666666667,
+        0.13333333333333336,
+        0.2666666666666667,
+        0.0666666666666667,
+        0.13333333333333336,
+        0.2,
+        0.13333333333333336
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 14,
+        "reduced_from": "RAND_3x3_01_V_014__reduced"
+      },
+      "name": "RAND_3x3_01_V_014__reduced__reduced",
+      "weights": [
+        0.13333333333333333,
+        0.26666666666666666,
+        0.13333333333333336,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 15,
+        "reduced_from": "RAND_3x3_01_V_015__reduced"
+      },
+      "name": "RAND_3x3_01_V_015__reduced__reduced",
+      "weights": [
+        0.13333333333333333,
+        0.1,
+        0.30000000000000004,
+        0.13333333333333333,
+        0.033333333333333326,
+        0.26666666666666666,
+        0.033333333333333326
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 16,
+        "reduced_from": "RAND_3x3_01_V_016__reduced"
+      },
+      "name": "RAND_3x3_01_V_016__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 17,
+        "reduced_from": "RAND_3x3_01_V_017__reduced"
+      },
+      "name": "RAND_3x3_01_V_017__reduced__reduced",
+      "weights": [
+        0.0666666666666667,
+        0.46666666666666673,
+        0.13333333333333336,
+        0.13333333333333336,
+        0.06666666666666667,
+        0.13333333333333336
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 18,
+        "reduced_from": "RAND_3x3_01_V_018__reduced"
+      },
+      "name": "RAND_3x3_01_V_018__reduced__reduced",
+      "weights": [
+        0.2,
+        0.26666666666666666,
+        0.06666666666666665,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "metadata": {
+        "construction": "random_lp_vertex",
+        "objective_index": 19,
+        "reduced_from": "RAND_3x3_01_V_019__reduced"
+      },
+      "name": "RAND_3x3_01_V_019__reduced__reduced",
+      "weights": [
+        0.26666666666666666,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666665
+      ]
+    }
+  ],
+  "USELESS_BINARY_OUTPUT": [
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "independent_row_coupling",
+        "reduced_from": "INDEPENDENT_ROWS__reduced"
+      },
+      "name": "INDEPENDENT_ROWS__reduced__reduced",
+      "weights": [
+        0.12249999999999998,
+        0.22749999999999998,
+        0.22749999999999998,
+        0.42250000000000004
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_000__reduced"
+      },
+      "name": "COMMON_UNIFORM_000__reduced__reduced",
+      "weights": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "maps": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "metadata": {
+        "construction": "common_uniform",
+        "orders": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reduced_from": "COMMON_UNIFORM_001__reduced"
+      },
+      "name": "COMMON_UNIFORM_001__reduced__reduced",
+      "weights": [
+        0.35,
+        0.35,
+        0.30000000000000004
+      ]
+    }
+  ]
+}

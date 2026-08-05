@@ -1,0 +1,11 @@
+{
+  "package_name": "CHANNEL_ATOM_KILL_FAST_GATE_v1_0",
+  "release_version": "1.0",
+  "release_date": "2026-08-05",
+  "default_profile": "standard",
+  "scientific_scope": "early research-investment gate; not a universal impossibility theorem",
+  "reference_validation_classification": "PIVOT_TO_REVISED_TRACK",
+  "reference_validation_command": "STOP_ORIGINAL_BROAD_CHANNEL_ATOM_PROGRAM",
+  "required_manual_gate": "H0 independent primary-source novelty audit",
+  "target_repo_relative_path": "experiments/CHANNEL_ATOM_KILL_FAST_GATE_v1_0"
+}

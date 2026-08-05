@@ -1,0 +1,17 @@
+{
+  "cpu_count": 5,
+  "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+  "git": "git version 2.47.3",
+  "machine": "x86_64",
+  "memory_total_bytes": 6368813056,
+  "packages": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "psutil": "7.2.2",
+    "scipy": "1.17.0"
+  },
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "processor": "",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]"
+}

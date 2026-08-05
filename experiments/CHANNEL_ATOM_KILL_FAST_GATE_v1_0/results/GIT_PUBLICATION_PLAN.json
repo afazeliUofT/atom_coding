@@ -1,0 +1,8 @@
+{
+  "branch": "main",
+  "classification": "PIVOT_TO_REVISED_TRACK",
+  "origin": "git@github.com:afazeliUofT/atom_coding.git",
+  "profile": "standard",
+  "target_relative_path": "experiments/CHANNEL_ATOM_KILL_FAST_GATE_v1_0",
+  "utc_precommit": "2026-08-05T23:44:00+00:00"
+}

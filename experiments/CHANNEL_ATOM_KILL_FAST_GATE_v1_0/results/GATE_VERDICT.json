@@ -1,0 +1,150 @@
+{
+  "authorized_follow_up": "First prove that the action class is not a relabelled/quasigroup restatement of known GRAND and identify a real channel where it provides an implementation advantage.",
+  "classification": "PIVOT_TO_REVISED_TRACK",
+  "evidence_summary": {
+    "atlas_channels": 19,
+    "atlas_natural_improvements": 13,
+    "atlas_representations": 243,
+    "atlas_witnesses": 14,
+    "exactness_checks": 8,
+    "exactness_pass": true,
+    "manual_novelty_gate_H0": "PENDING_INDEPENDENT_PRIMARY_SOURCE_AUDIT",
+    "nonlatin_details": {
+      "AES_INJECTIVE_FRIENDLY": {
+        "atom_slope": 0.7811444406476995,
+        "exact_all": true,
+        "fiber_ceiling": 1.0,
+        "kappa": 1.0,
+        "largest_n_completion": 0.0,
+        "largest_n_speedup": 0.004066586644603787,
+        "pass": false,
+        "pessimistic_slope_advantage": -0.12743818048510147,
+        "reference_slope": 0.6536774610288026,
+        "representation": "COMMON_UNIFORM_011__reduced__reduced__reduced",
+        "slope_advantage": -0.12746697961889686,
+        "target_rate": 0.5,
+        "transition_degeneracy_bits": 0.7287774473362745
+      },
+      "AES_OVERLOADED_ERASURE": {
+        "atom_slope": 0.6655068624412053,
+        "exact_all": true,
+        "fiber_ceiling": 0.7369655941662062,
+        "kappa": 1.2,
+        "largest_n_completion": 0.0,
+        "largest_n_speedup": 0.004791028456746251,
+        "pass": false,
+        "pessimistic_slope_advantage": 0.05517337230118924,
+        "reference_slope": 0.7206607623404611,
+        "representation": "COMMON_UNIFORM_004__reduced__reduced__reduced",
+        "slope_advantage": 0.05515389989925579,
+        "target_rate": 0.5,
+        "transition_degeneracy_bits": 0.8137455916601912
+      },
+      "BAC_HARD": {
+        "atom_slope": 1.3802793114242577,
+        "exact_all": true,
+        "fiber_ceiling": 0.277533975528909,
+        "kappa": 1.65,
+        "largest_n_completion": 0.0,
+        "largest_n_speedup": 0.004796611003184884,
+        "pass": false,
+        "pessimistic_slope_advantage": -0.7081650709423086,
+        "reference_slope": 0.6720139984213158,
+        "representation": "BAC_t0.40000000__reduced__reduced",
+        "slope_advantage": -0.7082653130029419,
+        "target_rate": 0.5,
+        "transition_degeneracy_bits": 0.6677574889884594
+      },
+      "BAC_MODERATE": {
+        "atom_slope": 1.585606913700594,
+        "exact_all": true,
+        "fiber_ceiling": 0.5145731728297583,
+        "kappa": 1.4,
+        "largest_n_completion": 0.25,
+        "largest_n_speedup": 0.0062262455288340166,
+        "pass": false,
+        "pessimistic_slope_advantage": -0.8565985154510114,
+        "reference_slope": 0.7279859558337016,
+        "representation": "BAC_t0.28000000__reduced__reduced",
+        "slope_advantage": -0.8576209578668923,
+        "target_rate": 0.5,
+        "transition_degeneracy_bits": 0.6310611162231983
+      }
+    },
+    "nonlatin_passing_channels": 0,
+    "rate_details": {
+      "AES_INJECTIVE_FRIENDLY": {
+        "actual_mass": 0.4851562499999995,
+        "atom_separating_rate_lower_bound": 0.4,
+        "best_representation": "COMMON_UNIFORM_011__reduced__reduced__reduced",
+        "fiber_ceiling_to_uniform_information": 2.3530029744457623,
+        "mass_ok": false,
+        "milp_optimal": true,
+        "pass": false,
+        "rate_to_uniform_information": 0.9412011897783049,
+        "target_mass": 0.9,
+        "uniform_input_mutual_information": 0.42498883803389365
+      },
+      "AES_OVERLOADED_ERASURE": {
+        "actual_mass": 0.2952400000000004,
+        "atom_separating_rate_lower_bound": 0.2,
+        "best_representation": "COMMON_UNIFORM_004__reduced__reduced__reduced",
+        "fiber_ceiling_to_uniform_information": 5.894606375824223,
+        "mass_ok": false,
+        "milp_optimal": true,
+        "pass": false,
+        "rate_to_uniform_information": 1.5996964912570466,
+        "target_mass": 0.9,
+        "uniform_input_mutual_information": 0.12502371611932422
+      },
+      "BAC_HARD": {
+        "actual_mass": 0.8517787500000003,
+        "atom_separating_rate_lower_bound": 0.0,
+        "best_representation": "BAC_t0.15000000__reduced__reduced",
+        "fiber_ceiling_to_uniform_information": 8.622232258603479,
+        "mass_ok": true,
+        "milp_optimal": true,
+        "pass": false,
+        "rate_to_uniform_information": 0.0,
+        "target_mass": 0.9,
+        "uniform_input_mutual_information": 0.09259390316628503
+      },
+      "BAC_MODERATE": {
+        "actual_mass": 0.9011036159999988,
+        "atom_separating_rate_lower_bound": 0.0,
+        "best_representation": "BAC_t0.16000000__reduced__reduced",
+        "fiber_ceiling_to_uniform_information": 2.7188392217711246,
+        "mass_ok": true,
+        "milp_optimal": true,
+        "pass": false,
+        "rate_to_uniform_information": 0.0,
+        "target_mass": 0.9,
+        "uniform_input_mutual_information": 0.289048057109906
+      }
+    },
+    "rate_passing_channels": 0,
+    "reversible_details": {
+      "NONCYCLIC_REVERSIBLE_ACTION_q5": {
+        "atom_log2_work_slope": 1.0245689683021661,
+        "exact_all": true,
+        "largest_n_completion": 1.0,
+        "largest_n_speedup": 143.16749467384344,
+        "reference_log2_work_slope": 1.9026347475892524,
+        "slope_advantage": 0.8780657792870863
+      },
+      "QARY_ADDITIVE_q5": {
+        "atom_log2_work_slope": 0.8631255811388928,
+        "exact_all": true,
+        "largest_n_completion": 1.0,
+        "largest_n_speedup": 168.33964662100274,
+        "reference_log2_work_slope": 1.9026347475892524,
+        "slope_advantage": 1.0395091664503595
+      }
+    },
+    "reversible_pass": true
+  },
+  "reason": "The broad non-Latin programme failed, but the non-cyclic bi-unambiguous action channel passed the exact first-hit scaling control.",
+  "stage": "REVERSIBLE_ACTION_ONLY",
+  "stop_original_claim": true,
+  "surviving_path": "Stop Channel-Atom Coding as a general exact-ML framework and evaluate a narrower Random Reversible Action GRAND theory."
+}

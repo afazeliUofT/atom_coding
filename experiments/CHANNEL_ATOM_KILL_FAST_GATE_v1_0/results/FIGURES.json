@@ -1,0 +1,9 @@
+{
+  "files": [
+    "FIG_01_atlas_kappa_vs_work.png",
+    "FIG_02_reversible_scaling.png",
+    "FIG_03_nonlatin_scaling.png",
+    "FIG_04_nonlatin_speedup.png",
+    "FIG_05_rate_survival.png"
+  ]
+}

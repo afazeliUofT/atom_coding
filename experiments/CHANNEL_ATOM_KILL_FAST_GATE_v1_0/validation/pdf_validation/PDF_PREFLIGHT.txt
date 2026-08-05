@@ -1,0 +1,6 @@
+PDF: /mnt/data/atom_gate_build/CHANNEL_ATOM_KILL_FAST_GATE_v1_0/theory/Channel_Atom_Collapse_Propositions_and_Kill_Fast_Protocol.pdf
+Pages: 13
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

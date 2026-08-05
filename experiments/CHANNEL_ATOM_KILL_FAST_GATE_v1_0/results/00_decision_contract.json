@@ -1,0 +1,31 @@
+{
+  "atlas_H2": {
+    "minimum_independent_to_best_work_ratio": 1.1,
+    "minimum_nonadditive_natural_improvement_witnesses": 1,
+    "minimum_nonadditive_variation_witnesses": 3,
+    "minimum_worst_to_best_work_ratio": 1.5
+  },
+  "contract_version": "1.0",
+  "manual_novelty_gate": {
+    "required": true,
+    "status_at_release": "PENDING_INDEPENDENT_PRIMARY_SOURCE_AUDIT"
+  },
+  "nonlatin_H3": {
+    "minimum_completion_fraction": 0.9,
+    "minimum_jointly_passing_channel_families_for_continue": 2,
+    "minimum_largest_n_speedup": 1.5,
+    "minimum_log2_work_slope_advantage": 0.03,
+    "minimum_pessimistic_slope_advantage": -0.02
+  },
+  "rate_survival_H4": {
+    "maximum_required_actual_likely_atom_mass": 0.85,
+    "minimum_fiber_ceiling_fraction_of_uniform_information": 0.6,
+    "minimum_likely_atom_code_rate_fraction_of_uniform_information": 0.3
+  },
+  "reversible_positive_control": {
+    "minimum_completion_fraction": 0.98,
+    "minimum_largest_n_speedup": 2.0,
+    "minimum_log2_work_slope_advantage": 0.05
+  },
+  "scientific_scope": "research-investment gate; not an impossibility theorem"
+}

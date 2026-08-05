@@ -1,0 +1,560 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.86in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\definecolor{navy}{HTML}{183A5A}
+\definecolor{teal}{HTML}{167D7F}
+\definecolor{lightblue}{HTML}{EAF3F8}
+\definecolor{lightteal}{HTML}{E8F6F5}
+\definecolor{lightgray}{HTML}{F3F5F7}
+\definecolor{darkred}{HTML}{8B1E1E}
+\definecolor{amber}{HTML}{9B6500}
+\definecolor{darkgreen}{HTML}{1E6B3A}
+
+\hypersetup{
+ colorlinks=true,
+ linkcolor=navy,
+ citecolor=teal,
+ urlcolor=teal,
+ pdftitle={Channel-Atom Coding: Collapse Propositions and Kill-Fast Computational Protocol},
+ pdfsubject={Early falsification of a latent-representation coding and decoding programme},
+ pdfkeywords={channel coding, maximum likelihood decoding, deterministic channel decomposition, functional representation, GRAND, coupling, code design}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Channel-Atom Coding}
+\rhead{Collapse Propositions and Kill-Fast Gate}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt}
+\setlist[itemize]{leftmargin=1.45em,itemsep=2.5pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=3pt,topsep=3pt}
+\renewcommand{\arraystretch}{1.15}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{hypothesis}[theorem]{Load-bearing hypothesis}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\X}{\mathcal X}
+\newcommand{\Y}{\mathcal Y}
+\newcommand{\Z}{\mathcal Z}
+\newcommand{\C}{\mathcal C}
+\newcommand{\PiW}{\boldsymbol{\Pi}(W)}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prb}{\mathbb P}
+\newcommand{\Work}{\operatorname{Work}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\rank}{\operatorname{rank}}
+
+\newtcolorbox{executivebox}{
+ colback=lightblue,colframe=navy,boxrule=0.8pt,arc=2pt,
+ left=7pt,right=7pt,top=6pt,bottom=6pt
+}
+\newtcolorbox{gatebox}[1][]{
+ colback=lightteal,colframe=teal,boxrule=0.8pt,arc=2pt,
+ left=7pt,right=7pt,top=6pt,bottom=6pt,title=#1,fonttitle=\bfseries
+}
+\newtcolorbox{stopbox}[1][]{
+ colback=red!3,colframe=darkred,boxrule=0.9pt,arc=2pt,
+ left=7pt,right=7pt,top=6pt,bottom=6pt,title=#1,fonttitle=\bfseries
+}
+\newtcolorbox{pivotbox}[1][]{
+ colback=orange!5,colframe=amber,boxrule=0.8pt,arc=2pt,
+ left=7pt,right=7pt,top=6pt,bottom=6pt,title=#1,fonttitle=\bfseries
+}
+
+\lstdefinestyle{pseudo}{
+ basicstyle=\ttfamily\small,
+ columns=fullflexible,
+ frame=single,
+ rulecolor=\color{navy!45},
+ backgroundcolor=\color{lightgray},
+ breaklines=true,
+ showstringspaces=false
+}
+
+\title{\vspace{-0.8cm}\textbf{Channel-Atom Coding}\\[3pt]
+\Large The Minimal Collapse Propositions and a Kill-Fast\\
+Computational Protocol for a Field-Defining Decision}
+\author{Scientific feasibility dossier in information theory and error-control coding}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{executivebox}
+\textbf{Purpose.} This document does not extend the broad proposal in every possible direction. It identifies the smallest set of claims that must survive before any substantial investment in code construction, asymptotic theory, finite-state channels, hardware, or applications is scientifically justified.
+
+\textbf{Decision principle.} The programme is continued only if an exact, succinct channel-atom representation yields a same-channel, same-code, same-ML-decision advantage that survives complete cost accounting, strengthens with blocklength on genuinely nonadditive channels, and does not require code rate to collapse. The attached software implements exact counterexample searches, exact small-channel decomposition studies, positive and negative controls, block-scaling experiments, rate-survival tests, and pre-registered \texttt{CONTINUE/PIVOT/STOP} logic.
+
+\textbf{Most important protection.} If the exactness gate fails, or if fully accounted work shows no legitimate nonadditive scaling path after the pre-registered tests, the software emits an explicit \texttt{STOP\_BROAD\_CHANNEL\_ATOM\_PROGRAM} command and does not proceed to expensive downstream stages.
+\end{executivebox}
+
+\tableofcontents
+\newpage
+
+\section{What must be decided before serious investment}
+
+A finite channel can be represented as a random deterministic action
+\begin{equation}
+ W(y\mid x)=\sum_{z\in\Z}p_Z(z)\one\{f_z(x)=y\},\qquad Z\perp X.
+ \label{eq:representation}
+\end{equation}
+The existence and nonuniqueness of such decompositions are established facts. Functional-representation results write a channel output as a function of the input and independent randomness \cite{LiElGamal2018}. The intrinsic-capacity literature explicitly studies nonunique convex decompositions into deterministic channels when the latent state is revealed \cite{Yang2019}. Minimum-entropy coupling studies which coupling of fixed marginals minimizes latent entropy \cite{Kovacevic2015,Cicalese2019,Compton2023}. GRAND realizes exact ML decoding by guessing a fixed additive disturbance representation \cite{Duffy2019}.
+
+The new programme is defensible only if the following operational question has a nontrivial answer:
+\begin{center}
+\fbox{\parbox{0.84\linewidth}{\centering
+Can optimization over exact, succinct latent deterministic representations reduce the end-to-end work of exact ML decoding, beyond additive or trivially relabelled channels, while preserving useful code rate?}}
+\end{center}
+
+This question contains five logically necessary claims, one of which is a manual novelty boundary and four of which are mathematical or computational. Their conjunction is not sufficient for a field-defining result, but failure of any one collapses the broad programme as presently defined.
+
+\section{Model, reduction, and admissible cost}
+
+Let $\C_n=\{c_1,\ldots,c_{M_n}\}\subseteq\X^n$ be a codebook, $M$ the uniform message, $X=c_M$, and $Y\sim W^n(\cdot\mid X)$. An exact block representation is
+\begin{equation}
+ W^n(y\mid x)=\sum_z p_n(z)\one\{f_{n,z}(x)=y\}.
+ \label{eq:blockrep}
+\end{equation}
+
+\subsection{Reduced representations}
+
+Two positive atoms that induce the same map on the operative codebook are operational duplicates and must be merged.
+
+\begin{proposition}[Reduction invariance]
+Suppose atoms $z_1,z_2$ satisfy $f_{z_1}(c)=f_{z_2}(c)$ for every $c\in\C$. Replacing them by one atom of mass $p(z_1)+p(z_2)$ preserves the channel induced on $\C$, every complete likelihood, every atom fiber, and every exact decoding decision. Consequently, artificial splitting of an atom cannot be counted as representation diversity or complexity gain.
+\end{proposition}
+
+\begin{proof}
+For every codeword-output pair, the two atom contributions occur in exactly the same indicator term and therefore enter the likelihood only through their summed mass. The same equality holds for partial scores if the copies are processed as one grouped atom. Their codeword fibers are identical.
+\end{proof}
+
+\subsection{Admissibility contract}
+
+\begin{definition}[Admissible representation family]
+A representation sequence $\{\pi_n\}$ is admissible only if all of the following are declared and charged:
+\begin{enumerate}[label=(\alph*)]
+\item representation description and stored state;
+\item preprocessing, with an explicit amortization horizon;
+\item generation or ranking of the next atom without an undeclared exponential table;
+\item probability evaluation to sufficient numerical precision;
+\item inversion or output-sensitive fiber enumeration;
+\item candidate-score updates and exact certificate maintenance;
+\item wall-clock time, memory, and parallel depth.
+\end{enumerate}
+\end{definition}
+
+The early package tests product representations of small single-letter decompositions because they have compact descriptions and exact best-first generators. A favorable result from an arbitrary optimized $W^n$ table is not accepted as operational evidence unless that table also has a succinct generator.
+
+\subsection{Work vector}
+
+No single scalar is trusted initially. The decoder reports
+\begin{equation}
+\bm w=(N_{\rm atom},N_{\rm gen},N_{\rm fiber\ query},N_{\rm fiber\ entry},
+N_{\rm score},N_{\rm heap},N_{\rm fallback},T_{\rm wall},M_{\rm peak}).
+\label{eq:workvector}
+\end{equation}
+Three pre-registered scalarizations---optimistic, balanced, and pessimistic---are used only after the vector is stored. A claimed gain must survive the balanced model and must not reverse under the pessimistic model.
+
+\section{The five collapse hypotheses}
+
+\begin{hypothesis}[H0: a genuinely new operational object]
+The closest prior theories establish deterministic channel decompositions, functional representations, intrinsic-capacity regions, minimum-entropy couplings, and guessing decoders for a fixed additive disturbance. They do not already establish an operational infimum over exact latent deterministic representations for certified ML work together with code-restricted fiber design.
+\label{hyp:H0}
+\end{hypothesis}
+
+\begin{stopbox}[Failure consequence of H0]
+If an independent primary-source audit finds that this exact operational optimization and its code-design consequences are already established, the field-defining claim stops immediately. A narrower algorithmic or application contribution may remain, but it must be evaluated under a new claim contract. The software cannot decide H0; the package therefore includes a manual prior-art boundary file and treats every positive numerical verdict as provisional until independent novelty review.
+\end{stopbox}
+
+\begin{hypothesis}[H1: exact certified decoding]
+For every tested channel, code, representation, atom schedule, and received word, residual-certified atom decoding returns the same ML decision or ML tie set as direct likelihood evaluation.
+\label{hyp:H1}
+\end{hypothesis}
+
+\begin{stopbox}[Failure consequence of H1]
+A single reproducible mismatch is a hard STOP. It means either the proposed decoder is mathematically wrong or the implementation does not test the theory being claimed. No performance result is admissible until the mismatch is repaired and the entire exactness suite is rerun.
+\end{stopbox}
+
+\begin{hypothesis}[H2: admissible operational representation dependence]
+There exists a fixed nonadditive channel $W$, fixed code $\C$, fixed input distribution, and two reduced admissible exact representations for which fully accounted exact-ML work differs; moreover the best discovered representation improves over natural exact couplings rather than only over an intentionally poor or artificially split representation.
+\label{hyp:H2}
+\end{hypothesis}
+
+\begin{stopbox}[Failure consequence of H2]
+If exhaustive small-channel tests find no operational difference after reduction and complete cost accounting, the central design variable is computationally inert. The broad programme stops.
+\end{stopbox}
+
+\begin{hypothesis}[H3: succinct nonadditive scaling advantage]
+For at least two structurally distinct, genuinely nonadditive channel families, a succinct representation and exact decoder have a work exponent or stable finite-length slope strictly below strong exact references---including syndrome-trellis ML for binary linear codes---at the same code, rate, and ML decision:
+\begin{equation}
+ \limsup_{n\to\infty}\frac1n\log_2\E[\Work_{\rm atom,n}]
+ <
+ \liminf_{n\to\infty}\frac1n\log_2\E[\Work_{\rm ref,n}].
+ \label{eq:scalinghyp}
+\end{equation}
+\label{hyp:H3}
+\end{hypothesis}
+
+\begin{pivotbox}[Failure consequence of H3]
+If only random reversible-action or weighted-Latin channels pass, the broad theory is stopped and the only permitted pivot is a narrower ``random reversible action GRAND'' programme. If no nonadditive class passes even that positive control, the entire programme stops. Constant finite-length gains without a favorable slope support at most a specialized decoder paper, not a field-defining programme.
+\end{pivotbox}
+
+\begin{hypothesis}[H4: rate--reliability--work coexistence]
+The representation advantage remains available for positive-rate code families whose error probability vanishes, without atom fibers or likely-atom confusability forcing the usable rate far below channel capacity.
+\label{hyp:H4}
+\end{hypothesis}
+
+\begin{pivotbox}[Failure consequence of H4]
+If low work is obtained only by reducing the code rate until decoding is trivial, the code-design claim collapses. A decoder-only narrow path may remain, but the broad field-defining code-and-decoder programme stops.
+\end{pivotbox}
+
+\begin{proposition}[Necessity, not sufficiency]
+Hypotheses H0--H4 are jointly necessary for the broad Channel-Atom Coding programme as presently defined. Their success is not sufficient: a later field-defining claim would additionally require a new asymptotic theorem, an explicit scalable code/decoder construction, novelty beyond the closest literature, and independent reproduction.
+\end{proposition}
+
+\section{Exact certificate and the H1 test}
+
+For an atom schedule $z_1,z_2,\ldots$, define
+\begin{align}
+ S_t(m;y)&=\sum_{i=1}^{t}p(z_i)\one\{f_{z_i}(c_m)=y\},\\
+ R_t&=1-\sum_{i=1}^{t}p(z_i).
+\end{align}
+Then
+\begin{equation}
+ S_t(m;y)\le W(y\mid c_m)\le S_t(m;y)+R_t.
+ \label{eq:residualbound}
+\end{equation}
+
+\begin{theorem}[Residual-certified exact ML stopping]
+If
+\begin{equation}
+ S_t(\widehat m;y)>\max_{m\ne\widehat m}\{S_t(m;y)+R_t\},
+ \label{eq:stopcert}
+\end{equation}
+then $\widehat m$ is the unique ML decision. If all atoms are processed, the score vector equals the complete likelihood vector.
+\end{theorem}
+
+\begin{proof}
+The selected candidate has true likelihood at least its partial score. Each competitor has true likelihood at most its partial score plus all unprocessed mass. Inequality \eqref{eq:stopcert} separates these intervals. Complete processing sums every atom contributing to every transition in \eqref{eq:representation}.
+\end{proof}
+
+The H1 suite checks this theorem by exhaustive enumeration for small DMCs and by independent direct-ML evaluation in every block experiment. It also tests ties, duplicate-map reduction, atom-order ties, invalid fibers, and fallback behavior.
+
+\section{The exact reference that a new decoder must beat}
+
+Beating exhaustive enumeration of $2^k$ codewords is not sufficient evidence. For any binary linear $[n,k]$ code with parity-check matrix $H$ of rank $r=n-k$, exact ML decoding on a binary-input memoryless channel can be performed by dynamic programming over the $2^r$ partial-syndrome states.
+
+\begin{proposition}[Exact syndrome-trellis ML reference]
+Let the channel metric factor as $\sum_{i=1}^n \log W(y_i\mid x_i)$ and let the code be $\{x:Hx^\top=0\}$. Processing coordinates sequentially and retaining the best metric for each partial syndrome gives an exact ML codeword using at most $2n2^r$ branch updates, $O(2^r)$ metric memory, and $O(n2^r)$ traceback storage in the direct implementation.
+\end{proposition}
+
+\begin{proof}
+After coordinate $i$, the dynamic-programming state is the syndrome contributed by the prefix. For each state, the two possible input bits either preserve the state or XOR the $i$th column of $H$. Bellman's principle applies because the channel metric is additive across coordinates. Every length-$n$ word terminating in syndrome zero is a codeword, and every codeword corresponds to one such path, so the best zero-syndrome path is exactly ML.
+\end{proof}
+
+The package therefore compares binary atom decoding with the cheaper of
+\begin{equation}
+  O(n2^k) \quad\text{direct codeword ML},\qquad
+  O(n2^{n-k}) \quad\text{syndrome-trellis ML}.
+\end{equation}
+Ignoring the second reference would create a false positive at high rate. A generic field-defining signal requires the atom method to improve on this strongest implemented exact reference, not merely on brute-force codeword scoring.
+
+\section{Two exponential obstructions that must be measured}
+
+A representation can reduce atom entropy while creating enormous inverse fibers, or make atoms injective while creating exponentially many latent explanations of each transition. These are distinct obstructions.
+
+\subsection{Fiber collision factor}
+
+For a single-letter deterministic map $f:\X\to\Y$ and uniform $X$, define
+\begin{equation}
+ \kappa(f)=\E\big[|f^{-1}(f(X))|\big]
+ =\frac1{|\X|}\sum_{y\in\Y}|f^{-1}(y)|^2.
+ \label{eq:kappaf}
+\end{equation}
+For a representation $\pi=(p_z,f_z)$, define the linear functional
+\begin{equation}
+ \kappa(\pi)=\sum_zp_z\kappa(f_z).
+ \label{eq:kappapi}
+\end{equation}
+It equals one exactly when all positive atoms are injective.
+
+\begin{theorem}[Exact expected random-code fiber]
+Let $Q=|\X|^n$. Select a transmitted word $X^n$ uniformly from $\X^n$, and form a size-$M$ random codebook by adding $M-1$ distinct words uniformly from the remaining $Q-1$ words. Under the product representation $\pi^{\otimes n}$,
+\begin{equation}
+ \E\big[|F_{Z^n}(Y^n;\C)|\big]
+ =1+\frac{M-1}{Q-1}\big(\kappa(\pi)^n-1\big).
+ \label{eq:randomfiber}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For fixed $(x^n,z^n)$, put $s=|f_{z^n}^{-1}(f_{z^n}(x^n))|$. Each of the $M-1$ other codewords lies in the remaining $s-1$ preimages with probability $(s-1)/(Q-1)$, giving conditional expectation $1+(M-1)(s-1)/(Q-1)$. For product maps and independent uniform coordinates,
+\[
+\E[s]=\prod_{i=1}^{n}\E\big[|f_{Z_i}^{-1}(f_{Z_i}(X_i))|\big]=\kappa(\pi)^n.
+\]
+Averaging proves \eqref{eq:randomfiber}.
+\end{proof}
+
+\begin{corollary}[Random-code fiber ceiling]
+For $M\doteq 2^{nR}$, the excess expected true-atom fiber has exponent
+\begin{equation}
+ \Gamma_{\rm fiber}(R,\pi)=
+ \big[R-\log_2|\X|+\log_2\kappa(\pi)\big]_+.
+ \label{eq:fiberexp}
+\end{equation}
+Thus the single-letter product representation has a random-code fiber ceiling
+\begin{equation}
+ R_{\rm fiber}(\pi)=\log_2|\X|-\log_2\kappa(\pi).
+ \label{eq:fiberceiling}
+\end{equation}
+The best such ceiling is obtained by a linear program over the representation polytope because $\kappa(\pi)$ is linear in the atom weights.
+\end{corollary}
+
+For binary inputs, injective maps have $\kappa=1$ and constant maps have $\kappa=2$. If the total constant-atom mass is $a$, then $\kappa=1+a$ and
+\begin{equation}
+ R_{\rm fiber}=1-\log_2(1+a).
+ \label{eq:binaryceiling}
+\end{equation}
+This gives a direct early test of whether representation optimization leaves room for high-rate codes.
+
+\subsection{Transition degeneracy}
+
+Define
+\begin{equation}
+ D_\pi=H(Z\mid X,Y).
+ \label{eq:degeneracy}
+\end{equation}
+Since $Z\perp X$ and $Y$ is deterministic given $(X,Z)$,
+\begin{equation}
+ H(Z)=H(Y\mid X)+D_\pi.
+ \label{eq:degidentity}
+\end{equation}
+For an i.i.d. product representation,
+\begin{equation}
+ H(Z^n\mid X^n,Y^n)=nD_\pi.
+ \label{eq:degproduct}
+\end{equation}
+Hence a typical transition can have approximately $2^{nD_\pi}$ latent explanations. This does not prove that every exact decoder must enumerate them: a certificate may stop early, or a dynamic program may aggregate their total mass. It does prove that an atom-by-atom implementation cannot treat multiplicity as free.
+
+\begin{gatebox}[Mandatory joint diagnostic]
+The computational gate reports both $\kappa(\pi)$ and $D_\pi$. A representation is not accepted merely because it minimizes one. The broad programme needs a representation/schedule/aggregation mechanism that simultaneously controls fibers, repeated explanations, and total certified work.
+\end{gatebox}
+
+\section{The first-hit positive control}
+
+\begin{definition}[Bi-unambiguous representation]
+A representation is bi-unambiguous on $\C$ when every positive atom is injective on $\C$ and every transition $(c,y)$ has at most one positive atom explanation.
+\end{definition}
+
+\begin{theorem}[Generalized first-hit ML]
+For a bi-unambiguous representation, enumerate atoms in nonincreasing probability, invert each atom at $y$, and test code membership. The first valid inverse is ML.
+\end{theorem}
+
+\begin{proof}
+Each candidate likelihood is either zero or exactly one atom mass, and each processed atom yields at most one candidate. The first valid candidate therefore has maximum likelihood.
+\end{proof}
+
+The package includes two controls:
+\begin{itemize}
+\item a standard additive channel, for which this reduces to GRAND;
+\item a non-cyclic random reversible-action channel formed by pairwise-disjoint permutations, which is first-hit decodable but is not a cyclic additive channel under symbol relabeling.
+\end{itemize}
+If the implementation cannot recover the expected exactness and favorable scaling on these controls, no broader conclusion is trusted.
+
+\section{Computational programme}
+
+\subsection{Stage E0: deterministic self-audit}
+
+The software first runs unit and property tests:
+\begin{enumerate}
+\item every representation matches its channel entrywise;
+\item duplicate maps merge without changing likelihoods;
+\item residual-certified outputs match direct ML for all enumerable cases;
+\item binary asymmetric channel parameterizations are exact;
+\item the full and compact injective-mass LPs agree;
+\item the random-code fiber identity agrees with direct enumeration on tiny spaces;
+\item product-atom enumeration is globally nonincreasing in mass and duplicate-free.
+\end{enumerate}
+Any failure emits a hard STOP and prevents performance stages.
+
+\subsection{Stage E1: exact small-DMC representation atlas}
+
+The atlas includes:
+\begin{itemize}
+\item deterministic and useless negative controls;
+\item BSC and BEC controls;
+\item a rational grid of binary asymmetric channels;
+\item asymmetric erasure/stuck-at binary-input ternary-output channels;
+\item random rational $2\times3$ and $3\times3$ DMCs.
+\end{itemize}
+For each channel it constructs the independent-row coupling, common-uniform couplings, LP-optimal fiber representations, and many basic feasible decompositions obtained from random linear objectives. It records latent entropy, degeneracy, $\kappa$, injective mass, support, one-shot certified work, and direct-ML agreement.
+
+The atlas asks whether representation choice is operational after duplicate reduction, and whether the best representation improves over natural couplings rather than only over the worst vertex.
+
+\subsection{Stage E2: exact block scaling for reversible actions}
+
+Random high-rate $q$-ary codebooks are decoded over additive and non-cyclic reversible-action channels. The same best-first product-atom generator is used. Metrics include exact first-hit queries, direct codeword-ML work, wall-clock time, and fitted slopes of $\log_2$ work versus $n$.
+
+This is a positive control and a possible narrow pivot, not sufficient evidence for the broad theory.
+
+\subsection{Stage E3: exact block scaling for non-Latin channels}
+
+The decisive experiments use binary linear codes and two non-Latin families:
+\begin{enumerate}
+\item binary asymmetric channels, with the complete one-letter decomposition interval tested;
+\item asymmetric erasure/stuck-at channels, with LP and vertex-generated representations.
+\end{enumerate}
+
+For each received block, the atom decoder uses an exact GF(2) fiber solver for coordinate constraints, output-sensitive candidate enumeration, exact score accumulation, and the residual certificate. Direct codeword likelihood evaluation supplies the independent ML oracle. A separate exact syndrome-trellis decoder supplies a much stronger high-rate reference, and every trellis decision and metric is checked against direct ML. The reported reference work is the smaller of direct codeword ML and syndrome-trellis ML. If an atom budget is reached, the decoder falls back to that cheaper exact reference and charges the fallback cost; an abandoned search is never reported as an exact atom-decoding success.
+
+Blocklength, rate, representation, channel, seed, and cost-model sensitivity are all varied. The package stores mean, median, tail work, exact-completion fraction, wall-clock, speedup, and fitted work slopes with bootstrap intervals.
+
+\subsection{Stage E4: rate-survival tests}
+
+Two tests address H4:
+\begin{enumerate}
+\item the exact LP value $R_{\rm fiber}^*=\log_2|\X|-\log_2\kappa^*$ is compared with the uniform-input mutual information relevant to the tested linear-code ensembles, while full Shannon capacity is also reported;
+\item for small blocks, the likely-atom confusability graph is formed and a maximum or certified-bounded independent set is computed, giving an exact/controlled lower bound on atom-separating code rate at a fixed atom-tail probability.
+\end{enumerate}
+
+A decoder speedup accompanied by a severe rate collapse is classified as a narrow decoder result, not a new coding paradigm.
+
+\section{Pre-registered verdict rules}
+
+The software emits one of three scientific classifications. Numerical thresholds are deliberately modest enough to detect a credible signal but strong enough to reject decorative one-shot gains.
+
+\begin{longtable}{@{}L{0.22\textwidth}L{0.70\textwidth}@{}}
+\toprule
+\textbf{Classification} & \textbf{Required evidence}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Classification} & \textbf{Required evidence}\\
+\midrule
+\endhead
+{\footnotesize\nolinkurl{CONTINUE_FIELD_DEFINING_TRACK}} & H1 passes; exact atlas contains multiple nonadditive operational witnesses; reversible-action positive control passes; at least two non-Latin families show favorable fully costed scaling against the strongest implemented exact references and natural representation baselines; the gain is robust to pessimistic cost weights; and rate-survival diagnostics remain a substantial fraction of the relevant uniform-input information rate.\\[3pt]
+{\footnotesize\nolinkurl{PIVOT_TO_REVISED_TRACK}} & The broad non-Latin claim fails, but a scientifically coherent restricted path survives: for example, random reversible actions, one specific asymmetric-memory class, a block-aggregation method, or a decoder-only result. The command explicitly stops the original broad programme before beginning the revised one.\\[3pt]
+{\footnotesize\nolinkurl{STOP_BROAD_CHANNEL_ATOM_PROGRAM}} & Exactness fails; no reduced operational representation effect exists; even positive controls fail; gains disappear under total-cost accounting or against the syndrome-trellis reference; no favorable scaling remains; or all gains require rate collapse or hidden exponential representation/storage.\\
+\bottomrule
+\end{longtable}
+
+\begin{stopbox}[Immediate stop discipline]
+A STOP verdict means: do not begin asymptotic rate--reliability--work theory, code-family invention, finite-state extensions, synchronization channels, hardware, or applications. Only work needed to verify the negative result or prepare a boundary/negative paper is authorized.
+\end{stopbox}
+
+\subsection{Why a finite experiment can justify STOP but not prove impossibility}
+
+No finite atlas proves that every imaginable representation and code family fails. The STOP rule is a research-investment decision, not a universal impossibility theorem. It is justified when all pre-registered necessary mechanisms fail over exhaustive small cases, two distinct scalable nonadditive families, positive controls, strong exact references, and adversarial cost models, with no residual structural route. Conversely, a CONTINUE verdict is only evidence of potential; it is not a declaration that the work is already field-defining.
+
+\section{What happens after each outcome}
+
+\subsection{After CONTINUE}
+
+Only then should the programme invest in:
+\begin{enumerate}
+\item a theorem linking $\kappa$, $D_\pi$, atom guesswork, and certificate stopping;
+\item an asymptotic strict work-exponent separation for a non-Latin channel family;
+\item an explicit positive-rate atom-separating code construction;
+\item compact aggregation of repeated atom explanations;
+\item comparisons with stronger channel-specific exact and near-ML decoders;
+\item external proof, novelty, and reproduction audits.
+\end{enumerate}
+
+\subsection{After PIVOT}
+
+The original headline must be withdrawn. A new one-page claim contract must specify exactly which assumption is changed. Examples include:
+\begin{itemize}
+\item restrict atoms to random reversible transformations;
+\item allow certified near-ML rather than exact ML;
+\item optimize a block transducer representation rather than a product representation;
+\item target a storage channel with a specialized polynomial fiber oracle;
+\item pursue a finite-length decoder contribution without a field-defining claim.
+\end{itemize}
+The revised path must receive its own kill criteria; favorable results from the original package cannot be silently transferred.
+
+\subsection{After STOP}
+
+Archive the exact counterexamples, theorem boundaries, and results. A publishable negative result may remain, particularly if it establishes a general fiber/degeneracy tradeoff or proves that representation optimization only displaces exact-ML complexity.
+
+\section{Reproducibility contract}
+
+The package enforces the following:
+\begin{enumerate}
+\item deterministic seeds and exact rational channel definitions where feasible;
+\item package and result SHA-256 manifests;
+\item isolated virtual environment outside the committed experiment folder;
+\item exact ML verification in every experiment;
+\item separate counts for atom generation, fiber queries, fiber entries, score updates, heap operations, fallback work, memory proxies, and wall-clock time;
+\item no committed virtual environment, caches, or large temporary arrays;
+\item a machine-readable verdict and a human-readable gate report;
+\item Git commit restricted to the experiment directory;
+\item explicit push status, without deleting local results if network authentication fails.
+\end{enumerate}
+
+\section{Final scientific recommendation}
+
+\begin{executivebox}
+The correct first investment is neither a long theorem programme nor a large application simulator. It is the attached exact kill-fast package. The most informative early quantities are not latent entropy alone, but the joint behavior of certified work, the fiber collision factor $\kappa(\pi)$, transition degeneracy $D_\pi$, and rate survival.
+
+The broad Channel-Atom programme deserves further investment only if the software finds a succinct, exact, non-Latin representation advantage that strengthens with blocklength and survives total-cost, strong exact-reference, and rate accounting on at least two nonadditive channel families. If that signal does not appear, the broad programme must be stopped or explicitly narrowed before additional theory is developed.
+\end{executivebox}
+
+\begin{thebibliography}{99}
+
+\bibitem{LiElGamal2018}
+C. T. Li and A. El Gamal, ``Strong functional representation lemma and applications to coding theorems,'' \emph{IEEE Transactions on Information Theory}, vol. 64, no. 11, pp. 6967--6978, 2018.
+
+\bibitem{Yang2019}
+S. Yang, R. Xu, J. Chen, and J.-K. Zhang, ``Intrinsic capacity,'' \emph{IEEE Transactions on Information Theory}, vol. 65, no. 3, pp. 1345--1360, 2019.
+
+\bibitem{Kovacevic2015}
+M. Kova\v{c}evi\'c, I. Stanojevi\'c, and V. \v{S}enk, ``On the entropy of couplings,'' \emph{Information and Computation}, vol. 242, pp. 369--382, 2015.
+
+\bibitem{Cicalese2019}
+F. Cicalese, L. Gargano, and U. Vaccaro, ``Minimum-entropy couplings and their applications,'' \emph{IEEE Transactions on Information Theory}, vol. 65, no. 6, pp. 3436--3451, 2019.
+
+\bibitem{Compton2023}
+S. Compton, D. Katz, B. Qi, K. Greenewald, and M. Kocaoglu, ``Minimum-entropy coupling approximation guarantees beyond the majorization barrier,'' in \emph{Proc. AISTATS}, 2023, pp. 10445--10469.
+
+\bibitem{Duffy2019}
+K. R. Duffy, J. Li, and M. M\'edard, ``Capacity-achieving guessing random additive noise decoding,'' \emph{IEEE Transactions on Information Theory}, vol. 65, no. 7, pp. 4023--4040, 2019.
+
+\bibitem{Arikan1996}
+E. Ar\i kan, ``An inequality on guessing and its application to sequential decoding,'' \emph{IEEE Transactions on Information Theory}, vol. 42, no. 1, pp. 99--105, 1996.
+
+\bibitem{Berlekamp1978}
+E. R. Berlekamp, R. J. McEliece, and H. C. A. van Tilborg, ``On the inherent intractability of certain coding problems,'' \emph{IEEE Transactions on Information Theory}, vol. 24, no. 3, pp. 384--386, 1978.
+
+\bibitem{GuruswamiVardy2005}
+V. Guruswami and A. Vardy, ``Maximum-likelihood decoding of Reed--Solomon codes is NP-hard,'' \emph{IEEE Transactions on Information Theory}, vol. 51, no. 7, pp. 2249--2256, 2005.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,44 @@
+PDF: /mnt/data/atom_gate_build/CHANNEL_ATOM_KILL_FAST_GATE_v1_0/theory/Channel_Atom_Collapse_Propositions_and_Kill_Fast_Protocol.pdf
+Pages: 13
+Encrypted: False
+Page sizes (pt, rounded):
+  - 612 x 792 (13 page(s))
+Metadata:
+  /Author: 
+  /CreationDate: D:20260805204955Z
+  /Creator: LaTeX with hyperref
+  /Keywords: channel coding, maximum likelihood decoding, deterministic channel decomposition, functional representation, GRAND, coupling, code design
+  /ModDate: D:20260805204955Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: Early falsification of a latent-representation coding and decoding programme
+  /Title: Channel-Atom Coding: Collapse Propositions and Kill-Fast Computational Protocol
+  /Trapped: /False
+Outline items: 26
+Form fields: 0
+Attachments: 0
+Annotations: 35
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+FDPHXR+LMRoman12-Bold                Type 1            Custom           yes yes yes    161  0
+UUEZXB+LMRoman12-Regular             Type 1            Custom           yes yes yes    162  0
+UOZOAZ+LMRoman10-Bold                Type 1            Custom           yes yes yes    163  0
+IEJFFG+LMRoman10-Regular             Type 1            Custom           yes yes yes    164  0
+RXGHCS+LMMono10-Regular              Type 1            Custom           yes yes yes    165  0
+XIXXVM+LMMathItalic10-Regular        Type 1            Custom           yes yes yes    199  0
+IEJFFG+LMRoman10-Regular             Type 1            Custom           yes yes yes    200  0
+LJXMLY+LMMathSymbols10-Regular       Type 1            Custom           yes yes yes    201  0
+WUJIEO+LMMathExtension10-Regular     Type 1            Custom           yes yes yes    202  0
+CPNVLS+LMMathItalic8-Regular         Type 1            Custom           yes yes yes    203  0
+ZNXNZD+LMMathSymbols8-Regular        Type 1            Custom           yes yes yes    204  0
+UOZOAZ+LMRoman10-Bold                Type 1            Custom           yes yes yes    205  0
+XQETGK+LMRoman8-Regular              Type 1            Custom           yes yes yes    206  0
+FAYXLO+LMMathItalic6-Regular         Type 1            Custom           yes yes yes    207  0
+DIQZIH+LMRoman10-Italic              Type 1            Custom           yes yes yes    210  0
+YNVWXX+LMRoman6-Regular              Type 1            Custom           yes yes yes    211  0
+SCMKBL+LMMathItalic10-Bold           Type 1            Custom           yes yes yes    232  0
+RAZVEJ+MSBM10                        Type 1            Builtin          yes yes yes    242  0
+IEJFFG+LMRoman10-Regular             Type 1            Custom           yes yes yes    281  0
+NLLQMN+LMMono9-Regular               Type 1            Custom           yes yes yes    302  0

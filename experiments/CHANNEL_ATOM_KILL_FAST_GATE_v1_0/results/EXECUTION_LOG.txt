@@ -1,0 +1,18 @@
+UTC_START=2026-08-05T23:43:46+00:00
+COMMAND=/home/afazeli2006/atom_coding/.venv_channel_atom_gate_v1_0/bin/python -m atom_gate.run_gate --profile standard
+
+[E0] Running exactness and theorem-implementation audit...
+[E1] Building exact small-DMC representation atlas...
+[E2] Running additive and non-cyclic reversible-action positive controls...
+[E3] Running exact non-Latin block-scaling tests...
+[E4] Running analytic and exact small-block rate-survival tests...
+
+==============================================================================
+FINAL CLASSIFICATION: PIVOT_TO_REVISED_TRACK
+STAGE: REVERSIBLE_ACTION_ONLY
+REASON: The broad non-Latin programme failed, but the non-cyclic bi-unambiguous action channel passed the exact first-hit scaling control.
+PIVOT COMMAND: STOP_ORIGINAL_BROAD_CHANNEL_ATOM_PROGRAM
+==============================================================================
+
+UTC_END=2026-08-05T23:44:00+00:00
+EXIT_CODE=0

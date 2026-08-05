@@ -1,0 +1,4 @@
+STOP_ORIGINAL_BROAD_CHANNEL_ATOM_PROGRAM
+PIVOT_STAGE=REVERSIBLE_ACTION_ONLY
+SURVIVING_PATH=Stop Channel-Atom Coding as a general exact-ML framework and evaluate a narrower Random Reversible Action GRAND theory.
+REQUIRE_NEW_CLAIM_CONTRACT=YES
