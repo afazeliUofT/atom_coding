@@ -1,0 +1,10 @@
+{
+  "equality_boundary": "The equality is for the history-revelation variable, not for every code-dependent certified decoder. The decoder may stop earlier after finding a competing ML codeword.",
+  "gap_decrease_fraction": 1.0,
+  "largest_n": 2048,
+  "maximum_largest_n_certificate_upper_gap": 0.02276066233937646,
+  "maximum_largest_n_quantile_gap": 0.05428152855225429,
+  "maximum_largest_n_reveal_moment_gap": 0.016724836984971958,
+  "theorem_statement": "For fixed t, p in (0,1/2), and rho>0, probability-ordered history revelation has moment exponent rho H_{1/(1+rho)}(p). The actual certified FIBER history work obeys the corresponding upper moment and upper-tail bounds because it stops no later than the deterministic shell certificate.",
+  "variational_identity_max_error": 6.661338147750939e-16
+}

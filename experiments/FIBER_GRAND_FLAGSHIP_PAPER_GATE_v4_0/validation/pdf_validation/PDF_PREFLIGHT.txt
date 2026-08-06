@@ -1,0 +1,6 @@
+PDF: /mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/theory/FIBER_GRAND_Flagship_Paper_Claim_Contract_and_Readiness_Gate.pdf
+Pages: 10
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

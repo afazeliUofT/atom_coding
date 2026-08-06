@@ -1,0 +1,221 @@
+{
+  "smoke": {
+    "seed": 20260806,
+    "candidate_exhaustive_n": [
+      4,
+      5
+    ],
+    "candidate_random_trials": 2,
+    "moment_blocklengths": [
+      128,
+      512,
+      2048
+    ],
+    "moment_probabilities": [
+      0.002,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "moment_orders": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "moment_edit_counts": [
+      1,
+      2
+    ],
+    "quantiles": [
+      0.5,
+      0.9,
+      0.99
+    ],
+    "phase_rates": [
+      0.625,
+      0.75,
+      0.875
+    ],
+    "bootstrap_replicates": 200,
+    "timing_repeats": 1,
+    "max_histories": 500000,
+    "max_prefix_nodes": 200000,
+    "compiled_schedules": [
+      {
+        "blocklengths": [
+          24,
+          32
+        ],
+        "rates": [
+          0.75
+        ],
+        "probabilities": [
+          0.002,
+          0.005,
+          0.01
+        ],
+        "families": [
+          "RLC",
+          "CRC"
+        ],
+        "trials32": 4,
+        "trials48": 4,
+        "trials64": 4,
+        "max_trellis_dp_updates": 1000000,
+        "max_trellis_terminals": 5000
+      }
+    ],
+    "vt_blocklengths": [
+      15,
+      31
+    ],
+    "vt_trials": 5,
+    "real_trace_glob": "data/real_traces/*.csv",
+    "max_trellis_terminals": 10000,
+    "max_trellis_dp_updates": 0
+  },
+  "standard": {
+    "seed": 20260806,
+    "candidate_exhaustive_n": [
+      4,
+      5,
+      6
+    ],
+    "candidate_random_trials": 8,
+    "moment_blocklengths": [
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "moment_probabilities": [
+      0.002,
+      0.005,
+      0.01,
+      0.02,
+      0.04
+    ],
+    "moment_orders": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "moment_edit_counts": [
+      1,
+      2
+    ],
+    "quantiles": [
+      0.5,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "phase_rates": [
+      0.625,
+      0.75,
+      0.875
+    ],
+    "bootstrap_replicates": 1000,
+    "timing_repeats": 1,
+    "max_histories": 500000,
+    "max_prefix_nodes": 50000,
+    "compiled_schedules": [
+      {
+        "blocklengths": [
+          32
+        ],
+        "rates": [
+          0.75,
+          0.875
+        ],
+        "probabilities": [
+          0.002,
+          0.005,
+          0.01
+        ],
+        "families": [
+          "RLC",
+          "CRC"
+        ],
+        "trials32": 24,
+        "trials48": 24,
+        "trials64": 24,
+        "max_trellis_dp_updates": 1000000,
+        "max_trellis_terminals": 5000
+      },
+      {
+        "blocklengths": [
+          48
+        ],
+        "rates": [
+          0.75,
+          0.875
+        ],
+        "probabilities": [
+          0.002,
+          0.005,
+          0.01
+        ],
+        "families": [
+          "RLC",
+          "CRC"
+        ],
+        "trials32": 16,
+        "trials48": 16,
+        "trials64": 16
+      },
+      {
+        "blocklengths": [
+          64
+        ],
+        "rates": [
+          0.75
+        ],
+        "probabilities": [
+          0.002,
+          0.005
+        ],
+        "families": [
+          "RLC",
+          "CRC"
+        ],
+        "trials32": 12,
+        "trials48": 12,
+        "trials64": 12,
+        "max_prefix_nodes": 200000,
+        "max_histories": 500000
+      },
+      {
+        "blocklengths": [
+          64
+        ],
+        "rates": [
+          0.875
+        ],
+        "probabilities": [
+          0.002,
+          0.005,
+          0.01
+        ],
+        "families": [
+          "RLC",
+          "CRC"
+        ],
+        "trials32": 12,
+        "trials48": 12,
+        "trials64": 12
+      }
+    ],
+    "vt_blocklengths": [
+      15,
+      31,
+      63,
+      127
+    ],
+    "vt_trials": 20,
+    "real_trace_glob": "data/real_traces/*.csv",
+    "max_trellis_terminals": 5000,
+    "max_trellis_dp_updates": 0
+  }
+}

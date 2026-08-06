@@ -1,0 +1,13 @@
+$ /usr/bin/g++ -O3 -DNDEBUG -std=c++20 -march=native -Wall -Wextra /mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp -o /mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark
+/mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘uint64_t fg::delete_bit(uint64_t, int, int)’:
+/mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:36:54: warning: unused parameter ‘n’ [-Wunused-parameter]
+   36 | uint64_t delete_bit(uint64_t word, int position, int n) {
+      |                                                  ~~~~^
+
+ELAPSED_SECONDS=8.358723
+RETURN_CODE=0
+$ /mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark --self-test
+SELF_TEST_PASS cases=600
+
+ELAPSED_SECONDS=1.549235
+RETURN_CODE=0

@@ -1,0 +1,43 @@
+{
+  "agreement_all": true,
+  "interpretation": "The classical VT decoder is a specialization boundary, not a target FIBER should beat. Its O(n) reconstruction demonstrates the value of code-specific structure.",
+  "linear_candidate_check_identity": true,
+  "summary": [
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 27.0,
+      "median_fiber_over_vt_wall": 22.08438014017593,
+      "median_vt_candidate_checks": 7.0,
+      "n": 15,
+      "p95_fiber_over_vt_wall": 26.365532057032393,
+      "trials": 20
+    },
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 60.0,
+      "median_fiber_over_vt_wall": 42.641651946349214,
+      "median_vt_candidate_checks": 14.5,
+      "n": 31,
+      "p95_fiber_over_vt_wall": 49.58744215483655,
+      "trials": 20
+    },
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 122.0,
+      "median_fiber_over_vt_wall": 87.87562999775376,
+      "median_vt_candidate_checks": 31.0,
+      "n": 63,
+      "p95_fiber_over_vt_wall": 102.61873549293146,
+      "trials": 20
+    },
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 252.0,
+      "median_fiber_over_vt_wall": 176.3157208867496,
+      "median_vt_candidate_checks": 51.5,
+      "n": 127,
+      "p95_fiber_over_vt_wall": 208.17912605916254,
+      "trials": 20
+    }
+  ]
+}

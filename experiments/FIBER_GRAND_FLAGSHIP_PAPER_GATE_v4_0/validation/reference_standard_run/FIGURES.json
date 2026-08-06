@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Finite-n history-revelation moment rates approaching the Renyi target.",
+    "file": "FIG_01_moment_convergence.png"
+  },
+  {
+    "description": "Rate-dependent typical and mean channel-side/code-side crossover probabilities.",
+    "file": "FIG_02_phase_diagram.png"
+  },
+  {
+    "description": "C++20 FIBER wall-time ratio versus the faster available compiled exact prefix-A* or syndrome-trellis baseline.",
+    "file": "FIG_03_compiled_benchmark.png"
+  },
+  {
+    "description": "Small-world audit of FIBER candidate queries against the L0 membership-oracle lower bound.",
+    "file": "FIG_04_oracle_competitiveness.png"
+  }
+]

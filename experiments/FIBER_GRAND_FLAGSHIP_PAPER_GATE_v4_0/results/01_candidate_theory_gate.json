@@ -1,0 +1,10 @@
+{
+  "candidate_volume_bounds_pass": true,
+  "exact_ambiguity_degree_pass": true,
+  "flagship_value": "This is a decoder-specific oracle-relative theorem. It is stronger than the history-revelation upper bound but still does not prove processor-cycle optimality or FPT dependence on edit count.",
+  "inflation_cases": 64,
+  "maximum_observed_history_per_candidate": 2.5,
+  "oracle_to_fiber_inflation_bounds_pass": true,
+  "theorem_summary": "For fixed t, the number V_y(w) of distinct candidates reachable within substitution shell w obeys 2^t B_{n-t}(w) <= V_y(w) <= 2^t binom(n,t) B_{n-t}(w), and each candidate has exactly binom(n,t) compatible complete histories. In the L0 membership-oracle model, every candidate strictly more likely than the ML codeword must be queried. For a codeword with best-alignment mismatch d*, FIBER certifies by shell d*+floor(log_{(1-p)/p} binom(n,t)), while all candidates through shell d*-floor(log_{(1-p)/p} binom(n,t))-1 are strictly more likely. Hence, away from the shell endpoints, FIBER is subexponentially competitive with the ideal aggregate-likelihood membership-query order.",
+  "volume_cases": 428
+}

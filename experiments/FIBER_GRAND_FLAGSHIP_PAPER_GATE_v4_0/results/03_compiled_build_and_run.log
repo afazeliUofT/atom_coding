@@ -1,0 +1,41 @@
+$ /usr/bin/g++ -O3 -DNDEBUG -std=c++20 -march=native -Wall -Wextra /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp -o /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘uint64_t fg::delete_bit(uint64_t, int, int)’:
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:36:54: warning: unused parameter ‘n’ [-Wunused-parameter]
+   36 | uint64_t delete_bit(uint64_t word, int position, int n) {
+      |                                                  ~~~~^
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘long double fg::component_mass(int, int, long double, int)’:
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:52:17: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
+   52 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches) / streams;
+      |                 ^~~~
+      |                 pow
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:52:44: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
+   52 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches) / streams;
+      |                                            ^~~~
+      |                                            pow
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘long double fg::unnormalized_mass(int, int, long double)’:
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:57:17: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
+   57 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches);
+      |                 ^~~~
+      |                 pow
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:57:44: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
+   57 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches);
+      |                                            ^~~~
+      |                                            pow
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘fg::DecodeResult fg::fiber_decode(uint64_t, const Code&, long double, uint64_t)’:
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:389:33: error: ‘fabsl’ is not a member of ‘std’; did you mean ‘fabs’?
+  389 |                 } else if (std::fabsl(score - best) <= TOL) {
+      |                                 ^~~~~
+      |                                 fabs
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘fg::DecodeResult fg::prefix_decode(uint64_t, const Code&, long double, uint64_t)’:
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:486:33: error: ‘fabsl’ is not a member of ‘std’; did you mean ‘fabs’?
+  486 |                 } else if (std::fabsl(score - best) <= TOL) {
+      |                                 ^~~~~
+      |                                 fabs
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘fg::DecodeResult fg::exhaustive_decode(uint64_t, const Code&, long double, uint64_t)’:
+/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:561:25: error: ‘fabsl’ is not a member of ‘std’; did you mean ‘fabs’?
+  561 |         } else if (std::fabsl(score - out.best) <= TOL) {
+      |                         ^~~~~
+      |                         fabs
+
+ELAPSED_SECONDS=1.093466
+RETURN_CODE=1

@@ -1,0 +1,34 @@
+{
+  "claim_boundary": [
+    "fiber guesswork is not a new generic random variable",
+    "best-path versus best-string and hidden-path summation are established",
+    "the current fixed-t method is XP, not FPT",
+    "the compiled benchmark is a reproducible reference comparison, not hardware dominance",
+    "real-system and field-defining-impact claims require measured traces and matched system baselines"
+  ],
+  "compiled_benchmark": {
+    "maximum_mean_favorable_median_ratio": 1.25,
+    "maximum_median_ci_high": 1.0,
+    "maximum_p95_ratio": 1.25,
+    "maximum_slope_disadvantage": 0.08,
+    "median_win_ratio": 0.8,
+    "minimum_favorable_largest_n_configs": 8,
+    "minimum_median_wins": 4,
+    "minimum_p95_wins": 3,
+    "minimum_robust_ci_wins": 3,
+    "minimum_slope_passes": 4
+  },
+  "contract_version": "4.0",
+  "hard_stop": {
+    "all_candidate_theory_audits_required": true,
+    "all_moment_tail_audits_required": true,
+    "false_certificate_tolerance": 0
+  },
+  "moment_tail_theory": {
+    "maximum_largest_n_certificate_upper_gap": 0.06,
+    "maximum_largest_n_quantile_gap": 0.09,
+    "maximum_largest_n_reveal_moment_gap": 0.05,
+    "require_gap_decrease_fraction": 0.8
+  },
+  "scientific_scope": "flagship-paper readiness gate for the narrowed fixed-edit FIBER-GRAND programme; not a guarantee of acceptance or field impact"
+}

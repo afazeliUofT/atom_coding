@@ -1,0 +1,40 @@
+PDF: /mnt/data/v4work/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/theory/FIBER_GRAND_Flagship_Paper_Claim_Contract_and_Readiness_Gate.pdf
+Pages: 10
+Encrypted: False
+Page sizes (pt, rounded):
+  - 612 x 792 (10 page(s))
+Metadata:
+  /Author: 
+  /CreationDate: D:20260806205100Z
+  /Creator: LaTeX with hyperref
+  /Keywords: 
+  /ModDate: D:20260806205100Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: 
+  /Title: 
+  /Trapped: /False
+Outline items: 14
+Form fields: 0
+Attachments: 0
+Annotations: 37
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+GLOYPB+CMBX12                        Type 1            Builtin          yes yes yes    116  0
+QZPGGL+CMR12                         Type 1            Builtin          yes yes yes    117  0
+YYJHXU+CMR10                         Type 1            Builtin          yes yes yes    118  0
+WXUSDV+CMBX10                        Type 1            Builtin          yes yes yes    120  0
+MLPLRY+CMMI10                        Type 1            Builtin          yes yes yes    153  0
+LGUJRD+CMTI10                        Type 1            Builtin          yes yes yes    158  0
+YKPJTK+CMSY10                        Type 1            Builtin          yes yes yes    159  0
+ATDVOR+CMMI8                         Type 1            Builtin          yes yes yes    162  0
+DYBBZN+CMEX10                        Type 1            Builtin          yes yes yes    180  0
+QASMKH+CMSY8                         Type 1            Builtin          yes yes yes    182  0
+TAGRYH+CMMI6                         Type 1            Builtin          yes yes yes    183  0
+MCODOQ+CMR8                          Type 1            Builtin          yes yes yes    184  0
+RGOXRF+CMTT10                        Type 1            Builtin          yes yes yes    185  0
+JCIOMA+CMR9                          Type 1            Builtin          yes yes yes    197  0
+RAZVEJ+MSBM10                        Type 1            Builtin          yes yes yes    237  0
+MRRPUK+SFRM1095                      Type 1            Custom           yes yes yes    247  0

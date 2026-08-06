@@ -1,0 +1,26 @@
+{
+  "package_name": "FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0",
+  "release_version": "4.0",
+  "release_date": "2026-08-06",
+  "default_profile": "standard",
+  "scientific_scope": "flagship IEEE Transactions on Information Theory paper-readiness gate for the narrowed fixed-edit FIBER-GRAND track",
+  "target_repo_relative_path": "experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0",
+  "working_directory": "/home/afazeli2006/atom_coding",
+  "github_repository": "git@github.com:afazeliUofT/atom_coding.git",
+  "claim_boundary": [
+    "No new generic fiber-guesswork random variable",
+    "No novelty claim for A*, path summation, or generic candidate-likelihood ordering",
+    "Current fixed-edit algorithm is XP, not FPT",
+    "No real-system or field-defining-impact claim without measured traces and external review"
+  ],
+  "reference_validation_classification": "PROCEED_TO_FLAGSHIP_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW",
+  "reference_validation_stage": "FLAGSHIP_THEORY_AND_COMPILED_MECHANISM_GATE_PASSED",
+  "reference_validation_field_defining_status": "NOT_ESTABLISHED",
+  "theory_pdf": "theory/FIBER_GRAND_Flagship_Paper_Claim_Contract_and_Readiness_Gate.pdf",
+  "required_next_external_gates": [
+    "independent theorem-by-theorem proof review",
+    "independent primary-source and patent novelty review",
+    "full IEEE Transactions on Information Theory manuscript review",
+    "measured post-front-end trace only for real-system claims"
+  ]
+}

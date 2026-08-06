@@ -1,0 +1,31 @@
+FIBER-GRAND FLAGSHIP-PAPER GATE v4.0 - REFERENCE STANDARD VALIDATION
+
+UTC_DATE=2026-08-06
+PROFILE=standard
+CLASSIFICATION=PROCEED_TO_FLAGSHIP_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW
+STAGE=FLAGSHIP_THEORY_AND_COMPILED_MECHANISM_GATE_PASSED
+
+TESTS
+- Python unit/integration tests: 21 passed.
+- Compiled C++20 self-test: SELF_TEST_PASS cases=600.
+- Candidate-volume exhaustive cases: 428.
+- Query-sandwich complete-code cases: 64.
+
+COMPILED BENCHMARK
+- C++20 compiler: /usr/bin/g++.
+- Flags: -O3 -DNDEBUG -std=c++20 -march=native -Wall -Wextra.
+- Total rows: 600.
+- Exact agreement all rows: True.
+- Certified completion all rows: True.
+- Largest blocklength: 64.
+- Favorable largest-n median wins: 10.
+- Favorable bootstrap-CI wins: 10.
+- Favorable observed-p95 wins: 10.
+- Favorable slope passes: 12.
+- At n=32 the syndrome-trellis reference was timed and certified on every row; at n=48 and n=64 the timed exact reference was compiled prefix A* because the syndrome DP budget was deliberately disabled.
+
+REFERENCE EXECUTION NOTE
+The container used for release construction imposes a short per-command execution cap. The four frozen compiled schedules were therefore executed as separate deterministic commands and aggregated with the package's unmodified analysis routine. The user-facing launcher runs the same four schedules sequentially in one standard scientific invocation. All raw part CSV files are retained.
+
+INTERPRETATION
+This is evidence of a quality IEEE TIT theory/algorithm manuscript opportunity. It is not a state-of-the-art hardware benchmark, a measured-receiver result, or evidence of field-defining impact.

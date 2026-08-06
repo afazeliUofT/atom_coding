@@ -1,0 +1,4 @@
+rate,redundancy_exponent,typical_threshold_p_h2_equals_1_minus_R,mean_threshold_p_Hhalf_equals_1_minus_R,mean_threshold_below_typical
+0.625,0.375,0.0724497922259377,0.022536315832662007,True
+0.75,0.25,0.041692690273826716,0.009031399264589636,True
+0.875,0.125,0.017128655077170693,0.002052123629415368,True
