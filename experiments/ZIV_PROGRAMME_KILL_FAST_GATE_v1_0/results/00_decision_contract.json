@@ -1,0 +1,33 @@
+{
+  "code_geometry": {
+    "minimum_structured_mdl_only_fraction": 0.5,
+    "minimum_structured_minus_random_control_fraction": 0.25
+  },
+  "contract_version": "1.0",
+  "field_defining_continue_requires": {
+    "effective_description_length_geometry": true,
+    "finite_block_mechanism": true,
+    "independent_primary_source_novelty_audit": true,
+    "original_or_genuinely_new_repaired_theorem": true,
+    "real_post_front_end_trace_premise": true
+  },
+  "masking": {
+    "absence_of_witness_is_not_a_proof": true,
+    "linear_defect_kill_threshold_per_symbol": 0.02
+  },
+  "nonstationary_signal": {
+    "maximum_adaptive_oracle_gap_per_symbol": 0.08,
+    "minimum_adaptive_gain_over_fixed_fit_per_symbol": 0.03
+  },
+  "real_trace_gate": {
+    "minimum_domains_passing_renyi_ratio": 2,
+    "minimum_valid_domains": 2
+  },
+  "scientific_scope": "pre-registered research-investment gate; not an impossibility theorem",
+  "stationary_rank_signal": {
+    "maximum_short_fit_advantage_over_universal_per_symbol": 0.03,
+    "maximum_universal_oracle_overhead_per_symbol": 0.04,
+    "minimum_memoryless_gain_per_symbol": 0.03,
+    "minimum_structured_regimes": 2
+  }
+}

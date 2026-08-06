@@ -1,0 +1,464 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "cases": 2047,
+        "failure": null
+      },
+      "name": "lz78_fixed_block_injective_roundtrip",
+      "pass": true
+    },
+    {
+      "detail": {
+        "rows": [
+          {
+            "model": "CTW_D0",
+            "n": 1,
+            "sum": 0.9999999999999993
+          },
+          {
+            "model": "CTW_D1",
+            "n": 1,
+            "sum": 0.9999999999999993
+          },
+          {
+            "model": "CTW_D2",
+            "n": 1,
+            "sum": 0.9999999999999993
+          },
+          {
+            "model": "CTW_D3",
+            "n": 1,
+            "sum": 0.9999999999999993
+          },
+          {
+            "model": "CTW_D4",
+            "n": 1,
+            "sum": 0.9999999999999993
+          },
+          {
+            "model": "KT_O0",
+            "n": 1,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O1",
+            "n": 1,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O2",
+            "n": 1,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D0",
+            "n": 2,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D1",
+            "n": 2,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "CTW_D2",
+            "n": 2,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "CTW_D3",
+            "n": 2,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "CTW_D4",
+            "n": 2,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "KT_O0",
+            "n": 2,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O1",
+            "n": 2,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O2",
+            "n": 2,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D0",
+            "n": 3,
+            "sum": 0.9999999999999988
+          },
+          {
+            "model": "CTW_D1",
+            "n": 3,
+            "sum": 0.9999999999999991
+          },
+          {
+            "model": "CTW_D2",
+            "n": 3,
+            "sum": 0.9999999999999989
+          },
+          {
+            "model": "CTW_D3",
+            "n": 3,
+            "sum": 0.9999999999999989
+          },
+          {
+            "model": "CTW_D4",
+            "n": 3,
+            "sum": 0.9999999999999989
+          },
+          {
+            "model": "KT_O0",
+            "n": 3,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O1",
+            "n": 3,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O2",
+            "n": 3,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D0",
+            "n": 4,
+            "sum": 1.0000000000000002
+          },
+          {
+            "model": "CTW_D1",
+            "n": 4,
+            "sum": 1.0000000000000002
+          },
+          {
+            "model": "CTW_D2",
+            "n": 4,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D3",
+            "n": 4,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D4",
+            "n": 4,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O0",
+            "n": 4,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O1",
+            "n": 4,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O2",
+            "n": 4,
+            "sum": 1.0
+          },
+          {
+            "model": "CTW_D0",
+            "n": 5,
+            "sum": 0.9999999999999987
+          },
+          {
+            "model": "CTW_D1",
+            "n": 5,
+            "sum": 0.9999999999999993
+          },
+          {
+            "model": "CTW_D2",
+            "n": 5,
+            "sum": 0.999999999999999
+          },
+          {
+            "model": "CTW_D3",
+            "n": 5,
+            "sum": 0.999999999999999
+          },
+          {
+            "model": "CTW_D4",
+            "n": 5,
+            "sum": 0.999999999999999
+          },
+          {
+            "model": "KT_O0",
+            "n": 5,
+            "sum": 1.0
+          },
+          {
+            "model": "KT_O1",
+            "n": 5,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O2",
+            "n": 5,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "CTW_D0",
+            "n": 6,
+            "sum": 0.9999999999999971
+          },
+          {
+            "model": "CTW_D1",
+            "n": 6,
+            "sum": 0.9999999999999979
+          },
+          {
+            "model": "CTW_D2",
+            "n": 6,
+            "sum": 0.9999999999999978
+          },
+          {
+            "model": "CTW_D3",
+            "n": 6,
+            "sum": 0.9999999999999977
+          },
+          {
+            "model": "CTW_D4",
+            "n": 6,
+            "sum": 0.9999999999999977
+          },
+          {
+            "model": "KT_O0",
+            "n": 6,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O1",
+            "n": 6,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O2",
+            "n": 6,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "CTW_D0",
+            "n": 7,
+            "sum": 0.9999999999999987
+          },
+          {
+            "model": "CTW_D1",
+            "n": 7,
+            "sum": 0.9999999999999987
+          },
+          {
+            "model": "CTW_D2",
+            "n": 7,
+            "sum": 0.9999999999999988
+          },
+          {
+            "model": "CTW_D3",
+            "n": 7,
+            "sum": 0.9999999999999987
+          },
+          {
+            "model": "CTW_D4",
+            "n": 7,
+            "sum": 0.9999999999999987
+          },
+          {
+            "model": "KT_O0",
+            "n": 7,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "KT_O1",
+            "n": 7,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O2",
+            "n": 7,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "CTW_D0",
+            "n": 8,
+            "sum": 1.0000000000000004
+          },
+          {
+            "model": "CTW_D1",
+            "n": 8,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "CTW_D2",
+            "n": 8,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "CTW_D3",
+            "n": 8,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "CTW_D4",
+            "n": 8,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "KT_O0",
+            "n": 8,
+            "sum": 0.9999999999999998
+          },
+          {
+            "model": "KT_O1",
+            "n": 8,
+            "sum": 0.9999999999999999
+          },
+          {
+            "model": "KT_O2",
+            "n": 8,
+            "sum": 0.9999999999999999
+          }
+        ]
+      },
+      "name": "ctw_kt_probability_normalization",
+      "pass": true
+    },
+    {
+      "detail": {
+        "rows": [
+          {
+            "maximum_log2_count_error": 0.0,
+            "n": 1,
+            "types": 2
+          },
+          {
+            "maximum_log2_count_error": 0.0,
+            "n": 2,
+            "types": 4
+          },
+          {
+            "maximum_log2_count_error": 0.0,
+            "n": 3,
+            "types": 8
+          },
+          {
+            "maximum_log2_count_error": 4.440892098500626e-16,
+            "n": 4,
+            "types": 14
+          },
+          {
+            "maximum_log2_count_error": 1.3322676295501878e-15,
+            "n": 5,
+            "types": 22
+          },
+          {
+            "maximum_log2_count_error": 1.5543122344752192e-15,
+            "n": 6,
+            "types": 32
+          },
+          {
+            "maximum_log2_count_error": 2.220446049250313e-15,
+            "n": 7,
+            "types": 44
+          },
+          {
+            "maximum_log2_count_error": 2.6645352591003757e-15,
+            "n": 8,
+            "types": 58
+          },
+          {
+            "maximum_log2_count_error": 3.9968028886505635e-15,
+            "n": 9,
+            "types": 74
+          },
+          {
+            "maximum_log2_count_error": 3.9968028886505635e-15,
+            "n": 10,
+            "types": 92
+          }
+        ]
+      },
+      "name": "binary_markov_type_counting",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases_checked": 176,
+        "conclusion": "The proposal's displayed equality is ensemble-dependent and is not the exact distinct-codeword law. Its exponent-level reduction remains plausible after the ensemble is specified correctly.",
+        "exact_law": "1 - C(N-rank, M-1)/C(N-1, M-1)",
+        "maximum_absolute_gap_proposal_power_vs_exact_without_replacement": 0.25
+      },
+      "name": "random_coding_hypergeometric_formula",
+      "pass": true
+    },
+    {
+      "detail": {
+        "baseline_errors": [
+          9.5367431640625e-07,
+          0.5
+        ],
+        "baseline_mean_error": 0.2500004768371582,
+        "candidate_errors": [
+          1.0,
+          4.547473508864641e-13
+        ],
+        "candidate_mean_error": 0.5000000000002274,
+        "frame_codelength_differences_bits": [
+          40.0,
+          -40.0
+        ],
+        "positive_part_regret_bits": 40.0,
+        "rank_factors": [
+          1099511627776.0,
+          9.094947017729282e-13
+        ],
+        "required_repair": "Replace signed cumulative regret by one-sided positive-part regret, a uniform pointwise bound, or an exponential-moment control tailored to rank/error transfer.",
+        "signed_total_regret_bits": 0.0,
+        "structural_failure": true
+      },
+      "name": "signed_regret_counterexample_reproduced",
+      "pass": true
+    },
+    {
+      "detail": {
+        "rows": [
+          {
+            "cardinality": 16,
+            "closed_sample": true,
+            "k": 4,
+            "n": 8
+          },
+          {
+            "cardinality": 128,
+            "closed_sample": true,
+            "k": 7,
+            "n": 10
+          },
+          {
+            "cardinality": 64,
+            "closed_sample": true,
+            "k": 6,
+            "n": 12
+          }
+        ]
+      },
+      "name": "random_systematic_linear_code",
+      "pass": true
+    }
+  ],
+  "count": 6,
+  "pass": true
+}

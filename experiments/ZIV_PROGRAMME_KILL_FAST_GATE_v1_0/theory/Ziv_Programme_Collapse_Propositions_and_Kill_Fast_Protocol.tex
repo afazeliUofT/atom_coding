@@ -1,0 +1,469 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable,tabularx,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{float}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.52em}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\lhead{Ziv Programme kill-fast gate}
+\rhead{Draft v1.0 -- August 2026}
+\cfoot{\thepage}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newcommand{\A}{\mathcal A}
+\newcommand{\C}{\mathcal C}
+\newcommand{\FS}{\mathsf{FS}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\bits}{\{0,1\}}
+\newcommand{\STOP}{\texttt{STOP\_FIELD\_DEFINING\_ZIV\_PROGRAMME}}
+\newcommand{\PIVOT}{\texttt{PIVOT\_TO\_REVISED\_ZIV\_TRACK}}
+\newcommand{\CONTINUE}{\texttt{CONTINUE\_FIELD\_DEFINING\_ZIV\_TRACK}}
+
+\title{\textbf{Universal Guessing and Description-Length Coding:}\\
+Collapse Propositions, Corrected Theoretical Foundations, and a Kill-Fast Computational Protocol}
+\author{Scientific de-risking dossier for the Ziv Programme}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This dossier develops the smallest collection of mathematical propositions and computations needed to decide whether the proposed Ziv Programme merits a multi-year investment as a potentially field-defining coding theory.  The programme proposes individual-sequence universal guessing, soft and learned rankers with regret guarantees, a description-length geometry of codes, and a Renyi-guesswork complexity calculus.  We separate these claims into logically independent gates and design each gate to fail early when a load-bearing statement is false.
+
+The resulting audit finds three structural defects in the programme as originally written.  First, deterministic pointwise rank competitiveness against every finite-state probability assignment is false under unrestricted tie breaking: a one-state uniform assignment can place any selected sequence first while a fixed LZ ranking places some sequence last, producing a full one-bit-per-symbol gap.  Second, the displayed exact random-coding error identity is ensemble dependent; the distinct-codeword law is hypergeometric.  Third, signed cumulative prediction regret does not imply average reliability because positive and negative log-loss differences can cancel while error probability saturates.
+
+The computational gate then asks whether a repaired path survives.  Exact and adversarial searches find explicit XOR-triangle violations for practical CTW codelengths, while the frozen LZ78 codelength survives the finite search but produces no viable short-block code-design signal.  Universal order-one KT ranking is close to an oracle Markov ranker, but at $n=256$ its median level-set query counts range from approximately $2.2\times10^9$ to $1.6\times10^{38}$ on the structured test regimes, exceeding the proposal's own $10^6$ kill threshold.  Discounted online adaptation does not beat a fixed fitted model in the regime-switching test, and no real post-front-end trace evidence is available.
+
+The reference execution therefore emits \STOP.  This is a research-investment verdict, not a universal impossibility theorem.  Narrow results on universal finite-state GRAND remain publishable engineering science, but the present evidence does not support the original four-pillar programme as a credible field-defining bet.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Purpose and decision discipline}
+
+The source proposal re-centers decoding on universal compression of an additive impairment sequence $z^n$ in
+\begin{equation}
+  y^n=x^n\oplus z^n,
+\end{equation}
+and proposes four linked pillars:
+\begin{enumerate}
+  \item deterministic individual-sequence rank competitiveness of LZ78 against every finite-state ranking decoder;
+  \item conditional and learned rankers with a regret-to-reliability transfer;
+  \item an effective description-length geometry based on an XOR masking inequality;
+  \item a Renyi-$1/2$ complexity calculus and a measurable de-interleaving dividend.
+\end{enumerate}
+The proposal correctly notes that stochastic universal noise guessing over finite-state additive channels is already established and places its novelty in the individual-sequence, soft/adaptive, and code-design extensions.
+
+The purpose here is not to complete all four pillars.  It is to determine, at minimum cost, whether at least one genuinely new, mathematically correct, and operationally scalable pillar remains.  The gate is conjunctive rather than score based: a false theorem cannot be offset by favorable plots, and a useful finite-block decoder cannot establish field-defining potential if its central principle is already known.
+
+\subsection{Permitted classifications}
+
+\begin{description}[leftmargin=2.4em]
+\item[\CONTINUE.] All early necessary gates survive.  This authorizes only theorem extraction and independent novelty review, not a claim of field-defining status.
+\item[\PIVOT.] The original four-pillar programme stops, but one explicitly named narrow path has both a new claim contract and affirmative evidence.
+\item[\STOP.] No evidence-supported path remains that could reasonably mature into a new coding field.  Only verification and a negative/boundary analysis are authorized.
+\end{description}
+
+The standard profile is frozen before execution.  A deeper run is blocked unless the standard gate first identifies a surviving claim.  This prevents the common failure mode of spending more computation to rescue a falsified hypothesis.
+
+\section{Correct ranking objects and ensemble conventions}
+
+\subsection{Deterministic rank and the tie problem}
+
+Let $q$ be a probability assignment on $\A^n$.  A deterministic total order $G_q$ is compatible with $q$ if
+\[
+ q(u)>q(v)\quad\Longrightarrow\quad G_q(u)<G_q(v).
+\]
+Equal-probability sequences are unrestricted unless a tie rule is part of the definition.  This distinction is not cosmetic: pointwise rank can vary from the first to the last position in a probability level set.
+
+A tie-invariant alternative is the upper-level-set rank
+\begin{equation}
+  R_q(z):=\bigl|\{u\in\A^n:q(u)\ge q(z)\}\bigr|.
+  \label{eq:levelrank}
+\end{equation}
+Another is expected rank under uniform randomized tie breaking.  These are materially different theorems from a statement about every deterministic compatible order.
+
+\subsection{Correct finite-block random-coding law}
+
+Let $N=q^n$ and fix a transmitted codeword $x$ and true impairment $z$.  Suppose $M-1$ competing codewords are selected uniformly \emph{without replacement} from the remaining $N-1$ ambient vectors.  Under a strict total noise order, let $r=G(z)$, so there are $r-1$ noise vectors ahead of $z$.
+
+\begin{proposition}[Exact distinct-codeword law]
+The conditional block-error probability is
+\begin{equation}
+ P_e(z)
+ =1-\frac{\binom{N-r}{M-1}}{\binom{N-1}{M-1}},
+ \label{eq:hypergeom}
+\end{equation}
+with the numerator interpreted as zero when $N-r<M-1$.
+\end{proposition}
+
+\begin{proof}
+The map $x'\mapsto y\ominus x'$ is a bijection from the $N-1$ competing ambient words to the $N-1$ noise vectors other than $z$.  Correct decoding requires all $M-1$ competitors to lie outside the $r-1$ vectors ranked ahead of $z$.  There are $N-r$ acceptable vectors, which gives \eqref{eq:hypergeom}.
+\end{proof}
+
+With independent sampling with replacement from the $N-1$ nontransmitted words, the exact law becomes
+\begin{equation}
+ 1-\left(1-\frac{r-1}{N-1}\right)^{M-1}.
+ \label{eq:replacement}
+\end{equation}
+The proposal's displayed denominator $N$ power law is therefore not an ensemble-independent equality.  Its exponent-level message can survive after the code ensemble, duplicates, and ties are specified.  Exhaustive enumeration in the package verifies \eqref{eq:hypergeom} and finds an absolute difference as large as $0.25$ between the proposal's power expression and the exact without-replacement law in the audited small cases.
+
+\section{Collapse proposition I: the deterministic flagship theorem}
+
+The source programme conjectures, in effect, that for every fixed number of states $s$, every sequence $z^n$, and every finite-state probability assignment $q$,
+\begin{equation}
+ \log G_{\mathrm{LZ}}(z^n)
+ \le \log G_q(z^n)+o(n).
+ \label{eq:original}
+\end{equation}
+The intended lower bound $G_q(z)\ge |T_q(z)|$ silently replaces exact deterministic rank by a type-level-set cardinality.  It is false for an arbitrary tie order.
+
+\begin{proposition}[Uniform-tie counterexample]
+For every fixed deterministic universal ranking $G_U$ on $\A^n$, there exists a one-state finite-state probability assignment $q$ and a compatible deterministic ranking $G_q$ such that, for some $z$, 
+\begin{equation}
+ \log G_U(z)-\log G_q(z)=n\log q.
+\end{equation}
+Consequently, \eqref{eq:original} is false as stated.
+\end{proposition}
+
+\begin{proof}
+Choose $z$ last under $G_U$, so $G_U(z)=q^n$.  Let the one-state model assign $q(u)=q^{-n}$ to every $u\in\A^n$.  Every total order is compatible with this assignment.  Choose its tie order to put $z$ first, so $G_q(z)=1$.
+\end{proof}
+
+The reference run reproduces the full gap at $n=16$: the selected sequence has LZ upper-level-set rank $2^{16}$ while the target-first uniform comparator has rank one.
+
+\subsection{What repair is mathematically legitimate?}
+
+Three repairs are possible:
+\begin{enumerate}
+  \item replace deterministic rank by the level-set rank \eqref{eq:levelrank};
+  \item use worst rank within a tie class;
+  \item use randomized guessing or randomized tie breaking and compare rank moments.
+\end{enumerate}
+These repairs remove the immediate counterexample, but they change the novelty boundary.  Individual-sequence finite-state randomized guessing governed by finite-state compressibility and achieved by a modified LZ78 mechanism has already been developed by Merhav.  Universal stochastic finite-state additive noise guessing with NML/KT ranking has also already been established.  A repaired theorem must therefore identify a genuinely new decoding consequence beyond those results; merely translating a known guessing theorem through a GRAND membership interface is not a new theorem class.
+
+\subsection{Finite repaired-rank atlas}
+
+The package exhaustively ranks every binary sequence for $n\le16$ using a frozen injective fixed-block LZ78 code, KT order zero, KT order one, and target-fitted order-zero/order-one Markov comparators.  The diagnostic is
+\begin{equation}
+ \frac{1}{n}\left[
+ \log R_{\mathrm{LZ}}(z)
+ -\min\{\log R_{\mathrm{fit},0}(z),\log R_{\mathrm{fit},1}(z)\}
+ \right].
+\end{equation}
+At $n=16$, the worst normalized gap is $0.855$ bit/symbol and the median gap is $2.515$ bits.  The result does not disprove a large-$n$ $o(n)$ theorem, but it shows that the canonical LZ78 rank is extremely coarse at the blocklengths where GRAND is meant to be practical.  It supplies no early evidence for the proposal's ``security-grade'' deterministic claim.
+
+\section{Collapse proposition II: signed regret does not imply average reliability}
+
+The source programme argues that if an online ranker has total prediction regret $\mathrm{Reg}_T$, then its average excess error exponent is at most $\mathrm{Reg}_T/(nT)$.  A pointwise codelength dominance can indeed yield a pointwise rank factor when the comparator has a smooth level-set lower bound.  The session-level conclusion, however, does not follow from ordinary signed cumulative regret.
+
+\begin{proposition}[Regret cancellation obstruction]
+Let the per-frame codelength differences between a candidate and comparator be
+\begin{equation}
+ d_1=A,
+ \qquad
+ d_2=-A.
+\end{equation}
+Then total signed regret is zero, but the associated rank factors are $2^A$ and $2^{-A}$.  Because error probabilities are bounded below by zero and above by one, the improvement in the second frame cannot in general compensate the saturated loss in the first.
+\end{proposition}
+
+The package instantiates $A=40$ bits.  A baseline error pair $(2^{-20},1/2)$ can map to approximately $(1,2^{-41})$ while signed regret remains zero; mean error increases from approximately $0.25$ to $0.50$.
+
+A valid theorem needs one of:
+\begin{equation}
+ \sum_{t=1}^{T}[d_t]_+,
+ \qquad
+ \sup_t d_t,
+ \qquad
+ \text{or an exponential-moment bound on }2^{d_t},
+\end{equation}
+not only $\sum_t d_t$.  This repair may still support an online-adaptation result, but it is narrower than the proposal's stated licensing principle for arbitrary learned rankers.
+
+\section{Collapse proposition III: description-length geometry}
+
+\subsection{The correct masking defects}
+
+The desired XOR subadditivity is
+\begin{equation}
+ L(u\oplus v)\le L(u)+L(v)+o(n).
+ \label{eq:mask}
+\end{equation}
+Applying it to $(u\oplus v,v)$ yields an inverse inequality.  The quantities that can falsify the claim are therefore
+\begin{align}
+ D_+(u,v)&=[L(u\oplus v)-L(u)-L(v)]_+,\\
+ D_u(u,v)&=[L(u)-L(v)-L(u\oplus v)]_+,\\
+ D_v(u,v)&=[L(v)-L(u)-L(u\oplus v)]_+.
+ \label{eq:defects}
+\end{align}
+The source proposal instead suggests measuring
+\begin{equation}
+ L(u\oplus v)-|L(u)-L(v)|.
+ \label{eq:wrongdefect}
+\end{equation}
+Expression \eqref{eq:wrongdefect} is not a defect of \eqref{eq:mask}.  It is typically linear for two incompressible sequences even when neither inequality in \eqref{eq:defects} is violated.  In the reference run its normalized value remains above $1.4$ bits/symbol for the LZ test at $n=1024$, while every correct positive defect remains zero.  The original P3 decision statistic can therefore issue a false kill.
+
+\subsection{Frozen practical codelengths}
+
+The package uses two explicit objects:
+\begin{description}
+\item[Fixed-block LZ78.] Each phrase record contains a parent index and one of the tags $0,1,\mathrm{EOF}$.  At record $r$, the parent index uses $\lceil\log_2 r\rceil$ bits and the tag uses two bits.  The blocklength is known.  Exhaustive round-trip testing establishes injectivity through $n=10$.
+\item[Binary CTW.] A full context tree of fixed depth uses KT estimators at nodes and the standard half-and-half weighted recursion.  Exhaustive summation verifies that its block probabilities normalize to one for depths zero through four and $n\le8$.
+\end{description}
+This freezing is essential: ``some repaired universal codelength'' is not a falsifiable object.
+
+\begin{proposition}[Explicit CTW masking failure]
+For depth-one CTW and the length-eight sequences
+\[
+ u=10101010,
+ \qquad
+ v=11111111,
+ \qquad
+ u\oplus v=01010101,
+\]
+the audited codelengths are
+\[
+ L(u)=4.72097,
+ \quad
+ L(v)=2.73160,
+ \quad
+ L(u\oplus v)=7.70079,
+\]
+so
+\begin{equation}
+ L(u\oplus v)-L(u)-L(v)=0.24822>0.
+\end{equation}
+\end{proposition}
+
+Heuristic structured and adversarial searches produce normalized positive CTW defects of $0.207$ (depth one) and $0.133$ (depth two) at $n=128$.  Thus the proposed uniform CTW masking lemma is not merely unproved; it is false for the frozen standard implementation.
+
+No positive defect was found for the frozen LZ78 code in exact all-pairs searches through $n=10$ or structured, random, and hill-climbing searches through $n=1024$.  This is only survival of falsification.  It is not evidence that the defect is $o(n)$ uniformly over all pairs, and it cannot justify the conditional coding theorems without proof.
+
+\section{Collapse proposition IV: practical universal guessing}
+
+A universal ranker can be close to the oracle in exponent and still be unusable at the proposed blocklength.  The gate therefore separates:
+\begin{enumerate}
+  \item normalized rank overhead relative to the oracle;
+  \item gain over a memoryless ranker;
+  \item gain over short and long fitted Markov models;
+  \item absolute level-set query count.
+\end{enumerate}
+
+For each $n\in\{32,64,128,256\}$, the package enumerates all binary first-order Markov types exactly.  The type cardinality is computed from run compositions, and all type counts sum to $2^n$.  This permits exact level-set ranks for an oracle Markov law, KT order one, empirical-ML order one, KT order zero, and fitted models without enumerating $2^n$ sequences.
+
+At $n=256$ and rate $R=0.875$, KT order one is statistically close to the oracle and much better than the memoryless ranker on structured sources.  Table~\ref{tab:rank} shows why this is insufficient.
+
+\begin{table}[H]
+\centering
+\caption{Reference standard-run level-set rank diagnostics at $n=256$.}
+\label{tab:rank}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Regime & KT-oracle/sym. & memory gain/sym. & median $\log_2$ rank & median rank \\
+\midrule
+Bursty rare & 0.0125 & 0.1605 & 31.02 & $2.17\times10^9$ \\
+Sticky balanced & 0.0091 & 0.7540 & 48.11 & $3.04\times10^{14}$ \\
+Moderate memory & 0.0170 & 0.1290 & 126.87 & $1.56\times10^{38}$ \\
+Near-i.i.d. control & 0.0093 & -0.0047 & 100.15 & $1.40\times10^{30}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The source proposal requires median query count at most $10^4$ and specifies $10^6$ as a kill threshold.  Every tested regime triggers the kill threshold at the largest blocklength.  Thus the test validates a known universality phenomenon but rejects the claimed practical regime.
+
+The synthetic Renyi audit reinforces the conclusion.  For the four source models, the Markov Renyi-$1/2$ rates lie between $0.423$ and $0.757$ bit/symbol.  None satisfies $H_{1/2}\le 1-R$ at $R=0.75$ or $0.875$.  The Shannon entropy rate can still satisfy capacity, but the guessing work remains exponentially large.  This distinction between reliability and decoding work is central.
+
+\section{Collapse proposition V: online adaptation and real impairments}
+
+The nonstationary benchmark alternates between two Markov regimes every eight frames at $n=128$.  It compares an oracle, a fixed initial fit, cumulative KT, and discounted KT.  Discounted KT has an oracle gap of only $0.0059$ bit/symbol but does not improve on the fixed fit: its mean rank advantage is $-0.00262$ bit/symbol.  The empirical adaptive pivot therefore fails under the frozen test.
+
+The source programme's strongest systems premise concerns real post-front-end traces.  The package includes a trace interface for binary text or NumPy arrays and reports marginal entropy, fitted Markov Shannon and Renyi rates, LZ78 rate, and CTW rate.  No real traces are bundled; the real-world gate remains pending.  This is not treated as a computational failure, but it prevents any positive systems verdict.
+
+A methodological warning is built into the package: ordinary LZ/CTW compression rates estimate Shannon-type log loss, not the Renyi-$1/2$ rate controlling mean guesswork.  The trace audit computes the latter only through an explicitly labeled fitted Markov model.
+
+\section{Collapse proposition VI: finite-block code geometry}
+
+For a binary linear code and transmitted zero codeword, an MDL decoder uniquely corrects $z$ when
+\begin{equation}
+ L(z)<L(z\oplus c)
+ \quad\text{for every nonzero }c\in\C.
+ \label{eq:mdlcondition}
+\end{equation}
+The gate generates random systematic codes, selects among a frozen candidate pool using the minimum LZ rank-codelength of nonzero codewords, and tests structured errors against matched-weight random controls.  Hamming unique correction is recorded separately.
+
+At the largest standard setting, $n=16$, $R=0.75$:
+\begin{itemize}
+  \item the LZ78 decoder uniquely corrects none of the structured patterns and none of the matched random controls;
+  \item depth-two CTW corrects $22.2\%$ of each group, so there is no structure-specific gain;
+  \item selecting among eight random linear codes increases the mean minimum LZ rank-distance by only $1.07$ bits and does not alter the largest-setting result.
+\end{itemize}
+This does not refute an asymptotic theorem, but it directly conflicts with the stated short-block use case.
+
+The asymptotic half-redundancy condition is also numerically remote for the frozen LZ78 code.  At rate $R=0.75$, the first tested blocklengths where $L(z)<n(1-R)/2$ are approximately
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Pattern & first tested crossover \\
+\midrule
+constant zero & $16{,}384$ \\
+alternating & $32{,}768$ \\
+period $001$ & $65{,}536$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+At rate $R=0.5$, the corresponding values are $2{,}048$, $4{,}096$, and $8{,}192$.  These are orders of magnitude beyond the $n\le512$ regime where the proposal expects guessing decoders to be strongest.
+
+\section{Primary-source novelty boundary}
+
+The following results are not available novelty claims for the programme:
+\begin{enumerate}
+  \item universal LZ/type decoding for finite-state channels;
+  \item individual-sequence finite-state randomized guessing characterized by finite-state compressibility and achieved by a modified LZ78 mechanism;
+  \item stochastic finite-state additive universal noise guessing using NML/KT with random-coding exponent and complexity guarantees;
+  \item individual additive-noise communication limits based on finite-state compressibility in feedback/universal communication formulations;
+  \item matched and mismatched deterministic/randomized noise-guessing exponents, including universal empirical-entropy metrics.
+\end{enumerate}
+
+A potentially new residue would need all of the following:
+\begin{enumerate}
+  \item one explicit efficiently computable codelength with a proved uniform XOR masking law;
+  \item a positive-rate explicit code family with a nontrivial description-length spectrum;
+  \item a decoder whose total generation and membership work is competitive at useful blocklengths;
+  \item a theorem not reducible to known randomized individual-sequence guessing or stochastic universal GRAND;
+  \item real post-front-end evidence that the relevant Renyi rate is inside the query-feasible region.
+\end{enumerate}
+The standard run supplies none of these jointly.
+
+\section{Computational stages and reproducibility contract}
+
+\begin{longtable}{@{}p{0.09\textwidth}p{0.27\textwidth}p{0.56\textwidth}@{}}
+\toprule
+Stage & Object & Decisive output \\
+\midrule
+\endhead
+E0 & exactness & LZ injectivity, CTW/KT normalization, Markov-type counts, ensemble law, code closure \\
+E1 & individual sequence & exact tie counterexample, corrected random-coding law, signed-regret counterexample, repaired-rank atlas \\
+E2 & masking & exhaustive all-pairs defects and structured/random/adversarial witnesses \\
+E3 & stationary ranking & exact type-level ranks for oracle, KT, empirical ML, memoryless, and fitted models \\
+E4 & nonstationarity & oracle, fixed-fit, cumulative-KT, and discounted-KT rank comparison under abrupt switching \\
+E5 & code geometry & random and LZ-selected linear codes, structured errors, matched-weight controls, crossover analysis \\
+E6 & entropy/traces & synthetic Shannon/Renyi audit and optional real post-front-end trace ingestion \\
+\bottomrule
+\end{longtable}
+
+All detailed trial tables, witnesses, configurations, figures, and SHA-256 manifests are retained.  Installation or authentication failures are labeled \texttt{EXECUTION\_BLOCKED\_NOT\_A\_SCIENTIFIC\_VERDICT}; they never become a false scientific stop.
+
+\section{Reference standard-run verdict}
+
+The release-validation run completed all stages and thirteen unit tests.  Its compact outcome is:
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Gate & Result \\
+\midrule
+implementation exactness & pass \\
+original deterministic theorem & fail \\
+corrected ensemble equality & original display not exact \\
+signed-regret transfer & fail \\
+LZ masking search & survives falsification only \\
+CTW masking & fail with explicit witnesses \\
+stationary relative universality & pass in rank quality, fail absolute query budget \\
+nonstationary adaptation & fail \\
+finite-block code geometry & fail \\
+real trace premise & pending \\
+field-defining novelty & not established \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Therefore the authoritative command is
+\begin{center}
+\fbox{\parbox{0.85\textwidth}{\centering
+\texttt{STOP\_FIELD\_DEFINING\_ZIV\_PROGRAMME}\\
+Do not run the deep profile.  Do not begin the soft-decoder, hardware, real-world trial, or code-family programme.}}
+\end{center}
+
+\section{What remains scientifically worthwhile}
+
+The stop applies to the \emph{field-defining investment claim}, not to every component result.  Three narrower outputs can be scientifically useful:
+\begin{enumerate}
+  \item a short note correcting the deterministic-rank, random-coding-ensemble, and regret statements;
+  \item an explicit CTW XOR-masking counterexample study and a precise distinction between codelength geometry and algorithmic Kolmogorov geometry;
+  \item an engineering benchmark showing that universal KT ranking can approximate an oracle while still violating absolute GRAND query budgets.
+\end{enumerate}
+None of these requires a multi-year programme, and none currently justifies a new coding field.
+
+\appendix
+\section{Exact Markov-type counting}
+
+A binary sequence is determined by its start and end symbols, the number of zero and one runs, and the positive run lengths.  If the sequence contains $N_0$ zeros in $r_0$ zero runs and $N_1$ ones in $r_1$ one runs, then its Markov type class has size
+\begin{equation}
+ |T|=\binom{N_0-1}{r_0-1}\binom{N_1-1}{r_1-1},
+\end{equation}
+with the natural all-zero/all-one boundary conventions.  The cross-transition counts determine $(r_0,r_1)$ from the start/end pair.  The package exhaustively verifies these counts through $n=10$ and verifies that the log-sum of all type cardinalities equals $n$ bits through every simulated blocklength.
+
+This type atlas makes the finite-block rank benchmark exact at the level-set level: for any score that depends only on Markov counts, the upper rank is the sum of complete type-class cardinalities whose score is no smaller than that of the target.
+
+\section{Why absence of an LZ witness is not a pass}
+
+The masking claim is uniform over $4^n$ ordered binary pairs.  Exact enumeration through $n=10$ checks only a finite prefix, while heuristic search through $n=1024$ covers a vanishing fraction of pairs.  Moreover, different LZ78 encoders have different headers, final-phrase conventions, index codes, and block normalization.  A theorem must freeze one encoder and control its defect for every pair.  The computational result only says that the chosen LZ78 candidate has not yet been falsified; it cannot carry the conditional coding theorems.
+
+\section{Files required for independent adjudication}
+
+The minimal evidence set produced by the package is:
+\begin{verbatim}
+results/GATE_VERDICT.json
+results/GATE_REPORT.md
+results/01_exactness_audit.json
+results/02_individual_sequence_gate.json
+results/02_repaired_rank_atlas.csv
+results/03_masking_gate.json
+results/03_masking_exact.csv
+results/03_masking_heuristic.csv
+results/03_masking_witnesses.csv
+results/04_stationary_rank_gate.json
+results/05_nonstationary_gate.json
+results/06_code_geometry_gate.json
+results/07_trace_gate.json
+results/RESULTS_SHA256.txt
+\end{verbatim}
+Exactly one of \texttt{STOP\_COMMAND.txt}, \texttt{PIVOT\_COMMAND.txt}, or \texttt{CONTINUE\_COMMAND.txt} is emitted.
+
+\begin{thebibliography}{99}
+\bibitem{ziv1978} J. Ziv and A. Lempel, ``Compression of individual sequences via variable-rate coding,'' \emph{IEEE Trans. Inf. Theory}, vol. 24, no. 5, pp. 530--536, 1978.
+\bibitem{ziv1985} J. Ziv, ``Universal decoding for finite-state channels,'' \emph{IEEE Trans. Inf. Theory}, vol. 31, no. 4, pp. 453--460, 1985.
+\bibitem{feder1992} M. Feder, N. Merhav, and M. Gutman, ``Universal prediction of individual sequences,'' \emph{IEEE Trans. Inf. Theory}, vol. 38, no. 4, pp. 1258--1270, 1992.
+\bibitem{lapidoth1998} A. Lapidoth and J. Ziv, ``On the universality of the LZ-based decoding algorithm,'' \emph{IEEE Trans. Inf. Theory}, vol. 44, no. 5, pp. 1746--1755, 1998.
+\bibitem{federlapidoth1998} M. Feder and A. Lapidoth, ``Universal decoding for channels with memory,'' \emph{IEEE Trans. Inf. Theory}, vol. 44, no. 5, pp. 1726--1745, 1998.
+\bibitem{merhav2013} N. Merhav, ``Universal decoding for arbitrary channels relative to a given class of decoding metrics,'' \emph{IEEE Trans. Inf. Theory}, vol. 59, no. 9, pp. 5566--5576, 2013.
+\bibitem{arikan1996} E. Arikan, ``An inequality on guessing and its application to sequential decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 42, no. 1, pp. 99--105, 1996.
+\bibitem{sundaresan2007} R. Sundaresan, ``Guessing under source uncertainty,'' \emph{IEEE Trans. Inf. Theory}, vol. 53, no. 1, pp. 269--287, 2007.
+\bibitem{merhav2019} N. Merhav, ``Guessing individual sequences: Generating randomized guesses using finite-state machines,'' arXiv:1906.10857, 2019.
+\bibitem{ctw1995} F. M. J. Willems, Y. M. Shtarkov, and T. J. Tjalkens, ``The context-tree weighting method: Basic properties,'' \emph{IEEE Trans. Inf. Theory}, vol. 41, no. 3, pp. 653--664, 1995.
+\bibitem{grand2019} K. R. Duffy, J. Li, and M. Medard, ``Capacity-achieving guessing random additive noise decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 65, no. 7, pp. 4023--4040, 2019.
+\bibitem{bursts2022} W. An, M. Medard, and K. R. Duffy, ``Keep the bursts and ditch the interleavers,'' \emph{IEEE Trans. Commun.}, vol. 70, no. 6, pp. 3655--3667, 2022.
+\bibitem{miyamoto2025} H. K. Miyamoto and S. Yang, ``Universal decoding over finite-state additive channels via noise guessing,'' arXiv:2501.12971, 2025.
+\bibitem{miyamoto2026} H. K. Miyamoto, R. Combes, and S. Yang, ``Mismatched exponents for deterministic and randomised noise-guessing decoding,'' arXiv:2606.26954, 2026.
+\bibitem{porosity2012} V. Misra and T. Weissman, ``The porosity of additive noise sequences,'' arXiv:1205.6974, 2012.
+\bibitem{merhavchain2025} N. Merhav, ``Lempel-Ziv complexity, empirical entropies, and chain rules,'' arXiv:2506.12772, 2025.
+\bibitem{guruswami2016} V. Guruswami and A. Smith, ``Optimal rate code constructions for computationally simple channels,'' \emph{J. ACM}, vol. 63, no. 4, Art. 35, 2016.
+\end{thebibliography}
+
+\end{document}

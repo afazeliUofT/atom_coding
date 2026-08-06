@@ -1,0 +1,4 @@
+STOP_FIELD_DEFINING_ZIV_PROGRAMME
+STAGE=FLAGSHIP_AND_GEOMETRY_COLLAPSE
+REASON=The original deterministic individual-sequence theorem is structurally false, the session regret implication is false as stated, and the frozen practical description-length geometry did not produce a viable finite-block code-design signal. Any stochastic universal-ranking gains are within an already established research line.
+DO_NOT_START=deep_profile,full_theory,soft_decoder,hardware,real_world_trials,code_family_programme

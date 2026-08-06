@@ -1,0 +1,8 @@
+{
+  "code_geometry": "FIG_05_code_geometry.png",
+  "entropy_audit": "FIG_06_entropy_audit.png",
+  "masking_defects": "FIG_02_masking_defects.png",
+  "nonstationary_adaptation": "FIG_04_nonstationary_adaptation.png",
+  "repaired_rank_regret": "FIG_01_repaired_rank_regret.png",
+  "stationary_rank": "FIG_03_stationary_rank.png"
+}

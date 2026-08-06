@@ -1,0 +1,8 @@
+{
+  "branch": "main",
+  "classification": "STOP_FIELD_DEFINING_ZIV_PROGRAMME",
+  "origin": "git@github.com:afazeliUofT/atom_coding.git",
+  "profile": "standard",
+  "target_relative_path": "experiments/ZIV_PROGRAMME_KILL_FAST_GATE_v1_0",
+  "utc_precommit": "2026-08-06T01:51:08+00:00"
+}

@@ -1,0 +1,6 @@
+PDF: /mnt/data/_ziv_build/ZIV_PROGRAMME_KILL_FAST_GATE_v1_0/theory/Ziv_Programme_Collapse_Propositions_and_Kill_Fast_Protocol.pdf
+Pages: 12
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

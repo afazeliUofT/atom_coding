@@ -1,0 +1,14 @@
+{
+  "package_name": "ZIV_PROGRAMME_KILL_FAST_GATE_v1_0",
+  "release_version": "1.0",
+  "release_date": "2026-08-05",
+  "default_profile": "standard",
+  "scientific_scope": "pre-registered early research-investment gate; not a universal impossibility theorem",
+  "reference_validation_classification": "STOP_FIELD_DEFINING_ZIV_PROGRAMME",
+  "reference_validation_command": "STOP_FIELD_DEFINING_ZIV_PROGRAMME",
+  "required_manual_gates": [
+    "independent primary-source novelty adjudication",
+    "real post-front-end trace audit for any future systems-only claim"
+  ],
+  "target_repo_relative_path": "experiments/ZIV_PROGRAMME_KILL_FAST_GATE_v1_0"
+}

@@ -1,0 +1,156 @@
+{
+  "original_deterministic_conjecture": {
+    "counterexample": {
+      "gap_bits": 16.0,
+      "gap_per_symbol": 1.0,
+      "interpretation": "The probability assignment is a valid one-state finite-state model. Because all sequences tie, an unrestricted deterministic tie order can place this target first.",
+      "log2_lz_upper_level_rank": 16.0,
+      "log2_uniform_comparator_rank_under_target_first_tie": 0.0,
+      "lz_codelength": 33,
+      "n": 16,
+      "structural_failure": true,
+      "target_bits_lsb_first": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "target_integer": 15
+    },
+    "pass": false,
+    "reason": "An unrestricted deterministic tie order for a one-state uniform finite-state assignment can rank a target first, whereas its LZ upper-level rank can be the full ambient size."
+  },
+  "per_sequence_random_coding_reduction": {
+    "cases_checked": 176,
+    "conclusion": "The proposal's displayed equality is ensemble-dependent and is not the exact distinct-codeword law. Its exponent-level reduction remains plausible after the ensemble is specified correctly.",
+    "exact_law": "1 - C(N-rank, M-1)/C(N-1, M-1)",
+    "maximum_absolute_gap_proposal_power_vs_exact_without_replacement": 0.25
+  },
+  "repaired_level_set_atlas": {
+    "blocklengths": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "interpretation": "Tie-invariant upper-level ranks remove the immediate deterministic tie pathology. This atlas is a finite counterexample search, not a proof of an individual-sequence theorem.",
+    "largest_n_median_regret_bits": 2.5145731728297562,
+    "largest_n_worst_normalized_regret": 0.8548794940695399,
+    "rows": [
+      {
+        "ambient": 64,
+        "fraction_sequences_lz_rank_worse": 0.96875,
+        "lz_distinct_lengths": 2,
+        "mean_log2_kt1_rank": 4.797588981692135,
+        "mean_log2_lz_rank": 5.625,
+        "mean_log2_target_fitted_rank": 3.0841511480407213,
+        "median_log2_rank_regret": 3.0963225389711977,
+        "n": 6,
+        "worst_log2_rank_regret_vs_target_fitted_order01": 5.0,
+        "worst_normalized_rank_regret": 0.8333333333333334
+      },
+      {
+        "ambient": 256,
+        "fraction_sequences_lz_rank_worse": 0.921875,
+        "lz_distinct_lengths": 2,
+        "mean_log2_kt1_rank": 6.752890225356849,
+        "mean_log2_lz_rank": 7.625,
+        "mean_log2_target_fitted_rank": 4.8824512138928835,
+        "median_log2_rank_regret": 2.79054663437105,
+        "n": 8,
+        "worst_log2_rank_regret_vs_target_fitted_order01": 7.0,
+        "worst_normalized_rank_regret": 0.875
+      },
+      {
+        "ambient": 1024,
+        "fraction_sequences_lz_rank_worse": 0.955078125,
+        "lz_distinct_lengths": 3,
+        "mean_log2_kt1_rank": 8.681738891408209,
+        "mean_log2_lz_rank": 9.55249062518029,
+        "mean_log2_target_fitted_rank": 6.814190113745543,
+        "median_log2_rank_regret": 2.5001541129167943,
+        "n": 10,
+        "worst_log2_rank_regret_vs_target_fitted_order01": 9.0,
+        "worst_normalized_rank_regret": 0.9
+      },
+      {
+        "ambient": 4096,
+        "fraction_sequences_lz_rank_worse": 0.9755859375,
+        "lz_distinct_lengths": 3,
+        "mean_log2_kt1_rank": 10.664807443746664,
+        "mean_log2_lz_rank": 11.376178986174402,
+        "mean_log2_target_fitted_rank": 8.70150541218618,
+        "median_log2_rank_regret": 2.503918780365092,
+        "n": 12,
+        "worst_log2_rank_regret_vs_target_fitted_order01": 9.727920454563199,
+        "worst_normalized_rank_regret": 0.8106600378802665
+      },
+      {
+        "ambient": 16384,
+        "fraction_sequences_lz_rank_worse": 0.971435546875,
+        "lz_distinct_lengths": 4,
+        "mean_log2_kt1_rank": 12.63916633155559,
+        "mean_log2_lz_rank": 13.51622264049309,
+        "mean_log2_target_fitted_rank": 10.66563482467641,
+        "median_log2_rank_regret": 2.5860706465939742,
+        "n": 14,
+        "worst_log2_rank_regret_vs_target_fitted_order01": 12.668884984266247,
+        "worst_normalized_rank_regret": 0.9049203560190177
+      },
+      {
+        "ambient": 65536,
+        "fraction_sequences_lz_rank_worse": 0.956878662109375,
+        "lz_distinct_lengths": 3,
+        "mean_log2_kt1_rank": 14.62939472109536,
+        "mean_log2_lz_rank": 15.53694111971625,
+        "mean_log2_target_fitted_rank": 12.660840414811094,
+        "median_log2_rank_regret": 2.5145731728297562,
+        "n": 16,
+        "worst_log2_rank_regret_vs_target_fitted_order01": 13.678071905112638,
+        "worst_normalized_rank_regret": 0.8548794940695399
+      }
+    ]
+  },
+  "session_regret_transfer": {
+    "counterexample": {
+      "baseline_errors": [
+        9.5367431640625e-07,
+        0.5
+      ],
+      "baseline_mean_error": 0.2500004768371582,
+      "candidate_errors": [
+        1.0,
+        4.547473508864641e-13
+      ],
+      "candidate_mean_error": 0.5000000000002274,
+      "frame_codelength_differences_bits": [
+        40.0,
+        -40.0
+      ],
+      "positive_part_regret_bits": 40.0,
+      "rank_factors": [
+        1099511627776.0,
+        9.094947017729282e-13
+      ],
+      "required_repair": "Replace signed cumulative regret by one-sided positive-part regret, a uniform pointwise bound, or an exponential-moment control tailored to rank/error transfer.",
+      "signed_total_regret_bits": 0.0,
+      "structural_failure": true
+    },
+    "pass_as_stated": false
+  },
+  "surviving_theory_candidate": "A tie-invariant or randomized guessing theorem may survive, but its novelty must be audited against existing finite-state individual-sequence randomized guessing results."
+}

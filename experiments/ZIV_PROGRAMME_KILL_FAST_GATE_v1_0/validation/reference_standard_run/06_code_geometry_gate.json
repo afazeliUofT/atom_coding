@@ -1,0 +1,583 @@
+{
+  "candidate_pool": 8,
+  "details": {
+    "CTW_D2": {
+      "LZ_SELECTED": {
+        "mean_structured_codelength_margin": -4.165738153827734,
+        "random_control_mdl_correction_fraction": 0.2222222222222222,
+        "structured_mdl_correction_fraction": 0.2222222222222222,
+        "structured_mdl_only_fraction": 0.1111111111111111
+      },
+      "RANDOM_BASELINE": {
+        "mean_structured_codelength_margin": -4.165738153827734,
+        "random_control_mdl_correction_fraction": 0.2222222222222222,
+        "structured_mdl_correction_fraction": 0.2222222222222222,
+        "structured_mdl_only_fraction": 0.1111111111111111
+      },
+      "n": 16,
+      "rate": 0.75
+    },
+    "LZ78_FIXED_BLOCK": {
+      "LZ_SELECTED": {
+        "mean_structured_codelength_margin": -6.666666666666667,
+        "random_control_mdl_correction_fraction": 0.0,
+        "structured_mdl_correction_fraction": 0.0,
+        "structured_mdl_only_fraction": 0.0
+      },
+      "RANDOM_BASELINE": {
+        "mean_structured_codelength_margin": -6.666666666666667,
+        "random_control_mdl_correction_fraction": 0.0,
+        "structured_mdl_correction_fraction": 0.0,
+        "structured_mdl_only_fraction": 0.0
+      },
+      "n": 16,
+      "rate": 0.75
+    }
+  },
+  "interpretation": "A pass is only evidence that the frozen practical codelength induces a useful finite-block ordering. It does not prove the masking theorem, capacity, or novelty of description-length code design.",
+  "largest_n": 16,
+  "largest_rate_requested": 0.75,
+  "lz_half_redundancy_crossover": {
+    "R=0.5": {
+      "alternating": {
+        "first_tested_crossover_n": 4096,
+        "rows": [
+          {
+            "half_redundancy_bits": 8.0,
+            "lz_bits": 51,
+            "n": 32,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 16.0,
+            "lz_bits": 75,
+            "n": 64,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 32.0,
+            "lz_bits": 123,
+            "n": 128,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 64.0,
+            "lz_bits": 186,
+            "n": 256,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 128.0,
+            "lz_bits": 297,
+            "n": 512,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 256.0,
+            "lz_bits": 441,
+            "n": 1024,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 512.0,
+            "lz_bits": 683,
+            "n": 2048,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 1024.0,
+            "lz_bits": 1016,
+            "n": 4096,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 2048.0,
+            "lz_bits": 1555,
+            "n": 8192,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 4096.0,
+            "lz_bits": 2295,
+            "n": 16384,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 8192.0,
+            "lz_bits": 3471,
+            "n": 32768,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 16384.0,
+            "lz_bits": 5110,
+            "n": 65536,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 32768.0,
+            "lz_bits": 7665,
+            "n": 131072,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 65536.0,
+            "lz_bits": 11253,
+            "n": 262144,
+            "passes": true
+          }
+        ]
+      },
+      "constant_zero": {
+        "first_tested_crossover_n": 2048,
+        "rows": [
+          {
+            "half_redundancy_bits": 8.0,
+            "lz_bits": 33,
+            "n": 32,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 16.0,
+            "lz_bits": 51,
+            "n": 64,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 32.0,
+            "lz_bits": 81,
+            "n": 128,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 64.0,
+            "lz_bits": 130,
+            "n": 256,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 128.0,
+            "lz_bits": 193,
+            "n": 512,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 256.0,
+            "lz_bits": 297,
+            "n": 1024,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 512.0,
+            "lz_bits": 449,
+            "n": 2048,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 1024.0,
+            "lz_bits": 692,
+            "n": 4096,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 2048.0,
+            "lz_bits": 1025,
+            "n": 8192,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 4096.0,
+            "lz_bits": 1555,
+            "n": 16384,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 8192.0,
+            "lz_bits": 2305,
+            "n": 32768,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 16384.0,
+            "lz_bits": 3471,
+            "n": 65536,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 32768.0,
+            "lz_bits": 5121,
+            "n": 131072,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 65536.0,
+            "lz_bits": 7665,
+            "n": 262144,
+            "passes": true
+          }
+        ]
+      },
+      "period_001": {
+        "first_tested_crossover_n": 8192,
+        "rows": [
+          {
+            "half_redundancy_bits": 8.0,
+            "lz_bits": 51,
+            "n": 32,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 16.0,
+            "lz_bits": 88,
+            "n": 64,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 32.0,
+            "lz_bits": 151,
+            "n": 128,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 64.0,
+            "lz_bits": 233,
+            "n": 256,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 128.0,
+            "lz_bits": 361,
+            "n": 512,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 256.0,
+            "lz_bits": 557,
+            "n": 1024,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 512.0,
+            "lz_bits": 854,
+            "n": 2048,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 1024.0,
+            "lz_bits": 1295,
+            "n": 4096,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 2048.0,
+            "lz_bits": 1945,
+            "n": 8192,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 4096.0,
+            "lz_bits": 2921,
+            "n": 16384,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 8192.0,
+            "lz_bits": 4340,
+            "n": 32768,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 16384.0,
+            "lz_bits": 6477,
+            "n": 65536,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 32768.0,
+            "lz_bits": 9597,
+            "n": 131072,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 65536.0,
+            "lz_bits": 14229,
+            "n": 262144,
+            "passes": true
+          }
+        ]
+      }
+    },
+    "R=0.75": {
+      "alternating": {
+        "first_tested_crossover_n": 32768,
+        "rows": [
+          {
+            "half_redundancy_bits": 4.0,
+            "lz_bits": 51,
+            "n": 32,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 8.0,
+            "lz_bits": 75,
+            "n": 64,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 16.0,
+            "lz_bits": 123,
+            "n": 128,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 32.0,
+            "lz_bits": 186,
+            "n": 256,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 64.0,
+            "lz_bits": 297,
+            "n": 512,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 128.0,
+            "lz_bits": 441,
+            "n": 1024,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 256.0,
+            "lz_bits": 683,
+            "n": 2048,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 512.0,
+            "lz_bits": 1016,
+            "n": 4096,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 1024.0,
+            "lz_bits": 1555,
+            "n": 8192,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 2048.0,
+            "lz_bits": 2295,
+            "n": 16384,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 4096.0,
+            "lz_bits": 3471,
+            "n": 32768,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 8192.0,
+            "lz_bits": 5110,
+            "n": 65536,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 16384.0,
+            "lz_bits": 7665,
+            "n": 131072,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 32768.0,
+            "lz_bits": 11253,
+            "n": 262144,
+            "passes": true
+          }
+        ]
+      },
+      "constant_zero": {
+        "first_tested_crossover_n": 16384,
+        "rows": [
+          {
+            "half_redundancy_bits": 4.0,
+            "lz_bits": 33,
+            "n": 32,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 8.0,
+            "lz_bits": 51,
+            "n": 64,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 16.0,
+            "lz_bits": 81,
+            "n": 128,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 32.0,
+            "lz_bits": 130,
+            "n": 256,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 64.0,
+            "lz_bits": 193,
+            "n": 512,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 128.0,
+            "lz_bits": 297,
+            "n": 1024,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 256.0,
+            "lz_bits": 449,
+            "n": 2048,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 512.0,
+            "lz_bits": 692,
+            "n": 4096,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 1024.0,
+            "lz_bits": 1025,
+            "n": 8192,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 2048.0,
+            "lz_bits": 1555,
+            "n": 16384,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 4096.0,
+            "lz_bits": 2305,
+            "n": 32768,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 8192.0,
+            "lz_bits": 3471,
+            "n": 65536,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 16384.0,
+            "lz_bits": 5121,
+            "n": 131072,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 32768.0,
+            "lz_bits": 7665,
+            "n": 262144,
+            "passes": true
+          }
+        ]
+      },
+      "period_001": {
+        "first_tested_crossover_n": 65536,
+        "rows": [
+          {
+            "half_redundancy_bits": 4.0,
+            "lz_bits": 51,
+            "n": 32,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 8.0,
+            "lz_bits": 88,
+            "n": 64,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 16.0,
+            "lz_bits": 151,
+            "n": 128,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 32.0,
+            "lz_bits": 233,
+            "n": 256,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 64.0,
+            "lz_bits": 361,
+            "n": 512,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 128.0,
+            "lz_bits": 557,
+            "n": 1024,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 256.0,
+            "lz_bits": 854,
+            "n": 2048,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 512.0,
+            "lz_bits": 1295,
+            "n": 4096,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 1024.0,
+            "lz_bits": 1945,
+            "n": 8192,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 2048.0,
+            "lz_bits": 2921,
+            "n": 16384,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 4096.0,
+            "lz_bits": 4340,
+            "n": 32768,
+            "passes": false
+          },
+          {
+            "half_redundancy_bits": 8192.0,
+            "lz_bits": 6477,
+            "n": 65536,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 16384.0,
+            "lz_bits": 9597,
+            "n": 131072,
+            "passes": true
+          },
+          {
+            "half_redundancy_bits": 32768.0,
+            "lz_bits": 14229,
+            "n": 262144,
+            "passes": true
+          }
+        ]
+      }
+    }
+  },
+  "pass": false,
+  "positive_structured_code_geometry_signal": false,
+  "selection_mean_gain_bits": 1.0657013540177724
+}

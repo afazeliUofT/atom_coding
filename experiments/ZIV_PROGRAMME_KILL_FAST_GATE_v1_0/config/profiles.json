@@ -1,0 +1,194 @@
+{
+  "deep": {
+    "adaptation_discount": 0.9,
+    "adaptation_frames": 200,
+    "adaptation_n": 256,
+    "adaptation_rate": 0.875,
+    "adaptation_sessions": 20,
+    "adaptation_switch_every": 20,
+    "blocked_by_default": true,
+    "ctw_depths": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "geometry_blocklengths": [
+      16,
+      18,
+      20
+    ],
+    "geometry_candidate_pool": 100,
+    "geometry_ctw_depth": 4,
+    "geometry_ctw_max_n": 18,
+    "geometry_rates": [
+      0.5,
+      0.75,
+      0.875
+    ],
+    "geometry_replicates": 20,
+    "individual_blocklengths": [
+      18,
+      20
+    ],
+    "masking_exact_blocklengths": [
+      10,
+      12,
+      13
+    ],
+    "masking_heuristic_blocklengths": [
+      128,
+      256,
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "masking_hill_steps": 300,
+    "masking_random_count": 24,
+    "masking_random_pairs": 1000,
+    "purpose": "confirmation only after a surviving standard claim contract",
+    "seed": 20260806,
+    "stationary_blocklengths": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "stationary_rates": [
+      0.75,
+      0.875,
+      0.9375
+    ],
+    "stationary_trials": 1000,
+    "trace_max_symbols": 1000000,
+    "training_lengths": [
+      16,
+      64,
+      512,
+      4096
+    ]
+  },
+  "smoke": {
+    "adaptation_discount": 0.8,
+    "adaptation_frames": 8,
+    "adaptation_n": 32,
+    "adaptation_rate": 0.75,
+    "adaptation_sessions": 1,
+    "adaptation_switch_every": 2,
+    "ctw_depths": [
+      1,
+      2
+    ],
+    "geometry_blocklengths": [
+      10,
+      12
+    ],
+    "geometry_candidate_pool": 3,
+    "geometry_ctw_depth": 2,
+    "geometry_ctw_max_n": 12,
+    "geometry_rates": [
+      0.5,
+      0.75
+    ],
+    "geometry_replicates": 1,
+    "individual_blocklengths": [
+      6,
+      8
+    ],
+    "masking_exact_blocklengths": [
+      4,
+      6
+    ],
+    "masking_heuristic_blocklengths": [
+      16,
+      32
+    ],
+    "masking_hill_steps": 10,
+    "masking_random_count": 4,
+    "masking_random_pairs": 20,
+    "purpose": "installation and exactness smoke test only",
+    "seed": 20260806,
+    "stationary_blocklengths": [
+      16,
+      32
+    ],
+    "stationary_rates": [
+      0.75
+    ],
+    "stationary_trials": 10,
+    "trace_max_symbols": 4096,
+    "training_lengths": [
+      8,
+      16
+    ]
+  },
+  "standard": {
+    "adaptation_discount": 0.82,
+    "adaptation_frames": 32,
+    "adaptation_n": 128,
+    "adaptation_rate": 0.75,
+    "adaptation_sessions": 3,
+    "adaptation_switch_every": 8,
+    "ctw_depths": [
+      1,
+      2
+    ],
+    "geometry_blocklengths": [
+      12,
+      16
+    ],
+    "geometry_candidate_pool": 8,
+    "geometry_ctw_depth": 2,
+    "geometry_ctw_max_n": 16,
+    "geometry_rates": [
+      0.5,
+      0.75
+    ],
+    "geometry_replicates": 3,
+    "individual_blocklengths": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "masking_exact_blocklengths": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "masking_heuristic_blocklengths": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "masking_hill_steps": 30,
+    "masking_random_count": 8,
+    "masking_random_pairs": 80,
+    "purpose": "pre-registered kill-fast field-defining investment gate",
+    "seed": 20260806,
+    "stationary_blocklengths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "stationary_rates": [
+      0.75,
+      0.875
+    ],
+    "stationary_trials": 80,
+    "trace_max_symbols": 65536,
+    "training_lengths": [
+      16,
+      64,
+      512
+    ]
+  }
+}

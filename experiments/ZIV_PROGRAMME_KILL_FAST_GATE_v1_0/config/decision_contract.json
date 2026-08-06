@@ -1,0 +1,33 @@
+{
+  "contract_version": "1.0",
+  "scientific_scope": "pre-registered research-investment gate; not an impossibility theorem",
+  "field_defining_continue_requires": {
+    "original_or_genuinely_new_repaired_theorem": true,
+    "effective_description_length_geometry": true,
+    "finite_block_mechanism": true,
+    "real_post_front_end_trace_premise": true,
+    "independent_primary_source_novelty_audit": true
+  },
+  "stationary_rank_signal": {
+    "minimum_structured_regimes": 2,
+    "maximum_universal_oracle_overhead_per_symbol": 0.04,
+    "minimum_memoryless_gain_per_symbol": 0.03,
+    "maximum_short_fit_advantage_over_universal_per_symbol": 0.03
+  },
+  "nonstationary_signal": {
+    "minimum_adaptive_gain_over_fixed_fit_per_symbol": 0.03,
+    "maximum_adaptive_oracle_gap_per_symbol": 0.08
+  },
+  "masking": {
+    "linear_defect_kill_threshold_per_symbol": 0.02,
+    "absence_of_witness_is_not_a_proof": true
+  },
+  "code_geometry": {
+    "minimum_structured_mdl_only_fraction": 0.50,
+    "minimum_structured_minus_random_control_fraction": 0.25
+  },
+  "real_trace_gate": {
+    "minimum_valid_domains": 2,
+    "minimum_domains_passing_renyi_ratio": 2
+  }
+}

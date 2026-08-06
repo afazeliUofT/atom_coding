@@ -1,0 +1,7 @@
+UTC_START=2026-08-06T00:45:03Z
+COMMAND=/opt/pyvenv/bin/python3 -m pytest -q tests
+.............                                                            [100%]
+13 passed in 0.27s
+UTC_END=2026-08-06T00:45:06Z
+EXIT_CODE=0
+[3JTERM environment variable not set.

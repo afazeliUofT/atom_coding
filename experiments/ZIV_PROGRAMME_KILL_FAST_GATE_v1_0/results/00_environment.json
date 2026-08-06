@@ -1,0 +1,16 @@
+{
+  "cpu_count": 16,
+  "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "git": "git version 2.43.0",
+  "machine": "x86_64",
+  "packages": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "psutil": "7.2.2",
+    "scipy": "1.18.0"
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.12.3"
+}

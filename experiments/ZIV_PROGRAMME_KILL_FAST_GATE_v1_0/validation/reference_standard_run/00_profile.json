@@ -1,0 +1,71 @@
+{
+  "config": {
+    "adaptation_discount": 0.82,
+    "adaptation_frames": 32,
+    "adaptation_n": 128,
+    "adaptation_rate": 0.75,
+    "adaptation_sessions": 3,
+    "adaptation_switch_every": 8,
+    "ctw_depths": [
+      1,
+      2
+    ],
+    "geometry_blocklengths": [
+      12,
+      16
+    ],
+    "geometry_candidate_pool": 8,
+    "geometry_ctw_depth": 2,
+    "geometry_ctw_max_n": 16,
+    "geometry_rates": [
+      0.5,
+      0.75
+    ],
+    "geometry_replicates": 3,
+    "individual_blocklengths": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "masking_exact_blocklengths": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "masking_heuristic_blocklengths": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "masking_hill_steps": 30,
+    "masking_random_count": 8,
+    "masking_random_pairs": 80,
+    "purpose": "pre-registered kill-fast field-defining investment gate",
+    "seed": 20260806,
+    "stationary_blocklengths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "stationary_rates": [
+      0.75,
+      0.875
+    ],
+    "stationary_trials": 80,
+    "trace_max_symbols": 65536,
+    "training_lengths": [
+      16,
+      64,
+      512
+    ]
+  },
+  "profile": "standard"
+}

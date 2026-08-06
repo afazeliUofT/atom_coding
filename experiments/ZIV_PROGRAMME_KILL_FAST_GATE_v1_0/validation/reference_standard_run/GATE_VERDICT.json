@@ -1,0 +1,23 @@
+{
+  "authorized_follow_up": "Archive the gate and prepare only a negative/boundary analysis. Do not run the deep profile or begin soft/hardware/application work.",
+  "classification": "STOP_FIELD_DEFINING_ZIV_PROGRAMME",
+  "evidence_summary": {
+    "adaptation_gain": -0.00262117268760087,
+    "adaptation_pass": false,
+    "ctw_mask_violation": true,
+    "exactness_checks": 6,
+    "exactness_pass": true,
+    "geometry_pass": false,
+    "geometry_signal": false,
+    "lz_mask_survives": true,
+    "repaired_rank_regret": 0.8548794940695399,
+    "stationary_pass": false,
+    "stationary_regimes": 0,
+    "tie_gap_per_symbol": 1.0,
+    "trace_status": "PENDING_REAL_POST_FRONT_END_TRACES",
+    "traces_pass": false
+  },
+  "manual_novelty_gate": "PENDING_INDEPENDENT_PRIMARY_SOURCE_ADJUDICATION",
+  "reason": "The original deterministic individual-sequence theorem is structurally false, the session regret implication is false as stated, and the frozen practical description-length geometry did not produce a viable finite-block code-design signal. Any stochastic universal-ranking gains are within an already established research line.",
+  "stage": "FLAGSHIP_AND_GEOMETRY_COLLAPSE"
+}

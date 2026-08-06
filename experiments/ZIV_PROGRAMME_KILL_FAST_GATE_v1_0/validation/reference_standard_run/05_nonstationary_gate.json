@@ -1,0 +1,12 @@
+{
+  "discount": 0.82,
+  "discounted_adaptive_gain_over_fixed_fit_per_symbol": -0.00262117268760087,
+  "discounted_oracle_gap_per_symbol": 0.005897708006933413,
+  "frames": 32,
+  "n": 128,
+  "pass": false,
+  "rate": 0.75,
+  "sessions": 3,
+  "switch_every": 8,
+  "theory_warning": "This empirical adaptation signal does not validate the proposal's signed-regret-to-average-error statement, which fails without one-sided control."
+}

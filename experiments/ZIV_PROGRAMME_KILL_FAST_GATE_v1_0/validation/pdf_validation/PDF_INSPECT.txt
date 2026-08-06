@@ -1,0 +1,40 @@
+PDF: /mnt/data/_ziv_build/ZIV_PROGRAMME_KILL_FAST_GATE_v1_0/theory/Ziv_Programme_Collapse_Propositions_and_Kill_Fast_Protocol.pdf
+Pages: 12
+Encrypted: False
+Page sizes (pt, rounded):
+  - 612 x 792 (12 page(s))
+Metadata:
+  /Author: 
+  /CreationDate: D:20260806004214Z
+  /Creator: LaTeX with hyperref
+  /Keywords: 
+  /ModDate: D:20260806004214Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: 
+  /Title: 
+  /Trapped: /False
+Outline items: 22
+Form fields: 0
+Attachments: 0
+Annotations: 30
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+AESGPO+CMBX12                        Type 1            Builtin          yes yes yes    102  0
+JDZFYQ+CMR17                         Type 1            Builtin          yes yes yes    103  0
+TMLQJM+CMR12                         Type 1            Builtin          yes yes yes    104  0
+ZUVQHG+CMBX10                        Type 1            Builtin          yes yes yes    105  0
+LVSSFR+CMR10                         Type 1            Builtin          yes yes yes    106  0
+HGRRGW+CMMI10                        Type 1            Builtin          yes yes yes    107  0
+YITNQO+CMSY10                        Type 1            Builtin          yes yes yes    108  0
+JCDWBJ+CMR7                          Type 1            Builtin          yes yes yes    109  0
+BPCMGY+CMTT10                        Type 1            Builtin          yes yes yes    110  0
+JTQVFQ+CMMI8                         Type 1            Builtin          yes yes yes    137  0
+KKGZFE+CMEX10                        Type 1            Builtin          yes yes yes    144  0
+BWOUJZ+CMTI10                        Type 1            Builtin          yes yes yes    152  0
+WQDNZG+CMSY8                         Type 1            Builtin          yes yes yes    155  0
+TDRAAQ+CMR8                          Type 1            Builtin          yes yes yes    156  0
+XPOJAY+CMMI6                         Type 1            Builtin          yes yes yes    174  0
+MRRPUK+SFRM1095                      Type 1            Custom           yes yes yes    205  0

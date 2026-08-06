@@ -1,0 +1,76 @@
+{
+  "largest_n": 256,
+  "largest_rate": 0.875,
+  "novelty_boundary": "A pass confirms finite-length usefulness of universal Markov ranking, not field-defining novelty; stochastic finite-state universal noise guessing and training comparisons already exist.",
+  "pass": false,
+  "rank_quality_pass_without_absolute_query_budget": true,
+  "regime_details": {
+    "BURSTY_RARE": {
+      "entropy_rate": 0.11132337203836123,
+      "median_memoryless_minus_universal_rank_per_symbol": 0.16045894020337143,
+      "median_universal_minus_long_fit_rank_per_symbol": 0.013889689263271693,
+      "median_universal_minus_short_fit_rank_per_symbol": -0.006175094978696061,
+      "median_universal_oracle_overhead_per_symbol": 0.012532293658077197,
+      "oracle_median_log2_rank": 28.203404614778115,
+      "pass_practical_stationary_signal": false,
+      "proposal_median_query_budget_1e4_pass": false,
+      "proposal_query_kill_1e6_triggered": true,
+      "renyi_half_rate": 0.43341058896531615,
+      "structured": true,
+      "universal_median_log2_rank": 31.01833435861313,
+      "universal_median_query_count_approx": 2174948898.651925
+    },
+    "MODERATE_MEMORY": {
+      "entropy_rate": 0.49697442424433874,
+      "median_memoryless_minus_universal_rank_per_symbol": 0.12900462833819965,
+      "median_universal_minus_long_fit_rank_per_symbol": 0.013567965623451417,
+      "median_universal_minus_short_fit_rank_per_symbol": -0.0015439998168347846,
+      "median_universal_oracle_overhead_per_symbol": 0.017039586578259547,
+      "oracle_median_log2_rank": 122.53436740237237,
+      "pass_practical_stationary_signal": false,
+      "proposal_median_query_budget_1e4_pass": false,
+      "proposal_query_kill_1e6_triggered": true,
+      "renyi_half_rate": 0.75653696775738,
+      "structured": true,
+      "universal_median_log2_rank": 126.87351027442129,
+      "universal_median_query_count_approx": 1.5585913003201267e+38
+    },
+    "NEAR_IID_CONTROL": {
+      "entropy_rate": 0.4021791902022728,
+      "median_memoryless_minus_universal_rank_per_symbol": -0.0046683755431405904,
+      "median_universal_minus_long_fit_rank_per_symbol": 0.011817843794310834,
+      "median_universal_minus_short_fit_rank_per_symbol": -0.006442092141074884,
+      "median_universal_oracle_overhead_per_symbol": 0.00934668996922268,
+      "oracle_median_log2_rank": 97.95013231449087,
+      "pass_practical_stationary_signal": false,
+      "proposal_median_query_budget_1e4_pass": false,
+      "proposal_query_kill_1e6_triggered": true,
+      "renyi_half_rate": 0.6253512954772469,
+      "structured": false,
+      "universal_median_log2_rank": 100.14523645353486,
+      "universal_median_query_count_approx": 1.401909876508643e+30
+    },
+    "STICKY_BALANCED": {
+      "entropy_rate": 0.1943918578315762,
+      "median_memoryless_minus_universal_rank_per_symbol": 0.7540117244679518,
+      "median_universal_minus_long_fit_rank_per_symbol": 0.010541264392446126,
+      "median_universal_minus_short_fit_rank_per_symbol": -0.26138211927405636,
+      "median_universal_oracle_overhead_per_symbol": 0.00914733798256101,
+      "oracle_median_log2_rank": 49.54273125196102,
+      "pass_practical_stationary_signal": false,
+      "proposal_median_query_budget_1e4_pass": false,
+      "proposal_query_kill_1e6_triggered": true,
+      "renyi_half_rate": 0.42349689608448005,
+      "structured": true,
+      "universal_median_log2_rank": 48.112366302741336,
+      "universal_median_query_count_approx": 304274403354829.56
+    }
+  },
+  "structured_passing_regimes": 0,
+  "training_lengths": [
+    16,
+    64,
+    512
+  ],
+  "trials_per_regime_n": 80
+}

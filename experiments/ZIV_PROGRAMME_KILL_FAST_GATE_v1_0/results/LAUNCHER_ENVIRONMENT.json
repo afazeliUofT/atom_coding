@@ -1,0 +1,14 @@
+{
+  "executable": "/usr/bin/python3",
+  "expected_remote": "git@github.com:afazeliUofT/atom_coding.git",
+  "launcher_version": "1.0",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "profile": "standard",
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "repo": "/home/afazeli2006/atom_coding",
+  "source_zip": "/mnt/c/Users/alifa/Downloads/ZIV_PROGRAMME_KILL_FAST_GATE_v1_0.zip",
+  "source_zip_sha256": "8bd52f3a2577d26ee0ac399ccc031e5a27df5a49c03fa8aa095eb465d6170317",
+  "target": "/home/afazeli2006/atom_coding/experiments/ZIV_PROGRAMME_KILL_FAST_GATE_v1_0",
+  "utc_completed": "2026-08-06T01:51:08+00:00",
+  "venv_python": "/home/afazeli2006/atom_coding/.venv_ziv_gate_v1_0/bin/python"
+}
