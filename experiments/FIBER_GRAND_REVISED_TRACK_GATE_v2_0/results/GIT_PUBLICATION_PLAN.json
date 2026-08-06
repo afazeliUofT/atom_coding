@@ -1,0 +1,8 @@
+{
+  "branch": "main",
+  "classification": "CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE",
+  "origin": "git@github.com:afazeliUofT/atom_coding.git",
+  "profile": "standard",
+  "target_relative_path": "experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0",
+  "utc_precommit": "2026-08-06T12:44:21+00:00"
+}

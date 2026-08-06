@@ -1,0 +1,279 @@
+
+==============================================================================
+FIBER-GRAND Revised Track Decisive Gate v2.0
+==============================================================================
+Repository: /mnt/data/_fiber_v2_launcher_rehearsal
+Profile:    standard
+Expected ZIP SHA-256: ebad94c2f3367ccf12b283e572ea41f34b587c9718857fac04c9e06304851843
+Verified source ZIP: /mnt/data/FIBER_GRAND_REVISED_TRACK_GATE_v2_0.zip
+
+==============================================================================
+Copying and safely installing the release package
+==============================================================================
+Installed package: /mnt/data/_fiber_v2_launcher_rehearsal/experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0
+
+==============================================================================
+Creating isolated virtual environment
+==============================================================================
++ /opt/pyvenv/bin/python3 -m venv --system-site-packages /mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0
++ /mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0/bin/python -c 'import sysconfig; print(sysconfig.get_paths()['"'"'purelib'"'"'])'
+/mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0/lib/python3.13/site-packages
+
+==============================================================================
+Installing pinned package requirements
+==============================================================================
++ /mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0/bin/python -c 'import numpy, scipy, pandas, matplotlib, psutil, pytest'
++ /mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0/bin/python -c 'import fiber_v2; print(fiber_v2.__file__)'
+/mnt/data/_fiber_v2_launcher_rehearsal/experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/__init__.py
+
+==============================================================================
+Running independent implementation tests
+==============================================================================
++ /mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0/bin/python -m pytest -q /mnt/data/_fiber_v2_launcher_rehearsal/experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests
+..............                                                           [100%]
+14 passed in 0.20s
+
+==============================================================================
+Running scientific gate: profile=standard
+==============================================================================
++ /mnt/data/_fiber_v2_launcher_rehearsal/.venv_fiber_revised_gate_v2_0/bin/python -m fiber_v2.run_gate --profile standard
+[E0] Independent exactness and no-codebook oracle audit...
+[E1] Membership-only FIBER versus exact syndrome-trellis aggregate search...
+[E2] Two-deletion codebook-free diagnostic...
+[E3] Specialized VT one-deletion baseline...
+[E4] Fixed-edit shell-certificate theorem audit...
+
+==============================================================================
+FINAL CLASSIFICATION: CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE
+STAGE: DECODER_THEOREM_AND_STRONG_BASELINE_GATE_PASSED
+REASON: The revised membership-only decoder remained exact and competitive against two independent code-specific exact searches (syndrome-trellis aggregation and prefix A*), the fixed-edit shell theorem passed its deterministic audits, and transfer to a specialized VT baseline and two deletions remained controlled.
+==============================================================================
+
+==============================================================================
+Publishing only the experiment package and required evidence
+==============================================================================
++ git -C /mnt/data/_fiber_v2_launcher_rehearsal remote add origin git@github.com:afazeliUofT/atom_coding.git
++ git -C /mnt/data/_fiber_v2_launcher_rehearsal add -- experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0
++ git -C /mnt/data/_fiber_v2_launcher_rehearsal status --short -- experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/.gitignore
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/PACKAGE_METADATA.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/PACKAGE_SHA256.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/README.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/RUN_GATE.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/config/decision_contract.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/config/profiles.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/pyproject.toml
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/pytest.ini
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/requirements.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/00_decision_contract.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/00_environment.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/00_profile.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/01_exactness_audit.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_slopes.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_trials.csv.gz
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/03_two_deletion_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/03_two_deletion_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/03_two_deletion_trials.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/04_vt_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/04_vt_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/04_vt_trials.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/05_shell_theorem_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/05_shell_theorem_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/05_shell_theorem_trials.csv.gz
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/ANALYSIS_HANDOFF.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/CONTINUE_COMMAND.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/DEPENDENCY_INSTALL_LOG.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/EXECUTION_LOG.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIGURES.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIG_01_primary_crc_like.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIG_01_primary_random_linear.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIG_02_shell_theorem.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/GATE_REPORT.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/GATE_VERDICT.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/GIT_PUBLICATION_PLAN.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/LAUNCHER_ENVIRONMENT.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/PYTEST_LOG.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/RESULTS_SHA256.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/RUN_STATUS.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/__init__.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/benchmark.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/channels.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/codes.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/decision.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/exactness.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/history_decoder.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/likelihood.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/plots.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/prefix_astar.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/run_gate.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/shell_theory.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/syndrome_trellis.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/utils.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/vt_baseline.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/work.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_codes.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_decoders.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_likelihood.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_shell_theory.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_utils.py
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/theory/FIBER_GRAND_Revised_Claim_Contract_and_Decisive_Gate.pdf
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/theory/FIBER_GRAND_Revised_Claim_Contract_and_Decisive_Gate.tex
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/theory/MANUAL_NOVELTY_GATE.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/REFERENCE_EXECUTION_LOG.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/RELEASE_VALIDATION.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/TEST_REPORT.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/PDF_INSPECT.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/PDF_PREFLIGHT.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-01.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-04.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-07.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-10.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/00_decision_contract.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/00_environment.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/00_profile.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/01_exactness_audit.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_slopes.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_trials.csv.gz
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/03_two_deletion_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/03_two_deletion_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/03_two_deletion_trials.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/04_vt_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/04_vt_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/04_vt_trials.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/05_shell_theorem_gate.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/05_shell_theorem_summary.csv
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/05_shell_theorem_trials.csv.gz
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/ANALYSIS_HANDOFF.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/CONTINUE_COMMAND.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIGURES.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIG_01_primary_crc_like.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIG_01_primary_random_linear.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIG_02_shell_theorem.png
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/GATE_REPORT.md
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/GATE_VERDICT.json
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/RESULTS_SHA256.txt
+A  experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/RUN_STATUS.json
++ git -C /mnt/data/_fiber_v2_launcher_rehearsal commit --only -m 'FIBER-GRAND revised track gate v2.0 [standard]: CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE' -- experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0
+[master (root-commit) d6c4fc5] FIBER-GRAND revised track gate v2.0 [standard]: CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE
+ 102 files changed, 10545 insertions(+)
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/.gitignore
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/PACKAGE_METADATA.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/PACKAGE_SHA256.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/README.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/RUN_GATE.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/config/decision_contract.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/config/profiles.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/pyproject.toml
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/pytest.ini
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/requirements.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/00_decision_contract.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/00_environment.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/00_profile.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/01_exactness_audit.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_slopes.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/02_primary_trials.csv.gz
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/03_two_deletion_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/03_two_deletion_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/03_two_deletion_trials.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/04_vt_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/04_vt_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/04_vt_trials.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/05_shell_theorem_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/05_shell_theorem_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/05_shell_theorem_trials.csv.gz
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/ANALYSIS_HANDOFF.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/CONTINUE_COMMAND.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/DEPENDENCY_INSTALL_LOG.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/EXECUTION_LOG.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIGURES.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIG_01_primary_crc_like.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIG_01_primary_random_linear.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/FIG_02_shell_theorem.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/GATE_REPORT.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/GATE_VERDICT.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/GIT_PUBLICATION_PLAN.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/LAUNCHER_ENVIRONMENT.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/PYTEST_LOG.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/RESULTS_SHA256.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results/RUN_STATUS.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/__init__.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/benchmark.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/channels.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/codes.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/decision.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/exactness.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/history_decoder.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/likelihood.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/plots.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/prefix_astar.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/run_gate.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/shell_theory.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/syndrome_trellis.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/utils.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/vt_baseline.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/src/fiber_v2/work.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_codes.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_decoders.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_likelihood.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_shell_theory.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/tests/test_utils.py
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/theory/FIBER_GRAND_Revised_Claim_Contract_and_Decisive_Gate.pdf
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/theory/FIBER_GRAND_Revised_Claim_Contract_and_Decisive_Gate.tex
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/theory/MANUAL_NOVELTY_GATE.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/REFERENCE_EXECUTION_LOG.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/RELEASE_VALIDATION.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/TEST_REPORT.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/PDF_INSPECT.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/PDF_PREFLIGHT.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-01.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-04.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-07.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/pdf_validation/representative_pages/page-10.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/00_decision_contract.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/00_environment.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/00_profile.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/01_exactness_audit.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_slopes.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/02_primary_trials.csv.gz
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/03_two_deletion_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/03_two_deletion_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/03_two_deletion_trials.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/04_vt_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/04_vt_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/04_vt_trials.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/05_shell_theorem_gate.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/05_shell_theorem_summary.csv
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/05_shell_theorem_trials.csv.gz
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/ANALYSIS_HANDOFF.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/CONTINUE_COMMAND.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIGURES.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIG_01_primary_crc_like.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIG_01_primary_random_linear.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/FIG_02_shell_theorem.png
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/GATE_REPORT.md
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/GATE_VERDICT.json
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/RESULTS_SHA256.txt
+ create mode 100644 experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/validation/reference_standard_run/RUN_STATUS.json
+Git push intentionally skipped; local branch is master
+
+==============================================================================
+SCIENTIFIC INVESTMENT COMMAND
+==============================================================================
+CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE
+Field-defining status is not yet established; all final external gates remain mandatory.
+
+CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE
+FIELD_DEFINING_STATUS=NOT_YET_ESTABLISHED
+NEXT_REQUIRED=independent_novelty_audit,independent_proof_review,specialized_system_baselines,calibrated_real_impairment
+STOP_IF_ANY_FINAL_GATE_FAILS=YES
+
+Local results retained at: /mnt/data/_fiber_v2_launcher_rehearsal/experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0/results
+The WSL terminal remains open.

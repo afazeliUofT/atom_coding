@@ -1,0 +1,54 @@
+{
+  "codebook_free": {
+    "membership_interfaces": [
+      "syndrome",
+      "VT checksum"
+    ],
+    "no_materialized_codebook_for_primary_benchmarks": true
+  },
+  "continuation_requirements_beyond_this_package": {
+    "calibrated_post_front_end_synchronization_impairment": true,
+    "comparison_with_additional_specialized_system_baselines": true,
+    "independent_primary_source_novelty_audit": true,
+    "new_decoder_specific_theorem_independently_reviewed": true
+  },
+  "continue_rule": "Only a pass of exactness, shell theorem, codebook-free execution, and strong-baseline competitiveness authorizes the final novelty and real-impairment gate.",
+  "contract_version": "2.0",
+  "hard_exactness": {
+    "all_micro_checks_required": true,
+    "false_certificate_tolerance": 0,
+    "primary_decision_disagreement_tolerance": 0
+  },
+  "narrow_rule": "If the theorem closes but the membership-only decoder is not competitive with the strong exact baseline, retain only a foundations/boundary paper and stop the field-defining investment.",
+  "scientific_scope": "decisive revised-track gate after the v1 computational signal; not a novelty proof or real-system validation",
+  "shell_theorem": {
+    "all_certificate_inequalities_required": true,
+    "all_observed_history_counts_below_theorem_bound": true,
+    "maximum_large_n_normalized_bound_minus_h2": 0.4,
+    "require_decreasing_maximum_p95_excess_with_n": true
+  },
+  "stop_rule": "If the code-specific syndrome-trellis baseline dominates by more than 5x in every primary largest-n configuration, or exactness/theorem checks fail, stop the field-defining programme immediately.",
+  "strong_baseline": {
+    "maximum_configs_with_trellis_wall_win_5x": 0,
+    "maximum_median_wall_ratio_fiber_over_best_exact_baseline": 3.0,
+    "minimum_completion_fraction": 1.0,
+    "minimum_configs_with_fiber_wall_win_1p25": 2,
+    "minimum_largest_n_trials_per_config": 4,
+    "required_families": [
+      "random_linear",
+      "crc_like"
+    ],
+    "required_probabilities": [
+      0.02,
+      0.05
+    ]
+  },
+  "two_deletion_diagnostic": {
+    "maximum_median_membership_fraction": 0.1,
+    "minimum_completion_fraction": 0.95
+  },
+  "vt_specialized_baseline": {
+    "exact_agreement_required": true,
+    "maximum_median_wall_ratio_fiber_over_vt": 5.0
+  }
+}

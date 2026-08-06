@@ -1,0 +1,32 @@
+{
+  "agreement_all": true,
+  "summary": [
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 28.0,
+      "median_fiber_over_vt_wall": 1.9147272843616499,
+      "median_vt_candidate_checks": 30.0,
+      "n": 15,
+      "p95_fiber_over_vt_wall": 2.1878428060868558,
+      "trials": 20
+    },
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 60.0,
+      "median_fiber_over_vt_wall": 1.556451167841669,
+      "median_vt_candidate_checks": 62.0,
+      "n": 31,
+      "p95_fiber_over_vt_wall": 1.9872894759239053,
+      "trials": 20
+    },
+    {
+      "agreement_fraction": 1.0,
+      "median_fiber_histories": 124.0,
+      "median_fiber_over_vt_wall": 1.3071174642031438,
+      "median_vt_candidate_checks": 126.0,
+      "n": 63,
+      "p95_fiber_over_vt_wall": 1.5560075210824198,
+      "trials": 20
+    }
+  ]
+}

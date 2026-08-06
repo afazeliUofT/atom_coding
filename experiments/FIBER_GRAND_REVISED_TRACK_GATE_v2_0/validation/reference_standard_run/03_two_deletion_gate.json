@@ -1,0 +1,72 @@
+{
+  "all_observed_below_theorem_bound": true,
+  "completion_all": true,
+  "summary": [
+    {
+      "all_below_theorem_bound": true,
+      "completion_fraction": 1.0,
+      "median_histories": 456.0,
+      "median_membership_fraction": 0.031982421875,
+      "median_wall": 0.004067848500085347,
+      "n": 16,
+      "p": 0.02,
+      "p95_histories": 456.0,
+      "trials": 6
+    },
+    {
+      "all_below_theorem_bound": true,
+      "completion_fraction": 1.0,
+      "median_histories": 728.0,
+      "median_membership_fraction": 0.006195068359375,
+      "median_wall": 0.006834986500052764,
+      "n": 20,
+      "p": 0.02,
+      "p95_histories": 754.2,
+      "trials": 4
+    },
+    {
+      "all_below_theorem_bound": true,
+      "completion_fraction": 1.0,
+      "median_histories": 1104.0,
+      "median_membership_fraction": 0.001148223876953125,
+      "median_wall": 0.011826595000002271,
+      "n": 24,
+      "p": 0.02,
+      "p95_histories": 14330.399999999998,
+      "trials": 3
+    },
+    {
+      "all_below_theorem_bound": true,
+      "completion_fraction": 1.0,
+      "median_histories": 474.0,
+      "median_membership_fraction": 0.0330810546875,
+      "median_wall": 0.004572645999928682,
+      "n": 16,
+      "p": 0.05,
+      "p95_histories": 1110.0,
+      "trials": 6
+    },
+    {
+      "all_below_theorem_bound": true,
+      "completion_fraction": 1.0,
+      "median_histories": 750.0,
+      "median_membership_fraction": 0.0063629150390625,
+      "median_wall": 0.0063570529999879,
+      "n": 20,
+      "p": 0.05,
+      "p95_histories": 4369.5999999999985,
+      "trials": 4
+    },
+    {
+      "all_below_theorem_bound": true,
+      "completion_fraction": 1.0,
+      "median_histories": 18352.0,
+      "median_membership_fraction": 0.015880584716796875,
+      "median_wall": 0.14842304499984493,
+      "n": 24,
+      "p": 0.05,
+      "p95_histories": 19936.0,
+      "trials": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "package_name": "FIBER_GRAND_REVISED_TRACK_GATE_v2_0",
+  "release_version": "2.0",
+  "release_date": "2026-08-06",
+  "default_profile": "standard",
+  "scientific_scope": "decisive strong-baseline and theorem gate after v1; not a novelty proof or real-system validation",
+  "reference_validation_classification": "CONTINUE_REVISED_FIBER_TRACK_TO_FINAL_GATE",
+  "required_manual_gates_after_pass": [
+    "independent primary-source novelty adjudication",
+    "independent proof review",
+    "additional specialized synchronization-system baselines",
+    "calibrated post-front-end synchronization impairment"
+  ],
+  "target_repo_relative_path": "experiments/FIBER_GRAND_REVISED_TRACK_GATE_v2_0"
+}

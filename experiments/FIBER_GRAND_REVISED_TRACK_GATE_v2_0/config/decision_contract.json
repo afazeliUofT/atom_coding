@@ -1,0 +1,54 @@
+{
+  "contract_version": "2.0",
+  "scientific_scope": "decisive revised-track gate after the v1 computational signal; not a novelty proof or real-system validation",
+  "hard_exactness": {
+    "all_micro_checks_required": true,
+    "false_certificate_tolerance": 0,
+    "primary_decision_disagreement_tolerance": 0
+  },
+  "codebook_free": {
+    "no_materialized_codebook_for_primary_benchmarks": true,
+    "membership_interfaces": [
+      "syndrome",
+      "VT checksum"
+    ]
+  },
+  "shell_theorem": {
+    "all_certificate_inequalities_required": true,
+    "all_observed_history_counts_below_theorem_bound": true,
+    "maximum_large_n_normalized_bound_minus_h2": 0.4,
+    "require_decreasing_maximum_p95_excess_with_n": true
+  },
+  "strong_baseline": {
+    "required_probabilities": [
+      0.02,
+      0.05
+    ],
+    "required_families": [
+      "random_linear",
+      "crc_like"
+    ],
+    "minimum_completion_fraction": 1.0,
+    "minimum_configs_with_fiber_wall_win_1p25": 2,
+    "maximum_configs_with_trellis_wall_win_5x": 0,
+    "minimum_largest_n_trials_per_config": 4,
+    "maximum_median_wall_ratio_fiber_over_best_exact_baseline": 3.0
+  },
+  "vt_specialized_baseline": {
+    "maximum_median_wall_ratio_fiber_over_vt": 5.0,
+    "exact_agreement_required": true
+  },
+  "two_deletion_diagnostic": {
+    "minimum_completion_fraction": 0.95,
+    "maximum_median_membership_fraction": 0.1
+  },
+  "continuation_requirements_beyond_this_package": {
+    "independent_primary_source_novelty_audit": true,
+    "new_decoder_specific_theorem_independently_reviewed": true,
+    "calibrated_post_front_end_synchronization_impairment": true,
+    "comparison_with_additional_specialized_system_baselines": true
+  },
+  "stop_rule": "If the code-specific syndrome-trellis baseline dominates by more than 5x in every primary largest-n configuration, or exactness/theorem checks fail, stop the field-defining programme immediately.",
+  "narrow_rule": "If the theorem closes but the membership-only decoder is not competitive with the strong exact baseline, retain only a foundations/boundary paper and stop the field-defining investment.",
+  "continue_rule": "Only a pass of exactness, shell theorem, codebook-free execution, and strong-baseline competitiveness authorizes the final novelty and real-impairment gate."
+}

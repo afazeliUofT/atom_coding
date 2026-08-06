@@ -1,0 +1,4 @@
+n,trials,agreement_fraction,median_fiber_over_vt_wall,p95_fiber_over_vt_wall,median_fiber_histories,median_vt_candidate_checks
+15,20,1.0,1.9147272843616499,2.1878428060868558,28.0,30.0
+31,20,1.0,1.556451167841669,1.9872894759239053,60.0,62.0
+63,20,1.0,1.3071174642031438,1.5560075210824198,124.0,126.0

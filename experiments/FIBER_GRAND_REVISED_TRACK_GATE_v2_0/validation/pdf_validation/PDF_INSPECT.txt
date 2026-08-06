@@ -1,0 +1,38 @@
+Title:           
+Subject:         
+Keywords:        
+Author:          
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.26
+CreationDate:    Thu Aug  6 05:12:22 2026 UTC
+ModDate:         Thu Aug  6 05:12:22 2026 UTC
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           10
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       227277 bytes
+Optimized:       no
+PDF version:     1.7
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+BPKYDN+CMBX12                        Type 1            Builtin          yes yes yes    134  0
+MHYWCZ+CMR12                         Type 1            Builtin          yes yes yes    135  0
+DFSUNR+CMR10                         Type 1            Builtin          yes yes yes    136  0
+TUFKNK+CMBX10                        Type 1            Builtin          yes yes yes    138  0
+LMZHKI+CMMI8                         Type 1            Builtin          yes yes yes    139  0
+GHRFAO+CMMI10                        Type 1            Builtin          yes yes yes    156  0
+QTEXWN+CMSY10                        Type 1            Builtin          yes yes yes    157  0
+SAZVGS+CMEX10                        Type 1            Builtin          yes yes yes    158  0
+GXVPSK+CMR8                          Type 1            Builtin          yes yes yes    159  0
+LXAWZL+CMMI6                         Type 1            Builtin          yes yes yes    160  0
+DPFLCB+CMTI10                        Type 1            Builtin          yes yes yes    166  0
+SIBYBJ+CMSY8                         Type 1            Builtin          yes yes yes    176  0
+PJZRLC+CMR6                          Type 1            Builtin          yes yes yes    189  0
+MRRPUK+SFRM1095                      Type 1            Custom           yes yes yes    223  0

@@ -1,0 +1,323 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable,tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{cleveref}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Revised FIBER--GRAND decisive gate}
+\rhead{August 2026}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newcommand{\C}{\mathcal C}
+\newcommand{\W}{\mathsf W}
+\newcommand{\Qhist}{Q_{\mathrm{hist}}}
+\newcommand{\Qcand}{Q_{\mathrm{cand}}}
+\newcommand{\Qcode}{Q_{\mathrm{code}}}
+\newcommand{\binomN}[2]{\binom{#1}{#2}}
+
+\title{\textbf{FIBER--GRAND: Revised Claim Contract and Decisive Strong-Baseline Gate}\\[2mm]
+\large Certified aggregate inverse search for bounded synchronization errors}
+\author{Scientific de-risking dossier, version 2.0}
+\date{6 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{tcolorbox}[colback=blue!4,colframe=blue!55!black,title=Scientific status]
+The first kill-fast gate established a correct and substantial finite-block computational mechanism, but it also invalidated the proposal's claim that ``fiber guesswork'' is a new information-theoretic random variable.  The revised programme is authorized for exactly one further decisive gate.  It must survive (i) codebook-free execution, (ii) an independent code-specific exact baseline, (iii) a new fixed-edit complexity theorem, and (iv) specialized-code comparison.  A positive outcome still does not establish field-defining status; novelty adjudication and a calibrated physical impairment remain mandatory.
+\end{tcolorbox}
+
+\tableofcontents
+\newpage
+
+\section{Purpose and decision discipline}
+The original programme proposed exact maximum-likelihood (ML) decoding for non-injective random-transformation channels by summing all latent histories that support each candidate input.  The first complete channel is exactly one uniformly located deletion combined with independent binary substitutions.  The decisive observation is valid:
+\[
+  W(y\mid x)=\sum_{z:T_z(x)=y}p(z\mid x),
+\]
+so a best individual history need not identify the best aggregate candidate.  The first gate certified the likelihood formula, runtime certificate, and multiple code interfaces, and found large gains relative to exhaustive codeword-wise ML.  It also exposed the limits of that evidence:
+\begin{enumerate}[label=(\alph*),leftmargin=2em]
+\item exhaustive codeword ML is not the strongest code-specific exact baseline;
+\item the implementation used pre-enumerated codeword tables for membership at the largest lengths;
+\item fixed-edit breadth was supported by very small samples; and
+\item aggregate posterior rank is ordinary conditional guesswork under a uniform prior.
+\end{enumerate}
+
+This dossier freezes the revised claim before further computation.  It prohibits silently returning to the original terminology if the revised gate fails.
+
+\subsection{The three possible outcomes}
+\begin{description}[leftmargin=2.3em,style=nextline]
+\item[CONTINUE\_REVISED\_FIBER\_TRACK\_TO\_FINAL\_GATE]
+The fixed-edit theorem, codebook-free decoder, and strong exact baselines pass.  Only an independent novelty/proof audit, specialized system baselines, and a calibrated physical impairment are authorized next.
+\item[NARROW\_TO\_FIXED\_EDIT\_FOUNDATIONS\_STOP\_FIELD\_DEFINING]
+A theorem or useful exact algorithm survives, but the membership-only decoder is not competitive with code-specific methods.  A bounded-edit foundations paper may proceed; the multi-year field-defining programme stops.
+\item[STOP\_FIBER\_FIELD\_DEFINING\_PROGRAMME]
+Correctness, the fixed-edit theorem, or the strong-baseline mechanism fails.  No deeper simulation, hardware, or general-transducer work is permitted.
+\end{description}
+
+\section{Revised novelty boundary}
+\subsection{Claims that are withdrawn}
+The following claims are not part of the revised programme.
+\begin{enumerate}[leftmargin=2em]
+\item \emph{Fiber guesswork is a new information-theoretic object.}  For a uniform prior over the candidate universe, ranking $x$ by $W(y\mid x)$ is exactly optimal posterior guessing of $X$ given $Y$.  Conditional guessing and its R\'enyi bounds are classical.
+\item \emph{Priority queues, admissible bounds, or path summation are themselves new.}  Priority-first ML decoding, sequential synchronization decoding, HMM/weighted-transducer path summation, and best-string versus best-path distinctions are established.
+\item \emph{The current experiments prove superiority over synchronization coding.}  They compare mainly with exhaustive codeword likelihood and therefore establish a mechanism, not state-of-the-art dominance.
+\item \emph{Unrestricted weighted transducers admit efficient exact code-agnostic decoding.}  Most-probable-string problems in ambiguous probabilistic automata can be NP-hard; unrestricted efficiency is not assumed.
+\end{enumerate}
+
+\subsection{Surviving claim}
+The only candidate field-defining residue is the following synthesis:
+\begin{quote}
+For bounded synchronization edits, exact aggregate inverse search can retain the code-modular membership interface of GRAND, provide an auditable ML certificate, and incur only a controlled fixed-edit overhead above the substitution-noise guessing exponent.  The programme seeks a theorem characterizing this tractable region and a decoder that remains competitive with code-specific exact search.
+\end{quote}
+
+The novelty must ultimately reside in a theorem-and-algorithm package, not terminology.  The primary-source audit must separately compare the result with GRAND, priority-first block decoding, Gallager-style synchronization sequential decoding, VT/GC+/marker/watermark methods, weighted automata, and the most-probable-string literature.
+
+\section{Channel and exact aggregate decoder}
+Let $x\in\{0,1\}^n$.  Exactly $t$ positions are selected uniformly without replacement and deleted.  The $m=n-t$ survivors pass through a BSC with crossover probability $p<1/2$.  The received word is $y\in\{0,1\}^m$.  Let
+\[
+  \mathcal J_t=\{J\subseteq[n]:|J|=t\},\qquad S=|\mathcal J_t|=\binom nt.
+\]
+For $J\in\mathcal J_t$, let $d_J(x,y)$ be the Hamming mismatch between $y$ and the length-$m$ subsequence of $x$ obtained by deleting $J$.  The exact candidate likelihood is
+\begin{equation}
+  \Lambda_y(x)=\frac1S\sum_{J\in\mathcal J_t}p^{d_J(x,y)}(1-p)^{m-d_J(x,y)}.
+  \label{eq:likelihood}
+\end{equation}
+
+For each $J$, an inverse stream enumerates a survivor-error mask $e\in\{0,1\}^m$ and $t$ hidden deleted bits.  Histories are emitted by increasing $w_H(e)$.  The component probability in each stream is
+\begin{equation}
+  \omega_w=\frac1S p^w(1-p)^{m-w}.
+\end{equation}
+The same $x$ can arise in several streams, so the decoder canonicalizes candidates.  At first discovery it calls a code-membership oracle.  Only codewords are completely scored by \eqref{eq:likelihood}; noncodewords cannot compete in the code-constrained ML maximization.
+
+If $\eta_J$ is the next unprocessed component probability in stream $J$, every completely unseen candidate obeys
+\begin{equation}
+  \Lambda_y(x)\le U_{\rm new}:=\sum_{J\in\mathcal J_t}\eta_J.
+  \label{eq:residual}
+\end{equation}
+Once the best discovered codeword score $s^\star$ satisfies $s^\star>U_{\rm new}$, it is the exact ML decision.  A complete tie set requires retaining all discovered codewords at $s^\star$ and strict exclusion of unseen ties.
+
+\section{New fixed-edit shell theorem}
+This section states the main theorem whose independent proof review is required.  It is more informative than the elementary posterior-rank identity because it bounds the work of a specific code-modular certified algorithm.
+
+\begin{theorem}[Deterministic shell-certificate bound]
+\label{thm:shell}
+Consider the exactly-$t$-deletion/BSC channel above with $0<p<1/2$.  Let $E$ be the actual number of substitutions on the surviving symbols in the transmitted history and set
+\[
+  a=\frac{1-p}{p},\qquad
+  L_{n,t}=\left\lfloor\log_a\binom nt\right\rfloor,
+  \qquad
+  w_E=\min\{m,E+L_{n,t}\}.
+\]
+Run the history enumerator through every stream component of substitution weight at most $w_E$.  By that point, the exact residual-mass certificate must have fired.  Consequently,
+\begin{equation}
+  \Qhist
+  \le
+  2^t\binom nt\sum_{i=0}^{w_E}\binom mi.
+  \label{eq:qbound}
+\end{equation}
+For $p=0$, the corresponding bound is $\Qhist\le 2^t\binom nt$.
+\end{theorem}
+
+\begin{proof}
+The true codeword is discovered no later than the actual deletion subset, actual hidden bits, and actual survivor-error mask, which lies in shell $E$.  Its aggregate likelihood is therefore at least the probability of this one supporting history:
+\[
+  s^\star\ge \frac1S p^E(1-p)^{m-E}.
+\]
+After every component of weight at most $w$ has been emitted, the next component in each of the $S$ streams has weight at most $S^{-1}p^{w+1}(1-p)^{m-w-1}$.  Hence \eqref{eq:residual} gives
+\[
+ U_{\rm new}\le p^{w+1}(1-p)^{m-w-1}.
+\]
+At $w=E+L_{n,t}<m$,
+\[
+ \frac{U_{\rm new}}{S^{-1}p^E(1-p)^{m-E}}
+ \le
+ S\left(\frac{p}{1-p}\right)^{L_{n,t}+1}<1,
+\]
+because $L_{n,t}+1>\log_a S$.  Thus the strict certificate holds.  If $w_E=m$, all streams are exhausted and the residual mass is zero.  Each stream contains $2^t\binom mi$ histories in shell $i$, yielding \eqref{eq:qbound}.  At $p=0$, only shell zero has positive mass.
+\end{proof}
+
+\begin{corollary}[Fixed edits preserve the BSC history-work exponent]
+\label{cor:exponent}
+Fix $t$ and $p\in(0,1/2)$.  For every $\epsilon>0$,
+\[
+ \Pr\left\{\frac1n\log_2\Qhist\le h_2(p)+\epsilon\right\}\longrightarrow 1.
+\]
+For $p=0$, $\Qhist$ is polynomial in $n$ for fixed $t$.
+\end{corollary}
+
+\begin{proof}
+For fixed $t$, $\log\binom nt=O(\log n)$, so $L_{n,t}=O(\log n)$.  Since $E/m\to p$ in probability, $w_E/m=p+o_{\Pr}(1)$.  For any $q<1/2$,
+\[
+ \sum_{i=0}^{\lfloor qm\rfloor}\binom mi\le 2^{m h_2(q)}.
+\]
+The prefactor $2^t\binom nt$ has normalized logarithm $o(1)$, and continuity of $h_2$ completes the proof.
+\end{proof}
+
+\begin{remark}[What the theorem does not prove]
+The theorem bounds history generation, not processor cycles, memory traffic, or the performance of unrestricted edit rates.  It also does not prove optimality.  A resource converse under a declared oracle model remains a target.  For $t$ growing with $n$, the deletion-subset factor may alter the exponent.
+\end{remark}
+
+\section{Independent strong exact baselines}
+The large speedups against exhaustive codeword ML are insufficient because the reference cost grows as $2^k$.  Version 2 therefore compares the membership-only decoder with two code-specific exact searches that do not materialize the codebook.
+
+\subsection{Syndrome-trellis aggregate search}
+For a systematic linear code with parity-check matrix $H$ and a fixed deletion alignment $j$, a codeword path selects $x_i\in\{0,1\}$ while updating the syndrome.  Survivor coordinates incur mismatch cost $1\{x_i\ne y_{\pi_j(i)}\}$ and the deleted coordinate has zero cost.  A backward dynamic program computes the exact minimum remaining cost for every $(i,s)$ state.  A$^\star$ then emits codewords for alignment $j$ in nondecreasing mismatch cost.  The $n$ alignment streams are merged, candidates are exactly aggregate-scored, and the same residual sum certificate is applied.
+
+This is an independent code-specific baseline because it exploits the full parity-check trellis rather than issuing generic membership queries.  Its preprocessing is charged per received word.
+
+\subsection{Code-aware aggregate prefix A$^\star$}
+A second baseline searches candidate prefixes directly.  Its state stores the prefix, all alignment mismatch counts, and systematic-code prefix feasibility.  The priority key is an admissible upper bound obtained by assuming every unassigned survivor symbol can match perfectly.  Exact terminal scores and a strict frontier certificate produce ML decoding.
+
+The authoritative reference at each trial is the faster of the syndrome-trellis and code-aware prefix implementations.  This avoids declaring victory over a deliberately weak baseline.
+
+\subsection{Specialized VT control}
+For a noiseless one-deletion channel and a VT code, direct decoding can enumerate the $2n$ single-bit insertions, evaluate the VT checksum, aggregate repeated candidates, and select the largest multiplicity.  FIBER--GRAND is not required to beat this specialized method; it must remain within a modest constant factor while retaining the generic interface.
+
+\section{Frozen computational protocol}
+\begin{table}[h]
+\centering
+\caption{Standard version-2 gate.}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Component & Frozen setting \\
+\midrule
+Primary channel & One uniform deletion plus BSC, $p\in\{0.02,0.05,0.10\}$ \\
+Codes & Random systematic linear and deterministic CRC-like linear families \\
+Lengths/rate & $n\in\{16,20,24,28,32\}$, $R\approx0.75$ \\
+Membership-only method & History enumeration, syndrome membership, exact aggregate score, residual certificate \\
+Strong baselines & Syndrome-trellis aggregate A$^\star$ and code-aware prefix A$^\star$; faster wall time is authoritative \\
+Breadth & Two deletions at $n\le24$; VT controls at $n\in\{15,31,63\}$ \\
+Theory audit & $t\in\{1,2\}$, $n\le96$, 200 binomial error samples per $(n,t,p)$ \\
+Correctness & Exhaustive micro-worlds plus independent agreement of certified algorithms \\
+Metrics & Raw work components, wall time, completion, tails, membership fraction, theorem bound \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+No primary benchmark constructs a dictionary of all codewords.  Linear membership is computed by syndrome; VT membership by checksum.  Code construction and per-received-word baseline preprocessing are charged or explicitly recorded.
+
+\section{Decision contract}
+\subsection{Hard failures}
+The field-defining programme stops immediately if any of the following occurs:
+\begin{enumerate}[leftmargin=2em]
+\item a false certificate or disagreement with exhaustive ML in a complete micro-world;
+\item disagreement among independently certified membership-only, syndrome-trellis, and prefix A$^\star$ decisions;
+\item violation of Theorem~\ref{thm:shell}'s deterministic inequality or an observed history count exceeding \eqref{eq:qbound};
+\item hidden materialization of the primary codebook; or
+\item the strongest code-specific baseline is more than five times faster in every required largest-length configuration.
+\end{enumerate}
+
+\subsection{Continuation threshold}
+Continuation to the final gate requires all of:
+\begin{enumerate}[leftmargin=2em]
+\item exact completion in every required primary configuration;
+\item median membership-only wall time no more than three times the faster code-specific exact baseline for both code families at $p=0.02$ and $p=0.05$;
+\item at least two required configurations in which the membership-only decoder is at least $1.25\times$ faster;
+\item exact VT agreement and median wall overhead no greater than $5\times$;
+\item at least $95\%$ two-deletion completion with median membership fraction below $0.10$;
+\item decreasing finite-length overhead of the shell bound toward $h_2(p)$, with all deterministic inequalities valid.
+\end{enumerate}
+
+These are research-investment thresholds, not universal constants.
+
+\section{Reference validation and interpretation}
+The release-standard reference run passed the revised gate.  At $n=32$, all required configurations had exact agreement.  For $p=0.02$, membership-only search was roughly five to six times faster than the faster code-specific exact baseline; for $p=0.05$, it was roughly two to two-and-a-half times faster in median wall time.  The $95$th-percentile ratio was less favorable, demonstrating that latency tails remain a central issue.  The VT implementation was within roughly $1.3$--$1.9\times$ in median wall time.  Two-deletion completion was exact in the frozen small sample, but its high-ambiguity tail at $p=0.05$ remained large.
+
+These numbers are not publication claims until reproduced in the user's environment and subjected to stronger external implementations.  They establish that the v1 speedups were not solely an artifact of exhaustive codeword ML or a precomputed membership dictionary.
+
+\section{Final field-defining gate after a positive version-2 run}
+A positive version-2 result authorizes only four tightly scoped tasks.
+
+\subsection{N1: independent primary-source novelty adjudication}
+Produce a claim-by-claim matrix containing the closest primary source, exact overlap, surviving novelty, and verdict for:
+\begin{enumerate}[leftmargin=2em]
+\item the fixed-edit shell certificate and $h_2(p)$ history-work exponent;
+\item membership-first exact aggregate inverse search;
+\item the search-inflation and history-duplication quantities;
+\item code modularity relative to priority-first and synchronization trellis decoding;
+\item the proposed bounded-ambiguity tractability hierarchy.
+\end{enumerate}
+If the shell theorem or complete synthesis is already established, the field-defining claim stops or is renamed before further investment.
+
+\subsection{N2: independent proof review}
+An external reviewer must check every inequality, strictness/tie condition, shell count, asymptotic step, and oracle assumption.  A proof defect that cannot be repaired without weakening the exponent statement is a STOP.
+
+\subsection{N3: additional specialized system baselines}
+At least one matched baseline from each relevant class must be implemented or obtained from authors:
+\begin{itemize}[leftmargin=2em]
+\item VT/shifted-VT or direct single-edit decoding;
+\item GC+ or Guess-and-Check;
+\item marker/watermark plus forward--backward/BCJR;
+\item a joint channel--code trellis or priority-first decoder;
+\item a modern insertion/deletion construction such as polar/guard-band where the operating regime matches.
+\end{itemize}
+No baseline may be denied channel parameters, soft information, code structure, or optimized implementation available to FIBER--GRAND.
+
+\subsection{N4: calibrated post-front-end impairment}
+Select one primary telecommunications mechanism rather than a generic deletion abstraction.  The strongest candidates are:
+\begin{enumerate}[leftmargin=2em]
+\item variable-length demapping errors from nonuniform labeling;
+\item bounded symbol slips after a timing/synchronization loop;
+\item short-packet frame-boundary ambiguity;
+\item a measured low-power receiver's missed/duplicated symbol decisions.
+\end{enumerate}
+The front end must output an alignment lattice or edit prior and independent held-out traces.  Continuation requires a reproducible regime in which aggregate code-aware synchronization provides a material latency, energy, or reliability advantage over the best matched system baseline.
+
+\subsection{Final stop rule}
+The programme stops as a field-defining investment if any one of N1--N4 fails.  Passing N1--N4 would establish a credible candidate programme, not guarantee retrospective field-defining impact.
+
+\section{Use-case boundary}
+The revised mechanism is aimed at short, high-rate blocks with a small edit budget and uncertain alignment.  Plausible scenarios include timing slips, variable-length demapping, framing ambiguity, packet duplication/loss over short coded sequences, and DNA/storage as a secondary benchmark.  It is not a general replacement for LDPC/polar decoders on ordinary memoryless channels, nor is it claimed efficient for a positive edit fraction or unrestricted ambiguous transducer.
+
+\section{Reproducibility requirements}
+Every release must preserve:
+\begin{enumerate}[leftmargin=2em]
+\item exact micro-world tests and zero false certificates;
+\item per-trial history, candidate, membership, score, trellis, wall, and memory records;
+\item explicit code-interface level and whether any codebook was materialized;
+\item source commit, environment, seeds, checksums, and immutable decision thresholds;
+\item mean and high-quantile latency, not only average speedup;
+\item all negative regimes, including cases where the specialized decoder is superior.
+\end{enumerate}
+
+\section{Primary-source boundary}
+The final novelty audit must begin with the following established foundations:
+\begin{itemize}[leftmargin=2em]
+\item K.~R. Duffy, J. Li, and M. M\'edard, ``Capacity-achieving guessing random additive noise decoding,'' \emph{IEEE Trans. Inf. Theory}, 2019.
+\item R.~G. Gallager, ``Sequential decoding for binary channels with noise and synchronization errors,'' MIT Lincoln Laboratory, 1961.
+\item Y.~S. Han, C.~R.~P. Hartmann, and C.-C. Chen, ``Efficient priority-first search maximum-likelihood soft-decision decoding of linear block codes,'' \emph{IEEE Trans. Inf. Theory}, 1993.
+\item M.~C. Davey and D.~J.~C. MacKay, ``Reliable communication over channels with insertions, deletions, and substitutions,'' \emph{IEEE Trans. Inf. Theory}, 2001.
+\item M. Mohri, ``Weighted automata algorithms,'' in \emph{Handbook of Weighted Automata}, 2009.
+\item C. de la Higuera and J. Oncina, ``The most probable string: an algorithmic study,'' \emph{Journal of Logic and Computation}, 2014.
+\item O. Sabary et al., work on ML and decoding error over one/two deletion channels, including fixed-$k$ deletion models.
+\item B. Haeupler and A. Shahrasbi, survey of synchronization strings and insertion/deletion codes, and contemporary VT, GC+, marker/watermark, and polar synchronization literature.
+\item E. Ar\i kan, ``An inequality on guessing and its application to sequential decoding,'' \emph{IEEE Trans. Inf. Theory}, 1996, together with later conditional-guesswork refinements.
+\end{itemize}
+
+\section{Conclusion}
+The first gate did not prove a new field, but unlike the two rejected programmes it produced a real exact computational mechanism across several edit channels and code families.  The revised analysis identifies a potentially stronger foundational result: for a fixed number of deletions, certified aggregate history search inherits the BSC substitution-guessing exponent up to fixed-edit polynomial overhead.  The version-2 package tests this theorem's implementation and compares the membership-only decoder against exact code-specific searches without materializing the codebook.
+
+A passed version-2 gate justifies one final, externally audited investment step.  It does not justify hardware, unrestricted transducers, or a field-defining headline.  Failure of the final novelty, proof, baseline, or physical-premise gate triggers an immediate stop.
+
+\end{document}

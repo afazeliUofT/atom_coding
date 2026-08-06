@@ -1,0 +1,68 @@
+{
+  "config": {
+    "max_histories": 500000,
+    "max_prefix_nodes": 500000,
+    "max_trellis_terminals": 150000,
+    "max_two_deletion_histories": 100000,
+    "primary_blocklengths": [
+      16,
+      20,
+      24,
+      28,
+      32
+    ],
+    "primary_families": [
+      "RLC",
+      "CRC"
+    ],
+    "primary_probabilities": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "primary_rate": 0.75,
+    "primary_trials": {
+      "16": 12,
+      "20": 10,
+      "24": 8,
+      "28": 6,
+      "32": 4
+    },
+    "seed": 20260806,
+    "theorem_blocklengths": [
+      16,
+      24,
+      32,
+      48,
+      64,
+      96
+    ],
+    "theorem_probabilities": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "theorem_samples": 200,
+    "two_deletion_blocklengths": [
+      16,
+      20,
+      24
+    ],
+    "two_deletion_probabilities": [
+      0.02,
+      0.05
+    ],
+    "two_deletion_trials": {
+      "16": 6,
+      "20": 4,
+      "24": 3
+    },
+    "vt_blocklengths": [
+      15,
+      31,
+      63
+    ],
+    "vt_trials": 20
+  },
+  "profile": "standard"
+}
