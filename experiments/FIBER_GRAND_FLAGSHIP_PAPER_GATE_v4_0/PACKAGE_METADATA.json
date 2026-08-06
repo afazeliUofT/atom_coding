@@ -1,6 +1,6 @@
 {
   "package_name": "FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0",
-  "release_version": "4.0",
+  "release_version": "4.0.1",
   "release_date": "2026-08-06",
   "default_profile": "standard",
   "scientific_scope": "flagship IEEE Transactions on Information Theory paper-readiness gate for the narrowed fixed-edit FIBER-GRAND track",
@@ -22,5 +22,11 @@
     "independent primary-source and patent novelty review",
     "full IEEE Transactions on Information Theory manuscript review",
     "measured post-front-end trace only for real-system claims"
-  ]
+  ],
+  "portability_repair": {
+    "release": "R1",
+    "reason": "The original v4.0 source used std::powl and std::fabsl, which are not exposed in namespace std by some GCC/libstdc++ combinations.",
+    "change": "Use the standard overloaded std::pow and std::fabs functions for long double arguments; no scientific algorithm, threshold, seed, theorem, or benchmark schedule changed.",
+    "scientific_status": "EXECUTION_REPAIR_ONLY_NOT_A_SCIENTIFIC_CHANGE"
+  }
 }

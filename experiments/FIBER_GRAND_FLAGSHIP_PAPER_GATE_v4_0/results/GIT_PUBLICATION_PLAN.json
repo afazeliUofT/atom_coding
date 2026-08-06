@@ -1,8 +1,8 @@
 {
   "branch": "main",
-  "classification": null,
+  "classification": "PROCEED_TO_FLAGSHIP_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW",
   "origin": "git@github.com:afazeliUofT/atom_coding.git",
   "profile": "standard",
   "target_relative_path": "experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0",
-  "utc_precommit": "2026-08-06T22:45:30+00:00"
+  "utc_precommit": "2026-08-06T22:58:42+00:00"
 }

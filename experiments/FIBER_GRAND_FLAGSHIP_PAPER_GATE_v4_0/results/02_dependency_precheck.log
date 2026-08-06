@@ -1,9 +1,0 @@
-UTC_START=2026-08-06T22:45:14+00:00
-COMMAND=/home/afazeli2006/atom_coding/.venv_fiber_flagship_gate_v4_0/bin/python -c 'import numpy, scipy, pandas, matplotlib, psutil, pytest'
-
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-ModuleNotFoundError: No module named 'numpy'
-
-UTC_END=2026-08-06T22:45:14+00:00
-EXIT_CODE=1

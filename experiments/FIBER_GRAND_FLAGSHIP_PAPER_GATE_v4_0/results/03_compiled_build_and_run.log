@@ -1,41 +1,63 @@
 $ /usr/bin/g++ -O3 -DNDEBUG -std=c++20 -march=native -Wall -Wextra /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp -o /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘uint64_t fg::delete_bit(uint64_t, int, int)’:
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:36:54: warning: unused parameter ‘n’ [-Wunused-parameter]
-   36 | uint64_t delete_bit(uint64_t word, int position, int n) {
-      |                                                  ~~~~^
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘long double fg::component_mass(int, int, long double, int)’:
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:52:17: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
-   52 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches) / streams;
-      |                 ^~~~
-      |                 pow
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:52:44: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
-   52 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches) / streams;
-      |                                            ^~~~
-      |                                            pow
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘long double fg::unnormalized_mass(int, int, long double)’:
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:57:17: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
-   57 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches);
-      |                 ^~~~
-      |                 pow
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:57:44: error: ‘powl’ is not a member of ‘std’; did you mean ‘pow’?
-   57 |     return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches);
-      |                                            ^~~~
-      |                                            pow
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘fg::DecodeResult fg::fiber_decode(uint64_t, const Code&, long double, uint64_t)’:
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:389:33: error: ‘fabsl’ is not a member of ‘std’; did you mean ‘fabs’?
-  389 |                 } else if (std::fabsl(score - best) <= TOL) {
-      |                                 ^~~~~
-      |                                 fabs
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘fg::DecodeResult fg::prefix_decode(uint64_t, const Code&, long double, uint64_t)’:
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:486:33: error: ‘fabsl’ is not a member of ‘std’; did you mean ‘fabs’?
-  486 |                 } else if (std::fabsl(score - best) <= TOL) {
-      |                                 ^~~~~
-      |                                 fabs
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp: In function ‘fg::DecodeResult fg::exhaustive_decode(uint64_t, const Code&, long double, uint64_t)’:
-/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/cpp/flagship_benchmark.cpp:561:25: error: ‘fabsl’ is not a member of ‘std’; did you mean ‘fabs’?
-  561 |         } else if (std::fabsl(score - out.best) <= TOL) {
-      |                         ^~~~~
-      |                         fabs
 
-ELAPSED_SECONDS=1.093466
-RETURN_CODE=1
+ELAPSED_SECONDS=2.670484
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark --self-test
+SELF_TEST_PASS cases=600
+
+ELAPSED_SECONDS=0.701560
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/results/03_compiled_trials_part00.csv --seed 20260806 --n 32 --rates 0.75,0.875 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 24 --trials48 24 --trials64 24 --timing-repeats 1 --max-histories 500000 --max-prefix-nodes 50000 --max-trellis-terminals 5000 --max-trellis-dp-updates 1000000
+compiled family=random_linear R=0.75 n=32 p=0.002 trials=24
+compiled family=random_linear R=0.75 n=32 p=0.005 trials=24
+compiled family=random_linear R=0.75 n=32 p=0.01 trials=24
+compiled family=random_linear R=0.875 n=32 p=0.002 trials=24
+compiled family=random_linear R=0.875 n=32 p=0.005 trials=24
+compiled family=random_linear R=0.875 n=32 p=0.01 trials=24
+compiled family=named_crc_linear R=0.75 n=32 p=0.002 trials=24
+compiled family=named_crc_linear R=0.75 n=32 p=0.005 trials=24
+compiled family=named_crc_linear R=0.75 n=32 p=0.01 trials=24
+compiled family=named_crc_linear R=0.875 n=32 p=0.002 trials=24
+compiled family=named_crc_linear R=0.875 n=32 p=0.005 trials=24
+compiled family=named_crc_linear R=0.875 n=32 p=0.01 trials=24
+COMPILED_BENCHMARK_DONE rows=288 disagreements=0 failures=0
+
+ELAPSED_SECONDS=1.704589
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/results/03_compiled_trials_part01.csv --seed 20360809 --n 48 --rates 0.75,0.875 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 16 --trials48 16 --trials64 16 --timing-repeats 1 --max-histories 500000 --max-prefix-nodes 50000 --max-trellis-terminals 5000 --max-trellis-dp-updates 0
+compiled family=random_linear R=0.75 n=48 p=0.002 trials=16
+compiled family=random_linear R=0.75 n=48 p=0.005 trials=16
+compiled family=random_linear R=0.75 n=48 p=0.01 trials=16
+compiled family=random_linear R=0.875 n=48 p=0.002 trials=16
+compiled family=random_linear R=0.875 n=48 p=0.005 trials=16
+compiled family=random_linear R=0.875 n=48 p=0.01 trials=16
+compiled family=named_crc_linear R=0.75 n=48 p=0.002 trials=16
+compiled family=named_crc_linear R=0.75 n=48 p=0.005 trials=16
+compiled family=named_crc_linear R=0.75 n=48 p=0.01 trials=16
+compiled family=named_crc_linear R=0.875 n=48 p=0.002 trials=16
+compiled family=named_crc_linear R=0.875 n=48 p=0.005 trials=16
+compiled family=named_crc_linear R=0.875 n=48 p=0.01 trials=16
+COMPILED_BENCHMARK_DONE rows=192 disagreements=0 failures=0
+
+ELAPSED_SECONDS=7.594148
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/results/03_compiled_trials_part02.csv --seed 20460812 --n 64 --rates 0.75 --p 0.002,0.005 --families RLC,CRC --trials32 12 --trials48 12 --trials64 12 --timing-repeats 1 --max-histories 500000 --max-prefix-nodes 200000 --max-trellis-terminals 5000 --max-trellis-dp-updates 0
+compiled family=random_linear R=0.75 n=64 p=0.002 trials=12
+compiled family=random_linear R=0.75 n=64 p=0.005 trials=12
+compiled family=named_crc_linear R=0.75 n=64 p=0.002 trials=12
+compiled family=named_crc_linear R=0.75 n=64 p=0.005 trials=12
+COMPILED_BENCHMARK_DONE rows=48 disagreements=0 failures=0
+
+ELAPSED_SECONDS=4.684957
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FLAGSHIP_PAPER_GATE_v4_0/results/03_compiled_trials_part03.csv --seed 20560815 --n 64 --rates 0.875 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 12 --trials48 12 --trials64 12 --timing-repeats 1 --max-histories 500000 --max-prefix-nodes 50000 --max-trellis-terminals 5000 --max-trellis-dp-updates 0
+compiled family=random_linear R=0.875 n=64 p=0.002 trials=12
+compiled family=random_linear R=0.875 n=64 p=0.005 trials=12
+compiled family=random_linear R=0.875 n=64 p=0.01 trials=12
+compiled family=named_crc_linear R=0.875 n=64 p=0.002 trials=12
+compiled family=named_crc_linear R=0.875 n=64 p=0.005 trials=12
+compiled family=named_crc_linear R=0.875 n=64 p=0.01 trials=12
+COMPILED_BENCHMARK_DONE rows=72 disagreements=0 failures=0
+
+ELAPSED_SECONDS=4.093263
+RETURN_CODE=0

@@ -33,7 +33,7 @@ uint64_t low_mask(int bits) {
 
 int bit(uint64_t x, int i) { return int((x >> i) & 1ULL); }
 
-uint64_t delete_bit(uint64_t word, int position, int n) {
+uint64_t delete_bit(uint64_t word, int position, int /*n*/) {
     const uint64_t lower = word & low_mask(position);
     const uint64_t upper = word >> (position + 1);
     return lower | (upper << position);
@@ -49,12 +49,12 @@ uint64_t insert_bit(uint64_t base, int base_length, int position, int hidden) {
 
 long double component_mass(int mismatches, int m, long double p, int streams) {
     if (p == 0.0L) return mismatches == 0 ? 1.0L / streams : 0.0L;
-    return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches) / streams;
+    return std::pow(p, mismatches) * std::pow(1.0L - p, m - mismatches) / streams;
 }
 
 long double unnormalized_mass(int mismatches, int m, long double p) {
     if (p == 0.0L) return mismatches == 0 ? 1.0L : 0.0L;
-    return std::powl(p, mismatches) * std::powl(1.0L - p, m - mismatches);
+    return std::pow(p, mismatches) * std::pow(1.0L - p, m - mismatches);
 }
 
 struct Code {
@@ -386,7 +386,7 @@ DecodeResult fiber_decode(uint64_t received, const Code& code, long double p, ui
                 if (score > best + TOL) {
                     best = score;
                     best_words = {candidate};
-                } else if (std::fabsl(score - best) <= TOL) {
+                } else if (std::fabs(score - best) <= TOL) {
                     best_words.push_back(candidate);
                 }
             }
@@ -483,7 +483,7 @@ DecodeResult prefix_decode(uint64_t received, const Code& code, long double p, u
                 if (score > best + TOL) {
                     best = score;
                     best_words = {node.prefix};
-                } else if (std::fabsl(score - best) <= TOL) {
+                } else if (std::fabs(score - best) <= TOL) {
                     best_words.push_back(node.prefix);
                 }
             }
@@ -558,7 +558,7 @@ DecodeResult exhaustive_decode(uint64_t received, const Code& code, long double 
         if (score > out.best + TOL) {
             out.best = score;
             out.ties = {word};
-        } else if (std::fabsl(score - out.best) <= TOL) {
+        } else if (std::fabs(score - out.best) <= TOL) {
             out.ties.push_back(word);
         }
     }

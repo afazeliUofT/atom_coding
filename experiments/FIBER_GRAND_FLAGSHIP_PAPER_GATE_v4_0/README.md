@@ -1,6 +1,10 @@
-# FIBER-GRAND Flagship-Paper Gate v4.0
+# FIBER-GRAND Flagship-Paper Gate v4.0 R1
 
 This package is the paper-readiness gate for the **narrow fixed-edit FIBER-GRAND track**. It does not revive the original broad random-transformation or new-guesswork claims.
+
+## Portability repair R1
+
+This release differs from v4.0 only in C++ portability: `std::powl`/`std::fabsl` were replaced by the standard overloaded `std::pow`/`std::fabs` functions. The scientific code path, decision contract, seeds, schedules, tests, theory, and reference evidence are unchanged.
 
 ## Frozen scientific claim
 
