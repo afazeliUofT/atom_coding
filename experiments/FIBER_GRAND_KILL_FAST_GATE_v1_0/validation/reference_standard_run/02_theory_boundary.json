@@ -1,0 +1,32 @@
+{
+  "fiber_guesswork_identity": {
+    "cases": 252,
+    "identity": "G_fib(X|Y) equals optimal posterior conditional guesswork G(X|Y) under a uniform input prior.",
+    "maximum_order_disagreement": 0,
+    "novelty_consequence": "The random variable and its generic Renyi/guessing bounds are not a new information-theoretic object. Novelty must come from channel-specific computation, search inflation, tractability, or decoder-tail theorems.",
+    "pass": true
+  },
+  "manual_novelty_status": "PENDING_PRIMARY_SOURCE_ADJUDICATION",
+  "multiplicity_counterexample": {
+    "aggregate_unique_ml": "000",
+    "best_path_tie": true,
+    "codewords": [
+      "000",
+      "001"
+    ],
+    "pass": true,
+    "received": "00",
+    "scores": {
+      "000": 1.0,
+      "001": 0.3333333333333333
+    }
+  },
+  "pass": true,
+  "random_code_rank_identity": {
+    "cases": 852,
+    "formula": "C(N-g, M-1) / C(N-1, M-1)",
+    "interpretation": "Correct finite-block combinatorial identity, but elementary once posterior rank is defined.",
+    "maximum_exhaustive_error": 0.0,
+    "pass": true
+  }
+}

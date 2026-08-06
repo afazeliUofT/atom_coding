@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "cases": 32736,
+        "maximum_scalar_error": 2.220446049250313e-16,
+        "maximum_vector_error": 2.220446049250313e-16,
+        "pass": true
+      },
+      "name": "likelihood_identities",
+      "pass": true
+    },
+    {
+      "detail": {
+        "maximum_fraction_to_float_error": 0.0,
+        "n": 6,
+        "p": "1/5",
+        "pass": true
+      },
+      "name": "exact_fraction_score",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 2016,
+        "exact_all": true,
+        "false_certificates": 0,
+        "pass": true
+      },
+      "name": "history_and_prefix_decoders",
+      "pass": true
+    },
+    {
+      "detail": {
+        "certified_count": 128,
+        "exact_all": true,
+        "pass": true,
+        "received_cases": 128
+      },
+      "name": "two_deletion_decoder",
+      "pass": true
+    },
+    {
+      "detail": {
+        "certified_count": 256,
+        "exact_all": true,
+        "pass": true,
+        "received_cases": 256
+      },
+      "name": "insertion_decoder",
+      "pass": true
+    },
+    {
+      "detail": {
+        "codes": [
+          {
+            "closed": true,
+            "family": "random_linear",
+            "name": "AUDIT_RLC",
+            "prefix_checks_pass": true,
+            "size": 512
+          },
+          {
+            "closed": true,
+            "family": "crc_like",
+            "name": "AUDIT_CRC",
+            "prefix_checks_pass": true,
+            "size": 256
+          },
+          {
+            "closed": true,
+            "family": "hamming",
+            "name": "HAMMING_15_11",
+            "prefix_checks_pass": true,
+            "size": 2048
+          },
+          {
+            "closed": true,
+            "family": "varshamov_tenengolts",
+            "name": "VT_n11_a0",
+            "prefix_checks_pass": true,
+            "size": 172
+          }
+        ],
+        "pass": true
+      },
+      "name": "code_families",
+      "pass": true
+    }
+  ],
+  "count": 6,
+  "pass": true
+}

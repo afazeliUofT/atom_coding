@@ -1,0 +1,2 @@
+Release-candidate launcher rehearsal is performed after the final ZIP and launcher hashes are frozen.
+The rehearsal uses a temporary Git repository, safe extraction, an isolated virtual environment, all unit tests, the standard scientific profile, and Git commit creation with remote push disabled.

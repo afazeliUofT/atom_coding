@@ -1,0 +1,8 @@
+{
+  "branch": "main",
+  "classification": "PIVOT_TO_REVISED_FIBER_TRACK",
+  "origin": "git@github.com:afazeliUofT/atom_coding.git",
+  "profile": "standard",
+  "target_relative_path": "experiments/FIBER_GRAND_KILL_FAST_GATE_v1_0",
+  "utc_precommit": "2026-08-06T04:46:24+00:00"
+}

@@ -1,0 +1,42 @@
+PDF: /mnt/data/fiber_grand_build/FIBER_GRAND_KILL_FAST_GATE_v1_0/theory/FIBER_GRAND_Collapse_Propositions_and_Kill_Fast_Protocol.pdf
+Pages: 15
+Encrypted: False
+Page sizes (pt, rounded):
+  - 612 x 792 (15 page(s))
+Metadata:
+  /Author: 
+  /CreationDate: D:20260806034657Z
+  /Creator: LaTeX with hyperref
+  /Keywords: 
+  /ModDate: D:20260806034657Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: 
+  /Title: FIBER-GRAND Collapse Propositions and Kill-Fast Protocol
+  /Trapped: /False
+Outline items: 37
+Form fields: 0
+Attachments: 0
+Annotations: 60
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+SJQTMA+LMRoman12-Bold                Type 1            Custom           yes yes yes    156  0
+SUKXGQ+LMRoman17-Regular             Type 1            Custom           yes yes yes    157  0
+LCCRRD+LMRoman12-Regular             Type 1            Custom           yes yes yes    158  0
+KVPCTS+LMRoman10-Bold                Type 1            Custom           yes yes yes    159  0
+QOVGBK+LMRoman10-Regular             Type 1            Custom           yes yes yes    160  0
+MRODRU+LMRoman10-Italic              Type 1            Custom           yes yes yes    190  0
+MTNAFS+LMMathItalic10-Regular        Type 1            Custom           yes yes yes    218  0
+QOVGBK+LMRoman10-Regular             Type 1            Custom           yes yes yes    219  0
+HDGFVG+LMMathItalic8-Regular         Type 1            Custom           yes yes yes    220  0
+OSMRZX+LMMathSymbols10-Regular       Type 1            Custom           yes yes yes    222  0
+MBPVBG+LMMathExtension10-Regular     Type 1            Custom           yes yes yes    224  0
+NINPSH+LMMathSymbols8-Regular        Type 1            Custom           yes yes yes    225  0
+OSTOQW+LMMathItalic6-Regular         Type 1            Custom           yes yes yes    226  0
+RUPJGD+LMRoman8-Regular              Type 1            Custom           yes yes yes    227  0
+KVPCTS+LMRoman10-Bold                Type 1            Custom           yes yes yes    250  0
+JTAWKO+MSBM10                        Type 1            Builtin          yes yes yes    272  0
+QOVGBK+LMRoman10-Regular             Type 1            Custom           yes yes yes    281  0
+IRSZPQ+LMMono10-Regular              Type 1            Custom           yes yes yes    303  0

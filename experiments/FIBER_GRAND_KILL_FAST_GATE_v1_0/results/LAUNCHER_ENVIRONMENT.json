@@ -1,0 +1,14 @@
+{
+  "executable": "/usr/bin/python3",
+  "expected_remote": "git@github.com:afazeliUofT/atom_coding.git",
+  "launcher_version": "1.0",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "profile": "standard",
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "repo": "/home/afazeli2006/atom_coding",
+  "source_zip": "/mnt/c/Users/alifa/Downloads/FIBER_GRAND_KILL_FAST_GATE_v1_0.zip",
+  "source_zip_sha256": "e5c8de04e74ae3384b7aa63aa1c1714d7deb0396c68e855fed5cce982f10b3f7",
+  "target": "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_KILL_FAST_GATE_v1_0",
+  "utc_completed": "2026-08-06T04:46:24+00:00",
+  "venv_python": "/home/afazeli2006/atom_coding/.venv_fiber_gate_v1_0/bin/python"
+}

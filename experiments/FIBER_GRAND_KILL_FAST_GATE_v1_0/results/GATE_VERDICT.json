@@ -1,0 +1,758 @@
+{
+  "authorized_follow_up": "Proceed only to a new claim contract containing: an independent primary-source novelty audit; strong A*/trellis, VT/GC+/marker and code-specific baselines; theorem extraction for search inflation or fixed-parameter edit complexity; and a calibrated synchronization use case.",
+  "classification": "PIVOT_TO_REVISED_FIBER_TRACK",
+  "evidence_summary": {
+    "best_one_deletion_p005": {
+      "algorithm": "HISTORY_L0",
+      "code_family": "random_linear",
+      "code_rate": 0.75,
+      "code_size": 262144,
+      "completion_fraction": 1.0,
+      "exact_fraction": 1.0,
+      "mean_reference_wall_seconds": 0.057016989530529825,
+      "mean_reference_work": 14994636.8,
+      "mean_speedup": 13057.975494471508,
+      "mean_wall_seconds": 0.0016533979098312557,
+      "mean_wall_speedup": 101.7865860098805,
+      "mean_work": 5479.74,
+      "median_candidate_score_speedup": 131072.0,
+      "median_histories": 71.0,
+      "median_membership_fraction": 0.000179290771484375,
+      "median_prefix_nodes": 0.0,
+      "median_speedup": 16908.21447276419,
+      "median_wall_speedup": 106.31411431001199,
+      "median_work": 994.45,
+      "n": 24,
+      "p": 0.05,
+      "p05_speedup": 1131.8942757802279,
+      "p95_work": 13247.465,
+      "p99_histories": 1014.0,
+      "p99_membership_fraction": 0.0018345260620117188,
+      "p99_work": 13271.332999999999
+    },
+    "best_one_insertion_p005": {
+      "code_family": "random_linear",
+      "code_size": 262144,
+      "completion_fraction": 1.0,
+      "exact_fraction": 1.0,
+      "mean_reference_wall_seconds": 0.2689358155184891,
+      "mean_reference_work": 64356351.99999999,
+      "mean_speedup": 177915.7178281979,
+      "mean_wall_seconds": 0.0008237489964812994,
+      "mean_wall_speedup": 685.7626702856826,
+      "mean_work": 2041.1749999999997,
+      "median_candidate_score_speedup": 262144.0,
+      "median_histories": 109.0,
+      "median_membership_fraction": 0.0002231597900390625,
+      "median_wall_speedup": 713.0329338930604,
+      "n": 24,
+      "p": 0.05,
+      "p05_speedup": 11860.001489766506,
+      "p95_work": 6380.434999999998,
+      "p99_histories": 1393.3599999999997,
+      "p99_membership_fraction": 0.0027499389648437495
+    },
+    "best_two_deletion_p005": {
+      "code_family": "random_linear",
+      "code_size": 32768,
+      "completion_fraction": 1.0,
+      "exact_fraction": 1.0,
+      "mean_reference_wall_seconds": 0.0055575905134901404,
+      "mean_reference_work": 2321612.8,
+      "mean_speedup": 309.42109690267966,
+      "mean_wall_seconds": 0.0024749949807301164,
+      "mean_wall_speedup": 2.2519943538757845,
+      "mean_work": 7527.5,
+      "median_candidate_score_speedup": 7281.777777777777,
+      "median_histories": 676.0,
+      "median_membership_fraction": 0.00579833984375,
+      "median_wall_speedup": 2.2519943538757845,
+      "n": 20,
+      "p": 0.05,
+      "p05_speedup": 293.56139025133984,
+      "p95_work": 7913.33,
+      "p99_histories": 707.36,
+      "p99_membership_fraction": 0.00603759765625
+    },
+    "code_transfer_best_p005": {
+      "crc_like": {
+        "algorithm": "HISTORY_L0",
+        "code_family": "crc_like",
+        "completion_fraction": 1.0,
+        "exact_fraction": 1.0,
+        "mean_speedup": 516.1763483787865,
+        "mean_wall_speedup": 2.334021950385423,
+        "median_candidate_score_speedup": 4096.0,
+        "median_membership_fraction": 0.003662109375,
+        "median_wall_speedup": 2.358926831721747,
+        "n": 16,
+        "p": 0.05,
+        "p05_speedup": 449.066323698391,
+        "p99_membership_fraction": 0.004150390625,
+        "rate": 0.75,
+        "size": 4096
+      },
+      "hamming": {
+        "algorithm": "HISTORY_L0",
+        "code_family": "hamming",
+        "completion_fraction": 1.0,
+        "exact_fraction": 1.0,
+        "mean_speedup": 175.46901349620217,
+        "mean_wall_speedup": 1.0718874229869944,
+        "median_candidate_score_speedup": 1024.0,
+        "median_membership_fraction": 0.0078125,
+        "median_wall_speedup": 1.3716934868688444,
+        "n": 15,
+        "p": 0.05,
+        "p05_speedup": 21.630962022843843,
+        "p99_membership_fraction": 0.077802734375,
+        "rate": 0.7333333333333333,
+        "size": 2048
+      },
+      "random_linear": {
+        "algorithm": "HISTORY_L0",
+        "code_family": "random_linear",
+        "completion_fraction": 1.0,
+        "exact_fraction": 1.0,
+        "mean_speedup": 385.5436368836194,
+        "mean_wall_speedup": 1.73522183696255,
+        "median_candidate_score_speedup": 2048.0,
+        "median_membership_fraction": 0.0040283203125,
+        "median_wall_speedup": 1.897572959544561,
+        "n": 16,
+        "p": 0.05,
+        "p05_speedup": 38.56710269272996,
+        "p99_membership_fraction": 0.0432958984375,
+        "rate": 0.75,
+        "size": 4096
+      },
+      "varshamov_tenengolts": {
+        "algorithm": "HISTORY_L0",
+        "code_family": "varshamov_tenengolts",
+        "completion_fraction": 1.0,
+        "exact_fraction": 1.0,
+        "mean_speedup": 266.20251182209876,
+        "mean_wall_speedup": 1.695641729988777,
+        "median_candidate_score_speedup": 2048.0,
+        "median_membership_fraction": 0.00732421875,
+        "median_wall_speedup": 1.7526473924310926,
+        "n": 15,
+        "p": 0.05,
+        "p05_speedup": 244.64866148497416,
+        "p99_membership_fraction": 0.0077587890625,
+        "rate": 0.7333333333333333,
+        "size": 2048
+      }
+    },
+    "code_transfer_families": [
+      "crc_like",
+      "hamming",
+      "random_linear",
+      "varshamov_tenengolts"
+    ],
+    "exactness_checks": 6,
+    "exactness_pass": true,
+    "fiber_guesswork_identity": "G_fib(X|Y) equals optimal posterior conditional guesswork G(X|Y) under a uniform input prior.",
+    "maximum_median_search_inflation": 5.077067669172932,
+    "maximum_pathwise_disagreement_fraction": 0.75,
+    "pathwise_disagreement_configs": 12
+  },
+  "gate_evaluations": {
+    "boundary": {
+      "disagreement_configs": 12,
+      "max_median_search_inflation": 5.077067669172932,
+      "max_p95_history_per_candidate": 2.242293906810036,
+      "pass": true
+    },
+    "code_transfer": {
+      "family_details": {
+        "crc_like": {
+          "algorithms": [
+            {
+              "algorithm": "HISTORY_L0",
+              "code_family": "crc_like",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 516.1763483787865,
+              "mean_wall_speedup": 2.334021950385423,
+              "median_candidate_score_speedup": 4096.0,
+              "median_membership_fraction": 0.003662109375,
+              "median_wall_speedup": 2.358926831721747,
+              "n": 16,
+              "p": 0.05,
+              "p05_speedup": 449.066323698391,
+              "p99_membership_fraction": 0.004150390625,
+              "pass": true,
+              "rate": 0.75,
+              "size": 4096
+            },
+            {
+              "algorithm": "PREFIX_L2",
+              "code_family": "crc_like",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 547.0410914363212,
+              "mean_wall_speedup": 0.9668138832855645,
+              "median_candidate_score_speedup": 4096.0,
+              "median_membership_fraction": 0.000244140625,
+              "median_wall_speedup": 1.0968519020433387,
+              "n": 16,
+              "p": 0.05,
+              "p05_speedup": 175.7315648442269,
+              "p99_membership_fraction": 0.000244140625,
+              "pass": true,
+              "rate": 0.75,
+              "size": 4096
+            }
+          ],
+          "pass": true
+        },
+        "hamming": {
+          "algorithms": [
+            {
+              "algorithm": "HISTORY_L0",
+              "code_family": "hamming",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 175.46901349620217,
+              "mean_wall_speedup": 1.0718874229869944,
+              "median_candidate_score_speedup": 1024.0,
+              "median_membership_fraction": 0.0078125,
+              "median_wall_speedup": 1.3716934868688444,
+              "n": 15,
+              "p": 0.05,
+              "p05_speedup": 21.630962022843843,
+              "p99_membership_fraction": 0.077802734375,
+              "pass": true,
+              "rate": 0.7333333333333333,
+              "size": 2048
+            },
+            {
+              "algorithm": "PREFIX_L2",
+              "code_family": "hamming",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 162.01332750063222,
+              "mean_wall_speedup": 0.3568310269910344,
+              "median_candidate_score_speedup": 2048.0,
+              "median_membership_fraction": 0.00048828125,
+              "median_wall_speedup": 0.2692297550055879,
+              "n": 15,
+              "p": 0.05,
+              "p05_speedup": 57.053067280456595,
+              "p99_membership_fraction": 0.00048828125,
+              "pass": true,
+              "rate": 0.7333333333333333,
+              "size": 2048
+            }
+          ],
+          "pass": true
+        },
+        "random_linear": {
+          "algorithms": [
+            {
+              "algorithm": "HISTORY_L0",
+              "code_family": "random_linear",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 385.5436368836194,
+              "mean_wall_speedup": 1.73522183696255,
+              "median_candidate_score_speedup": 2048.0,
+              "median_membership_fraction": 0.0040283203125,
+              "median_wall_speedup": 1.897572959544561,
+              "n": 16,
+              "p": 0.05,
+              "p05_speedup": 38.56710269272996,
+              "p99_membership_fraction": 0.0432958984375,
+              "pass": true,
+              "rate": 0.75,
+              "size": 4096
+            },
+            {
+              "algorithm": "PREFIX_L2",
+              "code_family": "random_linear",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 252.1992130079678,
+              "mean_wall_speedup": 0.4556566698416351,
+              "median_candidate_score_speedup": 4096.0,
+              "median_membership_fraction": 0.000244140625,
+              "median_wall_speedup": 0.43989912170314416,
+              "n": 16,
+              "p": 0.05,
+              "p05_speedup": 95.37971811072806,
+              "p99_membership_fraction": 0.00046142578125000014,
+              "pass": true,
+              "rate": 0.75,
+              "size": 4096
+            }
+          ],
+          "pass": true
+        },
+        "varshamov_tenengolts": {
+          "algorithms": [
+            {
+              "algorithm": "HISTORY_L0",
+              "code_family": "varshamov_tenengolts",
+              "completion_fraction": 1.0,
+              "exact_fraction": 1.0,
+              "mean_speedup": 266.20251182209876,
+              "mean_wall_speedup": 1.695641729988777,
+              "median_candidate_score_speedup": 2048.0,
+              "median_membership_fraction": 0.00732421875,
+              "median_wall_speedup": 1.7526473924310926,
+              "n": 15,
+              "p": 0.05,
+              "p05_speedup": 244.64866148497416,
+              "p99_membership_fraction": 0.0077587890625,
+              "pass": true,
+              "rate": 0.7333333333333333,
+              "size": 2048
+            }
+          ],
+          "pass": true
+        }
+      },
+      "pass": true,
+      "passing_families": 4
+    },
+    "exactness": {
+      "pass": true
+    },
+    "one_deletion": {
+      "family_details": {
+        "crc_like": {
+          "pass": true,
+          "probabilities": {
+            "0.02": {
+              "algorithms": [
+                {
+                  "algorithm": "HISTORY_L0",
+                  "largest_n": {
+                    "algorithm": "HISTORY_L0",
+                    "code_family": "crc_like",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.05441657399060205,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 20865.850798049047,
+                    "mean_wall_seconds": 0.0006240751943551003,
+                    "mean_wall_speedup": 147.19831579131284,
+                    "mean_work": 1667.2099999999998,
+                    "median_candidate_score_speedup": 131072.0,
+                    "median_histories": 46.0,
+                    "median_membership_fraction": 9.1552734375e-05,
+                    "median_prefix_nodes": 0.0,
+                    "median_speedup": 22615.56878488205,
+                    "median_wall_speedup": 162.54992162038974,
+                    "median_work": 663.05,
+                    "n": 24,
+                    "p": 0.02,
+                    "p05_speedup": 10501.600203796794,
+                    "p95_work": 6253.344999999988,
+                    "p99_histories": 759.6200000000001,
+                    "p99_membership_fraction": 0.0013867187500000001,
+                    "p99_work": 9892.909000000001
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5339152425337758
+                },
+                {
+                  "algorithm": "PREFIX_L2",
+                  "largest_n": {
+                    "algorithm": "PREFIX_L2",
+                    "code_family": "crc_like",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.05441657399060205,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 11968.418280256106,
+                    "mean_wall_seconds": 0.001877951028291136,
+                    "mean_wall_speedup": 40.90981842598579,
+                    "mean_work": 1762.5300000000002,
+                    "median_candidate_score_speedup": 262144.0,
+                    "median_histories": 0.0,
+                    "median_membership_fraction": 3.814697265625e-06,
+                    "median_prefix_nodes": 94.5,
+                    "median_speedup": 12308.52069735494,
+                    "median_wall_speedup": 39.579482844795734,
+                    "median_work": 1227.25,
+                    "n": 24,
+                    "p": 0.02,
+                    "p05_speedup": 4397.606616304518,
+                    "p95_work": 3746.489999999998,
+                    "p99_histories": 0.0,
+                    "p99_membership_fraction": 3.814697265625e-06,
+                    "p99_work": 4535.178000000001
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5468909040169523
+                }
+              ],
+              "pass": true
+            },
+            "0.05": {
+              "algorithms": [
+                {
+                  "algorithm": "HISTORY_L0",
+                  "largest_n": {
+                    "algorithm": "HISTORY_L0",
+                    "code_family": "crc_like",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.06599118969170377,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 10292.654074423537,
+                    "mean_wall_seconds": 0.0016013209940865635,
+                    "mean_wall_speedup": 98.29223023157407,
+                    "mean_work": 4904.610000000001,
+                    "median_candidate_score_speedup": 109226.66666666666,
+                    "median_histories": 140.0,
+                    "median_membership_fraction": 0.0003414154052734375,
+                    "median_prefix_nodes": 0.0,
+                    "median_speedup": 7940.433011282944,
+                    "median_wall_speedup": 95.06647136492282,
+                    "median_work": 1888.6,
+                    "n": 24,
+                    "p": 0.05,
+                    "p05_speedup": 1114.8989838068994,
+                    "p95_work": 13503.814999999999,
+                    "p99_histories": 1093.58,
+                    "p99_membership_fraction": 0.0018985366821289062,
+                    "p99_work": 14120.603000000001
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5229747500474695
+                },
+                {
+                  "algorithm": "PREFIX_L2",
+                  "largest_n": {
+                    "algorithm": "PREFIX_L2",
+                    "code_family": "crc_like",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.06599118969170377,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 6778.027797087921,
+                    "mean_wall_seconds": 0.003407444106414914,
+                    "mean_wall_speedup": 29.913450742377115,
+                    "mean_work": 3261.69,
+                    "median_candidate_score_speedup": 262144.0,
+                    "median_histories": 0.0,
+                    "median_membership_fraction": 3.814697265625e-06,
+                    "median_prefix_nodes": 187.0,
+                    "median_speedup": 6188.820613289119,
+                    "median_wall_speedup": 24.805748466151577,
+                    "median_work": 2425.3,
+                    "n": 24,
+                    "p": 0.05,
+                    "p05_speedup": 2257.925389729823,
+                    "p95_work": 7247.309999999996,
+                    "p99_histories": 0.0,
+                    "p99_membership_fraction": 3.814697265625e-06,
+                    "p99_work": 8720.862000000001
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5404852224570036
+                }
+              ],
+              "pass": true
+            }
+          }
+        },
+        "random_linear": {
+          "pass": true,
+          "probabilities": {
+            "0.02": {
+              "algorithms": [
+                {
+                  "algorithm": "HISTORY_L0",
+                  "largest_n": {
+                    "algorithm": "HISTORY_L0",
+                    "code_family": "random_linear",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.05428508028853685,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 16891.927240203666,
+                    "mean_wall_seconds": 0.0012764723971486092,
+                    "mean_wall_speedup": 118.29612276797086,
+                    "mean_work": 4227.91,
+                    "median_candidate_score_speedup": 262144.0,
+                    "median_histories": 48.0,
+                    "median_membership_fraction": 9.5367431640625e-05,
+                    "median_prefix_nodes": 0.0,
+                    "median_speedup": 22760.52944748027,
+                    "median_wall_speedup": 146.9269168423328,
+                    "median_work": 658.8,
+                    "n": 24,
+                    "p": 0.02,
+                    "p05_speedup": 1129.8696841196715,
+                    "p95_work": 13272.185,
+                    "p99_histories": 1014.0,
+                    "p99_membership_fraction": 0.0018310546875,
+                    "p99_work": 13358.117
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5148163556607152
+                },
+                {
+                  "algorithm": "PREFIX_L2",
+                  "largest_n": {
+                    "algorithm": "PREFIX_L2",
+                    "code_family": "random_linear",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.05428508028853685,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 8550.564537557744,
+                    "mean_wall_seconds": 0.003236307413317263,
+                    "mean_wall_speedup": 30.45541233417079,
+                    "mean_work": 3198.325,
+                    "median_candidate_score_speedup": 262144.0,
+                    "median_histories": 0.0,
+                    "median_membership_fraction": 3.814697265625e-06,
+                    "median_prefix_nodes": 177.0,
+                    "median_speedup": 6543.576012308968,
+                    "median_wall_speedup": 23.119203535196426,
+                    "median_work": 2292.025,
+                    "n": 24,
+                    "p": 0.02,
+                    "p05_speedup": 2055.2142778769676,
+                    "p95_work": 7296.295,
+                    "p99_histories": 0.0,
+                    "p99_membership_fraction": 3.814697265625e-06,
+                    "p99_work": 7335.139
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5276677309197355
+                }
+              ],
+              "pass": true
+            },
+            "0.05": {
+              "algorithms": [
+                {
+                  "algorithm": "HISTORY_L0",
+                  "largest_n": {
+                    "algorithm": "HISTORY_L0",
+                    "code_family": "random_linear",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.057016989530529825,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 13057.975494471508,
+                    "mean_wall_seconds": 0.0016533979098312557,
+                    "mean_wall_speedup": 101.7865860098805,
+                    "mean_work": 5479.74,
+                    "median_candidate_score_speedup": 131072.0,
+                    "median_histories": 71.0,
+                    "median_membership_fraction": 0.000179290771484375,
+                    "median_prefix_nodes": 0.0,
+                    "median_speedup": 16908.21447276419,
+                    "median_wall_speedup": 106.31411431001199,
+                    "median_work": 994.45,
+                    "n": 24,
+                    "p": 0.05,
+                    "p05_speedup": 1131.8942757802279,
+                    "p95_work": 13247.465,
+                    "p99_histories": 1014.0,
+                    "p99_membership_fraction": 0.0018345260620117188,
+                    "p99_work": 13271.332999999999
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5274379194670547
+                },
+                {
+                  "algorithm": "PREFIX_L2",
+                  "largest_n": {
+                    "algorithm": "PREFIX_L2",
+                    "code_family": "random_linear",
+                    "code_rate": 0.75,
+                    "code_size": 262144,
+                    "completion_fraction": 1.0,
+                    "exact_fraction": 1.0,
+                    "mean_reference_wall_seconds": 0.057016989530529825,
+                    "mean_reference_work": 14994636.8,
+                    "mean_speedup": 8022.573254704328,
+                    "mean_wall_seconds": 0.003315935586579144,
+                    "mean_wall_speedup": 30.07747895733228,
+                    "mean_work": 3224.64,
+                    "median_candidate_score_speedup": 262144.0,
+                    "median_histories": 0.0,
+                    "median_membership_fraction": 3.814697265625e-06,
+                    "median_prefix_nodes": 143.5,
+                    "median_speedup": 8100.437380346848,
+                    "median_wall_speedup": 29.327078237239775,
+                    "median_work": 1863.15,
+                    "n": 24,
+                    "p": 0.05,
+                    "p05_speedup": 2165.234793923209,
+                    "p95_work": 6938.0199999999995,
+                    "p99_histories": 0.0,
+                    "p99_membership_fraction": 3.814697265625e-06,
+                    "p99_work": 7153.084000000001
+                  },
+                  "pass": true,
+                  "slope_advantage": 0.5438492766625068
+                }
+              ],
+              "pass": true
+            }
+          }
+        }
+      },
+      "pass": true,
+      "passing_families": 2
+    },
+    "one_insertion": {
+      "family_details": {
+        "random_linear": {
+          "pass": true,
+          "probabilities": {
+            "0.02": {
+              "largest_n": {
+                "code_family": "random_linear",
+                "code_size": 262144,
+                "completion_fraction": 1.0,
+                "exact_fraction": 1.0,
+                "mean_reference_wall_seconds": 0.282288446003804,
+                "mean_reference_work": 64356351.99999999,
+                "mean_speedup": 290774.908786493,
+                "mean_wall_seconds": 0.00044186710147187114,
+                "mean_wall_speedup": 1078.7568885268272,
+                "mean_work": 878.29375,
+                "median_candidate_score_speedup": 262144.0,
+                "median_histories": 25.0,
+                "median_membership_fraction": 5.340576171875e-05,
+                "median_wall_speedup": 1278.1604888142324,
+                "n": 24,
+                "p": 0.02,
+                "p05_speedup": 21069.91549427858,
+                "p95_work": 3068.305,
+                "p99_histories": 571.96,
+                "p99_membership_fraction": 0.0010945129394531248
+              },
+              "pass": true,
+              "slope_advantage": 0.743407588498898
+            },
+            "0.05": {
+              "largest_n": {
+                "code_family": "random_linear",
+                "code_size": 262144,
+                "completion_fraction": 1.0,
+                "exact_fraction": 1.0,
+                "mean_reference_wall_seconds": 0.2689358155184891,
+                "mean_reference_work": 64356351.99999999,
+                "mean_speedup": 177915.7178281979,
+                "mean_wall_seconds": 0.0008237489964812994,
+                "mean_wall_speedup": 685.7626702856826,
+                "mean_work": 2041.1749999999997,
+                "median_candidate_score_speedup": 262144.0,
+                "median_histories": 109.0,
+                "median_membership_fraction": 0.0002231597900390625,
+                "median_wall_speedup": 713.0329338930604,
+                "n": 24,
+                "p": 0.05,
+                "p05_speedup": 11860.001489766506,
+                "p95_work": 6380.434999999998,
+                "p99_histories": 1393.3599999999997,
+                "p99_membership_fraction": 0.0027499389648437495
+              },
+              "pass": true,
+              "slope_advantage": 0.6047130033260284
+            }
+          }
+        }
+      },
+      "pass": true,
+      "passing_families": 1
+    },
+    "theory_identity": {
+      "pass": true
+    },
+    "two_deletion": {
+      "family_details": {
+        "random_linear": {
+          "pass": true,
+          "probabilities": {
+            "0.02": {
+              "largest_n": {
+                "code_family": "random_linear",
+                "code_size": 32768,
+                "completion_fraction": 1.0,
+                "exact_fraction": 1.0,
+                "mean_reference_wall_seconds": 0.005809622001834214,
+                "mean_reference_work": 2321612.8,
+                "mean_speedup": 283.52964777633736,
+                "mean_wall_seconds": 0.003069939441047609,
+                "mean_wall_speedup": 1.9016236906036301,
+                "mean_work": 8192.15,
+                "median_candidate_score_speedup": 3686.4,
+                "median_histories": 730.0,
+                "median_membership_fraction": 0.0062103271484375,
+                "median_wall_speedup": 1.9016236906036301,
+                "n": 20,
+                "p": 0.02,
+                "p05_speedup": 277.96489195305304,
+                "p95_work": 8352.935,
+                "p99_histories": 743.72,
+                "p99_membership_fraction": 0.00631500244140625
+              },
+              "pass": true,
+              "slope_advantage": 0.5966208084934415
+            },
+            "0.05": {
+              "largest_n": {
+                "code_family": "random_linear",
+                "code_size": 32768,
+                "completion_fraction": 1.0,
+                "exact_fraction": 1.0,
+                "mean_reference_wall_seconds": 0.0055575905134901404,
+                "mean_reference_work": 2321612.8,
+                "mean_speedup": 309.42109690267966,
+                "mean_wall_seconds": 0.0024749949807301164,
+                "mean_wall_speedup": 2.2519943538757845,
+                "mean_work": 7527.5,
+                "median_candidate_score_speedup": 7281.777777777777,
+                "median_histories": 676.0,
+                "median_membership_fraction": 0.00579833984375,
+                "median_wall_speedup": 2.2519943538757845,
+                "n": 20,
+                "p": 0.05,
+                "p05_speedup": 293.56139025133984,
+                "p95_work": 7913.33,
+                "p99_histories": 707.36,
+                "p99_membership_fraction": 0.00603759765625
+              },
+              "pass": true,
+              "slope_advantage": 0.6091309591021616
+            }
+          }
+        }
+      },
+      "pass": true,
+      "passing_families": 1
+    }
+  },
+  "manual_novelty_gate": "PENDING_INDEPENDENT_PRIMARY_SOURCE_ADJUDICATION",
+  "reason": "Certified aggregate inverse search shows a broad early computational signal across one deletion, one insertion, two deletions, and several unmodified code families. However, 'fiber guesswork' is ordinary posterior conditional guesswork and the elementary rank/certificate results are not a new information-theoretic object.",
+  "stage": "COMPUTATIONAL_CORE_PASSED_NOVELTY_REFRAME_REQUIRED",
+  "stop_original_claim": true,
+  "surviving_path": "Reframe the programme around certified code-modular aggregate inverse search, search-inflation/ambiguity laws, and a tractability-complexity theorem. Do not claim a new guesswork random variable.",
+  "warning": "This is evidence of field-defining potential, not proof of novelty, asymptotic superiority, or real-system relevance."
+}

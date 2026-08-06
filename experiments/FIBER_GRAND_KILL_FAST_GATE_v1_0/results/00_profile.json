@@ -1,0 +1,84 @@
+{
+  "config": {
+    "bootstrap_replicates": 100,
+    "boundary_blocklengths": [
+      10,
+      12
+    ],
+    "boundary_probabilities": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "boundary_trials": 20,
+    "code_transfer_probabilities": [
+      0.05
+    ],
+    "code_transfer_trials": 12,
+    "insertion_blocklengths": [
+      12,
+      16,
+      20,
+      24
+    ],
+    "insertion_code_families": [
+      "RLC"
+    ],
+    "insertion_probabilities": [
+      0.02,
+      0.05
+    ],
+    "insertion_rate": 0.75,
+    "insertion_trials": {
+      "12": 30,
+      "16": 24,
+      "20": 16,
+      "24": 8
+    },
+    "max_histories": 250000,
+    "max_prefix_nodes": 250000,
+    "max_two_deletion_histories": 12000,
+    "one_deletion_blocklengths": [
+      12,
+      16,
+      20,
+      24
+    ],
+    "one_deletion_code_families": [
+      "RLC",
+      "CRC"
+    ],
+    "one_deletion_probabilities": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "one_deletion_rate": 0.75,
+    "one_deletion_trials": {
+      "12": 40,
+      "16": 32,
+      "20": 20,
+      "24": 10
+    },
+    "seed": 20260806,
+    "two_deletion_blocklengths": [
+      12,
+      16,
+      20
+    ],
+    "two_deletion_code_families": [
+      "RLC"
+    ],
+    "two_deletion_probabilities": [
+      0.02,
+      0.05
+    ],
+    "two_deletion_rate": 0.75,
+    "two_deletion_trials": {
+      "12": 4,
+      "16": 3,
+      "20": 2
+    }
+  },
+  "profile": "standard"
+}

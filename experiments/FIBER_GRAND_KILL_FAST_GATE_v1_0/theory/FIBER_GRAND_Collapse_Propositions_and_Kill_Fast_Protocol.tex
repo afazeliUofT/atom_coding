@@ -1,0 +1,502 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array,tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{lastpage}
+
+\definecolor{navy}{RGB}{24,60,98}
+\definecolor{blue}{RGB}{42,111,165}
+\definecolor{lightblue}{RGB}{232,242,249}
+\definecolor{darkred}{RGB}{135,25,25}
+\definecolor{darkgreen}{RGB}{20,100,55}
+\hypersetup{colorlinks=true,linkcolor=navy,citecolor=navy,urlcolor=blue,pdftitle={FIBER-GRAND Collapse Propositions and Kill-Fast Protocol}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{FIBER-GRAND Kill-Fast Protocol}
+\rhead{Scientific Investment Gate v1.0}
+\cfoot{\thepage\ of \pageref{LastPage}}
+\setlength{\headheight}{14pt}
+\titleformat{\section}{\Large\bfseries\color{navy}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{navy}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{blue}}{\thesubsubsection}{0.5em}{}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newenvironment{gatebox}{\begin{center}\begin{minipage}{0.94\textwidth}\color{navy}\hrule\vspace{0.5em}}{\vspace{0.5em}\hrule\end{minipage}\end{center}}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\Prb}{\mathbb P}
+\newcommand{\E}{\mathbb E}
+\newcommand{\FG}{\textsc{FIBER-GRAND}}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{1.2cm}
+{\Large\bfseries\color{navy} FOUNDATIONAL ERROR-CONTROL CODING RESEARCH AUDIT\par}
+\vspace{1.4cm}
+{\Huge\bfseries\color{navy} FIBER-GRAND\par}
+\vspace{0.35cm}
+{\LARGE Collapse Propositions and Kill-Fast Protocol\par}
+\vspace{0.75cm}
+{\large A preregistered scientific investment gate for certified aggregate decoding of non-invertible transformation channels\par}
+\vspace{1.2cm}
+\begin{minipage}{0.88\textwidth}
+\colorbox{lightblue}{\parbox{0.94\textwidth}{
+\textbf{Purpose.} Determine, before a multi-year investment, whether aggregate inverse-channel search has a credible route to a field-defining coding/decoding programme. The gate separates mathematical correctness, finite-block computational mechanism, code modularity, bounded-edit transfer, novelty, strong-baseline survival, and real-system relevance. A hard failure generates an explicit STOP command.
+}}
+\end{minipage}
+\vfill
+\begin{tabular}{@{}ll@{}}
+\textbf{Programme under audit:} & FIBER-GRAND proposal, scientific-audit revision 4 \\
+\textbf{Primary starting channel:} & Exactly one deletion plus independent substitutions \\
+\textbf{Computational scope:} & One deletion, one insertion, two deletions, four code families \\
+\textbf{Decision classes:} & CONTINUE, REVISED PIVOT, NARROW PIVOT, STOP \\
+\textbf{Release:} & v1.0, August 2026
+\end{tabular}
+\vspace{1cm}
+\end{titlepage}
+
+\begin{abstract}
+The proposal under audit makes a correct and important observation: on a non-invertible random-transformation channel, maximum-likelihood (ML) decoding ranks candidate inputs by the \emph{sum} of all latent-history probabilities that generate the observation, not by the probability of the first or best individual history. The one-deletion-plus-substitution likelihood and its simple unseen-candidate bound are mathematically sound. The proposal's field-defining case, however, cannot rest merely on defining a transformation fiber, restating posterior candidate rank as ``fiber guesswork,'' or applying a generic branch-and-bound certificate. Conditional guesswork with side information is classical, and admissible best-first/priority-first search, alignment summation, weighted transducers, and synchronization decoding have substantial prior art.
+
+This dossier identifies the narrower scientific residue that could still be foundational: a code-modular aggregate inverse-search engine whose \emph{fully accounted} exact work is substantially below codeword-wise ML; a theory of search inflation and ambiguity overhead; and a tractability boundary for bounded-edit or bounded-drift channels. It proves the exact membership-first form of the one-deletion decoder, generalizes the unseen bound to fixed edit-position stream families, and specifies a reproducible experiment suite with preregistered GO/NARROW/STOP thresholds. The computational package checks exactness exhaustively, measures how often pathwise first-hit is wrong, compares history-driven and prefix-driven certified search against exhaustive codeword ML, tests one insertion and two deletions, and transfers the same channel engine across random-linear, CRC-like, Hamming, and VT codebooks. A positive standard run authorizes only a revised claim contract; it cannot by itself establish novelty, superiority over specialized synchronization decoders, or field-defining status.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Proposal reconstruction and scientific boundary}
+
+\subsection{The proposal's central claim}
+Let a latent transformation history $Z=z$ act on an input $x$ through $T_z$, producing $Y=T_z(x)$. For fixed $(x,y)$, define the inverse history fiber
+\begin{equation}
+\mathcal F_y(x)=\{z:T_z(x)=y\},
+\end{equation}
+and its aggregate score
+\begin{equation}
+\Lambda_y(x)=\sum_{z\in\mathcal F_y(x)}p(z\mid x)=W(y\mid x).
+\label{eq:aggregate}
+\end{equation}
+For a uniform prior over a codebook $\cC$, exact ML decoding is
+\begin{equation}
+\widehat c_{\rm ML}(y)\in\arg\max_{c\in\cC}\Lambda_y(c).
+\end{equation}
+The proposal correctly distinguishes this from ranking candidates by
+\begin{equation}
+M_y(x)=\max_{z\in\mathcal F_y(x)}p(z\mid x),
+\end{equation}
+which is a best-path rather than best-candidate criterion.
+
+\subsection{What is scientifically correct and immediately useful}
+The following statements survive direct audit.
+\begin{enumerate}[label=\textbf{C\arabic*.},leftmargin=2.2em]
+\item \textbf{Multiplicity can reverse the candidate order.} For $\cC=\{000,001\}$, observation $00$, and one uniform deletion with no substitutions, $\Lambda_{00}(000)=1$ while $\Lambda_{00}(001)=1/3$, although every compatible individual deletion history has mass $1/3$.
+\item \textbf{The fixed-observation order condition is exact.} A pathwise first-hit rule is ML for every codebook if and only if its induced candidate order never places a lower-$\Lambda_y$ candidate before a higher-$\Lambda_y$ candidate.
+\item \textbf{The general lazy certificate is valid.} If an incumbent codeword lower bound exceeds every discovered-competitor upper bound and a valid upper bound on every undiscovered candidate, the incumbent is exact ML.
+\item \textbf{The one-deletion likelihood is linear-time per candidate.} All deletion-alignment mismatch counts can be updated by a one-step recurrence.
+\item \textbf{The simple multi-stream unseen bound is valid.} If $\eta_j$ is the largest unprocessed component in deletion stream $j$, every completely unseen candidate has score at most $\sum_j\eta_j$.
+\end{enumerate}
+
+\subsection{What cannot carry a field-defining novelty claim}
+Three conceptual corrections are mandatory.
+
+\paragraph{Candidate rank is conditional guesswork.}
+Under a uniform prior on $X$, Bayes' rule gives
+\begin{equation}
+P_{X\mid Y}(x\mid y)\propto W(y\mid x)=\Lambda_y(x).
+\end{equation}
+Therefore the proposal's
+\begin{equation}
+G_{\rm fib}(X\mid Y)=\operatorname{rank}_{\Lambda_Y}(X)
+\end{equation}
+is exactly the optimal posterior guessing rank of $X$ given side information $Y$. Guessing with side information and its conditional R\'enyi characterization were studied by Ar\i kan and subsequently sharpened nonasymptotically by Sason and Verd\'u~\cite{arikan1996,sasonverdu2018}. The term ``fiber guesswork'' may remain a channel-specific interpretation, but not a new generic random variable.
+
+\paragraph{The stopping lemma is a branch-and-bound certificate.}
+The inequality comparing an incumbent lower bound to frontier or residual upper bounds is mathematically useful, but it is structurally a standard admissible-search certificate. Sequential synchronization decoding, priority-first ML decoding, weighted automata, and best-first search all provide relevant prior foundations~\cite{gallager1961,han1993,mohri2009}. Novelty must lie in a new bound, a new complexity theorem, or a new code-modular implementation advantage---not in the abstract certificate alone.
+
+\paragraph{Summing hidden alignments is established inference semantics.}
+Forward summation over deletion/insertion alignments, pair-HMM paths, and weighted-transducer paths is established. ML deletion analyses explicitly depend on embedding/alignment multiplicity~\cite{davey2001,sabary2020,sabary2022}. The proposal's defensible distinction is not ``sum the paths,'' but rather:
+\begin{equation}
+\boxed{\text{aggregate inverse-channel search} + \text{generic code interface} + \text{runtime exact certificate} + \text{work-tail theory}.}
+\end{equation}
+
+\section{Minimal mathematical development}
+
+\subsection{One deletion plus substitutions}
+Let $x=(x_1,\ldots,x_n)\in\{0,1\}^n$. Each bit is independently flipped with probability $p<1/2$, after which exactly one location $J$ is deleted with probability $q_j$. The observation has length $n-1$. For deletion position $j$, define
+\begin{equation}
+d_j(x,y)=\sum_{i<j}\mathbf 1\{x_i\ne y_i\}+\sum_{i>j}\mathbf 1\{x_i\ne y_{i-1}\}.
+\end{equation}
+Then
+\begin{equation}
+\Lambda_y(x)=\sum_{j=1}^{n}q_j p^{d_j(x,y)}(1-p)^{n-1-d_j(x,y)}.
+\label{eq:d1score}
+\end{equation}
+All $d_j$ are obtained in $O(n)$ time from
+\begin{align}
+d_1(x,y)&=\sum_{i=2}^{n}\mathbf 1\{x_i\ne y_{i-1}\},\\
+d_{j+1}(x,y)&=d_j(x,y)-\mathbf 1\{x_{j+1}\ne y_j\}+\mathbf 1\{x_j\ne y_j\}.
+\end{align}
+
+\subsection{History streams and the unseen-candidate bound}
+For each $j$, enumerate surviving-bit substitution patterns $e\in\{0,1\}^{n-1}$ in nonincreasing BSC mass, and both possible deleted input bits $b\in\{0,1\}$. The inverse candidate is
+\begin{equation}
+x=\operatorname{Ins}_j(y\oplus e,b),
+\end{equation}
+with component mass
+\begin{equation}
+\omega_j(e)=q_jp^{w_H(e)}(1-p)^{n-1-w_H(e)}.
+\end{equation}
+Let $\eta_j(t)$ be the next unprocessed mass in stream $j$.
+
+\begin{theorem}[Unseen-candidate bound and exact stopping]
+At any search time $t$, every candidate never emitted by any stream satisfies
+\begin{equation}
+\Lambda_y(x)\le U_t^{\rm new}:=\sum_{j=1}^n\eta_j(t).
+\end{equation}
+Assume every discovered complete candidate has been membership-tested and every discovered codeword has been exactly scored. Let
+\begin{equation}
+s_t^\star=\max_{c\in\cC\cap D_t}\Lambda_y(c),\qquad
+T_t^\star=\{c\in\cC\cap D_t:\Lambda_y(c)=s_t^\star\},
+\end{equation}
+where $D_t$ is the set of discovered candidates. If $\cC\cap D_t\neq\varnothing$ and
+\begin{equation}
+s_t^\star>U_t^{\rm new},
+\end{equation}
+then $T_t^\star$ is exactly the global ML tie set. In particular, the ML codeword is unique if and only if $|T_t^\star|=1$.
+\end{theorem}
+
+\begin{proof}
+For an unseen $x$, its unique component in each alignment stream has not been emitted and therefore has mass at most that stream's next mass $\eta_j(t)$. Summing the $n$ alignment contributions proves the bound. Every discovered codeword has its exact score represented in $s_t^\star$ and $T_t^\star$, while discovered noncodewords are outside the optimization domain. The strict inequality excludes every undiscovered codeword from tying or exceeding $s_t^\star$, so the global ML tie set is precisely $T_t^\star$.
+\end{proof}
+
+\subsection{Membership-first refinement}
+The proposal's literal Algorithm~1 exactly scores every newly discovered candidate before checking code membership. That work is unnecessary.
+
+\begin{proposition}[Membership-first exactness]
+Assume (i) every newly discovered complete candidate is subjected to an exact code-membership test, (ii) every discovered codeword is exactly scored, and (iii) $U_t^{\rm new}$ remains a valid bound on every completely undiscovered candidate. Then discovered noncodewords need not be exactly scored. Stopping when the best discovered-codeword score exceeds $U_t^{\rm new}$ remains exact ML.
+\end{proposition}
+
+\begin{proof}
+A discovered noncodeword is not in the maximization domain $\cC$. The only possible competitors are discovered codewords, which are exactly scored, and undiscovered codewords, each bounded by $U_t^{\rm new}$.
+\end{proof}
+
+This refinement is essential for the code-agnostic claim: with a cheap membership oracle, complete likelihood evaluation is performed only for the small subset of emitted candidates that are codewords.
+
+\subsection{Prefix aggregate search}
+For a candidate prefix $u$, maintain alignment-specific mismatch counts accumulated over processed input symbols. Because $p<1/2$, every unprocessed surviving symbol contributes at most $1-p$. Thus
+\begin{equation}
+B(u)=\sum_{j=1}^{n}q_jp^{m_j(u)}(1-p)^{n-1-m_j(u)}
+\end{equation}
+is an admissible upper bound on every full candidate extending $u$, where $m_j(u)$ counts observed mismatches already forced under deletion alignment $j$. Best-first expansion with an optional prefix-feasibility oracle is exact when the incumbent score exceeds the largest frontier bound.
+
+The computational package distinguishes:
+\begin{itemize}
+\item \textbf{PREFIX-L0}: no code-specific prefix pruning;
+\item \textbf{PREFIX-L2}: systematic-linear prefix feasibility, representing code-assisted acceleration rather than membership-only universality.
+\end{itemize}
+
+\subsection{Fixed edit-position generalization}
+For exactly $t$ uniform deletions, there are $\binom nt$ deletion-position streams. Each stream emits a surviving substitution pattern and $t$ hidden input bits. The same proof yields
+\begin{equation}
+U_t^{\rm new}=\sum_{S:\,|S|=t}\eta_S.
+\end{equation}
+The naive number of streams is $\Theta(n^t)$ for fixed $t$. This is polynomial for each fixed $t$ but is an \emph{XP} dependence, not a proof of fixed-parameter tractability $f(t)n^c$. Any FPT claim requires a different merged-state or combinatorial argument.
+
+One insertion has an analogous stream family indexed by insertion position, with the observed inserted symbol probability included in the component mass.
+
+\section{Collapse propositions}
+The programme should be evaluated conjunctively. A fatal failure cannot be averaged away by a favorable score elsewhere.
+
+\begin{longtable}{p{0.08\textwidth}p{0.35\textwidth}p{0.27\textwidth}p{0.22\textwidth}}
+\toprule
+\textbf{Gate} & \textbf{Necessary proposition} & \textbf{Required early evidence} & \textbf{Failure action}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Gate} & \textbf{Necessary proposition} & \textbf{Required early evidence} & \textbf{Failure action}\\
+\midrule
+\endhead
+F0 & The surviving synthesis is not already equivalent to established conditional guesswork, A$^\star$/priority-first decoding, weighted-transducer inference, or a known synchronization decoder. & Independent claim-by-claim primary-source audit. & Stop the field-defining claim or rename/narrow.\\
+F1 & The aggregate likelihood, inverse generators, membership-first rule, and certificates are exactly correct. & Exhaustive micro-world agreement; zero false certificates. & Immediate hard STOP until repaired.\\
+F2 & Path multiplicity changes decisions often enough to justify aggregation. & Pathwise first-hit disagrees with aggregate ML in multiple nondegenerate configurations. & Stop the aggregation programme; ordinary first-hit suffices in the tested domain.\\
+F3 & The first complete channel has a strong code-agnostic computational mechanism. & One deletion plus substitutions: exact completion, controlled tails, and large total-work reduction on at least two unmodified code families. & Stop the broad programme.\\
+F4 & The inverse search does not pay back its gain through hidden expansion. & Search inflation relative to ideal posterior rank and history-per-candidate overhead remain controlled. & Tighten bounds once; if unchanged, STOP or narrow.\\
+F5 & Code modularity is operational rather than rhetorical. & Same channel engine works on random-linear, CRC-like, Hamming, and nonlinear/VT membership oracles. & Reclassify as a code-specific synchronization decoder.\\
+F6 & The mechanism transfers beyond the single hand-picked channel. & Positive one-insertion and two-deletion results under the same certificate discipline. & Narrow to one deletion; do not claim a general transformation paradigm.\\
+F7 & The gain survives strong exact and specialized baselines. & Priority-first/A$^\star$, channel-code trellis where exact, VT/GC+/marker/polar synchronization methods, and codeword-side likelihood search receive equal channel knowledge. & If gains disappear, STOP the field-defining programme.\\
+F8 & A genuinely new theorem exists beyond generic posterior guesswork and branch-and-bound. & Search-inflation law, ambiguity-dependent complexity bound, FPT/XP/hardness boundary, or certified resource converse. & Algorithm paper only; no field-defining theory claim.\\
+F9 & At least one calibrated physical impairment lies in the favorable regime. & Post-front-end timing-slip, deletion/duplication, variable-demapping, or storage trace with fair end-to-end comparison. & Theoretical/special-purpose result only.\\
+\bottomrule
+\end{longtable}
+
+\begin{gatebox}
+\textbf{Investment discipline.} F1 is a binary correctness gate. F2--F4 decide whether the core mechanism exists. F5--F6 decide breadth. F7--F9 decide whether the work can plausibly become field-defining. The released standard package can close only F1--F6. A positive computational result therefore emits a \emph{revised pivot}, not an unconditional field-defining continuation.
+\end{gatebox}
+
+\section{Computational programme}
+
+\subsection{E0: exactness and implementation audit}
+The package checks:
+\begin{enumerate}
+\item one-deletion recurrence, dynamic program, vectorized codeword scoring, and exact rational scoring;
+\item one-insertion likelihood against independent vectorized scoring;
+\item complete history-driven decoding for one and two deletions;
+\item prefix-driven decoding and certificate validity;
+\item random-linear, CRC-like, Hamming, and VT membership/codeword construction;
+\item zero false certificates in exhaustive small observation spaces.
+\end{enumerate}
+Any discrepancy produces
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+STOP_FIELD_DEFINING_FIBER_PROGRAMME
+STAGE=EXACTNESS_OR_CERTIFICATE_FAILURE
+\end{lstlisting}
+
+\subsection{E1: theory and novelty-boundary audit}
+The code verifies three finite identities:
+\begin{enumerate}
+\item aggregate candidate order equals posterior order under a uniform prior;
+\item the random-code conditional success law is
+\begin{equation}
+\Prb\{\widehat X=X\mid G=g\}
+=\frac{\binom{N-g}{M-1}}{\binom{N-1}{M-1}};
+\end{equation}
+\item the minimal one-deletion multiplicity counterexample is reproduced exactly.
+\end{enumerate}
+The first two are scientifically useful but not field-defining novelty.
+
+\subsection{E2: path-versus-fiber boundary and search inflation}
+For small $n$, enumerate the full ambient input space and compute exact aggregate likelihood ranks. For each random trial, record:
+\begin{align}
+I_{\rm search}^{\rm opt}&=\frac{Q_{\rm cand}}{G_{\rm posterior}^{\rm optimistic}},\\
+I_{\rm search}^{\rm pess}&=\frac{Q_{\rm cand}}{G_{\rm posterior}^{\rm pessimistic}},\\
+I_{\rm hist}&=\frac{Q_{\rm hist}}{Q_{\rm cand}}.
+\end{align}
+The test includes uniform and edge-biased deletion positions and substitution probabilities $p\in\{0,0.05,0.10\}$. It also measures the frequency with which pathwise first-hit returns a non-ML codeword.
+
+\subsection{E3: one deletion plus substitutions}
+At $n\in\{12,16,20,24\}$ and rate near $0.75$, compare:
+\begin{itemize}
+\item HISTORY-L0: membership-only history enumeration with membership-first exact scoring;
+\item PREFIX-L0: code-independent prefix bound without prefix pruning;
+\item PREFIX-L2: prefix feasibility for systematic linear codes;
+\item exhaustive codeword-wise exact ML.
+\end{itemize}
+Use random-linear and CRC-like codes, $p\in\{0.02,0.05,0.10\}$, and per-block records sufficient to recompute all means and tails.
+
+\subsection{E4--E5: bounded-edit transfer}
+E4 tests one insertion plus substitutions at the same lengths and rates. E5 tests two deletions at $n\in\{10,12,14,16,18,20\}$. These are not substitutes for a general transducer theorem; they ask whether the same aggregate-search principle survives two structurally different extensions.
+
+\subsection{E6: code-family transfer}
+Use one-deletion plus substitutions on:
+\begin{itemize}
+\item random systematic linear code;
+\item deterministic CRC-like cyclic code;
+\item Hamming $(15,11)$ code;
+\item nonlinear VT code with a checksum membership oracle.
+\end{itemize}
+The same channel history engine must remain exact. PREFIX-L2 is reported only where the code exposes the required interface.
+
+\section{Cost accounting and preregistered thresholds}
+
+\subsection{Work vector}
+The package does not report ``number of guesses'' alone. It records
+\begin{equation}
+\mathbf W=(Q_{\rm hist},Q_{\rm cand},Q_{\rm mem},Q_{\rm score},Q_{\rm symbol},Q_{\rm heap},Q_{\rm bound},Q_{\rm prefix},M_{\rm peak},T_{\rm wall}).
+\end{equation}
+Three scalar work models---optimistic, balanced, and pessimistic---apply frozen weights to these components. The scientific record retains the full vector, so a reviewer can replace the scalarization.
+
+\subsection{Reference baseline}
+The initial computational gate uses exhaustive codeword-wise aggregate ML as an independent exact oracle and a first work reference. This is necessary for correctness and for establishing whether candidate-likelihood evaluation is avoided. It is \emph{not} sufficient for a final field-defining claim. The next contract must include exact priority-first/code-trellis methods and specialized synchronization systems.
+
+\subsection{Core thresholds}
+The standard profile requires, at $p=0.02$ and $p=0.05$:
+\begin{itemize}
+\item one deletion: at least two code families, completion at least $0.95$, mean total-work speedup at least $20$, fifth-percentile speedup at least $2$, median candidate-score reduction at least $100$, and favorable work-slope separation;
+\item one insertion: at least one family with mean speedup at least $15$;
+\item two deletions: at least one family with mean speedup at least $10$;
+\item code transfer: at least three families passing at $p=0.05$;
+\item boundary: multiple pathwise-error configurations, median search inflation no greater than $20$, and controlled history inflation.
+\end{itemize}
+These are early-investment thresholds, not claims of universal superiority.
+
+\section{Decision logic}
+
+\subsection{STOP}
+Emit
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+STOP_FIELD_DEFINING_FIBER_PROGRAMME
+\end{lstlisting}
+when exactness fails, path multiplicity is operationally irrelevant, or the one-deletion core fails to produce a strong exact computational signal across two code families.
+
+\subsection{Narrow pivot}
+Emit
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+PIVOT_TO_NARROW_ONE_EDIT_FIBER_TRACK
+\end{lstlisting}
+when the first one-deletion problem passes but insertion/two-deletion/code-transfer evidence does not. This authorizes one narrowly scoped theorem/algorithm paper, not a general random-transformation programme.
+
+\subsection{Revised pivot}
+Emit
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+PIVOT_TO_REVISED_FIBER_TRACK
+\end{lstlisting}
+when F1--F6 pass. The original wording must still stop because ``fiber guesswork'' is not a new general information-theoretic object. The revised programme is:
+\begin{equation}
+\boxed{\text{certified code-modular aggregate inverse search} + \text{ambiguity/search-inflation theory} + \text{tractability boundary}.}
+\end{equation}
+
+\subsection{Full continuation}
+A full field-defining continuation is deliberately not machine-authorized by the present release. It additionally requires:
+\begin{enumerate}
+\item independent primary-source novelty adjudication;
+\item strong exact and specialized baseline survival;
+\item a new decoder-specific theorem beyond the generic certificate;
+\item a calibrated real synchronization impairment and end-to-end advantage.
+\end{enumerate}
+
+\section{Real use cases and model discipline}
+The proposal's strongest application candidates are not generic wireless links but systems in which the receiver truly observes a small, probabilistically weighted alignment uncertainty:
+\begin{enumerate}
+\item \textbf{Short-packet timing slips:} missed/duplicated symbol decisions or bounded sample-clock drift, with the synchronizer exporting an alignment lattice rather than a single hard alignment.
+\item \textbf{Variable-length demapping:} unequal-length labels or framing errors create insertion/deletion uncertainty; candidate demapping histories are aggregated jointly with FEC membership.
+\item \textbf{Storage and DNA:} deletion/insertion/substitution channels and short strands provide natural benchmark domains, though they do not by themselves establish telecommunications relevance.
+\item \textbf{Packet-sequence transformations:} bounded loss, duplication, and reordering with outer checksum/network-code membership.
+\end{enumerate}
+A physical claim requires measured post-front-end statistics. Merely renaming a deletion channel as ``clock slip'' is insufficient.
+
+\section{Scientific interpretation of a positive early result}
+A positive standard run would establish four things:
+\begin{enumerate}
+\item aggregation is operationally necessary because pathwise first-hit can be wrong;
+\item the simple certificate can stop far before codebook-wide likelihood evaluation in favorable short, high-rate regimes;
+\item membership-first scoring makes the L0 code interface genuinely useful;
+\item the same mechanism transfers at least to one insertion, two deletions, and unrelated codebooks.
+\end{enumerate}
+It would \emph{not} establish:
+\begin{itemize}
+\item that the method beats the best specialized decoder;
+\item an asymptotic complexity exponent advantage;
+\item polynomial-time exact decoding for unrestricted transducers;
+\item novelty of posterior guesswork;
+\item a real telecommunications deployment advantage.
+\end{itemize}
+The correct outcome in that situation is a revised, sharply de-risked programme rather than either premature celebration or premature termination.
+
+\section{Authorized next contract after a revised pivot}
+Only the following four tasks are authorized after a positive computational gate.
+
+\subsection{N1: independent novelty matrix}
+For every proposed theorem or algorithmic claim, identify the closest primary source in conditional guesswork, sequential synchronization decoding, priority-first ML decoding, weighted transducers, ambiguous probabilistic automata, and deletion/insertion decoding. Classify each claim as distinct, partially anticipated, known, or unresolved.
+
+\subsection{N2: strong baseline gate}
+Implement or obtain reproducible baselines for:
+\begin{itemize}
+\item priority-first/A$^\star$ decoding on a code trellis;
+\item exact channel-code forward or list methods where feasible;
+\item VT, Guess-and-Check/GC+, marker/watermark, and synchronization-polar methods in their matched regimes;
+\item align-then-decode and best-path approximations;
+\item codeword-wise aggregate likelihood and any exact list-pruning alternative.
+\end{itemize}
+The revised programme stops if its fully accounted advantage disappears.
+
+\subsection{N3: theorem extraction}
+Target one of the following, in order of value:
+\begin{enumerate}
+\item a nontrivial bound on $Q_{\rm cand}/G(X\mid Y)$ or $Q_{\rm hist}/Q_{\rm cand}$ in terms of alignment ambiguity;
+\item a strict fixed-parameter/XP boundary for bounded deletions or drift;
+\item a hardness theorem showing where exact aggregate candidate search ceases to be favorable;
+\item a certified resource-constrained converse under an explicit oracle model.
+\end{enumerate}
+
+\subsection{N4: calibrated use-case gate}
+Use one real or high-fidelity front-end model. Freeze the channel law and compare total latency, memory, reliability, and tail behavior. Do not begin FPGA/ASIC work before N1--N3 survive.
+
+\section{Reproducibility contract}
+The package includes:
+\begin{itemize}
+\item complete source code and tests;
+\item frozen profile and decision contract;
+\item exact micro-world audits;
+\item compressed per-trial tables and uncompressed summaries;
+\item figures and machine-readable verdict;
+\item SHA-256 manifests;
+\item a WSL launcher that creates an isolated environment, runs the gate, and publishes only the experiment package to GitHub.
+\end{itemize}
+An installation, dependency, authentication, or push failure must be reported as
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+EXECUTION_BLOCKED_NOT_A_SCIENTIFIC_VERDICT
+\end{lstlisting}
+and never converted into a scientific STOP.
+
+
+\section{Reference-standard release validation}
+The frozen standard profile was executed independently before release. Fourteen unit tests and all six higher-level exactness groups passed. The machine classification was
+\begin{lstlisting}[basicstyle=\ttfamily\small]
+PIVOT_TO_REVISED_FIBER_TRACK
+STAGE=COMPUTATIONAL_CORE_PASSED_NOVELTY_REFRAME_REQUIRED
+\end{lstlisting}
+The decisive finite-block evidence is summarized in Table~\ref{tab:validation}. Operation-count speedup uses the frozen balanced work vector and exhaustive codeword-wise aggregate ML as the initial exact reference. Wall-clock measurements are Python/NumPy implementation measurements on the validation machine and are reported separately.
+
+\begin{longtable}{@{}p{0.19\textwidth}p{0.18\textwidth}p{0.18\textwidth}p{0.38\textwidth}@{}}
+\caption{Reference-standard early computational signal. Values are finite-block observations, not asymptotic or hardware claims.}\label{tab:validation}\\
+\toprule
+\textbf{Test} & \textbf{Frozen operation signal} & \textbf{Python wall-clock signal} & \textbf{Interpretation}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Test} & \textbf{Frozen operation signal} & \textbf{Python wall-clock signal} & \textbf{Interpretation}\\
+\midrule
+\endhead
+Path/fiber boundary, $n=10$--$12$ & Search inflation at most $5.08$ in median across frozen configurations & Not a speed benchmark & Pathwise first-hit disagreement reached $0.75$; aggregation is operationally necessary rather than merely semantic.\\
+One deletion, $p=0.05$, $n=24$ & Mean speedup $1.31\times10^4$; completion $1.00$ & Median speedup about $83$ & Median 71 histories; 99th percentile 1014; median membership fraction $1.79\times10^{-4}$.\\
+One insertion, $p=0.05$, $n=24$ & Mean speedup $1.78\times10^5$; completion $1.00$ & Median speedup about $6.3\times10^2$ & Median 109 histories; 99th percentile about 1393.\\
+Two deletions, $p=0.05$, $n=20$ & Mean speedup $3.09\times10^2$; completion $1.00$ & Median speedup about $1.87$ & Positive but modest wall-clock gain at the largest tested length; only two largest-$n$ trials were used in this kill-fast probe.\\
+Code transfer, $p=0.05$, $n=15$--$16$ & Mean speedups about $1.75\times10^2$--$5.16\times10^2$ & HISTORY-L0 mean speedups about $1.59$--$2.59$ & Random-linear, CRC-like, Hamming, and VT membership interfaces all remained exact.\\
+\bottomrule
+\end{longtable}
+
+The evidence is unusually strong for the one-deletion and one-insertion computational mechanism. It is not yet a field-defining result for four reasons. First, the exact reference is exhaustive codeword-wise likelihood evaluation rather than the full set of strongest specialized baselines. Second, the two-deletion wall-clock gain is modest and based on a deliberately small largest-length sample. Third, the generic information-theoretic interpretation of ``fiber guesswork'' is already conditional posterior guesswork. Fourth, no calibrated physical synchronization trace has been tested.
+
+Accordingly, the original claim set must stop, while a revised and sharply bounded research path is scientifically justified. The next investment gate is N1--N4, not a deep rerun of the same synthetic experiments.
+
+\section{Conclusion}
+The attached proposal is scientifically stronger than a superficial ``GRAND for deletions'' description. It identifies the right ML semantic object and supplies a valid exact certificate for a controlled non-invertible channel. Its broad field-defining language nevertheless overstates the novelty of candidate rank and generic bounded search. The kill-fast protocol therefore tests the computational core aggressively while preregistering a mandatory theoretical reframe.
+
+The programme deserves further investment only if exact aggregate search simultaneously demonstrates path-multiplicity relevance, controlled search inflation, strong work reduction, code transfer, and bounded-edit transfer. Even then, the next stage is not hardware or a general transducer library. It is a narrow novelty-and-baseline confrontation followed by extraction of a genuinely new complexity theorem. If those tests fail, the programme must stop immediately.
+
+\begin{thebibliography}{99}
+\bibitem{shannon1948} C. E. Shannon, ``A mathematical theory of communication,'' \emph{Bell System Technical Journal}, 1948.
+\bibitem{duffy2019} K. R. Duffy, J. Li, and M. M\'edard, ``Capacity-achieving guessing random additive noise decoding,'' \emph{IEEE Trans. Inf. Theory}, 2019.
+\bibitem{arikan1996} E. Ar\i kan, ``An inequality on guessing and its application to sequential decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 42, no. 1, pp. 99--105, 1996.
+\bibitem{sasonverdu2018} I. Sason and S. Verd\'u, ``Improved bounds on lossless source coding and guessing moments via R\'enyi measures,'' \emph{IEEE Trans. Inf. Theory}, vol. 64, no. 6, pp. 4323--4346, 2018.
+\bibitem{gallager1961} R. G. Gallager, ``Sequential decoding for binary channel with noise and synchronization errors,'' MIT Lincoln Laboratory Group Report, 1961.
+\bibitem{han1993} Y. S. Han, C. R. P. Hartmann, and C.-C. Chen, ``Efficient priority-first search maximum-likelihood soft-decision decoding of linear block codes,'' \emph{IEEE Trans. Inf. Theory}, 1993.
+\bibitem{davey2001} M. C. Davey and D. J. C. MacKay, ``Reliable communication over channels with insertions, deletions, and substitutions,'' \emph{IEEE Trans. Inf. Theory}, 2001.
+\bibitem{mohri2009} M. Mohri, ``Weighted automata algorithms,'' in \emph{Handbook of Weighted Automata}, Springer, 2009.
+\bibitem{sabary2020} O. Sabary, E. Yaakobi, and A. Yucovich, ``The error probability of maximum-likelihood decoding over two deletion channels,'' arXiv:2001.05582, 2020.
+\bibitem{sabary2022} O. Sabary, D. Bar-Lev, Y. Gershon, A. Yucovich, and E. Yaakobi, ``On the decoding error weight of one or two deletion channels,'' arXiv:2201.02466, 2022.
+\bibitem{higuera2014} C. de la Higuera and J. Oncina, ``The most probable string: an algorithmic study,'' \emph{J. Logic and Computation}, vol. 24, no. 2, pp. 311--330, 2014.
+\bibitem{haeupler2021} B. Haeupler and A. Shahrasbi, ``Synchronization strings and codes for insertions and deletions---a survey,'' arXiv:2101.00711, 2021.
+\bibitem{proposal2026} ``FIBER-GRAND: Exact Code-Agnostic Decoding for Finite-Length Non-Invertible Random-Transformation Channels,'' research proposal, scientific-audit revision 4, August 2026.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,18 @@
+{
+  "package_name": "FIBER_GRAND_KILL_FAST_GATE_v1_0",
+  "release_version": "1.0",
+  "release_date": "2026-08-06",
+  "default_profile": "standard",
+  "scientific_scope": "pre-registered early research-investment gate; not a universal impossibility theorem and not a novelty judgment by itself",
+  "reference_validation_classification": "PIVOT_TO_REVISED_FIBER_TRACK",
+  "reference_validation_command": "STOP_ORIGINAL_FIBER_GRAND_CLAIM_SET",
+  "required_manual_gates": [
+    "independent primary-source novelty adjudication",
+    "strong exact and specialized synchronization baselines",
+    "new search-inflation, tractability, or resource theorem",
+    "calibrated real synchronization impairment"
+  ],
+  "target_repo_relative_path": "experiments/FIBER_GRAND_KILL_FAST_GATE_v1_0",
+  "working_directory": "/home/afazeli2006/atom_coding",
+  "github_repository": "git@github.com:afazeliUofT/atom_coding.git"
+}

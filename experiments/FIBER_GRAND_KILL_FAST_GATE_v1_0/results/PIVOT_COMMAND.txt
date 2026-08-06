@@ -1,0 +1,5 @@
+STOP_ORIGINAL_FIBER_GRAND_CLAIM_SET
+PIVOT_CLASS=PIVOT_TO_REVISED_FIBER_TRACK
+PIVOT_STAGE=COMPUTATIONAL_CORE_PASSED_NOVELTY_REFRAME_REQUIRED
+SURVIVING_PATH=Reframe the programme around certified code-modular aggregate inverse search, search-inflation/ambiguity laws, and a tractability-complexity theorem. Do not claim a new guesswork random variable.
+REQUIRE_NEW_CLAIM_CONTRACT=YES

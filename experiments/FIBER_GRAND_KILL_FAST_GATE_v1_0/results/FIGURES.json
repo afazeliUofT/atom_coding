@@ -1,0 +1,11 @@
+{
+  "count": 6,
+  "generated": [
+    "FIG_01_pathwise_boundary.png",
+    "FIG_02_one_deletion_work.png",
+    "FIG_03_one_deletion_speedup.png",
+    "FIG_04_one_insertion_work.png",
+    "FIG_05_two_deletion_work.png",
+    "FIG_06_code_transfer.png"
+  ]
+}
