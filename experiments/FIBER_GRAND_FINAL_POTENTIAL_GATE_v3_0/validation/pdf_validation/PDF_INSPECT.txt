@@ -1,0 +1,42 @@
+PDF: /mnt/data/fiber_final_work/FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0/theory/FIBER_GRAND_Final_Novelty_Theory_and_Potential_Gate.pdf
+Pages: 16
+Encrypted: False
+Page sizes (pt, rounded):
+  - 612 x 792 (16 page(s))
+Metadata:
+  /Author: 
+  /CreationDate: D:20260806192211Z
+  /Creator: LaTeX with hyperref
+  /Keywords: 
+  /ModDate: D:20260806192211Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: 
+  /Title: 
+  /Trapped: /False
+Outline items: 29
+Form fields: 0
+Attachments: 0
+Annotations: 70
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+WUFWWG+CMBX12                        Type 1            Builtin          yes yes yes    177  0
+FCIALU+CMR12                         Type 1            Builtin          yes yes yes    178  0
+VZLXZP+CMR10                         Type 1            Builtin          yes yes yes    179  0
+MWEHAQ+CMTI10                        Type 1            Builtin          yes yes yes    180  0
+AACPAW+CMTT10                        Type 1            Builtin          yes yes yes    181  0
+LJNITN+CMBX10                        Type 1            Builtin          yes yes yes    183  0
+ODQOBI+CMMI10                        Type 1            Builtin          yes yes yes    224  0
+HTFPFD+CMSY10                        Type 1            Builtin          yes yes yes    225  0
+MRRPUK+SFRM1095                      Type 1            Custom           yes yes yes    275  0
+SLOHQP+CMMI8                         Type 1            Builtin          yes yes yes    292  0
+YEKAIZ+CMEX10                        Type 1            Builtin          yes yes yes    293  0
+CDBBVV+CMSY8                         Type 1            Builtin          yes yes yes    295  0
+HCTWUU+CMMI6                         Type 1            Builtin          yes yes yes    296  0
+DGNCVS+CMR8                          Type 1            Builtin          yes yes yes    297  0
+JCIOMA+CMR9                          Type 1            Builtin          yes yes yes    306  0
+PJZRLC+CMR6                          Type 1            Builtin          yes yes yes    337  0
+RAZVEJ+MSBM10                        Type 1            Builtin          yes yes yes    351  0
+XQFHRK+CMTI8                         Type 1            Builtin          yes yes yes    364  0

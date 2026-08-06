@@ -1,0 +1,61 @@
+{
+  "contract_version": "3.0",
+  "scientific_scope": "final early-investment gate, not a retrospective guarantee of field impact",
+  "novelty": {
+    "required_adjudication": "NARROW_NOVELTY_SURVIVES",
+    "stop_if_complete_synthesis_known": true,
+    "withdrawn_claims": [
+      "new fiber guesswork random variable",
+      "generic best-path/best-string distinction",
+      "generic A* or branch-and-bound novelty",
+      "unrestricted transducer tractability"
+    ]
+  },
+  "exactness": {
+    "false_certificate_tolerance": 0,
+    "all_micro_checks_required": true,
+    "all_primary_agreement_required": true
+  },
+  "moment_tail_theory": {
+    "maximum_largest_n_reveal_moment_gap": 0.09,
+    "maximum_largest_n_certificate_upper_gap": 0.2,
+    "maximum_largest_n_quantile_gap": 0.08,
+    "require_gap_decrease_fraction": 0.75,
+    "orders": [
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "phase_diagram": {
+    "require_monotone_thresholds": true,
+    "require_mean_threshold_below_typical_threshold": true
+  },
+  "benchmark": {
+    "minimum_completion_fraction": 1.0,
+    "minimum_predicted_favorable_configs": 4,
+    "minimum_configs_median_wall_win_1p25": 2,
+    "maximum_median_ratio_in_any_predicted_favorable_config": 3.0,
+    "maximum_p95_ratio_for_at_least_two_configs": 1.25,
+    "maximum_favorable_slope_disadvantage": 0.08,
+    "minimum_favorable_configs_with_nondegrading_slope": 2
+  },
+  "vt_boundary": {
+    "exact_agreement_required": true,
+    "require_linear_candidate_checks": true,
+    "performance_interpretation": "boundary only; FIBER is not expected to beat a specialized VT decoder"
+  },
+  "physical_plausibility": {
+    "minimum_exactly_one_slip_fraction": 0.95,
+    "maximum_deletion_position_tv_to_fitted": 0.2,
+    "maximum_absolute_p_fit_error": 0.02,
+    "maximum_error_lag1_correlation": 0.12,
+    "measured_real_trace_required_for_field_defining_status": true
+  },
+  "classifications": {
+    "continue": "CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED",
+    "narrow": "NARROW_TO_FIXED_EDIT_THEOREM_AND_ALGORITHM_PAPER",
+    "stop": "STOP_FIBER_FIELD_DEFINING_PROGRAMME"
+  },
+  "stop_rule": "Stop immediately on a correctness failure, a failed moment/tail theorem audit, complete prior-art anticipation, or systematic domination by strong exact baselines in the theoretically favorable region."
+}

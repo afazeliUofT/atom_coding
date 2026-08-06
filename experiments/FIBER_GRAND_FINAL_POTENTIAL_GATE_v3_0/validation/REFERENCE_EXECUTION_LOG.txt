@@ -1,0 +1,86 @@
+[E0] Exactness, complete ties, shell, moment-sandwich, and VT audit...
+[E1] Primary-source novelty adjudication for the narrowed claim...
+[E2] Exact finite-length Renyi moment, tail, and LDP audit...
+[E3] Typical-versus-mean rate-complexity phase diagram...
+[E4] Codebook-free FIBER versus syndrome-trellis and prefix A* near the phase boundary...
+    benchmark family=random_linear R=0.750 n=24 p=0.005
+    benchmark family=random_linear R=0.750 n=24 p=0.010
+    benchmark family=random_linear R=0.750 n=24 p=0.020
+    benchmark family=random_linear R=0.750 n=24 p=0.040
+    benchmark family=random_linear R=0.750 n=32 p=0.005
+    benchmark family=random_linear R=0.750 n=32 p=0.010
+    benchmark family=random_linear R=0.750 n=32 p=0.020
+    benchmark family=random_linear R=0.750 n=32 p=0.040
+    benchmark family=random_linear R=0.750 n=40 p=0.005
+    benchmark family=random_linear R=0.750 n=40 p=0.010
+    benchmark family=random_linear R=0.750 n=40 p=0.020
+    benchmark family=random_linear R=0.750 n=40 p=0.040
+    benchmark family=random_linear R=0.875 n=24 p=0.005
+    benchmark family=random_linear R=0.875 n=24 p=0.010
+    benchmark family=random_linear R=0.875 n=24 p=0.020
+    benchmark family=random_linear R=0.875 n=24 p=0.040
+    benchmark family=random_linear R=0.875 n=32 p=0.005
+    benchmark family=random_linear R=0.875 n=32 p=0.010
+    benchmark family=random_linear R=0.875 n=32 p=0.020
+    benchmark family=random_linear R=0.875 n=32 p=0.040
+    benchmark family=random_linear R=0.875 n=40 p=0.005
+    benchmark family=random_linear R=0.875 n=40 p=0.010
+    benchmark family=random_linear R=0.875 n=40 p=0.020
+    benchmark family=random_linear R=0.875 n=40 p=0.040
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.005
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.010
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.020
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.040
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.005
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.010
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.020
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.040
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.005
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.010
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.020
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.040
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.005
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.010
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.020
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.040
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.005
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.010
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.020
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.040
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.005
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.010
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.020
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.040
+[E5] True O(n) VT single-deletion specialization boundary...
+[E6] Calibrated synthetic timing-slip front end and optional measured trace audit...
+[E7] Frozen scientific decision...
+
+==============================================================================
+FINAL CLASSIFICATION: CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED
+STAGE: NARROW_NOVELTY_THEORY_AND_COMPUTATIONAL_POTENTIAL_CONFIRMED
+REASON: The narrowed fixed-edit synthesis survived the primary-source audit, exact certificate checks, new Renyi moment/tail theory, phase-diagram audit, and codebook-free comparison with two exact code-specific searches in the predicted favorable region.
+==============================================================================
+
+	Command being timed: "python -m fiber_final.run_gate --profile standard"
+	User time (seconds): 23.96
+	System time (seconds): 1.22
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:24.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 230356
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48182
+	Voluntary context switches: 32
+	Involuntary context switches: 128
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1616
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

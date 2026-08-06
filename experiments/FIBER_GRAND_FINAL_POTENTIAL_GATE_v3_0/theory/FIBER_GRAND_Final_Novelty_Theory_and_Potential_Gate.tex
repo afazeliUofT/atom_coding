@@ -1,0 +1,693 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.78in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable,tabularx,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{siunitx}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\urlstyle{same}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Fixed-edit FIBER--GRAND final potential gate}
+\rhead{August 2026}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\emergencystretch=2em
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newcommand{\C}{\mathcal C}
+\newcommand{\J}{\mathcal J}
+\newcommand{\Hh}{\mathcal H}
+\newcommand{\Qhist}{Q_{\rm hist}}
+\newcommand{\Qfib}{Q_{\rm FIBER}}
+\newcommand{\Qcode}{Q_{\rm code}}
+\newcommand{\Rhist}{R_{\rm hist}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\Dkl}{D_2}
+\newcommand{\hbin}{h_2}
+\newcommand{\Renyi}{H}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\poly}{\operatorname{poly}}
+\newcommand{\argmax}{\operatorname*{arg\,max}}
+\newcommand{\argmin}{\operatorname*{arg\,min}}
+
+\title{\textbf{Fixed-Edit FIBER--GRAND: Final Novelty, Theory, and Potential Gate}\\[1.5mm]
+\large Exact membership-only aggregate inverse decoding, moment/tail laws, and a typical-versus-mean complexity phase diagram}
+\author{Scientific de-risking dossier, version 3.0}
+\date{6 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{tcolorbox}[colback=blue!4,colframe=blue!55!black,title=Authoritative scientific status]
+The original broad FIBER--GRAND proposal must remain narrowed.  ``Fiber guesswork'' is ordinary posterior conditional guesswork; best-path versus best-string inference, hidden-path summation, priority-first search, and generic candidate-likelihood guessing are established.  The surviving candidate is a narrower theorem-and-algorithm synthesis for a \emph{fixed number of synchronization edits}: a codebook-free membership-only aggregate inverse generator, a strict unseen-candidate certificate, fixed-edit history moment and tail laws, and an operating-region comparison with code-side exact search.
+
+The internal reference run of this package returns
+\begin{center}
+\small\path{CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED}
+\end{center}
+This means \emph{high potential, not field-defining status}.  A measured post-front-end trace, independent external proof review, and independent novelty review remain mandatory.  Any failure at that next gate is an immediate stop command.
+\end{tcolorbox}
+
+\tableofcontents
+\newpage
+
+\section{Purpose and frozen decision discipline}
+The earlier computational gates established three facts.  First, pathwise first-hit decoding can disagree with aggregate maximum likelihood (ML) on deletion channels.  Second, a membership-first aggregate inverse decoder can be made exact through a strict residual-mass certificate.  Third, at short lengths and low substitution probabilities, the decoder can be competitive with code-specific exact searches while using only syndrome or checksum membership rather than a materialized codebook.
+
+Those results did not settle the most important field-defining questions:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item whether any genuinely new theorem survives the prior-art boundary;
+\item whether typical, mean, and tail complexity have the same operating region;
+\item whether the finite-length computational advantage is consistent with the new theory rather than a Python artifact;
+\item whether a physically calibrated synchronization impairment occupies the favorable regime.
+\end{enumerate}
+This dossier develops the first three questions rigorously and supplies a reproducible gate for the fourth.  It does not permit the broad claim to be rescued by changing terminology after a negative result.
+
+\subsection{Three possible outcomes}
+\begin{description}[leftmargin=2.8em,style=nextline]
+\item[CONTINUE]
+\path{CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED}.  The narrow novelty, exactness, moment/tail theory, phase diagram, and strong-baseline signal all survive.  Only paper-grade compiled implementation, external proof/novelty review, and one measured post-front-end trace are authorized.
+\item[NARROW]
+\path{NARROW_TO_FIXED_EDIT_THEOREM_AND_ALGORITHM_PAPER}.  The mathematics survives but the scalable decoder advantage does not.  A bounded-edit theorem/algorithm paper may proceed; the multi-year field-defining investment stops.
+\item[STOP]
+\path{STOP_FIBER_FIELD_DEFINING_PROGRAMME}.  A novelty, correctness, or moment/tail theorem fails, or strong exact baselines systematically dominate in the theoretically favorable regime.  No hardware, general-transducer, or broad systems programme is permitted.
+\end{description}
+
+\section{Narrowed novelty adjudication}
+\subsection{Claims withdrawn permanently}
+The following are not new contributions of the revised programme.
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Posterior candidate rank.}  Ranking $x$ by $W(y\mid x)$ under a uniform input prior is ordinary conditional guesswork.  Its R\'enyi and large-deviation theory has established foundations \cite{Arikan1996,Li2018}.
+\item \textbf{Best path versus best string.}  Ambiguous probabilistic automata distinguish a most-probable path from a most-probable emitted string, and the general most-probable-string problem is NP-hard for probabilistic automata \cite{HigueraOncina2014}.
+\item \textbf{Priority-first or sequential search.}  Priority-first ML decoding of linear block codes and synchronization-error sequential decoding are classical or established lines \cite{Gallager1961,Han1993,Banerjee2022}.
+\item \textbf{Summing hidden alignments.}  Forward-backward and weighted-transducer methods sum alignment paths, including in insertion/deletion/substitution receivers \cite{DaveyMacKay2001,Mohri2009}.
+\item \textbf{Generic candidate-likelihood guessing.}  Guessing-based decoders for general discrete memoryless channels can rank input candidates by channel closeness and query code membership \cite{TanJoudeh2025}; modern work also unifies noise-side and codeword-side guessing \cite{Wang2025}.
+\item \textbf{Unrestricted transducer tractability.}  General ambiguous automata can be computationally hard or undecidable, while bounded ambiguity supports only qualified algorithmic results \cite{HigueraOncina2014,Fijalkow2022}.
+\end{enumerate}
+
+\subsection{Closest insertion/deletion prior art}
+The narrow audit also found substantial overlap in synchronization coding:
+\begin{itemize}[leftmargin=2em]
+\item Gallager's 1961 report and later drift-state sequential decoders already search synchronization hypotheses \cite{Gallager1961,Banerjee2022}.
+\item A 1990 patent enumerates insertion/deletion ``error frames,'' decodes each frame, computes a word likelihood, and selects a maximum-probability output \cite{US4922494}.
+\item Fixed-$k$ deletion work derives multiplicity-aware ML/ML* rules for one and two deletions \cite{Sabary2022}.
+\item GC/GC+ codes and VT codes provide specialized polynomial or linear-time decoders for fixed deletions \cite{Hanna2017,Abroshan2017}.
+\item Polar guard-band constructions achieve information rates on insertion/deletion/substitution channels in an asymptotic, code-designed regime \cite{PfisterTal2021}.
+\item GRAND-assisted modulation already applies lightweight GRAND ideas to a specialized variable-length demapping problem \cite{Ozaydin2022}.
+\end{itemize}
+
+\subsection{Residual novelty classification}
+No located primary source contains the complete narrow package below as one theorem-and-algorithm result:
+\begin{quote}
+For a fixed number of uniformly located deletions followed by survivor BSC substitutions, generate inverse histories in probability order; canonicalize candidates; query only a code-membership oracle; exactly score only discovered codewords; terminate by a strict sum-of-stream-frontiers certificate; and characterize the history-revelation moments, tails, and rate-dependent operating region.
+\end{quote}
+The appropriate classification is therefore
+\[
+\boxed{\texttt{NARROW\_NOVELTY\_SURVIVES},}
+\]
+not ``a wholly new decoding principle.''  The shell and moment theorems may be viewed as elegant but elementary unless joined by a meaningful operating-region theorem and convincing implementation evidence.  No search can exclude unpublished work or every patent family; an external novelty review remains required.
+
+\begin{table}[t]
+\centering
+\caption{Claim-by-claim novelty boundary.}
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.29\textwidth}p{0.30\textwidth}X@{}}
+\toprule
+Statement & Closest established line & Classification \\
+\midrule
+Additive disturbance first-hit GRAND & GRAND \cite{Duffy2019} & Known \\
+General channel candidate guessing & Guessing with abandonment \cite{TanJoudeh2025} & Known \\
+Best path versus aggregate string & Probabilistic automata \cite{HigueraOncina2014} & Known \\
+Priority-first exact search & Han et al. \cite{Han1993} & Known \\
+Synchronization sequential decoding & Gallager; Banerjee et al. \cite{Gallager1961,Banerjee2022} & Known \\
+Enumerate edit frames, decode, score, select & US4922494A \cite{US4922494} & Partially anticipated \\
+Fixed-$k$ deletion multiplicity-aware ML & Sabary et al. \cite{Sabary2022} & Known ingredients \\
+Membership-only aggregate inverse generation with strict sum-of-frontiers certificate & No complete primary result located & Distinct, narrow \\
+Fixed-edit revelation moment/tail theorem & Guesswork supplies calculus, but no identical fixed-edit statement located & Distinct, narrow \\
+Typical-versus-mean rate-complexity phase diagram & GRAND/GCD regime work is prior; this fixed-edit synthesis not located & Distinct synthesis \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Channel, history representation, and exact decoder}
+\subsection{Fixed-edit deletion/BSC channel}
+Let $x\in\{0,1\}^n$ and fix an edit count $t<n$.  A deletion set $J\subseteq[n]$, $|J|=t$, is selected uniformly from
+\[
+\J_t=\{J\subseteq[n]:|J|=t\},\qquad S_n=|\J_t|=\binom nt.
+\]
+The $m=n-t$ surviving symbols pass through a BSC with crossover probability $0\le p<1/2$, producing $y\in\{0,1\}^m$.  For candidate $x$, let $d_J(x,y)$ be the Hamming distance between $y$ and the subsequence of $x$ obtained by deleting $J$.  The exact likelihood is
+\begin{equation}
+\Lambda_y(x)=W(y\mid x)=\frac1{S_n}\sum_{J\in\J_t}p^{d_J(x,y)}(1-p)^{m-d_J(x,y)}.
+\label{eq:likelihood}
+\end{equation}
+For $p=0$, each term is interpreted as the indicator of an exact subsequence match.
+
+\subsection{Inverse histories}
+An inverse history is
+\[
+h=(J,b,e)\in\Hh_n:=\J_t\times\{0,1\}^t\times\{0,1\}^m,
+\]
+where $b$ supplies the deleted symbols and $e$ is a survivor substitution pattern.  It generates
+\[
+x_h=\operatorname{Ins}_{J}(y\oplus e,b)
+\]
+with component weight
+\begin{equation}
+\omega(h)=\frac1{S_n}p^{\wt(e)}(1-p)^{m-\wt(e)}.
+\label{eq:component}
+\end{equation}
+For each candidate $x$, exactly one $(b,e)$ is compatible with each $J$, hence
+\[
+\Lambda_y(x)=\sum_{h:x_h=x}\omega(h).
+\]
+The $2^t$ hidden assignments are inverse candidates, not extra channel-probability factors; this is why the sum of history weights over all inverse histories exceeds one, while each candidate likelihood remains correct.
+
+\subsection{Membership-first aggregate inverse decoder}
+For every deletion set $J$, create a stream that enumerates $(e,b)$ in increasing substitution weight.  Merge the stream heads in a max heap.  Maintain a set of distinct candidates.  At first discovery of $x$:
+\begin{enumerate}[label=(\alph*),leftmargin=2em]
+\item query \texttt{IsCodeword}$(x)$;
+\item only if true, compute the complete likelihood \eqref{eq:likelihood};
+\item update the incumbent ML score and discovered tie set.
+\end{enumerate}
+Scoring discovered noncodewords is unnecessary: they cannot compete in the code-constrained maximization, and every undiscovered codeword remains covered by the global frontier bound.
+
+\begin{algorithm}[t]
+\caption{Certified fixed-edit FIBER search}
+\begin{algorithmic}[1]
+\Require $y$, $t$, $p$, membership oracle for $\C$, history budget
+\State initialize one probability-ordered stream for each $J\in\J_t$
+\State $D\gets\emptyset$; $s^\star\gets-\infty$; $T^\star\gets\emptyset$
+\While{the global heap is nonempty}
+  \State pop the largest next history; advance its stream
+  \State construct $x_h$
+  \If{$x_h\notin D$}
+    \State $D\gets D\cup\{x_h\}$; query \texttt{IsCodeword}$(x_h)$
+    \If{$x_h\in\C$}
+      \State compute exact $\Lambda_y(x_h)$ and update $(s^\star,T^\star)$
+    \EndIf
+  \EndIf
+  \State $U_{\rm new}\gets\sum_{J\in\J_t}\eta_J$, where $\eta_J$ is stream $J$'s next weight
+  \If{$T^\star\ne\emptyset$ and $s^\star>U_{\rm new}$}
+    \State \Return the complete ML tie set $T^\star$ and the strict certificate
+  \EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\begin{theorem}[Strict unseen-candidate certificate]
+\label{thm:certificate}
+Let $\eta_J$ be the weight of the next unprocessed history in stream $J$, or zero if the stream is exhausted.  Every completely unseen candidate $x$ satisfies
+\[
+\Lambda_y(x)\le U_{\rm new}:=\sum_{J\in\J_t}\eta_J.
+\]
+Suppose every discovered codeword has been exactly scored and let
+\[
+s^\star=\max_{c\in\C\cap D}\Lambda_y(c),\qquad
+T^\star=\{c\in\C\cap D:\Lambda_y(c)=s^\star\}.
+\]
+If $s^\star>U_{\rm new}$, then
+\[
+T^\star=\argmax_{c\in\C}\Lambda_y(c).
+\]
+\end{theorem}
+\begin{proof}
+For a fixed $J$, an unseen candidate has at most one compatible inverse history.  Because that history has not been emitted, its weight is at most $\eta_J$.  Summing over $J$ gives the unseen-candidate bound.  The strict inequality excludes every unseen codeword from tying or exceeding the incumbent.  Discovered codewords have exact scores, so the discovered maximizers are precisely the global ML tie set.
+\end{proof}
+
+\begin{remark}[Numerical certification]
+The production implementation uses outward rounding with \texttt{nextafter} and a scale-aware margin before accepting the strict inequality.  Exhaustive micro-world tests remain the authoritative correctness check.  A paper-grade implementation should use interval or fixed-point outward-rounded likelihoods near the stopping boundary.
+\end{remark}
+
+\section{Deterministic fixed-edit shell certificate}
+Let $E$ be the actual number of substitutions in the transmitted history and define
+\[
+a=\frac{1-p}{p},\qquad
+\ell_{n,t}=\left\lfloor\log_a\binom nt\right\rfloor,
+\qquad
+w_E=\min\{m,E+\ell_{n,t}\}.
+\]
+
+\begin{theorem}[Deterministic shell-work bound]
+\label{thm:shell}
+For $0<p<1/2$, after all inverse histories with substitution weight at most $w_E$ have been processed, the strict certificate in \cref{thm:certificate} must have fired.  Hence
+\begin{equation}
+\Qfib\le 2^t\binom nt\sum_{i=0}^{w_E}\binom mi.
+\label{eq:shellbound}
+\end{equation}
+For $p=0$,
+\[
+\Qfib\le 2^t\binom nt.
+\]
+\end{theorem}
+\begin{proof}
+The transmitted codeword is discovered no later than its actual deletion set, deleted bits, and survivor error mask.  Thus the incumbent score is at least
+\[
+\frac1{S_n}p^E(1-p)^{m-E}.
+\]
+After every history through shell $w$ has been emitted, the next history in each stream has weight at most
+\[
+\frac1{S_n}p^{w+1}(1-p)^{m-w-1}.
+\]
+Summing over the $S_n$ streams gives
+\[
+U_{\rm new}\le p^{w+1}(1-p)^{m-w-1}.
+\]
+At $w=E+\ell_{n,t}<m$, the ratio of this bound to the one-history incumbent lower bound is at most
+\[
+S_n\left(\frac{p}{1-p}\right)^{\ell_{n,t}+1}<1,
+\]
+because $\ell_{n,t}+1>\log_a S_n$.  If $w_E=m$, all streams are exhausted.  Each stream contains $2^t\binom mi$ histories in shell $i$, yielding \eqref{eq:shellbound}.  At $p=0$, only shell zero has positive weight.
+\end{proof}
+
+\begin{corollary}[Fixed-edit typical history exponent]
+\label{cor:typical}
+For fixed $t$ and $p\in(0,1/2)$, for every $\eps>0$,
+\[
+\Pr\left\{\frac1n\log_2\Qfib\le \hbin(p)+\eps\right\}\longrightarrow1.
+\]
+\end{corollary}
+\begin{proof}
+For fixed $t$, $\log\binom nt=O(\log n)$ and $\ell_{n,t}=O(\log n)$.  The binomial error weight satisfies $E/m\to p$ in probability.  Standard Hamming-ball estimates give
+\[
+\sum_{i=0}^{qm}\binom mi\le 2^{m\hbin(q)},\qquad q<1/2,
+\]
+and continuity of $\hbin$ completes the proof.
+\end{proof}
+
+\section{History revelation: exact moment and tail laws}
+The previous result is a high-probability upper bound.  It does not settle the mean or rare-tail complexity.  To expose those quantities, define the rank at which the \emph{actual inverse history} is revealed in the global probability ordering.
+
+\begin{definition}[History revelation rank]
+Let $\Rhist$ be the rank of the actual triple $(J,b,e)$ among all inverse histories ordered by nonincreasing component probability, under an arbitrary deterministic tie order within each shell.
+\end{definition}
+Define
+\[
+K_n=2^t\binom nt,\qquad B_m(k)=\sum_{i=0}^{\min\{k,m\}}\binom mi,
+\]
+with $B_m(-1)=0$.
+
+\begin{proposition}[Finite-length rank sandwich]
+\label{prop:ranksandwich}
+Conditioned on $E=e$,
+\begin{equation}
+1+K_nB_m(e-1)\le \Rhist\le K_nB_m(e).
+\label{eq:ranksandwich}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Every history in a lower-weight shell has strictly higher probability and must precede the actual history.  At most all histories through shell $e$ precede or include it.  There are $K_n\binom mi$ histories in shell $i$.
+\end{proof}
+
+\begin{theorem}[Fixed-edit moment exponent]
+\label{thm:moment}
+Fix $t$, $p\in(0,1/2)$, and $\rho>0$.  Let
+\[
+\alpha=\frac1{1+\rho}.
+\]
+Then
+\begin{equation}
+\lim_{n\to\infty}\frac1n\log_2\mathbb E[\Rhist^\rho]
+=\rho\Renyi_\alpha(p),
+\label{eq:moment}
+\end{equation}
+where the binary R\'enyi entropy is
+\[
+\Renyi_\alpha(p)=\frac1{1-\alpha}\log_2\left(p^\alpha+(1-p)^\alpha\right).
+\]
+The certified decoder obeys the corresponding upper bound
+\begin{equation}
+\limsup_{n\to\infty}\frac1n\log_2\mathbb E[\Qfib^\rho]
+\le \rho\Renyi_\alpha(p).
+\label{eq:certmoment}
+\end{equation}
+\end{theorem}
+\begin{proof}
+The fixed-edit factor $K_n$ is polynomial in $n$ and therefore subexponential.  By \cref{prop:ranksandwich}, the exponential order of $\Rhist$ conditioned on $E\approx qm$ is $2^{m\hbin(q)}$ for $q\le1/2$; the maximizing type below is strictly less than $1/2$.  The binomial method of types gives
+\[
+\frac1n\log_2\mathbb E[\Rhist^\rho]
+\longrightarrow
+\sup_{0\le q\le1/2}\left\{\rho\hbin(q)-\Dkl(q\|p)\right\},
+\]
+where
+\[
+\Dkl(q\|p)=q\log_2\frac qp+(1-q)\log_2\frac{1-q}{1-p}.
+\]
+The optimizer is
+\[
+q_\rho=\frac{p^{1/(1+\rho)}}{p^{1/(1+\rho)}+(1-p)^{1/(1+\rho)}},
+\]
+and direct substitution yields the variational identity
+\[
+\sup_q\{\rho\hbin(q)-\Dkl(q\|p)\}
+=\rho\Renyi_{1/(1+\rho)}(p).
+\]
+For the certified decoder, \cref{thm:shell} replaces $E$ by $E+O(\log n)$ and multiplies by only a polynomial fixed-edit factor; this does not change the exponent.  Since the decoder may stop earlier, only the upper bound is universal.
+\end{proof}
+
+\begin{remark}[The crucial distinction]
+At $\rho=1$, the mean history-revelation exponent is $\Renyi_{1/2}(p)$, not $\hbin(p)$.  A decoder may therefore have attractive median or fixed-quantile latency while suffering unfavorable mean or extreme-tail work.  This distinction is invisible in the typical shell theorem alone.
+\end{remark}
+
+\begin{theorem}[Large deviations of history revelation]
+\label{thm:ldp}
+For fixed $t$ and $p<1/2$, $n^{-1}\log_2\Rhist$ obeys the contraction of the binomial type large-deviation principle under
+\[
+g(q)=\begin{cases}
+\hbin(q),&0\le q\le1/2,\\
+1,&1/2\le q\le1.
+\end{cases}
+\]
+In particular, for $\gamma\in[\hbin(p),1)$, let $q_\gamma\in[p,1/2)$ solve $\hbin(q_\gamma)=\gamma$.  Then
+\begin{equation}
+\lim_{n\to\infty}-\frac1n\log_2\Pr\left\{\frac1n\log_2\Rhist\ge\gamma\right\}
+=\Dkl(q_\gamma\|p).
+\label{eq:tail}
+\end{equation}
+At $\gamma=1$ the rate is $\Dkl(1/2\|p)$.  The same formulas give upper-tail bounds for $\Qfib$ after the $O(\log n)$ shell shift.
+\end{theorem}
+\begin{proof}
+The empirical error fraction $E/m$ obeys the binomial large-deviation principle with rate $\Dkl(q\|p)$.  The rank sandwich gives exponential equivalence to $g(E/m)$.  The contraction principle yields the result; for an upper-tail threshold below one, the minimizing type is the unique $q_\gamma\ge p$ with $\hbin(q_\gamma)=\gamma$.
+\end{proof}
+
+\begin{corollary}[Fixed and exponentially rare quantiles]
+Every fixed quantile of $n^{-1}\log_2\Rhist$ converges to $\hbin(p)$.  A quantile whose upper-tail probability scales as $2^{-n\beta}$ has exponent $\hbin(q_\beta)$, where $q_\beta\in[p,1/2]$ solves $\Dkl(q_\beta\|p)=\beta$, until saturation at one.
+\end{corollary}
+
+\section{A typical-versus-mean complexity phase diagram}
+Suppose an independent exact code-side decoder has work bounded by
+\[
+\Qcode\le\poly(n)2^{n(1-R)}.
+\]
+For a high-rate linear code this is representative of a redundancy-state or syndrome-trellis search with $2^{n-k}$ states, although actual constants and code structure matter.  Run FIBER and the code-side decoder in parallel and stop when either returns an exact certificate.
+
+\begin{theorem}[Hybrid complexity upper envelope]
+\label{thm:hybrid}
+For fixed $t$ and $p<1/2$, the hybrid exact decoder obeys
+\begin{align}
+\limsup_{n\to\infty}\frac1n\log_2 Q_{\rm hybrid}^{(\text{fixed quantile})}
+&\le \min\{\hbin(p),1-R\},\\
+\limsup_{n\to\infty}\frac1n\log_2\mathbb E[Q_{\rm hybrid}^{\rho}]
+&\le \min\{\rho\Renyi_{1/(1+\rho)}(p),\rho(1-R)\}.
+\end{align}
+\end{theorem}
+\begin{proof}
+The hybrid work is no larger than either constituent work.  Apply \cref{cor:typical,thm:moment} to FIBER and the assumed code-side bound to the other constituent.
+\end{proof}
+
+The predicted fixed-quantile crossover is
+\[
+\hbin(p_{\rm typ})=1-R,
+\]
+while the predicted mean-work crossover is
+\[
+\Renyi_{1/2}(p_{\rm mean})=1-R.
+\]
+Because $\Renyi_{1/2}(p)>\hbin(p)$ for $p\in(0,1/2)$,
+\[
+p_{\rm mean}<p_{\rm typ}.
+\]
+
+\begin{table}[h]
+\centering
+\caption{Theoretical one-deletion/BSC operating thresholds.  These are exponent boundaries, not finite-length guarantees.}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Rate $R$ & Redundancy $1-R$ & $p_{\rm typ}:\hbin(p)=1-R$ & $p_{\rm mean}:\Renyi_{1/2}(p)=1-R$ \\
+\midrule
+0.625 & 0.375 & 0.07245 & 0.02254 \\
+0.750 & 0.250 & 0.04169 & 0.00903 \\
+0.875 & 0.125 & 0.01713 & 0.00205 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This phase diagram predicts a real phenomenon observed in the reference computation: at $R=0.75$, very low $p$ produces strong median wins, while $p=0.02$ or $0.04$ can show substantial variability and worse mean/tail behavior even though $p=0.04$ remains just below the typical asymptotic threshold.
+
+\section{Parameter complexity and the tractability boundary}
+The inverse history count contains
+\[
+2^t\binom nt=\Theta(2^t n^t/t!)
+\]
+for fixed $t$.  The present decoder is therefore in the parameterized class XP: polynomial in $n$ for each fixed $t$, with polynomial degree depending on $t$.  It is \emph{not} fixed-parameter tractable (FPT) in the formal sense $f(t)n^c$ with $c$ independent of $t$.
+
+If $t$ grows linearly with $n$, then $n^{-1}\log_2\binom nt$ contributes a nonzero deletion-position entropy and the fixed-edit theorem no longer preserves the BSC exponent.  Any future FPT or positive edit-rate claim requires a new merging or dynamic-programming theorem.  The general most-probable-string hardness literature makes an unrestricted exact claim implausible \cite{HigueraOncina2014,Fijalkow2022}.
+
+\section{Computational final gate}
+\subsection{Exact and codebook-free implementations}
+The package contains three exact one-deletion decoders:
+\begin{enumerate}[leftmargin=2em]
+\item membership-only FIBER history enumeration;
+\item a code-aware syndrome-trellis aggregate A* search;
+\item a code-aware aggregate prefix A* search.
+\end{enumerate}
+Random-linear and named CRC-polynomial codes use syndrome membership without a full codebook table.  The faster of the two code-specific exact searches is the per-trial reference.  Decoder order is randomized to reduce timing-order bias.  Micro-worlds compare complete ML tie sets against exhaustive codeword likelihoods.
+
+\subsection{Reference-standard result}
+The package's frozen internal reference run produced
+\begin{center}
+\small\path{CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED}
+\end{center}
+All exactness, moment/tail, phase, strong-baseline, and specialization-boundary gates passed.  At the largest standard length $n=40$, every primary trial returned the same complete ML tie set across the three exact decoders.  Representative median FIBER-to-best-baseline wall-time ratios were:
+
+\begin{table}[h]
+\centering
+\caption{Reference-standard $n=40$ mechanism probe.  Only three trials were used per row; these are not publication-grade tail estimates.}
+\begin{tabularx}{\textwidth}{@{}lccccX@{}}
+\toprule
+Family & $R$ & $p$ & Median ratio & Observed $95\%$ ratio & Interpretation \\
+\midrule
+Random linear & 0.75 & 0.005 & 0.157 & 0.176 & strong low-$p$ signal \\
+Random linear & 0.75 & 0.010 & 0.088 & 0.331 & strong median; mean theory unfavorable \\
+Random linear & 0.75 & 0.020 & 0.207 & 0.340 & positive finite sample, tail caution \\
+Random linear & 0.75 & 0.040 & 1.962 & 11.703 & heavy-tail failure signal \\
+Named CRC & 0.75 & 0.005 & 0.267 & 0.288 & strong low-$p$ signal \\
+Named CRC & 0.75 & 0.020 & 1.155 & 1.363 & baseline competitive \\
+Random linear & 0.875 & 0.005 & 0.093 & 0.179 & strong median signal \\
+Named CRC & 0.875 & 0.010 & 0.222 & 0.439 & positive median signal \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The result supports a narrow low-substitution operating region.  It does not establish $p99$ latency, compiled-code speedup, or asymptotic superiority.  The standard profile is an early investment gate, not a paper-grade performance campaign.
+
+\subsection{Moment and tail numerical audit}
+The moment gate evaluates the exact finite-$n$ rank sandwich through $n=2048$, for $t\in\{1,2\}$, multiple $p$, and $\rho\in\{1/2,1,2\}$.  The reference run found:
+\begin{itemize}[leftmargin=2em]
+\item maximum finite-$n$ reveal-moment exponent gap at $n=2048$: $0.01648$ bit/use;
+\item maximum certificate-upper exponent gap: $0.02276$ bit/use;
+\item maximum fixed-quantile gap: $0.07211$ bit/use;
+\item variational identity error below $5\times10^{-16}$;
+\item decreasing finite-length gaps in every tested parameter sequence.
+\end{itemize}
+These computations verify the implementation and finite-length convergence; the proofs, not the plots, establish the theorem.
+
+\section{Honest specialization boundary: VT decoding}
+A generic code-modular decoder should not be expected to beat a code designed specifically for the impairment.  The package therefore implements a classical linear-time single-deletion VT decoder, rather than the earlier $2n$ insertion-and-checksum enumerator.  The exactness audit exhaustively verifies it through $n=13$.
+
+In the reference run, FIBER was approximately $22\times$, $43\times$, $86\times$, and $181\times$ slower than the specialized VT decoder at $n=15,31,63,127$, respectively.  This is a successful \emph{boundary} result:
+\begin{tcolorbox}[colback=gray!4,colframe=gray!55!black]
+\centering FIBER's value is code modularity and noisy fixed-edit ML, not replacement of an optimal specialized VT decoder.
+\end{tcolorbox}
+VT codes are known to admit linear-time single-deletion decoding \cite{Abroshan2017}.  Any manuscript must report this result prominently rather than describe the VT gate as a performance win.
+
+\section{Physical plausibility and the unresolved real-trace gate}
+The package includes a physically motivated synthetic front end:
+\[
+\text{BPSK symbols}\to\text{one accumulated timing-cycle slip}\to\text{phase-dependent ISI}\to\text{AWGN hard decisions}.
+\]
+A uniformly random initial phase and one-symbol accumulated drift create exactly one missed decision; ISI and AWGN create survivor substitutions.  The standard held-out audit at $n=48$, SNR $7$ dB, and ISI strength $0.06$ found:
+\begin{itemize}[leftmargin=2em]
+\item exactly one deletion in every frame;
+\item fitted substitution probability $0.001319$ and held-out probability $0.001135$;
+\item absolute fit error $1.84\times10^{-4}$;
+\item held-out lag-one error correlation approximately $-0.0012$;
+\item deletion-position total variation $0.193$ between train and held-out empirical laws.
+\end{itemize}
+This shows that a simple timing-slip front end can land inside the low-$p$ theoretical region.  It is not measured deployment evidence.  The package deliberately contains no fabricated real trace and therefore cannot remove the qualifier
+\begin{center}
+\small\path{REAL_TRACE_REQUIRED}
+\end{center}
+A measured trace file can be placed in \texttt{data/real\_traces/}; the required CSV columns are \texttt{n}, \texttt{deleted\_position}, and \texttt{substitution\_weight}.  Passing syntax and calibration checks is still only a prerequisite; end-to-end superiority over a matched receiver remains a separate experiment.
+
+\section{Final decision contract}
+\subsection{Immediate stop conditions}
+The programme stops immediately if any of the following occurs:
+\begin{enumerate}[leftmargin=2em]
+\item one false exact certificate or complete-tie disagreement;
+\item independent proof review invalidates the shell, moment, or tail theorem;
+\item a primary source or patent contains the complete narrow theorem-and-algorithm synthesis and no stronger residual theorem remains;
+\item equally optimized exact code-specific decoders dominate FIBER throughout the theorem-predicted favorable region in both median and high-tail latency;
+\item no measured post-front-end impairment both fits the fixed-edit model and occupies a useful low-$p$ operating region.
+\end{enumerate}
+
+\subsection{Narrow-paper outcome}
+If the theory survives but compiled performance or physical relevance fails, the authorized result is a fixed-edit foundations paper containing:
+\begin{itemize}[leftmargin=2em]
+\item the exact membership-first certificate;
+\item the deterministic shell theorem;
+\item the revelation moment and tail laws;
+\item the phase diagram and specialization boundaries;
+\item negative results outside the favorable region.
+\end{itemize}
+The multi-year field-defining claim must then stop.
+
+\subsection{High-potential continuation outcome}
+A high-potential continuation requires all internal gates to pass and authorizes only:
+\begin{enumerate}[leftmargin=2em]
+\item independent primary-source novelty adjudication;
+\item independent mathematical proof review;
+\item paper-grade compiled benchmarking with enough blocks to support $p99$ claims;
+\item one measured post-front-end timing-slip or variable-length-demapping trace campaign.
+\end{enumerate}
+It does not authorize general weighted transducers, hardware, or standards claims.
+
+\section{Reproducible package protocol}
+The supplied launcher performs the following operations:
+\begin{enumerate}[leftmargin=2em]
+\item locate the release ZIP in the Windows Downloads directory by SHA-256;
+\item reject unsafe paths and symbolic links;
+\item verify every internal manifest entry;
+\item install only under \texttt{/home/afazeli2006/atom\_coding/experiments/};
+\item create an isolated virtual environment outside the committed experiment folder;
+\item run all unit tests and the frozen standard gate;
+\item write a machine-readable verdict and exactly one command file;
+\item commit and push only the experiment directory to the existing Git repository.
+\end{enumerate}
+Installation, authentication, or Git failures are classified as
+\[
+\texttt{EXECUTION\_BLOCKED\_NOT\_A\_SCIENTIFIC\_VERDICT}.
+\]
+
+\section{Final scientific interpretation}
+The theoretical and computational evidence supports the following narrow statement:
+\begin{quote}
+For a fixed number of uniformly located deletions and sufficiently low survivor-substitution uncertainty, codebook-free membership-only aggregate inverse search admits exact ML certificates and has a controlled probability-ordered history complexity.  Its fixed-quantile exponent is governed by binary Shannon entropy, its history-revelation moments by binary R\'enyi entropy, and these yield distinct typical and mean operating boundaries relative to redundancy-state exact search.
+\end{quote}
+This is a coherent new theorem-and-algorithm package with credible research potential.  It is not yet a field-defining result.  The decisive remaining uncertainty is whether a measured receiver impairment occupies the favorable region and whether the advantage survives equally optimized implementations and external novelty/proof review.
+
+\begin{tcolorbox}[colback=green!4,colframe=green!45!black,title=Reference investment command]
+\begin{verbatim}
+CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED
+FIELD_DEFINING_STATUS=HIGH_POTENTIAL_NOT_ESTABLISHED
+NEXT_REQUIRED=external_proof_review,external_novelty_review,
+              compiled_paper_grade_benchmark,measured_post_front_end_trace
+STOP_IF_NEXT_GATE_FAILS=YES
+\end{verbatim}
+\end{tcolorbox}
+
+\appendix
+\section{Proof-review checklist}
+An external reviewer should verify all of the following independently:
+\begin{enumerate}[leftmargin=2em]
+\item each unseen candidate has at most one compatible history per deletion set;
+\item the sum-of-frontiers bound does not double count in a way that invalidates an upper bound;
+\item membership-first scoring does not omit a competing codeword;
+\item the strict certificate returns the complete tie set under the stated tolerance model;
+\item $2^t$ is a history-count factor but not a channel-probability factor;
+\item the shell shift uses $\lfloor\log_{(1-p)/p}\binom nt\rfloor$ and yields a strict inequality;
+\item the history-rank sandwich is independent of within-shell tie order;
+\item the moment variational identity is evaluated at $q_\rho<1/2$;
+\item the certified decoder obtains only a universal upper moment/tail bound, not equality;
+\item the phase diagram is an upper-envelope theorem conditional on a $2^{n(1-R)}\poly(n)$ code-side decoder;
+\item the current parameter dependence is XP, not FPT;
+\item no field-defining or practical claim is inferred from the synthetic physical model.
+\end{enumerate}
+
+\section{Primary-source novelty questions}
+The external novelty reviewer should answer claim by claim:
+\begin{enumerate}[leftmargin=2em]
+\item Does any paper or patent already give the same membership-only aggregate inverse generator and strict sum-of-stream-frontiers certificate?
+\item Is \cref{thm:shell} already an explicit theorem in synchronization sequential decoding or fixed-deletion decoding?
+\item Is \cref{thm:moment} a documented fixed-edit history-revelation theorem, or only derivable from generic guesswork after this representation is introduced?
+\item Has the typical-versus-mean crossover for bounded-edit aggregate inverse decoding already been stated?
+\item Does the proposed decoder add anything beyond direct implementation of general DMC candidate guessing \cite{TanJoudeh2025}?
+\item Are there patent claims broad enough to anticipate code-membership edit-history enumeration with likelihood aggregation and certified stopping?
+\end{enumerate}
+
+\section{Reference-standard limitations}
+The internal standard run is intentionally inexpensive.  It is suitable for an investment gate, not a paper:
+\begin{itemize}[leftmargin=2em]
+\item only three blocks were used at the largest primary length;
+\item Python wall time can favor one data structure over another;
+\item the strong exact baselines are independently organized but share channel and code utilities;
+\item $p95$ from three observations is not a statistically supported tail estimate;
+\item no measured front-end trace is bundled;
+\item no energy, cache traffic, or fixed-point implementation is measured.
+\end{itemize}
+A positive run therefore establishes only high potential and the right to perform the next external/physical gate.
+
+\begin{thebibliography}{99}
+\bibitem{Duffy2019}
+K. R. Duffy, J. Li, and M. M\'edard, ``Capacity-achieving guessing random additive noise decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 65, no. 7, pp. 4023--4040, 2019; arXiv:1802.07010.
+
+\bibitem{TanJoudeh2025}
+V. Y. F. Tan and H. Joudeh, ``Ensemble-tight second-order asymptotics and exponents for guessing-based decoding with abandonment,'' arXiv:2502.05959, 2025.
+
+\bibitem{Wang2025}
+Q. Wang, J. Liang, P. Yuan, K. R. Duffy, M. M\'edard, and X. Ma, ``Guessing decoding of short blocklength codes,'' arXiv:2511.12108, 2025.
+
+\bibitem{Arikan1996}
+E. Ar\i kan, ``An inequality on guessing and its application to sequential decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 42, no. 1, pp. 99--105, 1996.
+
+\bibitem{Li2018}
+J. Li, ``Large deviations for conditional guesswork,'' arXiv:1809.10921, 2018.
+
+\bibitem{Gallager1961}
+R. G. Gallager, ``Sequential decoding for binary channels with noise and synchronization errors,'' MIT Lincoln Laboratory Group Report 2502, 1961.
+
+\bibitem{Han1993}
+Y. S. Han, C. R. P. Hartmann, and C.-C. Chen, ``Efficient priority-first search maximum-likelihood soft-decision decoding of linear block codes,'' \emph{IEEE Trans. Inf. Theory}, vol. 39, no. 5, pp. 1514--1523, 1993.
+
+\bibitem{Banerjee2022}
+A. Banerjee, A. Lenz, and A. Wachter-Zeh, ``Sequential decoding of convolutional codes for synchronization errors,'' arXiv:2201.11935, 2022.
+
+\bibitem{DaveyMacKay2001}
+M. C. Davey and D. J. C. MacKay, ``Reliable communication over channels with insertions, deletions, and substitutions,'' \emph{IEEE Trans. Inf. Theory}, vol. 47, no. 2, pp. 687--698, 2001.
+
+\bibitem{Mohri2009}
+M. Mohri, ``Weighted automata algorithms,'' in \emph{Handbook of Weighted Automata}, Springer, 2009, pp. 213--254.
+
+\bibitem{HigueraOncina2014}
+C. de la Higuera and J. Oncina, ``The most probable string: an algorithmic study,'' \emph{J. Logic Comput.}, vol. 24, no. 2, pp. 311--330, 2014, doi:10.1093/logcom/exs049.
+
+\bibitem{Fijalkow2022}
+N. Fijalkow, C. Riveros, and J. Worrell, ``Probabilistic automata of bounded ambiguity,'' \emph{Information and Computation}, vol. 282, 104648, 2022; arXiv:2205.08175.
+
+\bibitem{US4922494}
+A. Bassignani et al., ``Method of and circuit for decoding block-coded messages affected by symbol substitutions, insertions and deletions,'' U.S. Patent 4,922,494, 1990.
+
+\bibitem{Sabary2022}
+O. Sabary, D. Bar-Lev, Y. Gershon, A. Yucovich, and E. Yaakobi, ``On the decoding error weight of one or two deletion channels,'' arXiv:2201.02466, 2022.
+
+\bibitem{Hanna2017}
+S. K. Hanna and S. El Rouayheb, ``Guess \& Check codes for deletions, insertions, and synchronization,'' arXiv:1705.09569, 2017.
+
+\bibitem{Abroshan2017}
+M. Abroshan, R. Venkataramanan, and A. Guill\'en i F\`abregas, ``Efficient systematic encoding of non-binary VT codes,'' arXiv:1708.04071, 2017.  The paper notes the classical linear-time VT decoder.
+
+\bibitem{PfisterTal2021}
+H. D. Pfister and I. Tal, ``Polar codes for channels with insertions, deletions, and substitutions,'' arXiv:2102.02155, 2021.
+
+\bibitem{Ozaydin2022}
+B. Ozaydin, M. M\'edard, and K. R. Duffy, ``GRAND-assisted optimal modulation,'' arXiv:2210.16187, 2022.
+\end{thebibliography}
+
+\end{document}

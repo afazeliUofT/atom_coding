@@ -1,0 +1,21 @@
+{
+  "absolute_p_fit_error": 0.0001843971631205674,
+  "exactly_one_slip_fraction": 1.0,
+  "fitted_substitution_probability": 0.0013191489361702128,
+  "heldout_deletion_position_tv_to_fitted": 0.19266666666666668,
+  "heldout_error_lag1_correlation": -0.001160766105629713,
+  "heldout_substitution_probability": 0.0011347517730496454,
+  "interpretation": "This is a physically motivated synthetic front-end plausibility test, not measured deployment evidence. A positive result cannot remove the REAL_TRACE_REQUIRED qualifier.",
+  "isi_strength": 0.06,
+  "measured_trace_audit": {
+    "files": [],
+    "message": "No measured CSV trace was bundled. The scientific classification must retain REAL_TRACE_REQUIRED.",
+    "status": "PENDING_MEASURED_REAL_TRACE",
+    "valid_rows": 0
+  },
+  "model": "synthetic clock-recovery cycle slip with phase-dependent ISI and AWGN hard decisions",
+  "n": 48,
+  "snr_db": 7.0,
+  "test_frames": 300,
+  "train_frames": 1000
+}

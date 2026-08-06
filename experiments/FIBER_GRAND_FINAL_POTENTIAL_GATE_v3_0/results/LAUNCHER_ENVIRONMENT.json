@@ -1,0 +1,14 @@
+{
+  "executable": "/usr/bin/python3",
+  "expected_remote": "git@github.com:afazeliUofT/atom_coding.git",
+  "launcher_version": "3.0",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "profile": "standard",
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "repo": "/home/afazeli2006/atom_coding",
+  "source_zip": "/mnt/c/Users/alifa/Downloads/FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0.zip",
+  "source_zip_sha256": "a902dc29db6a94b39f46b05e4edc51143d0edd32cab98c617ad6f5d6983baa92",
+  "target": "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0",
+  "utc_completed": "2026-08-06T20:00:43+00:00",
+  "venv_python": "/home/afazeli2006/atom_coding/.venv_fiber_final_gate_v3_0/bin/python"
+}

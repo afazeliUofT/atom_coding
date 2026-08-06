@@ -1,0 +1,69 @@
+UTC_START=2026-08-06T20:00:35+00:00
+COMMAND=/home/afazeli2006/atom_coding/.venv_fiber_final_gate_v3_0/bin/python -m fiber_final.run_gate --profile standard
+
+[E0] Exactness, complete ties, shell, moment-sandwich, and VT audit...
+[E1] Primary-source novelty adjudication for the narrowed claim...
+[E2] Exact finite-length Renyi moment, tail, and LDP audit...
+[E3] Typical-versus-mean rate-complexity phase diagram...
+[E4] Codebook-free FIBER versus syndrome-trellis and prefix A* near the phase boundary...
+    benchmark family=random_linear R=0.750 n=24 p=0.005
+    benchmark family=random_linear R=0.750 n=24 p=0.010
+    benchmark family=random_linear R=0.750 n=24 p=0.020
+    benchmark family=random_linear R=0.750 n=24 p=0.040
+    benchmark family=random_linear R=0.750 n=32 p=0.005
+    benchmark family=random_linear R=0.750 n=32 p=0.010
+    benchmark family=random_linear R=0.750 n=32 p=0.020
+    benchmark family=random_linear R=0.750 n=32 p=0.040
+    benchmark family=random_linear R=0.750 n=40 p=0.005
+    benchmark family=random_linear R=0.750 n=40 p=0.010
+    benchmark family=random_linear R=0.750 n=40 p=0.020
+    benchmark family=random_linear R=0.750 n=40 p=0.040
+    benchmark family=random_linear R=0.875 n=24 p=0.005
+    benchmark family=random_linear R=0.875 n=24 p=0.010
+    benchmark family=random_linear R=0.875 n=24 p=0.020
+    benchmark family=random_linear R=0.875 n=24 p=0.040
+    benchmark family=random_linear R=0.875 n=32 p=0.005
+    benchmark family=random_linear R=0.875 n=32 p=0.010
+    benchmark family=random_linear R=0.875 n=32 p=0.020
+    benchmark family=random_linear R=0.875 n=32 p=0.040
+    benchmark family=random_linear R=0.875 n=40 p=0.005
+    benchmark family=random_linear R=0.875 n=40 p=0.010
+    benchmark family=random_linear R=0.875 n=40 p=0.020
+    benchmark family=random_linear R=0.875 n=40 p=0.040
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.005
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.010
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.020
+    benchmark family=named_crc_linear R=0.750 n=24 p=0.040
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.005
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.010
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.020
+    benchmark family=named_crc_linear R=0.750 n=32 p=0.040
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.005
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.010
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.020
+    benchmark family=named_crc_linear R=0.750 n=40 p=0.040
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.005
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.010
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.020
+    benchmark family=named_crc_linear R=0.875 n=24 p=0.040
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.005
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.010
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.020
+    benchmark family=named_crc_linear R=0.875 n=32 p=0.040
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.005
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.010
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.020
+    benchmark family=named_crc_linear R=0.875 n=40 p=0.040
+[E5] True O(n) VT single-deletion specialization boundary...
+[E6] Calibrated synthetic timing-slip front end and optional measured trace audit...
+[E7] Frozen scientific decision...
+
+==============================================================================
+FINAL CLASSIFICATION: CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED
+STAGE: NARROW_NOVELTY_THEORY_AND_COMPUTATIONAL_POTENTIAL_CONFIRMED
+REASON: The narrowed fixed-edit synthesis survived the primary-source audit, exact certificate checks, new Renyi moment/tail theory, phase-diagram audit, and codebook-free comparison with two exact code-specific searches in the predicted favorable region.
+==============================================================================
+
+
+UTC_END=2026-08-06T20:00:43+00:00
+EXIT_CODE=0

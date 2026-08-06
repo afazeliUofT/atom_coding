@@ -1,0 +1,85 @@
+{
+  "config": {
+    "benchmark_blocklengths": [
+      24,
+      32,
+      40
+    ],
+    "benchmark_families": [
+      "RLC",
+      "CRC"
+    ],
+    "benchmark_probabilities": [
+      0.005,
+      0.01,
+      0.02,
+      0.04
+    ],
+    "benchmark_rates": [
+      0.75,
+      0.875
+    ],
+    "benchmark_trials": {
+      "24": 8,
+      "32": 6,
+      "40": 3
+    },
+    "max_histories": 1000000,
+    "max_prefix_nodes": 500000,
+    "max_trellis_terminals": 200000,
+    "moment_blocklengths": [
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "moment_edit_counts": [
+      1,
+      2
+    ],
+    "moment_orders": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "moment_probabilities": [
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.075,
+      0.1
+    ],
+    "phase_rates": [
+      0.625,
+      0.75,
+      0.875
+    ],
+    "physical_isi_strength": 0.06,
+    "physical_n": 48,
+    "physical_rate": 0.75,
+    "physical_snr_db": 7.0,
+    "physical_test_frames": 300,
+    "physical_train_frames": 1000,
+    "quantiles": [
+      0.5,
+      0.9,
+      0.99,
+      0.999
+    ],
+    "real_trace_glob": "data/real_traces/*.csv",
+    "seed": 20260806,
+    "vt_blocklengths": [
+      15,
+      31,
+      63,
+      127
+    ],
+    "vt_trials": 40
+  },
+  "profile": "standard"
+}

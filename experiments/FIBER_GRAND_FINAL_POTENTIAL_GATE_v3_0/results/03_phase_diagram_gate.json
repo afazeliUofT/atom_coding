@@ -1,0 +1,28 @@
+{
+  "hybrid_theorem": "If an independent exact code-side search uses poly(n) 2^{n(1-R)} work, a parallel hybrid obeys typical exponent at most min(h2(p),1-R) and rho-moment exponent at most min(rho H_{1/(1+rho)}(p), rho(1-R)).",
+  "interpretation": "A fixed-quantile FIBER/search crossover is predicted by h2(p)=1-R, while the mean-work crossover is predicted by H_{1/2}(p)=1-R. The gap explains why a decoder can win in median latency while losing in average or extreme-tail work.",
+  "mean_threshold_below_typical_all": true,
+  "thresholds": [
+    {
+      "mean_threshold_below_typical": true,
+      "mean_threshold_p_Hhalf_equals_1_minus_R": 0.022536315832662007,
+      "rate": 0.625,
+      "redundancy_exponent": 0.375,
+      "typical_threshold_p_h2_equals_1_minus_R": 0.0724497922259377
+    },
+    {
+      "mean_threshold_below_typical": true,
+      "mean_threshold_p_Hhalf_equals_1_minus_R": 0.009031399264589636,
+      "rate": 0.75,
+      "redundancy_exponent": 0.25,
+      "typical_threshold_p_h2_equals_1_minus_R": 0.041692690273826716
+    },
+    {
+      "mean_threshold_below_typical": true,
+      "mean_threshold_p_Hhalf_equals_1_minus_R": 0.002052123629415368,
+      "rate": 0.875,
+      "redundancy_exponent": 0.125,
+      "typical_threshold_p_h2_equals_1_minus_R": 0.017128655077170693
+    }
+  ]
+}

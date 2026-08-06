@@ -1,0 +1,26 @@
+{
+  "package_name": "FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0",
+  "release_version": "3.0",
+  "release_date": "2026-08-06",
+  "default_profile": "standard",
+  "scientific_scope": "final early-investment gate for the narrowed fixed-edit FIBER-GRAND track; combines primary-source novelty adjudication, new moment/tail theory, codebook-free exact comparisons, honest VT boundary control, and a calibrated synthetic timing-slip front end",
+  "reference_validation_classification": "CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED",
+  "target_repo_relative_path": "experiments/FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0",
+  "working_directory": "/home/afazeli2006/atom_coding",
+  "github_repository": "git@github.com:afazeliUofT/atom_coding.git",
+  "claim_boundary": [
+    "No claim that fiber guesswork is a new random variable",
+    "No claim of efficient exact decoding for unrestricted weighted transducers",
+    "No FPT claim in the edit count; the current method is XP for fixed t",
+    "No field-defining status without measured post-front-end validation"
+  ],
+  "reference_validation_stage": "NARROW_NOVELTY_THEORY_AND_COMPUTATIONAL_POTENTIAL_CONFIRMED",
+  "reference_validation_field_defining_status": "HIGH_POTENTIAL_NOT_ESTABLISHED",
+  "theory_pdf": "theory/FIBER_GRAND_Final_Novelty_Theory_and_Potential_Gate.pdf",
+  "required_next_external_gates": [
+    "independent external proof review",
+    "independent primary-source and patent novelty review",
+    "paper-grade compiled benchmark with supported tail statistics",
+    "measured post-front-end synchronization trace and matched system baseline"
+  ]
+}

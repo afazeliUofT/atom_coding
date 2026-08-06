@@ -1,0 +1,6 @@
+PDF: /mnt/data/fiber_final_work/FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0/theory/FIBER_GRAND_Final_Novelty_Theory_and_Potential_Gate.pdf
+Pages: 16
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

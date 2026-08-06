@@ -1,0 +1,23 @@
+{
+  "caution": "No search can guarantee absence of unpublished work or every patent family. Independent external novelty review remains required before submission.",
+  "closest_prior_art": [
+    "Duffy-Li-Medard GRAND (IEEE TIT 2019; arXiv:1802.07010)",
+    "Tan-Joudeh general DMC guessing with abandonment (IEEE TIT 2025; arXiv:2502.05959)",
+    "Gallager synchronization sequential decoding (Lincoln Lab Group Report 2502, 1961)",
+    "Han-Hartmann-Chen priority-first ML decoding (IEEE TIT 1993)",
+    "US4922494A error-frame enumeration and likelihood selection (1990)",
+    "Ozaydin-Medard-Duffy GRAND-assisted optimal modulation (arXiv:2210.16187)",
+    "Sabary et al. fixed-k deletion likelihood/ML* analysis (arXiv:2201.02466)",
+    "Weighted automata and most-probable-string literature"
+  ],
+  "literature_cutoff": "2026-08-06",
+  "matrix_file": "theory/PRIMARY_SOURCE_NOVELTY_MATRIX.md",
+  "overall_classification": "NARROW_NOVELTY_SURVIVES",
+  "surviving_claim": "A fixed-edit, codebook-free, membership-only aggregate inverse generator with a strict sum-of-frontiers ML certificate, together with fixed-edit history moment/tail laws and a typical-versus-mean complexity phase diagram.",
+  "withdrawn_claims": [
+    "fiber guesswork is a new random variable",
+    "best-path versus best-string is new",
+    "A*, priority queues, or hidden-path summation are new",
+    "unrestricted weighted-transducer exact decoding is efficient"
+  ]
+}

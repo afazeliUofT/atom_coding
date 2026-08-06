@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Exact finite-n reveal moment rates approaching the Renyi target.",
+    "file": "FIG_01_moment_convergence.png"
+  },
+  {
+    "description": "Rate-dependent typical and mean FIBER/code-side crossover probabilities.",
+    "file": "FIG_02_phase_diagram.png"
+  },
+  {
+    "description": "FIBER wall-time ratio versus the faster of syndrome-trellis and prefix A*.",
+    "file": "FIG_03_exact_benchmark.png"
+  },
+  {
+    "description": "Training and held-out deletion-position distributions for the synthetic front end.",
+    "file": "FIG_04_physical_calibration.png"
+  }
+]

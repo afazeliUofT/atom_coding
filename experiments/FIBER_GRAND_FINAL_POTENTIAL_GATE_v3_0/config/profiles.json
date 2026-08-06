@@ -1,0 +1,153 @@
+{
+  "smoke": {
+    "seed": 20260806,
+    "moment_blocklengths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "moment_probabilities": [
+      0.01,
+      0.02,
+      0.05
+    ],
+    "moment_orders": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "moment_edit_counts": [
+      1,
+      2
+    ],
+    "quantiles": [
+      0.5,
+      0.9,
+      0.99
+    ],
+    "phase_rates": [
+      0.75,
+      0.875
+    ],
+    "benchmark_blocklengths": [
+      16,
+      24,
+      32
+    ],
+    "benchmark_rates": [
+      0.75
+    ],
+    "benchmark_probabilities": [
+      0.01,
+      0.02,
+      0.05
+    ],
+    "benchmark_families": [
+      "RLC",
+      "CRC"
+    ],
+    "benchmark_trials": {
+      "16": 6,
+      "24": 4,
+      "32": 3
+    },
+    "max_histories": 500000,
+    "max_trellis_terminals": 120000,
+    "max_prefix_nodes": 250000,
+    "vt_blocklengths": [
+      15,
+      31
+    ],
+    "vt_trials": 12,
+    "physical_n": 32,
+    "physical_rate": 0.75,
+    "physical_train_frames": 300,
+    "physical_test_frames": 120,
+    "physical_snr_db": 7.0,
+    "physical_isi_strength": 0.06,
+    "real_trace_glob": "data/real_traces/*.csv"
+  },
+  "standard": {
+    "seed": 20260806,
+    "moment_blocklengths": [
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "moment_probabilities": [
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.075,
+      0.1
+    ],
+    "moment_orders": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "moment_edit_counts": [
+      1,
+      2
+    ],
+    "quantiles": [
+      0.5,
+      0.9,
+      0.99,
+      0.999
+    ],
+    "phase_rates": [
+      0.625,
+      0.75,
+      0.875
+    ],
+    "benchmark_blocklengths": [
+      24,
+      32,
+      40
+    ],
+    "benchmark_rates": [
+      0.75,
+      0.875
+    ],
+    "benchmark_probabilities": [
+      0.005,
+      0.01,
+      0.02,
+      0.04
+    ],
+    "benchmark_families": [
+      "RLC",
+      "CRC"
+    ],
+    "benchmark_trials": {
+      "24": 8,
+      "32": 6,
+      "40": 3
+    },
+    "max_histories": 1000000,
+    "max_trellis_terminals": 200000,
+    "max_prefix_nodes": 500000,
+    "vt_blocklengths": [
+      15,
+      31,
+      63,
+      127
+    ],
+    "vt_trials": 40,
+    "physical_n": 48,
+    "physical_rate": 0.75,
+    "physical_train_frames": 1000,
+    "physical_test_frames": 300,
+    "physical_snr_db": 7.0,
+    "physical_isi_strength": 0.06,
+    "real_trace_glob": "data/real_traces/*.csv"
+  }
+}

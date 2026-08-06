@@ -1,0 +1,8 @@
+{
+  "branch": "main",
+  "classification": "CONTINUE_HIGH_POTENTIAL_FIXED_EDIT_FIBER_TRACK_REAL_TRACE_REQUIRED",
+  "origin": "git@github.com:afazeliUofT/atom_coding.git",
+  "profile": "standard",
+  "target_relative_path": "experiments/FIBER_GRAND_FINAL_POTENTIAL_GATE_v3_0",
+  "utc_precommit": "2026-08-06T20:00:43+00:00"
+}
