@@ -1,0 +1,12 @@
+{
+  "classification": "NARROW_TO_FIXED_EDIT_TIT_THEORY_ALGORITHM_PAPER",
+  "field_defining_status": "NOT_ESTABLISHED",
+  "foundational_theory_pass": true,
+  "original_v5_frozen_status": "FAILED_2M_RESOURCE_CAP_ON_7_E3_ROWS",
+  "original_v5_retroactive_pass_permitted": false,
+  "reason": "The theory and exact decoder survive, but shell-complete replay or the repaired full performance contract does not support the flagship performance claim.",
+  "repaired_compiled_contract_pass": false,
+  "replay_pass": true,
+  "stop_if_external_review_finds_blocking_defect": true,
+  "vt_boundary_pass": true
+}

@@ -4,8 +4,8 @@
   "all_fiber_certified_by_shell3": true,
   "all_prefix_certified_at_10M": true,
   "maximum_fiber_histories": 5341180,
-  "maximum_fiber_over_prefix_wall": 0.0528204261120351,
-  "median_fiber_over_prefix_wall": 0.0472641778819914,
+  "maximum_fiber_over_prefix_wall": 0.0633703687729407,
+  "median_fiber_over_prefix_wall": 0.0552175819888196,
   "pass": true,
   "shell3_history_cap": 5341184,
   "targets": 7
