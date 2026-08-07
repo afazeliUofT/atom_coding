@@ -1,0 +1,8 @@
+UTC_START=2026-08-06T23:49:45+00:00
+COMMAND=/home/afazeli2006/atom_coding/.venv_fiber_pre_manuscript_v5_0/bin/python -m pytest -q /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/tests
+
+.....................                                                    [100%]
+21 passed in 0.64s
+
+UTC_END=2026-08-06T23:49:46+00:00
+EXIT_CODE=0

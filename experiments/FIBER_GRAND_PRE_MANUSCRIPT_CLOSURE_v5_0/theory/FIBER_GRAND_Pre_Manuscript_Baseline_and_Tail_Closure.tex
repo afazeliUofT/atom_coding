@@ -1,0 +1,295 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.78in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,tabularx,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{cleveref}
+\usepackage{url}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\urlstyle{same}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{FIBER--GRAND pre-manuscript closure}
+\rhead{August 2026}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\emergencystretch=2em
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newcommand{\C}{\mathcal C}
+\newcommand{\J}{\mathcal J}
+\newcommand{\Qfib}{Q_{\mathrm{FIBER}}}
+\newcommand{\Qopt}{Q_{\mathrm{L0}}^\star}
+\newcommand{\hbin}{h_2}
+\newcommand{\Renyi}{H}
+\newcommand{\eps}{\varepsilon}
+
+\title{\textbf{Fixed-Edit FIBER--GRAND: Mandatory Pre-Manuscript Baseline and Tail Closure}\\[1.5mm]
+\large Independent audit of commit \texttt{2f67a32} and a frozen final computational gate}
+\author{Scientific de-risking dossier, version 5.0}
+\date{6 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{tcolorbox}[colback=blue!4,colframe=blue!55!black,title=Authoritative status]
+Commit \texttt{2f67a32} validly passed its frozen version-4 contract and provides strong evidence for a narrow fixed-edit theory/algorithm paper.  It does not yet justify freezing a flagship IEEE Transactions on Information Theory manuscript because the strongest feasible syndrome-trellis reference was disabled at several larger operating points and the reported high quantiles were based on only twelve blocks per largest-length configuration.  The correct action is therefore
+\begin{center}
+\small\path{CONTINUE_TO_ONE_MANDATORY_PRE_MANUSCRIPT_CLOSURE_GATE}.
+\end{center}
+A positive version-5 outcome authorizes the manuscript and external review.  A negative outcome narrows the work to a rigorous fixed-edit theorem/algorithm paper and stops further performance escalation.
+\end{tcolorbox}
+
+\tableofcontents
+\newpage
+
+\section{Purpose and scientific decision}
+The narrowed FIBER--GRAND programme considers exactly $t$ uniformly located deletions followed by independent BSC substitutions on the $m=n-t$ surviving symbols.  It generates inverse histories in probability order, canonicalizes repeated candidates, calls only a code-membership oracle at its weakest interface, exactly scores discovered codewords, and terminates when a strict frontier bound excludes every undiscovered codeword and every unseen ML tie.
+
+The version-4 WSL reproduction established correctness and a large compiled timing signal.  The machine verdict was \path{PROCEED_TO_FLAGSHIP_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW}.  Independent inspection agrees that a quality IEEE TIT paper is plausible, but finds two unresolved defects in the \emph{performance evidence}, not in the core mathematics:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item the syndrome-trellis exact decoder was disabled at $n=48$ and $n=64$, including several points where its declared dynamic-programming budget made it feasible; and
+\item $p95$ and $p99$ summaries at $n=64$ were computed from only twelve trials, while the low-$p$ channel makes the zero-substitution event dominant.
+\end{enumerate}
+Version 5 is the smallest experiment that resolves these two issues without reopening the already closed broad proposal.
+
+\subsection{Three outcomes}
+\begin{description}[leftmargin=3em,style=nextline]
+\item[\texttt{AUTHORIZE\_FULL\_TIT\_MANUSCRIPT\_AND\_EXTERNAL\_REVIEW}]
+The exact theory remains intact, feasible trellis references are enabled, the advantage survives at supported $p99$ and on positive-substitution strata, and manuscript construction is authorized.
+\item[\texttt{NARROW\_TO\_FIXED\_EDIT\_TIT\_THEORY\_ALGORITHM\_PAPER}]
+The mathematics survives but the flagship performance claim does not.  Prepare a rigorous theory/algorithm paper, retain the negative boundary, and stop performance escalation.
+\item[\texttt{STOP\_FLAGSHIP\_PERFORMANCE\_CLAIM}]
+A correctness or theorem audit fails.  Only a demonstrable implementation repair is allowed.
+\end{description}
+
+\section{What commit \texttt{2f67a32} established}
+\subsection{Exactness and certificates}
+The reproduced audit reported zero failures in 50,688 likelihood-recurrence cases, 200 complete-tie one-deletion cases, 105 complete-tie two-deletion cases, 15,174 VT checks, 1,602 shell-certificate cases, and 36 moment-sandwich checks.  The maximum likelihood-recurrence error was approximately $2.2\times10^{-16}$.  The C++ self-test additionally checked 600 complete small-code worlds.
+
+These tests support the following hard-decision result.  Let $\eta_J$ be the probability of the next unprocessed history in deletion-set stream $J$.  If $s^\star$ is the exact score of the best discovered codeword and
+\[
+  s^\star > U_{\rm new}:=\sum_{J\in\J_t}\eta_J,
+\]
+then the discovered codewords at score $s^\star$ form the complete ML tie set.  Strictness is essential: equality cannot certify uniqueness or tie completeness.
+
+\subsection{Candidate-volume and oracle-relative theory}
+For observation $y$, define the best-alignment mismatch
+\[
+ \delta_y(x)=\min_{J\in\J_t} d_J(x,y)
+\]
+and the inverse candidate volume
+\[
+ V_y(w)=\left|\left\{x\in\{0,1\}^n:\delta_y(x)\le w\right\}\right|.
+\]
+With
+\[
+ B_m(w)=\sum_{i=0}^{\min\{w,m\}}\binom mi,
+\]
+the audited bounds are
+\begin{equation}
+  2^t B_m(w)\le V_y(w)\le 2^t\binom nt B_m(w).
+  \label{eq:volume}
+\end{equation}
+Every complete candidate has exactly $\binom nt$ compatible inverse histories, one for every deletion subset.
+
+For $p<1/2$, set
+\[
+ a=\frac{1-p}{p},\qquad
+ L_{n,t}=\left\lfloor\log_a\binom nt\right\rfloor.
+\]
+If an ML codeword has best-alignment mismatch $d^\star$, then an exact L0 membership-only decoder must query every candidate in shell $d^\star-L_{n,t}-1$ that is strictly more likely, unless it has already identified the entire code.  FIBER certifies by shell $d^\star+L_{n,t}$.  This yields the oracle-relative sandwich
+\begin{equation}
+  V_y(d^\star-L_{n,t}-1)
+  \le \Qopt
+  \le \Qfib
+  \le V_y(d^\star+L_{n,t}),
+  \label{eq:sandwich}
+\end{equation}
+under the original arbitrary-code oracle model.
+
+\subsection{Known-cardinality refinement}
+The code cardinality $M$ is often known.  This slightly weakens a pure indistinguishability converse because an unqueried high-likelihood candidate can be excluded after all $M$ codewords have already been found.  The correct refinement is the following.
+
+\begin{proposition}[Known-cardinality L0 lower bound]
+Let
+\[
+ H_y(c^\star)=\left|\{x:\Lambda_y(x)>\Lambda_y(c^\star)\}\right|.
+\]
+An exact decoder that knows only the membership oracle and code cardinality $M$ must, before certifying $c^\star$, either query every member of this higher-likelihood set or have already received $M$ positive membership responses.  Hence its total query count satisfies
+\[
+ Q_{\mathrm{L0},M}^\star\ge \min\{H_y(c^\star),M\},
+\]
+with the additional trivial requirement of at least one positive query when a codeword is returned.
+\end{proposition}
+\begin{proof}
+Assume some higher-likelihood candidate remains unqueried and fewer than $M$ codewords have been found.  The query transcript is then consistent with another size-$M$ code whose membership set contains the unqueried candidate and preserves all previous answers.  Returning $c^\star$ would be incorrect for that oracle.  Therefore one of the two stated conditions is necessary.
+\end{proof}
+
+For a rate-$R$ code, $M=2^{nR}$.  When the interior-shell exponent $\hbin(q)$ is below $R$, the cardinality truncation does not alter the $\hbin(q)$ lower exponent.  This closes an important assumption gap while preserving the intended favorable-regime theorem.
+
+\subsection{Moment, tail, and phase laws}
+For fixed $t$, the probability-ordered rank $R_{\rm hist}$ at which the actual inverse history is revealed satisfies, for every $\rho>0$,
+\[
+ \lim_{n\to\infty}\frac1n\log_2\mathbb E[R_{\rm hist}^{\rho}]
+ = \rho\Renyi_{1/(1+\rho)}(p).
+\]
+Certified FIBER may stop earlier, so only the corresponding upper moment and tail bounds hold universally for $Q_{\rm FIBER}$.  The typical fixed-quantile exponent is $\hbin(p)$, whereas the mean-history exponent is $\Renyi_{1/2}(p)$.  A parallel hybrid with a code-side exact search of exponent $1-R$ therefore has distinct predicted boundaries
+\[
+ \hbin(p_{\rm typ})=1-R,
+ \qquad
+ \Renyi_{1/2}(p_{\rm mean})=1-R.
+\]
+At $R=0.75$, for example, $p_{\rm typ}\approx0.04169$ but $p_{\rm mean}\approx0.00903$.  A decoder can thus win in median latency while losing in mean or rare-tail work.
+
+\section{Why the version-4 performance gate is not yet final}
+\subsection{Feasible syndrome-trellis points were disabled}
+The compiled syndrome reference estimates its preprocessing work as
+\[
+ U_{\rm tr}(n,r)=2n^2 2^r,
+ \qquad r=n-k.
+\]
+The version-4 profile supplied a nonzero trellis budget at $n=32$ but left the global budget at zero for the $n=48$ and $n=64$ schedules.  Consequently the result files record a trellis availability fraction of one at $n=32$ and zero at $n=48,64$.  Yet several larger points are computationally feasible:
+
+\begin{table}[h]
+\centering
+\caption{Charged trellis update estimates.}
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+$n$ & $R$ & $r$ & $U_{\rm tr}(n,r)$ & Version-5 treatment\\
+\midrule
+48 & 0.75  & 12 & 18,874,368  & mandatory\\
+48 & 0.875 & 6  & 294,912     & mandatory\\
+64 & 0.875 & 8  & 2,097,152   & mandatory\\
+64 & 0.75  & 16 & 536,870,912 & recorded but not mandatory\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At the largest lengths the spectacular version-4 ratios were therefore primarily FIBER versus prefix A*, not FIBER versus the faster of every feasible implemented exact decoder.  This does not invalidate the signal; it prevents treating it as closed.
+
+\subsection{Twelve samples cannot support a $p99$ claim}
+The version-4 standard profile used 24 trials at $n=32$, 16 at $n=48$, and only 12 at $n=64$.  An empirical $p99$ from 12 observations is essentially an interpolation near the maximum, not a stable high-quantile estimate.  Bootstrap confidence intervals on the median do not repair this tail limitation.
+
+The low-$p$ regime also makes zero-substitution blocks dominant.  With $m=63$ survivors,
+\[
+ \Pr\{E=0\}=(1-p)^{63},
+\]
+which equals approximately $0.8815$, $0.7292$, and $0.5309$ for $p=0.002$, $0.005$, and $0.01$, respectively.  A large unconditional speedup could therefore describe the easiest $E=0$ case while hiding a failure on the positive-error blocks responsible for the tail.
+
+\subsection{Baseline switching contaminates slope interpretation}
+Version 4 reported favorable slopes from $n=32$ to $64$, but its authoritative baseline changed from the minimum of trellis and prefix at $n=32$ to prefix alone at $n=48,64$.  A slope comparison across changing reference classes cannot by itself establish scaling superiority.  Version 5 keeps the trellis enabled at every required feasible point and records which baseline wins each block.
+
+\section{Version-5 computational protocol}
+\subsection{Implementations and fairness controls}
+The package compiles FIBER, prefix A*, and syndrome-trellis search from the same C++20 translation unit using
+\[
+ \texttt{-O3 -DNDEBUG -std=c++20 -march=native}.
+\]
+It retains the exact 600-case C++ self-test and all Python theorem/exactness audits.  Each configuration receives warmup blocks excluded from timing; decoder order is randomized; each reported block time is the median of three repeats; and thread-related numerical-library environment variables are fixed to one.
+
+The authoritative per-block reference is the faster certified result among prefix A* and the syndrome trellis whenever the latter is feasible.  Preprocessing is included in each decoder time.
+
+\subsection{Frozen experiment matrix}
+The standard profile uses:
+\begin{itemize}[leftmargin=2em]
+\item $n\in\{32,48,64\}$, $R\in\{0.75,0.875\}$;
+\item $p\in\{0.002,0.005,0.01\}$;
+\item random systematic linear and reproducible CRC-polynomial linear codes;
+\item 120 trials at $n=32$, 160 at $n=48$, and 600 at $n=64$ per family/rate/$p$ configuration;
+\item three timing repeats and three warmup blocks per configuration;
+\item exact syndrome membership without a codebook table.
+\end{itemize}
+The $n=64$ schedule yields about 71 positive-error samples even at $p=0.002$ in expectation, enough to examine the $E=1$ stratum rather than infer everything from $E=0$.
+
+\subsection{Tail and conditioning outputs}
+The package reports:
+\begin{itemize}[leftmargin=2em]
+\item median ratio with a 95\% bootstrap interval;
+\item empirical $p90$, $p95$, $p99$, maximum, and an order-statistic interval for $p99$;
+\item separate summaries for $E=0$, $E=1$, $E=2$, and $E\ge3$;
+\item median and high-quantile history counts;
+\item trellis availability, certification, update estimate, and fraction of blocks on which it is the faster reference;
+\item scaling slopes using a consistent enabled-reference policy.
+\end{itemize}
+
+\section{Frozen decision contract}
+Let a \emph{key configuration} be a largest-length point with $p\le0.01$ inside the predicted typical-favorable region.  Continuation requires all of the following:
+\begin{enumerate}[label=G\arabic*.,leftmargin=2.5em]
+\item all exactness, candidate-volume, ambiguity, known-cardinality, moment/tail, and phase audits pass;
+\item at least ten key configurations are present and each has at least 500 trials;
+\item FIBER wins the median by at least $1.25\times$ in at least eight key configurations;
+\item the upper 95\% bootstrap endpoint of the median ratio is at most $0.8$ in at least six configurations;
+\item the empirical $p99$ ratio is at most one in at least six configurations, and the upper order-statistic interval endpoint is at most $1.25$ in at least four;
+\item every predicted mean-favorable largest-length configuration has $p99$ ratio at most one;
+\item at least four favorable slope comparisons with a consistent reference-availability policy have disadvantage no greater than $0.08$ in log-two wall-time slope;
+\item at least four positive-error strata have at least 50 blocks, median ratio at most $0.8$, and $p95$ ratio at most $1.25$;
+\item the syndrome trellis is available and certified for all required $n=48$ points and for $n=64,R=0.875$;
+\item the true linear-time VT specialization boundary remains exact.
+\end{enumerate}
+
+These thresholds are demanding by design.  The purpose is not to rescue the performance claim; it is to decide whether the claim is strong enough to carry a flagship manuscript.
+
+\section{Novelty boundary and publication interpretation}
+The following are established or substantially anticipated: additive GRAND, candidate-likelihood guessing for general DMCs, priority-first decoding, synchronization sequential decoding, hidden-alignment summation, best-string versus best-path distinctions, fixed-$k$ deletion likelihoods, and specialized VT/GC/polar synchronization constructions \cite{Duffy2019,TanJoudeh2025,Han1993,Gallager1961,DaveyMacKay2001,Sabary2022}.
+
+The residual contribution is narrower:
+\begin{quote}
+An exact membership-first aggregate inverse decoder with a strict complete-tie certificate for fixed edits, joined to candidate-volume bounds, an L0 oracle-query converse and polynomial competitiveness theorem, fixed-edit moment/tail laws, and a rate-complexity phase diagram.
+\end{quote}
+The present search did not locate this complete package in one primary source.  The counting bounds are elementary, and the oracle converse uses a standard indistinguishability technique; their value comes from the integrated theorem-and-decoder result rather than from claiming a wholly new mathematical primitive.
+
+A positive version-5 result supports a high-quality IEEE TIT manuscript.  It does not establish field-defining status.  That term remains retrospective and would require broader independent uptake and demonstrated relevance beyond one fixed-edit channel.
+
+\section{Exact next step after the run}
+If version 5 returns \texttt{AUTHORIZE\_FULL\_TIT\_MANUSCRIPT\_AND\_EXTERNAL\_REVIEW}, the next deliverable is one full IEEE TIT manuscript and a minimal standalone external-review package containing:
+\begin{enumerate}[leftmargin=2em]
+\item the manuscript PDF and source;
+\item a compact proof supplement only if page limits require it;
+\item the claim-by-claim novelty matrix;
+\item the exactness and compiled closure evidence;
+\item a reviewer handoff requesting one of four classifications: flagship candidate, strong non-flagship paper, blocking mathematical defect, or blocking novelty defect.
+\end{enumerate}
+
+If version 5 returns \texttt{NARROW\_TO\_FIXED\_EDIT\_TIT\_THEORY\_ALGORITHM\_PAPER}, the theorem and exact decoder should still be written, but all flagship timing and field-defining language should be removed.  If it returns \texttt{STOP\_FLAGSHIP\_PERFORMANCE\_CLAIM}, no further performance campaign is justified.
+
+\section{Conclusions}
+Commit \texttt{2f67a32} is a valid and encouraging result.  It establishes real flagship-paper potential but not manuscript readiness.  The remaining uncertainty is sharply localized: whether FIBER's compiled advantage survives the strongest feasible exact reference and the positive-substitution tail.  Version 5 closes that uncertainty without broadening the theory, changing the decoder, or moving the decision thresholds after observing the outcome.
+
+\begin{thebibliography}{99}
+\bibitem{Duffy2019}
+K. R. Duffy, J. Li, and M. M\'edard, ``Capacity-achieving guessing random additive noise decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 65, no. 7, pp. 4023--4040, 2019.
+
+\bibitem{TanJoudeh2025}
+V. Y. F. Tan and H. Joudeh, ``Ensemble-tight second-order asymptotics and exponents for guessing-based decoding with abandonment,'' arXiv:2502.05959, 2025.
+
+\bibitem{Han1993}
+Y. S. Han, C. R. P. Hartmann, and C.-C. Chen, ``Efficient priority-first search maximum-likelihood soft-decision decoding of linear block codes,'' \emph{IEEE Trans. Inf. Theory}, vol. 39, no. 5, pp. 1514--1523, 1993.
+
+\bibitem{Gallager1961}
+R. G. Gallager, ``Sequential decoding for binary channel with noise and synchronization errors,'' MIT Lincoln Laboratory Group Report 2502, 1961.
+
+\bibitem{DaveyMacKay2001}
+M. C. Davey and D. J. C. MacKay, ``Reliable communication over channels with insertions, deletions, and substitutions,'' \emph{IEEE Trans. Inf. Theory}, vol. 47, no. 2, pp. 687--698, 2001.
+
+\bibitem{Sabary2022}
+O. Sabary, D. Bar-Lev, Y. Gershon, A. Yucovich, and E. Yaakobi, ``On the decoding error weight of one or two deletion channels,'' arXiv:2201.02466, 2022.
+
+\bibitem{Arikan1996}
+E. Ar\i kan, ``An inequality on guessing and its application to sequential decoding,'' \emph{IEEE Trans. Inf. Theory}, vol. 42, no. 1, pp. 99--105, 1996.
+\end{thebibliography}
+
+\end{document}

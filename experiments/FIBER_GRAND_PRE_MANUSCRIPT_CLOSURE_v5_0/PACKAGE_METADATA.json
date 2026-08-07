@@ -1,0 +1,32 @@
+{
+  "package_name": "FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0",
+  "release_version": "5.0.0",
+  "release_date": "2026-08-06",
+  "default_profile": "standard",
+  "scientific_scope": "mandatory pre-manuscript closure of the strongest-baseline, sample-size, and positive-substitution weaknesses identified after commit 2f67a32",
+  "target_repo_relative_path": "experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0",
+  "working_directory": "/home/afazeli2006/atom_coding",
+  "github_repository": "git@github.com:afazeliUofT/atom_coding.git",
+  "claim_boundary": [
+    "The original broad FIBER-GRAND and generic fiber-guesswork claims remain withdrawn",
+    "The L0 theorem is interface-relative query competitiveness, not processor-cycle optimality",
+    "The fixed-edit construction is XP, not FPT, in the edit count",
+    "The theory paper does not require measured traces, but real-system and field-impact claims do",
+    "The flagship performance claim is stopped if an enabled feasible syndrome-trellis baseline or positive-error conditioning removes the advantage"
+  ],
+  "input_commit_under_audit": "2f67a321fa595a9d840355b417bd4ab18bb3180d",
+  "input_commit_machine_classification": "PROCEED_TO_FLAGSHIP_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW",
+  "independent_audit_classification": "CONTINUE_TO_ONE_MANDATORY_PRE_MANUSCRIPT_CLOSURE_GATE",
+  "theory_pdf": "theory/FIBER_GRAND_Pre_Manuscript_Baseline_and_Tail_Closure.pdf",
+  "possible_outputs": [
+    "AUTHORIZE_FULL_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW",
+    "NARROW_TO_FIXED_EDIT_TIT_THEORY_ALGORITHM_PAPER",
+    "STOP_FLAGSHIP_PERFORMANCE_CLAIM"
+  ],
+  "required_after_positive_run": [
+    "freeze full IEEE Transactions on Information Theory manuscript",
+    "produce minimal standalone external-review package",
+    "obtain independent theorem-by-theorem proof review",
+    "obtain independent primary-source and patent novelty review"
+  ]
+}

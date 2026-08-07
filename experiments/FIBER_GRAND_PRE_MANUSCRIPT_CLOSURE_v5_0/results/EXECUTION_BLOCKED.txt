@@ -1,0 +1,3 @@
+EXECUTION_BLOCKED_NOT_A_SCIENTIFIC_STOP
+ERROR=LauncherError('The scientific driver exited with code 1')
+ACTION=repair_environment_or_installation_and_rerun_standard_profile

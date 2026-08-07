@@ -1,0 +1,65 @@
+{
+  "contract_version": "5.0",
+  "scientific_scope": "mandatory pre-manuscript closure of the strongest-baseline and latency-tail weaknesses identified after commit 2f67a32",
+  "claim_boundary": [
+    "The original broad FIBER-GRAND and generic fiber-guesswork claims remain withdrawn",
+    "The L0 oracle theorem is an interface-relative query theorem, not processor-cycle optimality",
+    "The fixed-edit method remains XP rather than FPT in edit count",
+    "A theory-centered IEEE TIT paper does not require measured traces, but all real-system claims do",
+    "No flagship performance claim is permitted if the signal vanishes against an enabled feasible syndrome-trellis baseline or after conditioning on positive substitution weight"
+  ],
+  "hard_stop": {
+    "false_certificate_tolerance": 0,
+    "all_candidate_theory_audits_required": true,
+    "all_moment_tail_audits_required": true
+  },
+  "moment_tail_theory": {
+    "maximum_largest_n_certificate_upper_gap": 0.06,
+    "maximum_largest_n_quantile_gap": 0.09,
+    "maximum_largest_n_reveal_moment_gap": 0.05,
+    "require_gap_decrease_fraction": 0.8
+  },
+  "compiled_benchmark": {
+    "maximum_key_probability": 0.01,
+    "minimum_key_largest_n_configs": 10,
+    "minimum_key_trials_per_config": 500,
+    "median_win_ratio": 0.8,
+    "maximum_median_ci_high": 0.8,
+    "maximum_p99_ratio": 1.0,
+    "maximum_mean_favorable_p99_ratio": 1.0,
+    "maximum_slope_disadvantage": 0.08,
+    "minimum_median_wins": 8,
+    "minimum_robust_ci_wins": 6,
+    "minimum_p99_wins": 6,
+    "minimum_slope_passes": 4,
+    "minimum_positive_error_stratum_trials": 50,
+    "positive_error_median_ratio": 0.8,
+    "positive_error_p95_ratio": 1.25,
+    "minimum_positive_error_strata_passes": 4,
+    "required_trellis_points": [
+      {
+        "n": 48,
+        "rate": 0.75,
+        "maximum_p": 0.01
+      },
+      {
+        "n": 48,
+        "rate": 0.875,
+        "maximum_p": 0.01
+      },
+      {
+        "n": 64,
+        "rate": 0.875,
+        "maximum_p": 0.01
+      }
+    ],
+    "maximum_p99_ci_high": 1.25,
+    "minimum_p99_ci_wins": 4
+  },
+  "classifications": {
+    "proceed": "AUTHORIZE_FULL_TIT_MANUSCRIPT_AND_EXTERNAL_REVIEW",
+    "narrow": "NARROW_TO_FIXED_EDIT_TIT_THEORY_ALGORITHM_PAPER",
+    "stop": "STOP_FLAGSHIP_PERFORMANCE_CLAIM"
+  },
+  "stop_rule": "Stop or narrow immediately if exactness fails, the feasible syndrome-trellis baseline removes the advantage, or the advantage is confined to zero-substitution blocks and disappears on positive-error strata."
+}

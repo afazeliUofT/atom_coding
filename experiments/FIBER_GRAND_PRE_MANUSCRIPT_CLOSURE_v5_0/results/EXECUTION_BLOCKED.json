@@ -1,0 +1,6 @@
+{
+  "classification": "EXECUTION_BLOCKED_NOT_A_SCIENTIFIC_VERDICT",
+  "error": "LauncherError('The scientific driver exited with code 1')",
+  "launcher_version": "5.0.0",
+  "utc": "2026-08-07T02:41:33+00:00"
+}

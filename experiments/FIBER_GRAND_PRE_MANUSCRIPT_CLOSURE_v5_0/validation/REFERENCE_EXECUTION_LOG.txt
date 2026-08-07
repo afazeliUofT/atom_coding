@@ -1,0 +1,18 @@
+FIBER-GRAND PRE-MANUSCRIPT CLOSURE v5.0 - RELEASE VALIDATION
+
+UTC_DATE=2026-08-06
+AUTHORITATIVE_PROFILE=standard (not precomputed in release construction)
+SOFTWARE_VALIDATION_PROFILE=smoke
+
+TESTS
+- Python tests: 21 passed.
+- C++20 self-test: SELF_TEST_PASS cases=600.
+- PDF: 8 pages; openable, searchable, and preflighted.
+
+TARGETED TRELLIS PROBES
+- n=48, R=0.75: trellis available; exact agreement; estimated updates 18,874,368.
+- n=48, R=0.875: trellis available; exact agreement; estimated updates 294,912.
+- n=64, R=0.875: trellis available; exact agreement; estimated updates 2,097,152.
+
+IMPORTANT
+The smoke-profile NARROW classification is expected because it deliberately does not meet the standard profile's 500-trial and positive-tail thresholds. It is not a scientific verdict. The user-facing wrapper always runs the standard profile.

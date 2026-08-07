@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "cases": 50688,
+        "maximum_absolute_error": 2.220446049250313e-16
+      },
+      "name": "one_deletion_linear_recurrence",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "closed": true,
+          "family": "random_linear",
+          "size": 128
+        },
+        {
+          "closed": true,
+          "family": "named_crc_linear",
+          "size": 128
+        }
+      ],
+      "name": "code_oracle_closure",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 200,
+        "failure": []
+      },
+      "name": "one_deletion_complete_tie_exactness",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 105,
+        "failure": []
+      },
+      "name": "two_deletion_complete_tie_exactness",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 15174,
+        "failure": []
+      },
+      "name": "linear_time_vt_exhaustive",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 1602,
+        "failure": []
+      },
+      "name": "deterministic_shell_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 36,
+        "failure": []
+      },
+      "name": "moment_sandwich",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cases": 200,
+        "failure": []
+      },
+      "name": "synthetic_timing_slip_structure",
+      "pass": true
+    }
+  ],
+  "count": 8,
+  "pass": true
+}

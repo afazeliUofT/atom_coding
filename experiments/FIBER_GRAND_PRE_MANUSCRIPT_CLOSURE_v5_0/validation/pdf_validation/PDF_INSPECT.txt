@@ -1,0 +1,41 @@
+PDF: /mnt/data/work_v5/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/theory/FIBER_GRAND_Pre_Manuscript_Baseline_and_Tail_Closure.pdf
+Pages: 8
+Encrypted: False
+Page sizes (pt, rounded):
+  - 612 x 792 (8 page(s))
+Metadata:
+  /Author: 
+  /CreationDate: D:20260806232738Z
+  /Creator: LaTeX with hyperref
+  /Keywords: 
+  /ModDate: D:20260806232738Z
+  /PTEX.Fullbanner: This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) kpathsea version 6.4.0/dev
+  /Producer: pdfTeX-1.40.26
+  /Subject: 
+  /Title: 
+  /Trapped: /False
+Outline items: 19
+Form fields: 0
+Attachments: 0
+Annotations: 25
+
+Fonts (pdffonts, first 25 lines):
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+UZJQTY+CMBX12                        Type 1            Builtin          yes yes yes    141  0
+VAYIQA+CMR12                         Type 1            Builtin          yes yes yes    142  0
+MRIXZS+CMTT12                        Type 1            Builtin          yes yes yes    143  0
+HZMFTR+CMR10                         Type 1            Builtin          yes yes yes    144  0
+PQGEHA+CMTT10                        Type 1            Builtin          yes yes yes    145  0
+NJOZDY+CMBX10                        Type 1            Builtin          yes yes yes    147  0
+AEKREF+CMMI10                        Type 1            Builtin          yes yes yes    148  0
+BRBDWJ+CMSY10                        Type 1            Builtin          yes yes yes    159  0
+CYISRV+CMTI10                        Type 1            Builtin          yes yes yes    160  0
+QASMKH+CMSY8                         Type 1            Builtin          yes yes yes    163  0
+QZBBWJ+CMR8                          Type 1            Builtin          yes yes yes    164  0
+MRNLIN+CMMI8                         Type 1            Builtin          yes yes yes    165  0
+KSXENI+CMEX10                        Type 1            Builtin          yes yes yes    166  0
+XPOJAY+CMMI6                         Type 1            Builtin          yes yes yes    167  0
+RAZVEJ+MSBM10                        Type 1            Builtin          yes yes yes    179  0
+QTJUYY+CMMI12                        Type 1            Builtin          yes yes yes    181  0
+MRRPUK+SFRM1095                      Type 1            Custom           yes yes yes    187  0

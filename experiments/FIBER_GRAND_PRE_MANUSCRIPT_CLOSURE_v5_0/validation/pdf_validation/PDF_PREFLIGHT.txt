@@ -1,0 +1,6 @@
+PDF: /mnt/data/work_v5/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/theory/FIBER_GRAND_Pre_Manuscript_Baseline_and_Tail_Closure.pdf
+Pages: 8
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

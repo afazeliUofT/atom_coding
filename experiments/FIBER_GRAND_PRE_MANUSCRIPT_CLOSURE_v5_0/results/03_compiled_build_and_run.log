@@ -1,0 +1,65 @@
+$ /usr/bin/g++ -O3 -DNDEBUG -std=c++20 -march=native -Wall -Wextra /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/cpp/flagship_benchmark.cpp -o /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark
+
+ELAPSED_SECONDS=2.827089
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark --self-test
+SELF_TEST_PASS cases=600
+
+ELAPSED_SECONDS=0.741604
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/results/03_compiled_trials_part00.csv --seed 20260807 --n 32 --rates 0.75,0.875 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 80 --trials48 80 --trials64 80 --timing-repeats 3 --warmup-trials 3 --max-histories 2000000 --max-prefix-nodes 1000000 --max-trellis-terminals 20000 --max-trellis-dp-updates 50000000
+compiled family=random_linear R=0.75 n=32 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=524288
+compiled family=random_linear R=0.75 n=32 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=524288
+compiled family=random_linear R=0.75 n=32 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=524288
+compiled family=random_linear R=0.875 n=32 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=32768
+compiled family=random_linear R=0.875 n=32 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=32768
+compiled family=random_linear R=0.875 n=32 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=32768
+compiled family=named_crc_linear R=0.75 n=32 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=524288
+compiled family=named_crc_linear R=0.75 n=32 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=524288
+compiled family=named_crc_linear R=0.75 n=32 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=524288
+compiled family=named_crc_linear R=0.875 n=32 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=32768
+compiled family=named_crc_linear R=0.875 n=32 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=32768
+compiled family=named_crc_linear R=0.875 n=32 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=32768
+COMPILED_BENCHMARK_DONE rows=960 disagreements=0 failures=0
+
+ELAPSED_SECONDS=16.839715
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/results/03_compiled_trials_part01.csv --seed 20360810 --n 48 --rates 0.75,0.875 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 80 --trials48 80 --trials64 80 --timing-repeats 3 --warmup-trials 3 --max-histories 2000000 --max-prefix-nodes 1000000 --max-trellis-terminals 20000 --max-trellis-dp-updates 50000000
+compiled family=random_linear R=0.75 n=48 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=18874368
+compiled family=random_linear R=0.75 n=48 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=18874368
+compiled family=random_linear R=0.75 n=48 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=18874368
+compiled family=random_linear R=0.875 n=48 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=294912
+compiled family=random_linear R=0.875 n=48 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=294912
+compiled family=random_linear R=0.875 n=48 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=294912
+compiled family=named_crc_linear R=0.75 n=48 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=18874368
+compiled family=named_crc_linear R=0.75 n=48 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=18874368
+compiled family=named_crc_linear R=0.75 n=48 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=18874368
+compiled family=named_crc_linear R=0.875 n=48 p=0.002 trials=80 trellis_available=1 trellis_estimated_updates=294912
+compiled family=named_crc_linear R=0.875 n=48 p=0.005 trials=80 trellis_available=1 trellis_estimated_updates=294912
+compiled family=named_crc_linear R=0.875 n=48 p=0.01 trials=80 trellis_available=1 trellis_estimated_updates=294912
+COMPILED_BENCHMARK_DONE rows=960 disagreements=0 failures=0
+
+ELAPSED_SECONDS=158.000942
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/results/03_compiled_trials_part02.csv --seed 20460813 --n 64 --rates 0.875 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 600 --trials48 600 --trials64 600 --timing-repeats 3 --warmup-trials 3 --max-histories 2000000 --max-prefix-nodes 1000000 --max-trellis-terminals 50000 --max-trellis-dp-updates 20000000
+compiled family=random_linear R=0.875 n=64 p=0.002 trials=600 trellis_available=1 trellis_estimated_updates=2097152
+compiled family=random_linear R=0.875 n=64 p=0.005 trials=600 trellis_available=1 trellis_estimated_updates=2097152
+compiled family=random_linear R=0.875 n=64 p=0.01 trials=600 trellis_available=1 trellis_estimated_updates=2097152
+compiled family=named_crc_linear R=0.875 n=64 p=0.002 trials=600 trellis_available=1 trellis_estimated_updates=2097152
+compiled family=named_crc_linear R=0.875 n=64 p=0.005 trials=600 trellis_available=1 trellis_estimated_updates=2097152
+compiled family=named_crc_linear R=0.875 n=64 p=0.01 trials=600 trellis_available=1 trellis_estimated_updates=2097152
+COMPILED_BENCHMARK_DONE rows=3600 disagreements=0 failures=0
+
+ELAPSED_SECONDS=1060.879980
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/results/03_compiled_trials_part03.csv --seed 20560816 --n 64 --rates 0.75 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 600 --trials48 600 --trials64 600 --timing-repeats 3 --warmup-trials 3 --max-histories 2000000 --max-prefix-nodes 1000000 --max-trellis-terminals 50000 --max-trellis-dp-updates 100000000
+compiled family=random_linear R=0.75 n=64 p=0.002 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=random_linear R=0.75 n=64 p=0.005 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=random_linear R=0.75 n=64 p=0.01 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=named_crc_linear R=0.75 n=64 p=0.002 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=named_crc_linear R=0.75 n=64 p=0.005 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=named_crc_linear R=0.75 n=64 p=0.01 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+COMPILED_BENCHMARK_DONE rows=3600 disagreements=7 failures=7
+
+ELAPSED_SECONDS=9065.038750
+RETURN_CODE=3

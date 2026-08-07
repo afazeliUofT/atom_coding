@@ -1,0 +1,15 @@
+{
+  "cpu_count": 16,
+  "machine": "x86_64",
+  "packages": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "psutil": "7.2.2",
+    "pytest": "9.1.1",
+    "scipy": "1.18.0"
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "utc": "2026-08-06T23:49:47+00:00"
+}

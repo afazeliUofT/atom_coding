@@ -1,0 +1,35 @@
+UTC_START=2026-08-06T23:49:46+00:00
+COMMAND=/home/afazeli2006/atom_coding/.venv_fiber_pre_manuscript_v5_0/bin/python -m fiber_flagship.run_gate --profile standard
+
+[E0] Exactness, complete ties, certificates, moment sandwich, and VT audit...
+[E1] Candidate-volume, ambiguity, and L0 membership-oracle competitiveness audit...
+[E2] Fixed-edit moment/tail theory and typical-versus-mean phase diagram...
+[E3] C++20 pre-manuscript closure: FIBER versus enabled prefix A* and syndrome-trellis baselines...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/src/fiber_flagship/run_gate.py", line 108, in <module>
+    main()
+  File "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/src/fiber_flagship/run_gate.py", line 104, in main
+    run(args.profile)
+  File "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/src/fiber_flagship/run_gate.py", line 64, in run
+    run_compiled_flagship_gate(package_root, results_dir, profile, contract, rng)
+  File "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/src/fiber_flagship/compiled_gate.py", line 157, in run_compiled_flagship_gate
+    parts = _schedule_args(profile, results_dir, binary, package_root, log_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/src/fiber_flagship/compiled_gate.py", line 109, in _schedule_args
+    _run_checked(command, package_root, log_path)
+  File "/home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/src/fiber_flagship/compiled_gate.py", line 42, in _run_checked
+    raise RuntimeError(
+RuntimeError: command failed (3): /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/build/flagship_benchmark --output /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0/results/03_compiled_trials_part03.csv --seed 20560816 --n 64 --rates 0.75 --p 0.002,0.005,0.01 --families RLC,CRC --trials32 600 --trials48 600 --trials64 600 --timing-repeats 3 --warmup-trials 3 --max-histories 2000000 --max-prefix-nodes 1000000 --max-trellis-terminals 50000 --max-trellis-dp-updates 100000000
+compiled family=random_linear R=0.75 n=64 p=0.002 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=random_linear R=0.75 n=64 p=0.005 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=random_linear R=0.75 n=64 p=0.01 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=named_crc_linear R=0.75 n=64 p=0.002 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=named_crc_linear R=0.75 n=64 p=0.005 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+compiled family=named_crc_linear R=0.75 n=64 p=0.01 trials=600 trellis_available=0 trellis_estimated_updates=536870912
+COMPILED_BENCHMARK_DONE rows=3600 disagreements=7 failures=7
+
+
+UTC_END=2026-08-07T02:41:33+00:00
+EXIT_CODE=1
