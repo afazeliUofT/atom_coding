@@ -1,0 +1,15 @@
+{
+  "source_commit": "29e18ba2a18c6fb3f9c230311e326e74514ca3ab",
+  "source_experiment": "FIBER_GRAND_PRE_MANUSCRIPT_CLOSURE_v5_0",
+  "shell3_history_cap": 5341184,
+  "prefix_node_cap": 10000000,
+  "targets": [
+    ["random_linear", 0.005, 561],
+    ["random_linear", 0.010, 31],
+    ["named_crc_linear", 0.005, 382],
+    ["named_crc_linear", 0.010, 105],
+    ["named_crc_linear", 0.010, 185],
+    ["named_crc_linear", 0.010, 296],
+    ["named_crc_linear", 0.010, 314]
+  ]
+}

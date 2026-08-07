@@ -1,0 +1,5 @@
+{
+  "classification": "EXECUTION_BLOCKED_NOT_A_SCIENTIFIC_VERDICT",
+  "error": "RuntimeError('command failed (1): /home/afazeli2006/atom_coding/.venv_fiber_v5_e3_tail_r1/bin/python /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_V5_E3_TAIL_ADJUDICATION_R1/src/adjudicate.py --repo-root /home/afazeli2006/atom_coding --timing-repeats 3')",
+  "utc": "2026-08-07T05:04:22.339245+00:00"
+}

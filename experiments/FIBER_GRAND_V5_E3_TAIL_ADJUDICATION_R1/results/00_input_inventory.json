@@ -1,0 +1,28 @@
+{
+  "all_failures_E3": true,
+  "files": [
+    {
+      "file": "03_compiled_trials_part00.csv",
+      "rows": 960,
+      "sha256": "6beb399edbdc880eed67fabf98e14a2f5ce04bc670f24e74debfb2d0d6ce3d25"
+    },
+    {
+      "file": "03_compiled_trials_part01.csv",
+      "rows": 960,
+      "sha256": "4b5ab9c23173d8796624cf10152c2c9476b8fc095c396f48806d1443f3328ec0"
+    },
+    {
+      "file": "03_compiled_trials_part02.csv",
+      "rows": 3600,
+      "sha256": "0b2f913fdb048fa24b982602bbeb0e39299d8d6a904aeff336735d17301ce2a8"
+    },
+    {
+      "file": "03_compiled_trials_part03.csv",
+      "rows": 3600,
+      "sha256": "9ba3aa6d08fe0d4bf55f14555acb5d830456be4d03cb615c1a6a3ed3657f4936"
+    }
+  ],
+  "original_failure_count": 7,
+  "original_rows": 9120,
+  "source_commit": "29e18ba2a18c6fb3f9c230311e326e74514ca3ab"
+}

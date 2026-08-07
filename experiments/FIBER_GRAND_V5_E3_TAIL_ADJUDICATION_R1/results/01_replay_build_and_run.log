@@ -1,0 +1,23 @@
+$ /usr/bin/g++ -O3 -DNDEBUG -std=c++20 -march=native -Wall -Wextra /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_V5_E3_TAIL_ADJUDICATION_R1/cpp/replay_failures.cpp -o /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_V5_E3_TAIL_ADJUDICATION_R1/build/replay_failures
+
+ELAPSED_SECONDS=9.414451
+RETURN_CODE=0
+$ /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_V5_E3_TAIL_ADJUDICATION_R1/build/replay_failures /home/afazeli2006/atom_coding/experiments/FIBER_GRAND_V5_E3_TAIL_ADJUDICATION_R1/results/01_e3_failure_replay.csv 3
+TARGET_START family=random_linear p=0.005 trial=561 E=3 deleted=56
+REPLAY family=random_linear p=0.005 trial=561 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341177 prefix_nodes=876230
+TARGET_START family=random_linear p=0.01 trial=31 E=3 deleted=38
+REPLAY family=random_linear p=0.01 trial=31 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341179 prefix_nodes=1107262
+TARGET_START family=named_crc_linear p=0.005 trial=382 E=3 deleted=53
+REPLAY family=named_crc_linear p=0.005 trial=382 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341180 prefix_nodes=1070754
+TARGET_START family=named_crc_linear p=0.01 trial=105 E=3 deleted=62
+REPLAY family=named_crc_linear p=0.01 trial=105 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341179 prefix_nodes=967158
+TARGET_START family=named_crc_linear p=0.01 trial=185 E=3 deleted=51
+REPLAY family=named_crc_linear p=0.01 trial=185 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341179 prefix_nodes=1048620
+TARGET_START family=named_crc_linear p=0.01 trial=296 E=3 deleted=60
+REPLAY family=named_crc_linear p=0.01 trial=296 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341179 prefix_nodes=928725
+TARGET_START family=named_crc_linear p=0.01 trial=314 E=3 deleted=15
+REPLAY family=named_crc_linear p=0.01 trial=314 E=3 fiber_certified=1 prefix_certified=1 agreement=1 fiber_histories=5341179 prefix_nodes=998506
+REPLAY_DONE targets=7
+
+ELAPSED_SECONDS=1172.147075
+RETURN_CODE=0
